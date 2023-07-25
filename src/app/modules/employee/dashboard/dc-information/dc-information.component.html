@@ -1,2 +1,188 @@
-<p>dc-information works!</p>
-hi
+<div class="container" *ngIf="loggedUserData">
+  <div class="card  m-2">
+    <div class="council-head p-2  m-0 d-flex align-items-center ">
+      <p>Delivery Council</p>
+      <p>Council <span><i class="fa-solid fa-caret-down"></i></span></p>
+    </div>
+  </div>
+
+
+  <div class="card m-2"> <!--DC information card-->
+    <div class="card-header">
+      <span><img src="../../../../../assets/images/icons/information.svg" alt="info-icon"></span>
+      DC Information
+    </div>
+    <div class="card-body p-2 pl-4 pr-4">
+      <div class="row">
+        <div class="col-md-6">Name</div>
+        <div class="col-md-6">{{loggedUserData.DCTech}}</div>
+      </div>
+      <div class="row align-items-center justify-content-center mt-2">
+        <div class="col-md-6 text-wrap">Reporting Manager</div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">{{loggedUserData.DCChairName}}</h5>
+                      <p class="card-text">{{loggedUserData.DCChairId}} </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <div class="card-header">
+      <span><img src="../../../../../assets/images/icons/client.svg" alt="info-icon"></span>
+
+      Client
+    </div>
+    <div class="card-body p-2 pl-4 pr-4">
+      <div class="row">
+        <div class="col-md-6">Name</div>
+        <div class="col-md-6">client</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Manager</div>
+        <div class="col-md-6">manager</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Team</div>
+        <div class="col-md-6">team</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">Experience</div>
+        <div class="col-md-6">{{loggedUserData}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card m-2"> <!--DC information card-->
+    <div class="card-header">
+      <span><img src="../../../../../assets/images/icons/reportees.svg" alt="info-icon"></span>
+
+      My Reportees
+    </div>
+    <div class="card-body p-2 pl-4 pr-4 mentor-card">
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Reportee name</h5>
+                      <p class="card-text">Reportee Email </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Reportee name</h5>
+                      <p class="card-text">Reportee Email </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center mt-2">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Reportee name</h5>
+                      <p class="card-text">Reportee Email </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Reportee name</h5>
+                      <p class="card-text">Reportee Email </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col">
+              <div class="card small-card">
+                <div class="row">
+                  <div class="col-md-4 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/profile_pictures/siddhesh.pansare@geminisolutions.com_img.jpg"
+                      class="card-img" alt="Profile Image">
+                  </div>
+                  <div class="col-md-8 align-items-center justify-content-center p-0">
+                    <div class="card-body p-0">
+                      <h5 class="card-title">Reportee name</h5>
+                      <p class="card-text">Reportee Email </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

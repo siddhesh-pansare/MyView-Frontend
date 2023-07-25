@@ -1,5 +1,5 @@
 .container{
-    display: flex;
+    display: grid;
 
 }
 .navbar-nav{
@@ -10,6 +10,18 @@ h6{
 font-family: Outfit;
 
 }
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    flex-shrink: 0;
+color: #082737;
+font-family: Outfit;
+font-size: 25px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}
 .thead{
     color: #38A3A5;
     font-family: Outfit;}
@@ -17,7 +29,51 @@ font-family: Outfit;
 .tname{
     color: #205072;
 font-family: Outfit;
-}    
+}
+.head {
+    color: #205072;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
+}  
+.name{
+    color: rgba(51, 54, 63, 0.60);
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ } 
+.bltag{
+    color: #205072;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+} 
+.imgsize{
+    display: grid;
+align-items: center;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid rgba(245, 245, 245, 0.63);
+background: #FFF;
+size: 30px;
+}
+.imghome{
+    display: grid;
+align-items: center;
+flex-shrink: 0;
+border-radius: 5px;
+border: 1px solid rgba(245, 245, 245, 0.63);
+background: #FFF;
+margin-right: 20px;
+
+}
 /*
 .title{
     display: flex;

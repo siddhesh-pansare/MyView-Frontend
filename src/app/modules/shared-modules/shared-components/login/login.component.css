@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.loginPage {
+  height: 100vh;
+
+  width: 100%;
+
+  display: flex;
+}
+
+.leftSide {
+  width: 55%;
+
+  height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.rightSide {
+  width: 45%;
+
+  height: 100vh;
+
+  background-color: #205072;
+
+  display: flex;
+
+  justify-content: space-evenly;
+
+  align-items: center;
+
+  flex-direction: column;
+}
+
+.navbar-brand {
+  height: 10vh;
+
+  width: 100%;
+
+  display: flex;
+
+  justify-content: start;
+
+  align-items: center;
+
+  padding-left: 10vh;
+}
+
+.logoGemini {
+  height: 5vh;
+
+  width: auto;
+}
+
+.main-bg {
+  background-color: #ffffff;
+
+  align-items: left;
+
+  background-size: cover;
+
+  width: auto;
+
+  height: 80vh;
+}
+
+.welcome {
+  color: #fff;
+
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.box {
+  display: flex;
+
+  flex-direction: column;
+
+  background-color: #ffffff;
+
+  border-radius: 10px;
+
+  border: 1px solid #ffffff;
+
+  width: 50%;
+
+  height: 60%;
+
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.box-bg {
+  width: 40%;
+  height: auto;
+}
+
+.app_logo {
+  width: 50%;
+
+  height: auto;
+}
+
+.ssoButton {
+  height: 7vh;
+
+  width: 50%;
+
+  border-radius: 5px;
+
+  background-color: #205072;
+
+  color: #fff;
+
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    flex-direction: column;
+  }
+
+  .leftSide {
+    display: none;
+  }
+
+  .welcome {
+    font-size: 40px;
+
+    align-self: center;
+  }
+
+  .rightSide {
+    width: 100%;
+
+    height: 100vh;
+
+    padding: 20px;
+
+    margin: 0;
+
+    position: fixed;
+  }
+
+  .main-bg {
+    height: 60vh;
+  }
+
+  .box {
+    width: 80%;
+
+    height: 60%;
+
+    align-self: center;
+  }
+
+  .box-bg {
+    width: 50%;
+    height: 50%;
+  }
+
+  .app_logo {
+    width: 60%;
+
+    height: auto;
+  }
+
+  .ssoButton {
+    width: 80%;
+  }
+}

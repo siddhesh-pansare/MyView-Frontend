@@ -1,4 +1,9 @@
 
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  font-family: 'Outfit', sans-serif;
+}
+
 /*body {
     margin: 0;
     padding: 0;
@@ -66,10 +71,10 @@ flex-shrink: 0;
       text-align: center;
       color: #082737;
       font-family: Outfit;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
      }
       select{
         margin-left: 200px;
@@ -128,7 +133,44 @@ line-height: normal;
     .logo6:hover{
       transform: scale(1.2);
     }
- 
+
+    .card-header{
+      border-radius: 5px 5px 0px 0px;
+      background: conic-gradient(from 180deg at 51.01% -55.41%, #FFD700 0deg, #F00 322.4999928474426deg);
+      box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+
+      height: 40px;
+    }
+
+    .task{
+      color: palevioletred;
+    }
+
+    .task1{
+      margin-bottom: 5px;
+    }
+
+    .card{
+      height: 35%;
+      width: 35%;
+      margin-left: 15px;
+      display: grid;
+      border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+
+    }
+
+    
+ .head{
+  font-weight: bold;
+ }
+
+ .card-header1{
+  border-radius: 5px 5px 0px 0px;
+background: linear-gradient(95deg, rgba(1, 186, 239, 0.35) 0%, #20BF55 100%);
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+ }
       
       
     

@@ -77,7 +77,7 @@
 .welcome {
   color: #fff;
 
-  font-size: 20px;
+  font-size: 30px;
 
   font-weight: 400;
 }
@@ -100,11 +100,18 @@
   justify-content: space-around;
 
   align-items: center;
-}
 
-.box-bg {
-  width: 40%;
-  height: auto;
+  background-image: url("./../../../../../assets/login images/gemini.png");
+
+  background-repeat: no-repeat;
+
+  background-size: 100%;
+
+  background-position-x: center;
+
+  background-position-y: bottom;
+
+  background-position: fixed;
 }
 
 .app_logo {
@@ -116,7 +123,7 @@
 .ssoButton {
   height: 7vh;
 
-  width: 50%;
+  width: 70%;
 
   border-radius: 5px;
 
@@ -127,19 +134,15 @@
   border: none;
 }
 
-@media (max-width: 768px) {
+/* Responsive styles for mobile phones */
+
+@media screen and (max-width: 767px) {
   .loginPage {
     flex-direction: column;
   }
 
   .leftSide {
     display: none;
-  }
-
-  .welcome {
-    font-size: 40px;
-
-    align-self: center;
   }
 
   .rightSide {
@@ -149,7 +152,7 @@
 
     padding: 20px;
 
-    margin: 0;
+    justify-content: center;
 
     position: fixed;
   }
@@ -163,21 +166,23 @@
 
     height: 60%;
 
+    background-position-y: bottom;
+  }
+
+  .welcome {
+    font-size: 40px;
+
     align-self: center;
-  }
-
-  .box-bg {
-    width: 50%;
-    height: 50%;
-  }
-
-  .app_logo {
-    width: 60%;
-
-    height: auto;
   }
 
   .ssoButton {
     width: 80%;
+  }
+}
+
+@media (width: 768px) {
+  .ssoButton {
+    width: 90%;
+    font-size: small;
   }
 }

@@ -1,0 +1,83 @@
+#sidebar {
+    padding: 0px;
+    margin: -2px;
+    height: 100vh;
+    width: 81px;
+    border-radius: 0px 0px 10px 0px;
+    border: 2px solid #a3f7f9;
+    background: #082737;
+    text-align: center;
+  }
+ #sidebar .sidebar-header{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+ }
+ #sidebar ul.components li a img {
+    display: block;
+    
+    margin: 0 auto; /* Center the images horizontally */
+ 
+  }
+  #sidebar .sidebar-header img {
+    width: 42.243px;
+    height: 50.345px;
+    
+  }
+
+  #sidebar .list-unstyled  img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+  
+
+  
+  #sidebar ul li a {
+    color: white;
+    
+    display: block;
+  }
+  
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+#sidebar ul.components li {
+    position: relative;
+    padding: 25px 0;
+  }
+  
+  #sidebar ul.components li a img {
+    width: 40px; /* Adjust the width as per your requirement */
+    height: 40px; /* Adjust the height as per your requirement */
+    transition: transform 0.3s ease; /* Apply a transition for smooth animation */
+    box-shadow: #00070b; /* Add a subtle shadow */
+    transform: perspective(800px) scale(1) rotateX(0deg); /* Set the initial perspective and rotation */
+      
+  }
+  
+  #sidebar ul.components li .image-name {
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #082737;
+    padding: 5px;
+    opacity: 0;
+    pointer-events: none; /* This prevents the name from being clickable */
+    transition: opacity 0.3s ease;
+    font-size: 12px;
+  }
+  #sidebar ul.components li a:hover img {
+    transform: perspective(6.5cm) scale(1.2) rotateX(10deg); /* Increase the image size by 20% on hovering */
+  }
+  #sidebar ul.components li:hover .image-name {
+    opacity: 1;
+    
+  }

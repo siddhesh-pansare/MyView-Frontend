@@ -1,3 +1,136 @@
-.col-md-4{
-  color: red;
-}
+
+
+/*body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+  .logo-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make it a circle
+    overflow: hidden; /* Hide any content that overflows the circular container
+    margin-right: 10px;
+  }
+
+  .logo-image {
+    width: 5%; /* Make the image fill the circular container
+    height: 5%;
+    object-fit: cover; /* Maintain aspect ratio of the image
+  }
+  .test2{
+color: #205072;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  h4{
+    display: flex;
+width: 595px;
+height: 70px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+  }*/
+
+  .container{
+    display: flex;
+    width: 458px;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 1px 36px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-size-adjust: 10px;
+    margin-left: 10px;
+      }
+
+      .section {
+        /*border: 1px solid #D9D9D9;*/
+    background: #F5F5F5;
+
+      }
+     h2{
+      font-size: 14px;
+      text-align: center;
+      color: #082737;
+      font-family: Outfit;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+     }
+      select{
+        margin-left: 200px;
+      }
+
+      .logo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 150px); /* Set the desired width for each logo box */
+        grid-gap: 5px; /* Add some spacing between the logo boxes */
+        align-items: center;
+      }
+
+      .logo-box {
+        width: 150px; /* Set the desired width for each logo box */
+        height: 150px; /* Set the desired height for each logo box */
+        transition: transform 0.3s; /* Add a smooth transition effect */
+        cursor: pointer; /* Show a pointer cursor on hover */
+      }
+
+      .logo-box img {
+        width: 100%; /* Make the logo fill the logo box */
+        height: 100%; /* Make the logo fill the logo box */
+        object-fit: contain; /* Preserve aspect ratio and fit the logo within the logo box */
+
+      }
+
+      .logo6{
+        height: 75%;
+        width: 80%;
+        size: 50px;
+        margin-left: 20px;
+        transition: transform 0.3s; /* Add a smooth transition effect */
+        cursor: pointer; /* Show a pointer cursor on hover */
+      }
+
+      img, svg {
+        display: grid;
+        vertical-align: middle;
+        height: 89%;
+    }
+
+    .logo5{
+      size: 50px;
+      transition: transform 0.3s; /* Add a smooth transition effect */
+      cursor: pointer; /* Show a pointer cursor on hover */
+    }
+
+    .logo-box:hover {
+      transform: scale(1.2); /* Set the scale factor to magnify the logo */
+    }
+
+    .logo5:hover{
+      transform: scale(1.2);
+    }
+
+    .logo6:hover{
+      transform: scale(1.2);
+    }
+
+
+
+
+

@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component ,HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -11,20 +11,26 @@ import { Component} from '@angular/core';
 export class HeaderComponent {
   isDropdownOpen = false;
 
-  constructor() { }
-
   toggleDropdown() {
     this.isDropdownOpen = !this.isDropdownOpen;
-}
-
-isSearchBarVisible = false;
-
-  showSearchBar() {
-    this.isSearchBarVisible = true;
   }
 
-  hideSearchBar() {
-    this.isSearchBarVisible = false;
+  onProfileClick() {
+    // Add your logic for the "My Profile" option here
+    console.log('My Profile clicked');
+    this.isDropdownOpen = false; // Close the dropdown
   }
+
+  onLogoutClick() {
+    // Add your logic for the "Log out" option here
+    console.log('Log out clicked');
+    this.isDropdownOpen = false; // Close the dropdown
+  }
+
+  closeDropdown() {
+    // Close the dropdown when the mouse leaves it
+    this.isDropdownOpen = false;
+  }
+
 
 }

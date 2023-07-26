@@ -55,7 +55,7 @@ a,a:hover{
 
 .profile{
    padding-right: 0px;
-   margin-left: 30px;
+   margin-left: 50px;
 }
 
 .searchBox:hover{  
@@ -75,3 +75,16 @@ a,a:hover{
     color: white;
 }
 
+@media (max-width:768px){
+    .searchBox{
+        max-width: max-content;
+        max-height: min-content;
+        overflow: none;
+        /* width: 431px;
+        height: 66px;
+        background: white;
+        display: flex;    
+        justify-content: center; */
+    
+    }
+}

@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CertificateDialogueComponent } from './modules/shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CertificateDialogueComponent
   ],
   imports: [
     BrowserModule,

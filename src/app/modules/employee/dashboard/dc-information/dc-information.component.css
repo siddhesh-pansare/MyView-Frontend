@@ -6,7 +6,7 @@
 }
 
 .small-card {
-  height: 50px;
+  border: none;
 }
 
 .small-card .card-img {
@@ -14,6 +14,10 @@
   height: 35px;
   width: 35px;
   border-radius: 40px;
+}
+.row{
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -39,6 +43,18 @@
 }
 
 
+.mentee-work-status {
+  color: #F90;
+  font-family: Outfit;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: end;
+}
+
+
 
 
 .record-number {
@@ -49,4 +65,31 @@
   border-radius: 50%;
   color: #fff;
   text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .reportee-card{
+    padding: 0;
+  }
+
+  .img-container{
+    padding:0;
+  }
+
+  .inner-card-body{
+    padding:0;
+  }
+
+  .details-container{
+    padding: 0;
+  }
+
+  .small-card{
+    padding-right: 5px;;
+  }
+
+  .mentee-work-status{
+    padding-right: 10px;
+  }
 }

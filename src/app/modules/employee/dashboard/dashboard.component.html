@@ -1,13 +1,13 @@
 <div class="container-fluid" *ngIf="loggedUserData">
   <div class="row p-1 m-0">
 
-    <div class="col-sm-9 col-md-12 col-lg-8">
+    <div class="col-sm-12 col-md-12 col-lg-8">
       <div class="top center">
 
-        <div class="container">
-          <div class="row">
+        <div class="container-fluid personal-info-container">
+          <div class="row mt-1">
             <!-- Left Column - Image -->
-            <div class="col-sm-12 col-md-12 col-lg-3 pr-0 m-0">
+            <div class="col-4 col-md-4 col-lg-4 pr-0 m-0">
               <div class="text-img">
                 <div class="image-container">
                   <div class="circular-wrapper">
@@ -19,7 +19,7 @@
               </div>
             </div>
             <!-- Right Column - Employee Details -->
-            <div class="col-lg-9 col-md-12 pl-0 m-0">
+            <div class="col-8 col-lg-8 col-md-8 pl-0 m-0">
               <div class="card-body">
                 <!-- Name and Position -->
                 <h5 class="custom-card-title">Hi, Siddhesh Sandeep Pansare</h5>
@@ -41,16 +41,16 @@
 
 
       <div class="row">
-        <div class="bottom col-sm-12 col-md-6 col-lg-6">
+        <div class="bottom col-10 col-md-8 col-lg-8 col-xl-6">
           <mat-tab-group>
             <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
             <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
           </mat-tab-group>
         </div>
 
-        <div class="cards col-sm-12 col-md-2 col-lg-6">
+        <div class="cards col-2 col-md-4 col-lg-4 col-xl-6 mt-2">
           <div class="row menu-cards-row">
-            <div class="col-lg-6 menu-card-container" *ngFor="let card of cards">
+            <div class="col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
               <div class="menu-card-box">
                 <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
               </div>
@@ -64,37 +64,36 @@
 
 
 
-    <div class="col-lg-4">
+      <div class="container col-sm-8 col-lg-4 col-md-8 offset--2 ">
+        <div class="card">
+          <div class="pending-task-header">
+            <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
+            <span class="head">Pending Tasks</span>
+          </div>
+          <div class="card-body">
+            <ul class="task1">
+              <li>PIMCO Cyber Security Training <span class="task">(Deadline - 15th July)</span></li><br>
+              <li>Fill the July BOW <span class="task">(Deadline - 26th July)</span></li><br>
+              <li>July Monthly Connect with mentees</li>
+            </ul>
+          </div>
+        </div>
 
-      <div class="card">
-        <div class="pending-task-header">
-          <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
-          <span class="head">Pending Tasks</span>
+        <div class="card">
+          <div class="upcoming-events-header">
+            <img src="assets/images/icons/events.svg">
+            <span class="head">Upcoming Events</span>
+          </div>
+          <div class="card-body">
+            <ul class="task1">
+              <li>Client Visit on 25th July (Uma Katru - PIMCO)</li><br>
+              <li>DE Team Gurgoan Office Visit (31-July-2023)</li><br>
+              <li>Team Trip in 3 week of october.<a href=""> Register Now!</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="card-body">
-          <ul class="task1">
-            <li>PIMCO Cyber Security Training <span class="task">(Deadline - 15th July)</span></li><br>
-            <li>Fill the July BOW <span class="task">(Deadline - 26th July)</span></li><br>
-            <li>July Monthly Connect with mentees</li>
-          </ul>
-        </div>
+
       </div>
-
-      <div class="card">
-        <div class="upcoming-events-header">
-          <img src="assets/images/icons/events.svg">
-          <span class="head">Upcoming Events</span>
-        </div>
-        <div class="card-body">
-          <ul class="task1">
-            <li>Client Visit on 25th July (Uma Katru - PIMCO)</li><br>
-            <li>DE Team Gurgoan Office Visit (31-July-2023)</li><br>
-            <li>Team Trip in 3 week of october.<a href=""> Register Now!</a></li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
   </div>
   <img src="../../../../assets/images/icons/scratchpad.svg" alt="scratchpad" class="scratchpad-logo">
   <span class="company-logo">

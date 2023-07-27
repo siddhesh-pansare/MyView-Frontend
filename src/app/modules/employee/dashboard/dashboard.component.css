@@ -1,9 +1,382 @@
-
-.code{
-    color: #205072;
-font-family: Outfit;
-font-size: 6px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+/* .card-container {
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-size-adjust: 10px;
 }
+
+.section {
+  background: #F5F5F5;
+}
+
+h2 {
+  font-size: 14px;
+  text-align: center;
+  color: #082737;
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+select {
+  margin-left: 200px;
+}
+
+
+.logo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-gap: 5px;
+  align-items: center;
+}
+
+.logo-box {
+  width: 150px;
+  height: 150px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.logo6 {
+  height: 75%;
+  width: 80%;
+  size: 50px;
+  margin-left: 20px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: grid;
+  vertical-align: middle;
+  height: 89%;
+}
+
+.logo5 {
+  size: 50px;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.logo-box:hover {
+  transform: scale(1.2);
+}
+
+.logo5:hover {
+  transform: scale(1.2);
+}
+
+.logo6:hover {
+  transform: scale(1.2);
+}
+
+
+.navbar-nav {
+  display: flex;
+}
+
+h6 {
+  color: rgba(8, 39, 55, 0.50);
+  font-family: Outfit;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  flex-shrink: 0;
+  color: #082737;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.thead {
+  color: #38A3A5;
+  font-family: Outfit;
+}
+
+.tname {
+  color: #205072;
+  font-family: Outfit;
+}
+
+.head {
+  color: #205072;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.name {
+  color: rgba(51, 54, 63, 0.60);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bltag {
+  color: #205072;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.imgsize {
+  display: grid;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid rgba(245, 245, 245, 0.63);
+  background: #FFF;
+  size: 30px;
+}
+
+.imghome {
+  display: grid;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid rgba(245, 245, 245, 0.63);
+  background: #FFF;
+  margin-right: 20px;
+}
+
+.code {
+  color: #205072;
+  font-family: Outfit;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
+
+
+
+
+.card {
+  margin-top: 20px;
+}
+
+
+/* Vertically center the image */
+/* .col-lg-4 {
+  display: flex;
+  align-items: center;
+} */
+
+.img-fluid {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-card-title {
+  color: #082737;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.custom-card-designation {
+  color: rgba(8, 39, 55, 0.50);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-card-h2 {
+  color: #38A3A5;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-card-d2 {
+  color: #205072;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-card-workStatus {
+  text-align: center;
+  color: #FF710A;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/*  awrds, certifications, etc cards  */
+
+.menu-cards-row {
+  margin-top: 8vh;
+}
+
+.menu-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-card-box {
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  padding: 1vw 3vw 1vw 3vw;
+  width: fit-content;
+}
+
+.menu-card-image {
+  height: 80px;
+  width: 80px;
+}
+
+
+.menu-card-title {
+  color: #082737;
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container-fluid {
+  position: relative;
+}
+
+.company-logo {
+  position: fixed;
+  bottom: 0vh;
+  right: 1.4vw;
+  z-index: 9999;
+}
+
+.scratchpad-logo {
+  position: fixed;
+  bottom: 15vh;
+  right: 8vw;
+  z-index: 9999;
+}
+
+/* Styles for the image container */
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.circular-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #38A3A5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circular-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+}
+
+
+.pending-task-header {
+  border-radius: 5px 5px 0px 0px;
+  background: conic-gradient(from 180deg at 51.01% 55.41%, #FFD700 210deg, #F00 322.4999928474426deg);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.upcoming-events-header {
+  border-radius: 5px 5px 0px 0px;
+  background: linear-gradient(95deg, rgba(1, 186, 239, 0.35) 0%, #20BF55 100%);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+/*  extra-large or xl*/
+@media (max-width: 1200px) {}
+
+/*  large or lg*/
+@media (max-width: 992px) {}
+
+/*medium or md*/
+@media (max-width: 768px) {
+  .custom-card-title {
+    color: #082737;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .custom-card-designation {
+    color: rgba(8, 39, 55, 0.50);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .custom-card-h2 {
+    color: #38A3A5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .detail {
+    align-content: center;
+    text-align: center;
+  }
+}
+
+/*small or sm*/
+@media (max-width: 576px) {}
+
+
+/*extra-small*/
+@media (max-width: 576px) {}

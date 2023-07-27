@@ -1,4 +1,4 @@
-.council-head{
+.council-head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6,7 +6,7 @@
 }
 
 .small-card {
-  border: none ;
+  height: 50px;
 }
 
 .small-card .card-img {
@@ -17,25 +17,36 @@
 }
 
 
-.mentor-card{
+.mentor-card {
   height: 120px;
   overflow-y: auto;
+
 }
 
-.card-img-top{
+.card-img-top {
   height: 70%;
   width: 70%;
   margin-top: 15px;
 }
 
 
-.card-title{
-  font-size: 10px;
+
+
+.card-header {
+  border-radius: 5px 5px 0px 0px;
+  background: rgba(0, 240, 255, 0.10);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
 
-.card-header{
-  border-radius: 5px 5px 0px 0px;
-background: rgba(0, 240, 255, 0.10);
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+
+
+.record-number {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #33363F;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
 }

@@ -5,7 +5,7 @@ import { HeaderComponent } from './modules/shared-modules/shared-components/head
 import { SideBarComponent } from './modules/shared-modules/shared-components/side-bar/side-bar.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'sidebar', pathMatch:'full' },
+  { path:'', redirectTo: 'header', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'header', component:HeaderComponent },
   { path:'sidebar', component:SideBarComponent }

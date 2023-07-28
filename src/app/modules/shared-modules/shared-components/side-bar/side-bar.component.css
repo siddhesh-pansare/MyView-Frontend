@@ -86,3 +86,40 @@ body{
     opacity: 1;
     
   }
+  @media (max-width: 767px) {
+    #sidebar {
+      width: 40px; /* Adjust the width for mobile devices */
+    }
+  
+    #sidebar ul.components li a img {
+      width: 24px; /* Adjust the image width for mobile devices */
+      height: 24px; /* Adjust the image height for mobile devices */
+    }
+  
+    #sidebar ul.components li .image-name {
+      font-size: 9px; /* Adjust the font size for mobile devices */
+      padding: 6px; /* Adjust the padding for mobile devices */
+    }
+    #sidebar ul.components li .image-name {
+      position: relative;
+      
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: #082737;
+      padding: 8px;
+      opacity: 0;
+      pointer-events: none; /* This prevents the name from being clickable */
+      transition: opacity 0.3s ease;
+      font-size: 0px;
+    }
+    #sidebar ul.components li:hover .image-name {
+      opacity: 0;
+      
+    }
+    #sidebar ul.components li a:hover img {
+      transform: perspective(6.5cm) scale(1.3) rotateX(10deg); /* Increase the image size by 20% on hovering */
+    }
+    
+  }

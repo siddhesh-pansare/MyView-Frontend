@@ -1,20 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+/* body{
 
+  font-family: Outfit;
+
+} */
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .container{
-    width: 400px;
-    height: 400px; 
+    width: 80vw;
+    height: 50vh; 
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 200px;
-    bottom: 60px; 
-    margin-left: 10%;
-    margin-right: 10%;
-    right: 30px;
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
     position: relative;
     
     }
@@ -23,7 +25,7 @@
         color: #205072;
     text-align: center;
     font-family: Outfit;
-    font-size: 22px;
+    font-size: 4vw;
     font-style: normal;
     font-weight: 200;
     line-height: normal;
@@ -32,38 +34,38 @@
     }
 
     .imgsize{
-        width: 50px;
-    height: 50px;
+        width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
-    border-radius: 100px;
-    border: 1px solid #38A3A5;
-    margin-left: 5px;
+    /* border-radius: 2vw; */
+    /* border: 1px solid #38A3A5; */
+    margin-left: 1vw;    
     /* background: lightgray 50% / cover no-repeat; */
     }
 
     .certilogo{
-        width: 60px;
-    height: 60px;
+        width: 12vw;
+    height: 12vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
-    align-items: flex-end;  
+    /* align-items: flex-end;   */
     position: absolute; 
-    margin-right: 100px;
-    margin-left: 250px;
-    top: 25px;
-    bottom: 200px;
+    margin-right: 22vw;
+    margin-left: 45vw;
+    top: 3vw;
+    
     }
     
     
     .line {
-        width: 360px; /* Adjust the width as needed */
-        height: 2px; /* Adjust the height as needed */
+        width: 66vw; /* Adjust the width as needed */
+        height: 0.1vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
     
     .rounded-table {
-        margin-left: 10px;
+        margin-left: 10vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
@@ -74,12 +76,12 @@
       }
       
       th, td {
-        padding: 10px;
+        padding: 1vw;
         border: 1px solid #ccc;
         color: #205072;
 text-align: center;
 font-family: Outfit;
-font-size: 20px;
+font-size: 2.5vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -90,7 +92,7 @@ line-height: normal;
         color: #38A3A5;
 text-align: center;
 font-family: Outfit;
-font-size: 16px;
+font-size: 2vw;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -115,9 +117,9 @@ flex-shrink: 0;
 
       } */
       .btncross{
-        right: 10px;
+        right: 1vw;
         position: absolute;  
-        top: 10px;   
+        top: 1vw;   
         cursor: pointer;   
         size: 40px;
       }
@@ -126,19 +128,19 @@ flex-shrink: 0;
   }
  
    /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
-  @media (min-width: 1025px) {
+  @media (min-width: 1025px){
 
     .container{
-        width: 800px;
-    height: 500px;
+        width: 60vw;
+    height: 80vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 70px;
-    margin-bottom: 100px;
-    margin-left: 300px;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 20vw;
     position: fixed;
     
     }
@@ -147,45 +149,46 @@ flex-shrink: 0;
         color: #205072;
     text-align: center;
     font-family: Outfit;
-    font-size: 32px;
+    font-size: 2.5vw;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
        
     
     }
 
     .imgsize{
-        width: 100px;
-    height: 100px;
+        width: 8vw;
+    height: 5vw;
     flex-shrink: 0;
     border-radius: 100px;
-    border: 1px solid #38A3A5;
-    margin-left: 20px;
+    /* border: 1px solid #38A3A5; */
+    margin-left: 1vw;
     /* background: lightgray 50% / cover no-repeat; */
     }
 
     .certilogo{
-        width: 100px;
-    height: 100px;
+        width: 8vw;
+    height: 5vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
     align-items: flex-end;  
     position: absolute;
-    margin-right: 20px;
-    margin-left: 550px;
+    margin-right: 15vw;
+    margin-left: 40vw;
     }
     
     
     .line {
-        width: 780px; /* Adjust the width as needed */
-        height: 2px; /* Adjust the height as needed */
+        width: 57vw; /* Adjust the width as needed */
+        height: 0.5vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
     
     .rounded-table {
-        margin-left: 170px;
+        margin-left: 10vw;
+        margin-right: 7vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
@@ -196,12 +199,12 @@ flex-shrink: 0;
       }
       
       th, td {
-        padding: 10px;
+        padding: 1vw;
         border: 1px solid #ccc;
         color: #205072;
 text-align: center;
 font-family: Outfit;
-font-size: 20px;
+font-size: 1.5vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -212,7 +215,7 @@ line-height: normal;
         color: #38A3A5;
 text-align: center;
 font-family: Outfit;
-font-size: 16px;
+font-size: 1.5vw;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -237,9 +240,9 @@ flex-shrink: 0;
 
       } */
       .btncross{
-        right: 10px;
+        right: 1vw;
         position: absolute;  
-        top: 10px;   
+        top: 1vw;   
         cursor: pointer;   
       }
 
@@ -247,17 +250,18 @@ flex-shrink: 0;
   }
   
   /* Media query for tablet screens */
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     .container{
-        width: 600px;
-    height: 600px;
+        width: 60vw;
+    height: 60vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 70px;
-    margin-bottom: 100px;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 20vw;
     position: fixed;
     
     }
@@ -266,7 +270,7 @@ flex-shrink: 0;
         color: #205072;
     text-align: center;
     font-family: Outfit;
-    font-size: 32px;
+    font-size: 3,2vw;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -275,38 +279,38 @@ flex-shrink: 0;
     }
 
     .imgsize{
-        width: 100px;
-    height: 100px;
+        width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
     border-radius: 100px;
     border: 1px solid #38A3A5;
-    margin-left: 20px;
+    margin-left: 2vw;
     /* background: lightgray 50% / cover no-repeat; */
     }
 
     .certilogo{
-        width: 100px;
-    height: 100px;
+        width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
     align-items: flex-end;  
     position: absolute;
-    margin-right: 20px;
-    margin-left: 340px;
-    top: 40px;
+    margin-right: 2vw;
+    margin-left: 34vw;
+    top: 3.5vh;
     }
     
     
     .line {
-        width: 570px; /* Adjust the width as needed */
-        height: 2px; /* Adjust the height as needed */
+        width: 57vw; /* Adjust the width as needed */
+        height: 0.2vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
     
     .rounded-table {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 10vw;
+        margin-right: 10vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
@@ -317,12 +321,12 @@ flex-shrink: 0;
       }
       
       th, td {
-        padding: 10px;
+        padding: 1vw;
         border: 1px solid #ccc;
         color: #205072;
 text-align: center;
 font-family: Outfit;
-font-size: 20px;
+font-size: 2vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -333,7 +337,7 @@ line-height: normal;
         color: #38A3A5;
 text-align: center;
 font-family: Outfit;
-font-size: 16px;
+font-size: 1.6vw;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -358,10 +362,122 @@ flex-shrink: 0;
 
       } */
       .btncross{
-        right: 10px;
+        right: 1vw;
         position: absolute;  
-        top: 10px;   
+        top: 1vw;   
         cursor: pointer;   
       }
     
   } 
+
+  @media (min-width: 2281px){
+    .container {
+      width: 45vw;
+      height: 80vh;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #205072;
+      background: #FFF;
+      box-shadow: 0px 0px 3px 3px #0074FC;
+      margin-top: 15vh;
+      margin-bottom: 5vh;
+      margin-left: 30vw;
+      margin-right: 20vw;
+      position: relative;
+    }
+  
+    h1 {
+      
+      color: #205072;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  
+    .imgsize {
+      width: 5vw;
+      height: 5vw;
+      flex-shrink: 0;
+      margin-left: 1vw;
+     }
+  
+    .certilogo {
+      width: 5vw;
+      height: 5vw;
+      background: lightgray 50% / cover no-repeat;
+      /* align-items: flex-end; */
+      position: absolute;
+      margin-left: 30vw;
+      top: 4.5vw;
+    }
+  
+    .line {
+     
+      width: 42vw;
+      height: 0.2vh;
+      background: rgba(51, 54, 63, 0.60);
+    }
+  
+    .rounded-table {
+     
+      margin-left: 3vw;
+      margin-right: 10vw;
+      width: 38vw;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      align-items: center;
+      border: #205072;
+    }
+  
+   
+     th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      color: #205072;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+    }
+  
+    td{
+      color: #38A3A5;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    tr:last-child td {
+      border-bottom: none;
+    }
+    
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+   
+    .btncross{
+      right: 10px;
+      position: absolute;  
+      top: 10px;   
+      cursor: pointer;   
+    }
+  
+    /* You can also add any other styles or adjustments for larger screens here*/
+  }
+  

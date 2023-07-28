@@ -5,13 +5,15 @@ import { SharedModulesRoutingModule } from './shared-modules-routing.module';
 import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
+import { CertificationDialogueComponent } from './shared-components/dialogue/certification-dialogue/certification-dialogue.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     HeaderComponent,
-    SideBarComponent
+    SideBarComponent,
+    CertificationDialogueComponent
   ],
   imports: [
     CommonModule,

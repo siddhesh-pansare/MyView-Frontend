@@ -105,13 +105,11 @@
 
   background-repeat: no-repeat;
 
-  background-size: 100%;
+  background-size: 80%;
 
   background-position-x: center;
 
   background-position-y: bottom;
-
-  background-position: fixed;
 }
 
 .app_logo {
@@ -184,5 +182,49 @@
   .ssoButton {
     width: 90%;
     font-size: small;
+    height: 5vh;
+  }
+
+  .leftSide {
+    width: 45%;
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    margin-bottom: 300px;
+    align-items: center;
+  }
+
+  .main-bg {
+    background-color: #ffffff;
+
+    align-items: left;
+
+    background-size: cover;
+
+    width: 60vh;
+
+    height: 60vh;
+  }
+
+  .rightSide {
+    width: 55%;
+
+    height: 100vh;
+
+    background-color: #205072;
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+    align-items: center;
+
+    flex-direction: column;
   }
 }

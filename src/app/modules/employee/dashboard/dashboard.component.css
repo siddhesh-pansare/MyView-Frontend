@@ -1,7 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+body{
+  font-family: Outfit;
+}
+
 .card {
   margin-top: 20px;
 }
 
+.task1{
+  font-family: Outfit;
+  color: #205072;
+  font-weight: bold;
+}
+
+.task{
+  color: #E50255;
+}
+
+.head{
+  color: #082737;
+font-family: Outfit;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.9px;
+}
 
 /* Vertically center the image */
 /* .col-lg-4 {
@@ -22,6 +47,7 @@
 
 .custom-card-title {
   color: #082737;
+  font-family: Outfit;
   font-size: 40px;
   font-style: normal;
   font-weight: 200;
@@ -38,6 +64,7 @@
 
 .custom-card-h2 {
   color: #38A3A5;
+  font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -46,18 +73,21 @@
 
 .custom-card-d2 {
   color: #205072;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 .custom-card-workStatus {
-  text-align: center;
   color: #FF710A;
+  text-align: center;
+  font-family: Outfit;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  line-height: normal;
 }
 
 /*  awrds, certifications, etc cards  */

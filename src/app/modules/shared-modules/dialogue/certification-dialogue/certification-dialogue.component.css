@@ -8,7 +8,7 @@
 @media (max-width: 768px) {
     .container{
     width: 80vw;
-    height: 50vh; 
+    height: 70vh; 
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -52,7 +52,7 @@
     position: absolute; 
     margin-right: 22vw;
     margin-left: 45vw;
-    top: 3vw;
+    top: 4vw;
     
     }
     
@@ -72,6 +72,7 @@
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         align-items: center;
         border: #205072;
+        height: 15vh;
         
       }
       
@@ -94,7 +95,7 @@ text-align: center;
 font-family: Outfit;
 font-size: 2vw;
 font-style: normal;
-font-weight: 400;
+font-weight: 500;
 line-height: normal;
       }
       
@@ -253,7 +254,7 @@ flex-shrink: 0;
   @media (min-width: 769px) and (max-width: 1024px) {
     .container{
         width: 60vw;
-    height: 60vh;
+    height: 90vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -282,8 +283,6 @@ flex-shrink: 0;
         width: 10vw;
     height: 10vw;
     flex-shrink: 0;
-    border-radius: 100px;
-    border: 1px solid #38A3A5;
     margin-left: 2vw;
     /* background: lightgray 50% / cover no-repeat; */
     }
@@ -297,7 +296,7 @@ flex-shrink: 0;
     position: absolute;
     margin-right: 2vw;
     margin-left: 34vw;
-    top: 3.5vh;
+    top: 8vh;
     }
     
     

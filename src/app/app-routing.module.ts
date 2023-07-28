@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './modules/shared-modules/shared-components/login/login.component';
 import { DashboardComponent } from './modules/employee/dashboard/dashboard.component';
 import { CertificationDialogueComponent } from './modules/shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
-import { InterviewComponent } from './modules/shared-modules/dialogue/interview-dialogue/interview/interview.component';
-import { SessionComponent } from './modules/shared-modules/dialogue/session-dialogue/session/session.component';
+import { InterviewComponent } from './modules/shared-modules/dialogue/interview-dialogue/interview.component';
+import { SessionComponent } from './modules/shared-modules/dialogue/session-dialogue/session.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },

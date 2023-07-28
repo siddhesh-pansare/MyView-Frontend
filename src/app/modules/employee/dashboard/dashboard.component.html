@@ -1,13 +1,13 @@
 <div class="container-fluid" *ngIf="loggedUserData">
-  <div class="row p-1 m-0">
+  <div class="row p-1 m-0 dashboard-container">
 
-    <div class="col-sm-12 col-md-12 col-lg-8">
+    <div class="col-12 col-md-12 col-lg-8">
       <div class="top center">
 
         <div class="container-fluid personal-info-container">
           <div class="row mt-1">
             <!-- Left Column - Image -->
-            <div class="col-4 col-md-4 col-lg-4 pr-0 m-0">
+            <div class="col-4 col-md-4 col-lg-4 pr-0 m-0 d-flex justify-content-center align-items-center">
               <div class="text-img">
                 <div class="image-container">
                   <div class="circular-wrapper">
@@ -22,7 +22,7 @@
             <div class="col-8 col-lg-8 col-md-8 pl-0 m-0">
               <div class="card-body">
                 <!-- Name and Position -->
-                <h5 class="custom-card-title">Hi, Siddhesh Sandeep Pansare</h5>
+                <h5 class="custom-card-title"><span class="hi">Hi,</span>Siddhesh Sandeep Pansare</h5>
                 <p class="custom-card-designation">Technology Solution Lead-L2</p>
                 <!-- Other Details -->
                 <div class="details">
@@ -41,17 +41,17 @@
 
 
       <div class="row">
-        <div class="bottom col-10 col-md-8 col-lg-8 col-xl-6">
+        <div class="bottom col-sm-10 col-md-8 col-lg-8 col-xl-6">
           <mat-tab-group>
             <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
             <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
           </mat-tab-group>
         </div>
 
-        <div class="cards col-2 col-md-4 col-lg-4 col-xl-6 mt-2">
+        <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2">
           <div class="row menu-cards-row">
-            <div class="col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
-              <div class="menu-card-box">
+            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
+              <div class="menu-card-box" [matTooltip]="card.cardTitle">
                 <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
               </div>
               <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
@@ -64,7 +64,7 @@
 
 
 
-      <div class="container col-sm-8 col-lg-4 col-md-8 offset--2 ">
+      <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 ">
         <div class="card">
           <div class="pending-task-header">
             <img src="./../../../../assets/images/icons/clock.svg" alt="clock">

@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ECInformationComponent } from './dashboard/ec-information/ec-information.component';
 import { DcInformationComponent } from './dashboard/dc-information/dc-information.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EmployeeRoutingModule,
     MatTabsModule,
     HttpClientModule,
+    MatTooltipModule
   ]
 })
 export class EmployeeModule { }

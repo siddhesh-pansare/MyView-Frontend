@@ -6,6 +6,7 @@ import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { CertificateDialogueComponent } from '../shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
+import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialogue.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { CertificateDialogueComponent } from '../shared-modules/Dialogue/certifi
     LoginComponent,
     HeaderComponent,
     SideBarComponent,
-    CertificateDialogueComponent
+    CertificateDialogueComponent,
+    RemarkDialogueComponent
   ],
   imports: [
     CommonModule,

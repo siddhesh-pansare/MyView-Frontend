@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
 
 
 
@@ -18,7 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
     AppRoutingModule,
     EmployeeModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModulesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

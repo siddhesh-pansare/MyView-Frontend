@@ -44,11 +44,14 @@
 
   <div class="card m-2">
     <div class="card-header">
-      <span class="card-info"><img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
+      <span class="card-info">
+        <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 
       CLIENT</span>
+      <span class="arrows" (click)="toggleClient()" *ngIf="collapseClient"><i class="fa-solid fa-caret-down"></i></span>
+      <span (click)="toggleClient()" *ngIf="!collapseClient"><i class="fa-solid fa-caret-up"></i></span>
     </div>
-    <div class="card-body p-2 pl-4 pr-4">
+    <div class="card-body p-2 pl-4 pr-4" *ngIf="!collapseClient">
       <div class="row">
         <div class="col-6">Name</div>
         <div class="col-6">client</div>

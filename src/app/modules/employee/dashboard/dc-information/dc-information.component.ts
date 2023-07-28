@@ -9,6 +9,8 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class DcInformationComponent implements OnInit{
 
   loggedUserData: any;     //variable to store complete data from MIS
+  collapseClient : boolean = true;
+  collapseReportee : boolean = true;
 
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'siddhesh.pansare@geminisolutions.com';
@@ -27,6 +29,10 @@ export class DcInformationComponent implements OnInit{
 
   loadData(): void {
 
+  }
+
+  toggleClient(){
+    this.collapseClient = !this.collapseClient;
   }
 
 }

@@ -45,12 +45,13 @@ a,a:hover{
   border: none;
   outline: none;
   width: 0rem;
-  padding: 1.2rem;
 }
 
 .empsearch{
    align-items: center;    
    justify-content: center;
+   width: 87.94px;
+   height: 66px;
 }
 
 .profile{
@@ -77,14 +78,10 @@ a,a:hover{
 
 @media (max-width:768px){
     .searchBox{
+        display: none;
         max-width: max-content;
         max-height: min-content;
         overflow: none;
-        /* width: 431px;
-        height: 66px;
-        background: white;
-        display: flex;    
-        justify-content: center; */
     
     }
 }

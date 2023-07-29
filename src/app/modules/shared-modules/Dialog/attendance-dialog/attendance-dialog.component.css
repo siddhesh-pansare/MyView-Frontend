@@ -1,0 +1,583 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+/* body{
+  font-family: Outfit;
+} */
+
+/* Media query for mobile screens */
+
+@media (max-width: 768px) {
+    .container{
+    width: 80vw;
+    height: 50vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: relative;
+    }
+
+ .empname_img{
+    
+ }
+
+    h1{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    }
+
+ 
+
+    .imgsize{
+    width: 10vw;
+    height: 10vw;
+    flex-shrink: 0;
+    /* border-radius: 2vw; */
+    /* border: 1px solid #38A3A5; */
+    margin-left: 1vw;    
+    /* background: lightgray 50% / cover no-repeat; */
+
+    }
+
+ 
+
+    .attlogo{
+    width: 12vw;
+    height: 12vw;
+    flex-shrink: 0;
+  /*  align-items: flex-end;   */
+    position: absolute;
+    margin-right: 22vw;
+    margin-left: 45vw;
+    top: 3vw;
+    }
+
+   
+
+   
+
+    .line {
+        width: 66vw; /* Adjust the width as needed */
+        height: 0.1vw; /* Adjust the height as needed */
+        background: rgba(51, 54, 63, 0.60);
+
+    }
+
+   
+
+    .rounded-table {
+        margin-left: 10vw;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        border: #205072;
+      }
+
+     
+
+      th, td {
+        padding: 1vw;
+        border: 1px solid #ccc;
+        color: #205072;
+text-align: center;
+font-family: Outfit;
+font-size: 2.5vw;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+
+      }
+
+      td{
+
+        color: #38A3A5;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+     
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+
+      }
+
+     
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+
+      /* .tableicon{
+
+        width: 60px;
+
+height: 28.171px;
+
+flex-shrink: 0;
+
+ 
+
+      } */
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+        size: 40px;
+      }
+
+  }
+
+ 
+
+   /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
+
+  @media (min-width: 1025px){
+
+    .container{
+    width: 60vw;
+    height: 80vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 20vw;
+    position: fixed;
+    
+    }
+
+    .box{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box1{
+        margin-left: -110px;
+    }
+
+
+    h1{
+    color: #205072;
+    align-items: center;
+    font-family: Outfit;
+    font-size: 2.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    }
+
+ 
+
+    .imgsize{
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    /* border: 1px solid #38A3A5; */
+    margin-left: 1vw;
+    /* background: lightgray 50% / cover no-repeat; */
+
+    }
+
+    .attlogo{
+    width: 8vw;
+    height: 5vw;
+    flex-shrink: 0;
+    align-items: flex-end;  
+    position: absolute;
+    margin-left: -120px;
+    margin-top: -30px;
+    }
+
+
+    .line {
+        width: 57vw; /* Adjust the width as needed */
+        height: 0.5vh; /* Adjust the height as needed */
+        background: rgba(51, 54, 63, 0.60);
+    }
+
+   
+
+    .rounded-table {
+        margin-left: 10vw;
+        margin-right: 7vw;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        border: #205072;
+      }
+
+      th, td {
+        padding: 1vw;
+        border: 1px solid #ccc;
+        color: #205072;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      td{
+        color: #38A3A5;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+     
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+     
+
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+
+      /* .tableicon{
+
+        width: 60px;
+
+height: 28.171px;
+
+flex-shrink: 0;
+
+ 
+
+      } */
+
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+      }
+
+  } 
+
+  /* Media query for tablet screens */
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container{
+    width: 60vw;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    margin-left: 20vw;
+    position: fixed;
+    }
+
+    .empname_img{
+        
+        
+     }
+
+
+    h1{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 3,2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    .imgsize{
+    width: 10vw;
+    height: 10vw;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #38A3A5;
+    margin-left: 2vw;
+    /* background: lightgray 50% / cover no-repeat; */
+    }
+
+    .attlogo{
+    width: 10vw;
+    height: 10vw;
+    flex-shrink: 0;
+    
+    align-items: flex-end;  
+    position: absolute;
+    margin-right: 2vw;
+    margin-left: 34vw;
+    top: 3.5vh;
+    }
+
+    .line {
+        width: 57vw; /* Adjust the width as needed */
+        height: 0.2vh; /* Adjust the height as needed */
+        background: rgba(51, 54, 63, 0.60);
+    }
+
+    .rounded-table {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        border-collapse: collapse;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        border: #205072;
+
+      }     
+
+      th, td {
+        padding: 1vw;
+        border: 1px solid #ccc;
+        color: #205072;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+      }
+
+      td{
+        color: #38A3A5;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1.6vw;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+      } 
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      tr:hover {
+        background-color: #f9f9f9;
+      }
+
+      /* .tableicon{
+        width: 60px;
+height: 28.171px;
+flex-shrink: 0;
+      } */
+
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+      }   
+
+      .tab-button1 {
+        position: relative;
+    }
+    .tab-button {
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+        width: 211px;
+        display: flex;
+        flex-direction: row;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        color: #205072;
+    }
+    .tab-button3 {
+        position: relative;
+        font-weight: 300;
+    }
+    .tab-button2 {
+        width: 211px;
+        display: flex;
+        flex-direction: row;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+    }
+    .attendance-tabs-child {
+        position: relative;
+        border-top: 1px solid #000;
+        box-sizing: border-box;
+        width: 706px;
+        height: 1px;
+    }
+    .attendance-tabs {
+        width: 707px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 36px;
+    }
+
+  }
+
+  @media (min-width: 2281px){
+    .container {
+      width: 45vw;
+      height: 80vh;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #205072;
+      background: #FFF;
+      box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+      margin-top: 15vh;
+      margin-bottom: 5vh;
+      margin-left: 30vw;
+      margin-right: 20vw;
+      position: relative;
+    }
+
+    h1 {
+      color: #205072;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+ 
+
+    .imgsize {
+      width: 5vw;
+      height: 5vw;
+      flex-shrink: 0;
+      margin-left: 1vw;
+     }
+
+ 
+
+    .attlogo {
+      width: 5vw;
+      height: 5vw;
+      
+      /* align-items: flex-end; */
+      position: absolute;
+      margin-left: 30vw;
+      top: 4.5vw;
+    }
+
+ 
+
+    .line {
+      width: 42vw;
+      height: 0.2vh;
+      background: rgba(51, 54, 63, 0.60);
+    }
+
+ 
+
+    .rounded-table {
+      margin-left: 3vw;
+      margin-right: 10vw;
+      width: 38vw;
+      border-collapse: collapse;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      align-items: center;
+      border: #205072;
+    }
+
+     th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      color: #205072;
+       text-align: center;
+      font-family: Outfit;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    td{
+    color: #38A3A5;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover {
+      background-color: #f9f9f9;
+    }
+
+    .btncross{
+      right: 10px;
+      position: absolute;  
+      top: 10px;  
+      cursor: pointer;  
+    }
+    
+    
+    
+  }
+
+  

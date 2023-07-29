@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './modules/shared-modules/shared-components/login/login.component';
 import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
+import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'header', pathMatch:'full' },
- // { path:'login', component:LoginComponent },
+  { path:'', redirectTo: 'attendance', pathMatch:'full' },
+  { path:'attendance', component:AttendanceDialogComponent },
   {path:'header',component:HeaderComponent}
 ];
 

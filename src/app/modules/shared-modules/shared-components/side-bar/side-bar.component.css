@@ -5,7 +5,7 @@ body{
 #sidebar {
     padding: 0px;
     margin: 0px;
-    
+    margin-bottom: -20px;
     height: 100vh ;
     width: 81px;
     background: #082737;
@@ -52,8 +52,7 @@ body{
 
 #sidebar ul.components li {
     position: relative;
-    padding: 5% 0;
-
+    padding: 3%;
   }
   
   #sidebar ul.components li a img {
@@ -95,7 +94,12 @@ body{
       width: 24px; /* Adjust the image width for mobile devices */
       height: 24px; /* Adjust the image height for mobile devices */
     }
-  
+    #sidebar ul.components li {
+      display: relative;
+      
+      padding: 10%;
+   
+    }
     #sidebar ul.components li .image-name {
       font-size: 9px; /* Adjust the font size for mobile devices */
       padding: 6px; /* Adjust the padding for mobile devices */
@@ -122,4 +126,96 @@ body{
       transform: perspective(6.5cm) scale(1.3) rotateX(10deg); /* Increase the image size by 20% on hovering */
     }
     
+  }
+  @media screen and (min-width: 768px) and (max-width: 1250px) {
+    #sidebar {
+      padding: 0px;
+      margin: 0px;
+      
+      height: 100vh ;
+      width: 81px;
+      background: #082737;
+      text-align: center;
+   
+  
+    }
+  
+    .hero-con{
+      overflow: hidden;
+    }
+   #sidebar .sidebar-header{
+      
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid white;
+      margin-bottom: 25px;
+   }
+   #sidebar ul.components li {
+    display: block;
+   
+ 
+  }
+   #sidebar ul.components li a img {
+      display: block;
+      
+      margin: 0 auto; /* Center the images horizontally */
+   
+    }
+    #sidebar .sidebar-header img {
+      width: 35px;
+      height: 35px;
+      
+    }
+  
+    
+  
+    
+    #sidebar ul li a {
+      color: white;
+      
+      display: block;
+    }
+    
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #sidebar ul.components li {
+      position: relative;
+     
+  
+    }
+    
+    #sidebar ul.components li a img {
+      width: 27px; /* Adjust the width as per your requirement */
+      height: 27px; /* Adjust the height as per your requirement */
+      transition: transform 0.3s ease; /* Apply a transition for smooth animation */
+      box-shadow: #00070b; /* Add a subtle shadow */
+      transform: perspective(800px) scale(1) rotateX(0deg); /* Set the initial perspective and rotation */
+        
+    }
+    
+    #sidebar ul.components li .image-name {
+      position: relative;
+      
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: #082737;
+      padding: 5px;
+      opacity: 0;
+      pointer-events: none; /* This prevents the name from being clickable */
+      transition: opacity 0.3s ease;
+      font-size: 10px;
+    }
+    #sidebar ul.components li a:hover img {
+      transform: perspective(6.5cm) scale(1.2) rotateX(10deg); /* Increase the image size by 20% on hovering */
+    }
+    #sidebar ul.components li:hover .image-name {
+      opacity: 1;
+      
+    }
+  
   }

@@ -6,7 +6,7 @@ import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component';
-
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component'
   ],
   imports: [
     CommonModule,
-    SharedModulesRoutingModule
+    SharedModulesRoutingModule,
+    MatButtonModule
   ]
 })
 export class SharedModulesModule { }

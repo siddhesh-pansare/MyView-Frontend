@@ -1,0 +1,50 @@
+ /* Assuming the textarea has the class 'textarea-with-background' */
+/* .text{
+    padding: 50px;
+}
+.textarea-with-background {
+    /* Set the background image */
+    /* background-image: url('src/assets/images/scratchpadimage.png'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color:black;
+    width: 80%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;  */
+
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+body{
+    background-color: rgb(255, 255, 161);
+}
+    .text {
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+    }
+    .text img {
+        display: block;
+        padding-bottom: 0px;
+        width: 1300px;
+        height: 100vh;
+    }
+    .text .heading{
+        padding: 20px;
+        position: absolute;
+        font-family: Rock Salt;
+    }
+    .text textarea {
+        font-family: Rock Salt;
+        margin-top: 120px;
+        margin-left: 200px;
+        position: absolute;
+        height: calc(100vh );
+        width: 900px;
+        background-color: rgba(255,255,255,0);
+        border: none;
+        outline: none;
+        font-size: 20px;
+    }
+

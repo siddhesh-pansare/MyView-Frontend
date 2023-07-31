@@ -133,7 +133,6 @@ body{
     #sidebar {
       padding: 0px;
       margin: 0px;
-      
       height: 100vh ;
       width: 81px;
       background: #082737;
@@ -186,7 +185,6 @@ body{
   #sidebar ul.components li {
       position: relative;
      
-  
     }
     
     #sidebar ul.components li a img {
@@ -206,11 +204,11 @@ body{
       text-align: center;
       color: white;
       background-color: #082737;
-      padding: 5px;
+      padding: 4px;
       opacity: 0;
       pointer-events: none; /* This prevents the name from being clickable */
       transition: opacity 0.3s ease;
-      font-size: 10px;
+      font-size: 9px;
     }
     #sidebar ul.components li a:hover img {
       transform: perspective(6.5cm) scale(1.2) rotateX(10deg); /* Increase the image size by 20% on hovering */

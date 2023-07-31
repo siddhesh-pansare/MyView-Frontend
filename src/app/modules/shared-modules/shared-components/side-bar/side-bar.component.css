@@ -10,12 +10,12 @@ body{
     width: 81px;
     background: #082737;
     text-align: center;
- 
+  overflow: visible;
 
   }
 
   .hero-con{
-    overflow: hidden;
+    overflow:visible;
   }
  #sidebar .sidebar-header{
     
@@ -46,8 +46,9 @@ body{
   }
   
 .container {
-  position: relative;
+  position: absolute;
   display: inline-block;
+  overflow:visible;
 }
 
 #sidebar ul.components li {
@@ -106,22 +107,23 @@ body{
     }
     #sidebar ul.components li .image-name {
       position: relative;
+      top: 50%;
+      left: calc(100% + 10px);
+      width: auto;
       
-      left: 0;
-      width: 100%;
-      text-align: center;
       color: white;
-      background-color: #082737;
-      padding: 8px;
+      transform: translate(-30%, -170%);
+      border-radius: 5px;
+      background-color: rgba(8, 39, 55, 0.6);
+      padding: 4px;
       opacity: 0;
       pointer-events: none; /* This prevents the name from being clickable */
       transition: opacity 0.3s ease;
-      font-size: 0px;
+      font-size: 10px;
+      z-index: 1;
+      display: inline-block;
     }
-    #sidebar ul.components li:hover .image-name {
-      opacity: 0;
-      
-    }
+   
     #sidebar ul.components li a:hover img {
       transform: perspective(6.5cm) scale(1.3) rotateX(10deg); /* Increase the image size by 20% on hovering */
     }

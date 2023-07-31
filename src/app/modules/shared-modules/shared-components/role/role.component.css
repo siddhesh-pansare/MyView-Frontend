@@ -1,0 +1,23 @@
+.header {
+  background-color: aquamarine;
+  height: 70px;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  padding: 10px;
+}
+
+.menu {
+  margin-top: 70px;
+  position: absolute;
+  background-color: bisque;
+  right: 0px;
+  left: 0px;
+  padding: 10px;
+}
+
+.body {
+  margin-top: 150px;
+  position: absolute;
+}
+

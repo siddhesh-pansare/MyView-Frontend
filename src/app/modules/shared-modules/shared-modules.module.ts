@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component';
 import {MatButtonModule} from '@angular/material/button';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [
     CommonModule,
     SharedModulesRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule
   ]
 })
 export class SharedModulesModule { }

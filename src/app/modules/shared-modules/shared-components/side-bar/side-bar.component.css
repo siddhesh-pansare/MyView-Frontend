@@ -2,6 +2,11 @@ body{
     margin: 0px;
     padding: 0px;
 }
+button{
+  position: absolute;
+  margin: 300px;
+  margin-left: 400px;
+}
 #sidebar {
     padding: 0px;
     margin: 0px;

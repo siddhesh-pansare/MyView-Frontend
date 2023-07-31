@@ -27,25 +27,26 @@ body{
     .text img {
         display: block;
         padding-bottom: 0px;
-        width: 1300px;
-        height: 100vh;
+        width: 600px;
+        height: 529px;
+        margin: -40px;
+        margin-left: -88px;
+        margin-right: -100px;
+        overflow: hidden;
     }
-    .text .heading{
-        padding: 20px;
-        position: absolute;
-        font-family: Rock Salt;
-    }
+    
     .text textarea {
         font-family: Rock Salt;
-        margin-top: 120px;
-        margin-left: 200px;
+        margin-top: 0px;
+        margin-left:0px;
         position: absolute;
-        height: calc(100vh );
-        width: 900px;
+        height: 403px;
+        width: 400px;
         background-color: rgba(255,255,255,0);
         border: none;
         outline: none;
         font-size: 20px;
         line-height: 1.8;
+        overflow: hidden;
     }
 

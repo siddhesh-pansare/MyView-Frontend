@@ -16,18 +16,19 @@
     <div class="line"></div><br>
 
     <div class="attendance-tabs">
-        <div class="tab-button">
-              <div class="tab-button1">Client Visits</div>
-        </div>
-        <div class="tab-button2">
-              <div class="tab-button3">Internal Meetings</div>
-        </div>
-        <div class="tab-button2">
-              <div class="tab-button3">Office Visits</div>
-        </div>
-        <div class="attendance-tabs-child">
-        </div>
-  </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Client Visits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Internal Meetings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Office Visits</a>
+            </li>
+          </ul>
+          <div class="line2"></div><br>
+    </div>
     <table class="rounded-table">
         <tr>
           <th>Date</th>
@@ -37,12 +38,12 @@
         <tr>
           <td>01-January-2023</td>
           <td>Client Visit 1</td>
-          <td>Present</td>
+          <td id="present">Present</td>
         </tr>
         <tr>
             <td>01-February-2023</td>
             <td>Client Visit 2</td>
-            <td>Leave</td>
+            <td id="leave">Leave</td>
           </tr>
       </table>
  </div>

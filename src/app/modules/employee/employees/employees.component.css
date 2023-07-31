@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+.page-heading-child {
+    position: absolute;
+    top: 3.66rem;
+    left: -0.03rem;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 96.94rem;
+    height: 0.06rem;
+}
+.page-heading1 {
+    position: absolute;
+    top: 0rem;
+    left: 4.19rem;
+    display: flex;
+    align-items: center;
+    width: 15.19rem;
+    height: 3.69rem;
+    font-size:1.5rem ;
+    font-weight:400;
+}
+.page-heading {
+    position: relative;
+    width: 96.88rem;
+    height: 3.69rem;
+    z-index: 0;
+}
+.arrow-back-icon {
+    position: absolute;
+    margin: 0 !important;
+    top: 0.63rem;
+    left: 0rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.page-sub-header {
+    position: relative;
+    left:80px;
+    right:70px;
+    top:70px;
+    width:1080px;
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.63rem;
+    text-align: left;
+    font-size: 1.5rem;
+    color: #205072;
+    font-family: Outfit;
+}
+
+.btn-all-employees-icon {
+    position: relative;
+    object-fit: cover;
+    height: 60px;
+    width: 60px;
+    margin-left: 26px;
+    margin-right: 100px;
+}
+
+.rounded-table {
+    position: relative;
+    top:100px;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border: #205072;
+
+  }
+
+  th, td {
+    padding-top: 1vw;
+    padding-bottom: 1vw ;
+    padding-left: 3vw;
+    padding-right: 3vw ;
+    border: 1px solid #ccc;
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+  td{
+    color: #38A3A5;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }

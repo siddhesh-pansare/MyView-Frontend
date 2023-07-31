@@ -8,7 +8,7 @@
 @media (max-width: 768px) {
     .container{
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -70,8 +70,8 @@
   /*  align-items: flex-end;   */
     position: absolute;
     margin-right: 22vw;
-    margin-left: 45vw;
-    top: 3vw;
+    margin-left: -15vw;
+    top: 7vw;
     }
 
    
@@ -103,9 +103,9 @@
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 60%;
+      width: 20rem;
       height: 0.06rem;
-      margin-left: 140px;
+      margin-left: 4rem;
   }
 
     .rounded-table {
@@ -153,7 +153,13 @@ line-height: normal;
 
       }
 
-     
+      #present{
+        color: #00ac2b;
+      }
+           
+      #leave{
+        color:#e50255
+      }
 
       tr:last-child td {
         border-bottom: none;
@@ -254,7 +260,7 @@ flex-shrink: 0;
     flex-shrink: 0;
     align-items: flex-end;  
     position: absolute;
-    margin-left: -120px;
+    margin-left: -140px;
     margin-top: -30px;
     }
 
@@ -267,10 +273,14 @@ flex-shrink: 0;
  
 .attendance-tabs{
     margin-top: -20px;
-
+    
 
 }    
  
+.nav-item{
+  margin-left: 20px;
+}
+
 .nav-link .active{
    color: #205072;
 }
@@ -283,27 +293,28 @@ flex-shrink: 0;
     position: relative;
     border-top: 1px solid #000;
     box-sizing: border-box;
-    width: 60%;
+    width: 35vw;
     height: 0.06rem;
-    margin-left: 140px;
+    margin-left: 12vw;
 }
 
     .rounded-table {
-        margin-left: 45px;
-        margin-right: 35px;
+        margin-left: 10vw;
+        margin-right: 7vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         align-items: center;
         border: #205072;
+  
       }
 
       th, td {
         padding-top: 1vw;
         padding-bottom: 1vw ;
-        padding-left: 60px;
-        padding-right: 60px ;
+        padding-left: 3vw;
+        padding-right: 3vw ;
         border: 1px solid #ccc;
         color: #205072;
         text-align: center;
@@ -371,7 +382,7 @@ flex-shrink: 0;
   @media (min-width: 769px) and (max-width: 1024px) {
     .container{
     width: 60vw;
-    height: 60vh;
+    height: 80vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -383,7 +394,23 @@ flex-shrink: 0;
     position: fixed;
     }
 
-  
+    .box{
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .box1{
+      margin-left: -110px;
+  }
+
+.empname{
+  margin-top: 10px;
+  margin-left: 13.18px;
+  text-align: center;
+  color: #205072;
+}
 
 
     h1{
@@ -414,8 +441,8 @@ flex-shrink: 0;
     align-items: flex-end;  
     position: absolute;
     margin-right: 2vw;
-    margin-left: 34vw;
-    top: 3.5vh;
+    margin-left: -10vw;
+    top: 10vh;
     }
 
     .line {
@@ -442,9 +469,9 @@ flex-shrink: 0;
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 60%;
+      width: 70%;
       height: 0.06rem;
-      margin-left: 140px;
+      margin-left: 80px;
   }
     .rounded-table {
         margin-left: 10vw;
@@ -486,7 +513,13 @@ flex-shrink: 0;
         background-color: #f2f2f2;
         font-weight: bold;
       }
-
+      #present{
+        color: #00ac2b;
+      }
+           
+      #leave{
+        color:#e50255
+      }
       tr:last-child td {
         border-bottom: none;
       }
@@ -527,6 +560,24 @@ flex-shrink: 0;
       margin-right: 20vw;
       position: relative;
     }
+
+    .box{
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .box1{
+      margin-left: -110px;
+  }
+
+.empname{
+  margin-top: 10px;
+  margin-left: 13.18px;
+  text-align: center;
+  color: #205072;
+}
 
     h1 {
       color: #205072;
@@ -585,7 +636,7 @@ flex-shrink: 0;
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 60%;
+      width: 30px ;
       height: 0.06rem;
       margin-left: 140px;
   }
@@ -628,7 +679,13 @@ flex-shrink: 0;
       background-color: #f2f2f2;
       font-weight: bold;
     }
-
+    #present{
+      color: #00ac2b;
+    }
+         
+    #leave{
+      color:#e50255
+    }
     tr:last-child td {
       border-bottom: none;
     }

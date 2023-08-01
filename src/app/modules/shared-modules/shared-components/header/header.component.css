@@ -11,20 +11,19 @@ html{
     padding: 0px 0px 0px 0px;
 }
 
+.leftitems{
+    margin-left: -58px;
+}
+
 .sidebar_toggle{
+    position: relative;
     height: 66px;
     padding-top: 0px;
-
+    
 }
 
 .searchBar{
     border: 1px solid rgba(199, 192, 192, 0.744);
-}
-
-.notification{
-   
-   
-
 }
 
 a,a:hover{
@@ -32,13 +31,13 @@ a,a:hover{
 }
 
 .searchBox{
-    position: relative;
+    position:relative;
     width: 431px;
     height: 66px;
     background: white;
     display: flex;    
     justify-content: center;
-
+    
 }
 
 .searchText{  

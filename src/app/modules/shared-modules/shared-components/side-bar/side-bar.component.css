@@ -1,11 +1,12 @@
 body{
     margin: 0px;
     padding: 0px;
+    background-color: yellow;
 }
-button{
+.scratchbutton {
   position: absolute;
-  margin: 300px;
-  margin-left: 400px;
+  margin-top: 650px;
+  margin-left: 1500px;
 }
 #sidebar {
     padding: 0px;
@@ -90,6 +91,13 @@ button{
   #sidebar ul.components li:hover .image-name {
     opacity: 1;
     
+  }
+  @media (max-height: 700px){
+    .scratchbutton {
+      position: absolute;
+      margin-top: 500px;
+      margin-left: 1200px;
+    }
   }
   @media (max-width: 767px) {
     #sidebar {

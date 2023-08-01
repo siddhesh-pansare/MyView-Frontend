@@ -17,9 +17,9 @@ export class SideBarComponent {
       
       this.dialog.open(ScratchpadComponent,{
         panelClass: ['animate__animated','animate__slideInUp'],
-        width:'400px',
-        height: '410px',
-        position: {right:'50px', top: '270px'}
+        width:'300px',
+        height: '310px',
+        position: {right:'50px', bottom: '50px'}
         
       })
     }

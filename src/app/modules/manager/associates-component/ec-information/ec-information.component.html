@@ -1,0 +1,93 @@
+<div class="container" *ngIf="loggedUserData">
+    <div class="card  m-2">
+      <div class="council-head p-2  m-0 d-flex align-items-center ">
+        <p>Delivery Council</p>
+        <p>Council <span><i class="fa-solid fa-caret-down"></i></span></p>
+      </div>
+    </div>
+  
+  
+    <div class="card m-2"> <!--EC information card-->
+      <div class="card-header">
+        <span><img src="../../../../../assets/images/icons/information.svg" alt="info-icon"></span>
+        EC Information
+      </div>
+      <div class="card-body p-2 pl-4 pr-4">
+        <div class="row">
+          <div class="col-6">Name</div>
+          <div class="col-6">{{loggedUserData.ECTech}}</div>
+        </div>
+        <div class="row align-items-center justify-content-center mt-2">
+          <div class="col-6 text-wrap">Reporting Manager</div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col">
+                <div class="card small-card">
+                  <div class="row">
+                    <div class="col-3 col-xl-3 d-flex align-items-center p-0">
+                      <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile">
+                    </div>
+                    <div class="col-9 col-xl-9 align-items-start justify-content-center p-0">
+                      <div class="card-body p-0">
+                        <h5 class="card-title m-0">{{loggedUserData.ECChairName}}</h5>
+                        <p class="card-text">{{loggedUserData.ECChairId}} </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="card m-2"> <!--EC Menteees card-->
+      <div class="card-header">
+        <span><img src="../../../../../assets/images/icons/reportees.svg" alt="info-icon"></span>
+  
+        Your Mentees <span class="record-number">2</span>
+      </div>
+      <div class="card-body mentor-card p-0">
+        <div class="row mt-1">
+  
+  
+          <div class="col-6 col-xl-6">
+            <div class="card small-card">
+              <div class="row">
+                <div class="col-3 col-xl-2 d-flex align-items-center">
+                  <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile">
+                </div>
+                <div class="col-9 col-xl-10 align-items-start justify-content-center">
+                  <div class="card-body">
+                    <p class="mentee-work-status m-0">WFH</p>
+                    <h5 class="card-title m-0">Mentee name</h5>
+                    <p class="card-text">Mentee Designation </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-6 col-xl-6">
+            <div class="card small-card">
+              <div class="row mt-1">
+                <div class="col-3 col-xl-2 d-flex align-items-center">
+                  <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile">
+                </div>
+                <div class="col-9 col-xl-10 align-items-start justify-content-center">
+                  <div class="card-body">
+                    <p class="mentee-work-status m-0">WFH</p>
+                    <h5 class="card-title m-0">Mentee Name</h5>
+                    <p class="card-text">Mentee Designation</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

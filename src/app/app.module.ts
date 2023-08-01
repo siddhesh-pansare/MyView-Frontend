@@ -8,7 +8,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
 
-
+import { ManagerModule } from './modules/manager/manager.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,8 @@ import { SharedModulesModule } from './modules/shared-modules/shared-modules.mod
     AppRoutingModule,
     EmployeeModule,
     HttpClientModule,
-    SharedModulesModule
+    SharedModulesModule,
+    ManagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

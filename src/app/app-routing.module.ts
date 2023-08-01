@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './modules/shared-modules/shared-components/login/login.component';
 import { DashboardComponent } from './modules/employee/dashboard/dashboard.component';
 import { RoleComponent } from './modules/shared-modules/shared-components/role/role.component';
+import { ReporteesComponent } from './modules/manager/associates-component/reportees/reportees.component';
+import { MatTabsModule } from '@angular/material/tabs';
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
@@ -15,7 +17,8 @@ const routes: Routes = [
       .then(module => module.EmployeeModule)
     }
   ]
-}
+},
+  {path: 'reportees', component:ReporteesComponent}
 ];
 
 @NgModule({

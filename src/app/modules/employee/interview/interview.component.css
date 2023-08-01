@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.back {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.navBar {
+  height: 60px;
+  background-color: blueviolet;
+  width: calc(100vh-70px);
+}
+
+.titleBar {
+  height: 60px;
+}
+
+.sideBar {
+  width: 70px;
+  height: 100vh;
+  background-color: black;
+}
+
+table {
+  border-color: #205072;
+  border: 1;
+  border-radius: 2px;
+}
+
+table.table tr td {
+  color: #38a3a5;
+}
+
+table.table tr th {
+  color: #205072;
+}
+
+@media screen and (width: 320px) {
+  .page {
+    min-width: calc(100vw - 40px);
+  }
+  .navBar {
+    height: 30px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 40px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .page {
+    min-width: calc(100vw - 50px);
+  }
+
+  .navBar {
+    height: 40px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 50px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    min-width: calc(100vw - 65px);
+  }
+  .navBar {
+    height: 55px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 65px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page {
+    min-width: calc(100vw - 70px);
+  }
+
+  .navBar {
+    height: 60px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 70px;
+    height: 100vh;
+    background-color: black;
+  }
+}

@@ -169,6 +169,11 @@ table.table tr th {
     border: 2px solid #ffd700;
   }
 
+  .titleBar {
+    padding: 10px;
+    margin: 20px;
+  }
+
   .title {
     font-size: 44px;
     font-weight: 700;

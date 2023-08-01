@@ -8,7 +8,7 @@ import { SideBarComponent } from './shared-components/side-bar/side-bar.componen
 import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -20,7 +20,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     CommonModule,
     SharedModulesRoutingModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    BrowserAnimationsModule
   ]
 })
 export class SharedModulesModule { }

@@ -23,15 +23,15 @@ body{
         margin: 0px;
         padding: 0px;
         position: absolute;
+       overflow: hidden;
     }
     .text img {
         display: block;
-        padding-bottom: 0px;
-        width: 600px;
-        height: 529px;
-        margin: -40px;
-        margin-left: -88px;
-        margin-right: -100px;
+        margin-top:-10%;
+        margin-bottom: -12%;
+        margin-left: -20%;
+        width: 140%;
+        height: 100%;
         overflow: hidden;
     }
     
@@ -40,13 +40,14 @@ body{
         margin-top: 0px;
         margin-left:0px;
         position: absolute;
-        height: 403px;
-        width: 400px;
+        padding-left: 3%;
+        height: 100%;
+        width: 100%;
         background-color: rgba(255,255,255,0);
         border: none;
         outline: none;
         font-size: 20px;
         line-height: 1.8;
-        overflow: hidden;
+        
     }
 

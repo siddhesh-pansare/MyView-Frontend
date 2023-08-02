@@ -1,3 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+.body{
+  font-family: Outfit;
+}
+.container{
+  overflow: hidden;
+}
+.card-header {
+
+  color: #082737;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.text-wrap{
+  color: rgba(51, 54, 63, 0.60);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.ec-tech{
+  color: #205072;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+
+.card-text {
+  color: #56C596;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.card-header {
+  border-radius: 5px 5px 0px 0px;
+  background: rgba(218, 39, 149, 0.1);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
 .council-head {
     display: flex;
     flex-direction: row;
@@ -19,48 +69,5 @@
   .row{
     margin-left: 0;
     margin-right: 0;
-  }
-  
-  
-  .mentor-card {
-    height: 120px;
-    overflow-y: auto;
-  }
-  
-  .card-img-top {
-    height: 70%;
-    width: 70%;
-    margin-top: 15px;
-  
-  }
-  
-  .mentee-work-status {
-    color: #F90;
-    font-family: Outfit;
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.5px;
-    text-align: end;
-  }
-  
-  
-  
-  .card-header {
-    border-radius: 5px 5px 0px 0px;
-    background: rgba(255, 0, 0, 0.10);
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
-  }
-  
-  
-  .record-number {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background-color: #33363F;
-    border-radius: 50%;
-    color: #fff;
-    text-align: center;
-  }
-  
+  } 
+

@@ -1,9 +1,18 @@
 html{
     font-size: 62.5%;
 }
+
+
 .navbar{
+    position: fixed;
+    top: 0;
+    left:80px;
+    display: flex;
+    justify-content: space-between;
     padding: 0px 0px 0px 0px;
     height: 66px;
+    width: 100%;
+    z-index: 100;
     background-color:rgba(255,255,255,1);
 }
 .container{
@@ -17,6 +26,10 @@ html{
     margin-left: -58px;
 }
 
+.rightitems{
+    display: flex;
+
+}
 .sidebar_toggle{
     position: relative;
     height: 66px;

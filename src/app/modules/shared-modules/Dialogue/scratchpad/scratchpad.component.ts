@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-
-import { MatDialogRef } from '@angular/material/dialog';
-
+import { MatDialogRef, MatDialogConfig } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-scratchpad',
@@ -9,16 +7,25 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./scratchpad.component.css']
 })
 export class ScratchpadComponent {
-  constructor(public dialogRef: MatDialogRef<any>) { }
+  private originalWidth = '300px';
+  private originalHeight = '310px';
+  private expandedWidth = '500px';
+  private expandedHeight = '450px';
+  
+  private isExpanded = false;
 
-//    ngOnInit() {
-//     this.dialogRef.updateSize('60%', '80%');
-//     // this.changeDialogSize();
-// }
+  constructor(public dialogRef: MatDialogRef<ScratchpadComponent>) {
+    // Initially, set the dialog size to its original size
+    this.dialogRef.updateSize(this.originalWidth, this.originalHeight);
+   }
+  expandDialog() {
+    const newWidth = this.isExpanded ? this.originalWidth : this.expandedWidth;
+    const newHeight = this.isExpanded ? this.originalHeight : this.expandedHeight;
 
-  // Method to change the size on button click
-  // changeDialogSize() {
-  //   this.dialogRef.updateSize('40%', '50%'); // Replace with desired width and height
-  // }
+    // Update the dialog size
+    this.dialogRef.updateSize(newWidth, newHeight);
 
+    // Toggle the dialog state
+    this.isExpanded = !this.isExpanded;
+  }
 }

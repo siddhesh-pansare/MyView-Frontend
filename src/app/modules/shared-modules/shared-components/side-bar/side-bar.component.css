@@ -12,10 +12,12 @@ body{
 }
 .scratchbutton img{
   position: fixed;
-  bottom: 60px;
-  right: 60px;
+  bottom: 70px;
+  right: 70px;
 }
 .scratchbutton img:hover{
+  box-shadow: 0 0 5px #44c2e8;
+  text-shadow: 0 0 5px #44c2e8;
   transform: perspective(6.5cm) scale(1.2) rotateX(10deg); 
 }
 #sidebar {

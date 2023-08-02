@@ -11,16 +11,23 @@ import { trigger,transition,style,animate } from "@angular/animations";
 export class SideBarComponent {
     constructor(private dialog:MatDialog){}
 
+
+    
     OpenScratch(){
       const dialogConfig = new MatDialogConfig();
-      dialogConfig.hasBackdrop = false;
-      
+     
       this.dialog.open(ScratchpadComponent,{
         panelClass: ['animate__animated','animate__slideInUp'],
+        
         width:'300px',
         height: '310px',
-        position: {right:'50px', bottom: '50px'}
+        position: {right:'30px', bottom: '50px'},
+        backdropClass: 'cdk-overlay-transparent-backdrop',
+        
+       
         
       })
+    
+    
     }
 }

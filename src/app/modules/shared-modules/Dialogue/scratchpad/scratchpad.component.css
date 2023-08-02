@@ -46,8 +46,10 @@ body{
         background-color: rgba(255,255,255,0);
         border: none;
         outline: none;
-        font-size: 20px;
+        font-size: 14px;
         line-height: 1.8;
-        
+        font-weight: 400;
+        color: rgba(32, 80, 114, 0.80);
+        resize: none;
     }
 

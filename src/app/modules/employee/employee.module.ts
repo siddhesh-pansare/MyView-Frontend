@@ -21,6 +21,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatTabsModule,
     HttpClientModule,
     MatTooltipModule
+  ],
+  exports: [
+    DashboardComponent,
+    ECInformationComponent,
+    DcInformationComponent
   ]
 })
 export class EmployeeModule { }

@@ -24,7 +24,6 @@ export class SideBarComponent {
         position: {right:'30px', bottom: '50px'},
         backdropClass: 'cdk-overlay-transparent-backdrop',
         
-       
         
       })
     

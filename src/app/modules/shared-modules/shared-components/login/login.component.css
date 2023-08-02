@@ -81,20 +81,8 @@
     flex-shrink: 0;
   }
   .ssoButton {
-    display: flex;
-    width: 219px;
-    height: 59px;
-    padding: 7px 13px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: #205072;
-  }
-  .ssoButton {
     height: 7vh;
-    width: 50%;
+    width: 70%;
     border-radius: 15px;
     color: #fff;
     border: none;
@@ -129,23 +117,22 @@
       height: 60vh;
     }
     .box {
-      width: 80%;
+      width: 60%;
       height: 60%;
-      background-position-y: bottom;
+      /* background-position-y: bottom; */
     }
     .welcome {
       font-size: 40px;
       align-self: center;
     }
     .ssoButton {
-        width: 80%;
-        background-color: #205072;
-        text-align: center;
-        font-family: Inter;
-        font-size: 16px;
-        border-radius: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
+      text-align: center;
+      font-family: "Outfit";
+      font-size: 18px;
+      border-radius: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
     }
+  }
+  

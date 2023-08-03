@@ -1,4 +1,4 @@
-<div class="container" *ngIf="loggedUserData">
+<!--<div class="container" *ngIf="loggedUserData">
   <div class="card  m-2">
     <div class="council-head p-2  m-0 d-flex align-items-center ">
       <p>Delivery Council</p>
@@ -7,7 +7,7 @@
   </div>
 
 
-  <div class="card m-2"> <!--EC information card-->
+  <div class="card m-2"> <!--EC information card
     <div class="card-header">
       <span><img src="../../../../../assets/images/icons/information.svg" alt="info-icon"></span>
       EC Information
@@ -43,7 +43,7 @@
   </div>
 
 
-  <div class="card m-2"> <!--EC Menteees card-->
+  <div class="card m-2"> <!--EC Menteees card
     <div class="card-header">
       <span><img src="../../../../../assets/images/icons/reportees.svg" alt="info-icon"></span>
 
@@ -89,4 +89,54 @@
       </div>
     </div>
   </div>
-</div>
+</div>-->
+
+<div class="container" *ngIf="loggedUserData">
+  <!-- <div class="card  m-2">
+    <div class="council-head p-2  m-0 d-flex align-items-center ">
+      <p class="council1">Delivery Council</p>
+      <p class="council2">Council <span><i class="fa-solid fa-caret-down"></i></span></p>
+    </div>
+  </div> -->
+
+  
+  <div class="card m-2"> <!--DC information card-->
+    <div class="card-header">
+      <span class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+      &nbsp;EC Information</span>
+    </div>
+    <div class="card-body p-2 pl-4 pr-4">
+      <div class="row">
+        <div class="col-6">
+          <p class="text-wrap">Name</p>
+        </div>
+        <div class="col-6 align-items-center">
+          <p class="dc-tech">{{loggedUserData.DCTech}}</p></div>
+       
+      </div>
+      <div class="row align-items-center justify-content-center mt-2">
+        <div class="col-6">
+          <p class="text-wrap">Experience</p>
+        </div>
+        <div class="col-6 p-0">
+          <div class="row">
+            <div class="col p-0">
+              <div class="card small-card">
+                <div class="row">
+                  <!-- <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                  </div> -->
+                  <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                    <div class="card-exp p-0">
+                      <!-- <h5 class="card-title">{{loggedUserData.Experience}}</h5> -->
+                      <p class="card-text">&nbsp;&nbsp;&nbsp;{{loggedUserData.Experience}} </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

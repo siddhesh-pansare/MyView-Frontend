@@ -29,7 +29,7 @@
   }
 
   .box1{
-      margin-left: -80px;
+      margin-left: -50px;
   }
 
 .empname{
@@ -37,7 +37,8 @@
   margin-left: 10px;
   text-align: center;
   color: #205072;
-  font-size: 2.5vw;
+  font-size: 1.5vw;
+  font-family: Outfit;
 }
 
     h1{
@@ -66,14 +67,14 @@
  
 
     .attlogo{
-    width: 12vw;
-    height: 12vw;
+    width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
   /*  align-items: flex-end;   */
     position: absolute;
     margin-right: 22vw;
     margin-left: -15vw;
-    top: 7vw;
+    top: 10vw;
     }
 
    
@@ -81,8 +82,8 @@
    
 
     .line {
-        width: 66vw; /* Adjust the width as needed */
-        height: 0.1vw; /* Adjust the height as needed */
+        width: 75vw; /* Adjust the width as needed */
+        height: 0.3vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
@@ -91,13 +92,13 @@
       margin-top: -20px;
       font-size: 2.0vw ;
       margin-left: 10px;
-
-  
+      font-family: Outfit;
+      font-weight: 500;
   }    
    
-  .nav-link .active{
-     color: #205072;
-  }
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+ }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);
@@ -114,7 +115,7 @@
   }
 
     .rounded-table {
-        margin-left: 12vw;
+        margin-left: 16vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
@@ -127,14 +128,16 @@
 
       th, td {
         padding: 1vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
         border: 1px solid #ccc;
         color: #205072;
-text-align: center;
-font-family: Outfit;
-font-size: 2.5vw;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 1.5vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
 
 
       }
@@ -144,7 +147,7 @@ line-height: normal;
         color: #38A3A5;
         text-align: center;
         font-family: Outfit;
-        font-size: 2vw;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -201,7 +204,7 @@ flex-shrink: 0;
 }
 
 
-@media (min-width:601px) and (max-width: 1025px) {
+@media (min-width:600px) and (max-width: 1025px) {
     .container{
     width: 80vw;
     height: 90vh;
@@ -221,6 +224,7 @@ flex-shrink: 0;
       margin-top: 40px;
       justify-content: space-between;
       align-items: center;
+      height: 120px;
   }
 
   .box1{
@@ -232,7 +236,9 @@ flex-shrink: 0;
   margin-left: 10px;
   text-align: center;
   color: #205072;
-  font-size: 2.5vw;
+  font-size: 1.75vw;
+  font-family: Outfit;
+  font-weight: 300;
 }
 
     h1{
@@ -261,14 +267,14 @@ flex-shrink: 0;
  
 
     .attlogo{
-    width: 12vw;
-    height: 12vw;
+    width: 7vw;
+    height: 7vw;
     flex-shrink: 0;
   /*  align-items: flex-end;   */
     position: absolute;
     margin-right: 22vw;
     margin-left: -15vw;
-    top: 7vw;
+    top: 8vw;
     }
 
    
@@ -276,23 +282,24 @@ flex-shrink: 0;
    
 
     .line {
-        width: 66vw; /* Adjust the width as needed */
-        height: 0.1vw; /* Adjust the height as needed */
+        width: 71vw; /* Adjust the width as needed */
+        height: 0.4vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
 
     .attendance-tabs{
-      margin-top: -20px;
+      margin-top: -25px;
       font-size: 2.0vw ;
       margin-left: 10px;
-
-  
+      font-size: 1rem;
+      font-family: Outfit;
+      font-weight: 500;
   }    
    
-  .nav-link .active{
-     color: #205072;
-  }
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+ }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);
@@ -302,14 +309,14 @@ flex-shrink: 0;
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 20rem;
+      width: 50vw;
       height: 0.06rem;
-      margin-left: 4rem;
+      margin-left: 10vw;
     
   }
 
     .rounded-table {
-        margin-left: 12vw;
+        margin-left: 14vw;
         border-collapse: collapse;
         border-radius: 10px;
         overflow: hidden;
@@ -322,14 +329,16 @@ flex-shrink: 0;
 
       th, td {
         padding: 1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
         border: 1px solid #ccc;
         color: #205072;
-text-align: center;
-font-family: Outfit;
-font-size: 2.5vw;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+        text-align: center;
+        font-family: Outfit;
+        font-size: 2vw;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
 
 
       }
@@ -339,7 +348,7 @@ line-height: normal;
         color: #38A3A5;
         text-align: center;
         font-family: Outfit;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -412,7 +421,7 @@ flex-shrink: 0;
     margin-bottom: 10vh;
     margin-left: 20vw;
     position: fixed;
-    
+    overflow:auto;
     }
 
     .box{
@@ -431,6 +440,7 @@ flex-shrink: 0;
     margin-left: 13.18px;
     text-align: center;
     color: #205072;
+    font-family: Outfit;
 }
 
 
@@ -464,7 +474,7 @@ flex-shrink: 0;
     flex-shrink: 0;
     align-items: flex-end;  
     position: absolute;
-    margin-left: -140px;
+    margin-left: -160px;
     margin-top: -30px;
     }
 
@@ -476,20 +486,21 @@ flex-shrink: 0;
     }
  
 .attendance-tabs{
-    margin-top: -20px;
-    
-
+    margin-top: -18px;
+    font-family: Outfit;
+    font-size: 1rem;
+    font-weight: 500;
 }    
  
 .nav-item{
   margin-left: 20px;
 }
 
-.nav-link .active{
+.attendance-tabs .nav-item .nav-link.active{
    color: #205072;
 }
 
-.nav-item .nav-link{
+.nav-link{
   color: rgba(51, 54, 63, 0.6);
 }
 
@@ -523,7 +534,7 @@ flex-shrink: 0;
         color: #205072;
         text-align: center;
         font-family: Outfit;
-        font-size: 1rem;
+        font-size: 1.25vw;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -533,7 +544,7 @@ flex-shrink: 0;
         color: #38A3A5;
         text-align: center;
         font-family: Outfit;
-        font-size: 1rem;
+        font-size: 1vw;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -587,174 +598,7 @@ flex-shrink: 0;
 
   /* Media query for tablet screens */
 
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container{
-    width: 60vw;
-    height: 80vh;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-    margin-left: 20vw;
-    position: fixed;
-    }
-
-    .box{
-      display: flex;
-      margin-top: 40px;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .box1{
-      margin-left: -110px;
-  }
-
-.empname{
-  margin-top: 10px;
-  margin-left: 13.18px;
-  text-align: center;
-  color: #205072;
-}
-
-
-    h1{
-    color: #205072;
-    text-align: center;
-    font-family: Outfit;
-    font-size: 3,2vw;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    }
-
-    .imgsize{
-    width: 10vw;
-    height: 10vw;
-    flex-shrink: 0;
-    border-radius: 100px;
-    border: 1px solid #38A3A5;
-    margin-left: 2vw;
-    /* background: lightgray 50% / cover no-repeat; */
-    }
-
-    .attlogo{
-    width: 10vw;
-    height: 10vw;
-    flex-shrink: 0;
-    
-    align-items: flex-end;  
-    position: absolute;
-    margin-right: 2vw;
-    margin-left: -10vw;
-    top: 7vh;
-    }
-
-    .line {
-        width: 57vw; /* Adjust the width as needed */
-        height: 0.2vh; /* Adjust the height as needed */
-        background: rgba(51, 54, 63, 0.60);
-    }
-    
-    .attendance-tabs{
-      margin-top: -20px;
   
-  
-  }    
-   
-  .nav-link .active{
-     color: #205072;
-  }
-  
-  .nav-item .nav-link{
-    color: rgba(51, 54, 63, 0.6);
-  }
-  
-  .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 70%;
-      height: 0.06rem;
-      margin-left: 80px;
-  }
-    .rounded-table {
-        margin-left: 10vw;
-        margin-right: 10vw;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        align-items: center;
-        border: #205072;
-
-      }     
-
-      th, td {
-        padding: 1vw;
-        border: 1px solid #ccc;
-        color: #205072;
-        text-align: center;
-        font-family: Outfit;
-        font-size: 2vw;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-      }
-
-      td{
-        color: #38A3A5;
-        text-align: center;
-        font-family: Outfit;
-        font-size: 1.6vw;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-
-      } 
-
-      th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-      }
-      #present{
-        color: #00ac2b;
-      }
-           
-      #leave{
-        color:#e50255
-      }
-      #wfh{
-        color:#e50255;
-      }
-      tr:last-child td {
-        border-bottom: none;
-      }
-
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-      } */
-
-      .btncross{
-        right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-      }   
-
-      
-
-  }
 
   @media (min-width: 2281px){
     .container {
@@ -788,6 +632,8 @@ flex-shrink: 0;
   margin-left: 13.18px;
   text-align: center;
   color: #205072;
+  font-family: Outfit;
+  font-weight: 300;
 }
 
     h1 {
@@ -825,19 +671,20 @@ flex-shrink: 0;
 
     .line {
       width: 42vw;
-      height: 0.2vh;
+      height: 0.5vh;
       background: rgba(51, 54, 63, 0.60);
     }
 
     .attendance-tabs{
       margin-top: -20px;
-  
+      font-family: Outfit;
+      font-weight: 500;
   
   }    
    
-  .nav-link .active{
-     color: #205072;
-  }
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+ }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);

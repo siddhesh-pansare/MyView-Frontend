@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/* ::-webkit-scrollbar {
+    width: 3px;
+    background-color: #F5F5F5;
+    color: #000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #f5f5f5;
+  }
+ 
+  /* Hide scrollbar for Firefox */
+  /* Note: Firefox currently does not support styling the scrollbar, so this solution hides the scrollbar completely */
+ /*
+  html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  } 
+  */

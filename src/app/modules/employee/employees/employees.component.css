@@ -1,18 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
-.page-heading-child {
-    position: absolute;
-    top: 3.66rem;
-    left: -0.03rem;
-    border-top: 1px solid #000;
-    box-sizing: border-box;
-    width: 96.94rem;
-    height: 0.06rem;
-}
+
+
 .page-heading1 {
     position: absolute;
     top: 0rem;
-    left: 4.19rem;
+    left: 4rem;
     display: flex;
     align-items: center;
     width: 15.19rem;
@@ -22,7 +15,7 @@
 }
 .page-heading {
     position: relative;
-    width: 96.88rem;
+    width: 98.88rem;
     height: 3.69rem;
     z-index: 0;
 }
@@ -34,25 +27,19 @@
     width: 2.5rem;
     height: 2.5rem;
     overflow: hidden;
-    flex-shrink: 0;
-    z-index: 1;
+    flex-shrink:0;
+    
 }
 .page-sub-header {
     position: relative;
-    left:80px;
-    right:70px;
+    left:70px;
     top:70px;
-    width:1080px;
+    width:calc(100%-70px);
     display: flex;
-    width:100%;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 0.63rem;
-    text-align: left;
     font-size: 1.5rem;
     color: #205072;
     font-family: Outfit;
+    overflow: hidden;
 }
 
 .btn-all-employees-icon {
@@ -60,7 +47,7 @@
     object-fit: cover;
     height: 60px;
     width: 60px;
-    margin-left: 26px;
+    margin-left: 0px;
     margin-right: 100px;
 }
 
@@ -75,7 +62,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     align-items: center;
     border: #205072;
-
+    overflow: hidden;
   }
 
   th, td {
@@ -107,4 +94,77 @@
   th {
     background-color: #f2f2f2;
     font-weight: bold;
+  }
+
+
+  @media (min-width:1000px) and (max-width:1500px) {
+    .page-heading1{
+      font-size: 1.25rem;
+      left:3.5rem;
+      top:-3px;
+    }
+    th,td{
+     font-size : 0.80rem;
+    }
+    .arrow-back-icon {
+      width: 2rem;
+      height: 2rem;
+      
+      
+  }
+    .btn-all-employees-icon {
+      height: 50px;
+      width: 50px;
+  }
+  }
+
+
+  @media (min-width : 700px) and (max-width:1000px) {
+    .page-heading1{
+      font-size: 1rem;
+      left:3rem;
+      top:-5px;
+    }
+    th,td{
+     font-size : 0.60rem;
+    }
+    .arrow-back-icon {
+      width: 1.5rem;
+      height: 1.5rem;
+ 
+  }
+    .btn-all-employees-icon {
+      height: 40px;
+      width: 40px;
+  }
+  .rounded-table{
+    margin-left: 15vw;
+  }
+  } 
+
+  @media (max-width:700px) {
+    .page-heading1{
+      font-size: 0.80rem;
+      left:2rem;
+      top:-10px;
+    }
+    th,td{
+     font-size : 0.40rem;
+    }
+    .arrow-back-icon {
+
+      width: 1rem;
+      height: 1rem;
+  
+      
+  }
+    .btn-all-employees-icon {
+
+      height: 25px;
+      width: 25px;
+
+  }
+  .rounded-table{
+    margin-left: 20vw;
+  }
   }

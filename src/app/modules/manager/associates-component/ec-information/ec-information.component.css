@@ -10,7 +10,7 @@
 
   color: #082737;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -20,7 +20,7 @@
 .text-wrap{
   color: rgba(51, 54, 63, 0.60);
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 12px;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -29,7 +29,7 @@
 .ec-tech{
   color: #205072;
 font-family: Outfit;
-font-size: 16px;
+font-size: 12px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -38,7 +38,7 @@ line-height: normal;
 .card-text {
   color: #56C596;
 font-family: Outfit;
-font-size: 14px;
+font-size: 12px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

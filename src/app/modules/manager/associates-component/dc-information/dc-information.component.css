@@ -19,7 +19,7 @@ body {
 
   color: #082737;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   line-height: normal;
@@ -29,7 +29,7 @@ body {
 .text-wrap{
 color: rgba(51, 54, 63, 0.60);
 font-family: Outfit;
-font-size: 16px;
+font-size: 12px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -38,7 +38,7 @@ line-height: normal;
 .dc-tech{
   color: #205072;
 font-family: Outfit;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -47,7 +47,7 @@ line-height: normal;
 .attendence{
   color: #205072;
 font-family: Outfit;
-font-size: 14px;
+font-size: 12px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -86,7 +86,7 @@ letter-spacing: 0.8px;
 .card-title {
   color: #205075;
   font-family: Outfit;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -96,7 +96,7 @@ letter-spacing: 0.8px;
 .card-text {
   color: #56C596;
 font-family: Outfit;
-font-size: 14px;
+font-size: 12px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -114,7 +114,7 @@ line-height: normal;
 .client1{
   color: #56C596;
 font-family: Outfit;
-font-size: 14px;
+font-size: 12px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -123,7 +123,7 @@ line-height: normal;
 .client2{
   color: rgba(51, 54, 63, 0.60);
 font-family: Outfit;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -132,7 +132,7 @@ line-height: normal;
 .col-6 {
   color: #205072;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -151,7 +151,7 @@ line-height: normal;
   color: #082737;
   text-align: center;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -192,9 +192,49 @@ line-height: normal;
   color: #fff;
   text-align: center;
 }
+.client2{
+  font-size: 12px;
+}
 
+
+
+
+@media (max-width: 992px){
+  .card-info{
+    font-size: 10px;
+  }
+  .card-body{
+    font-size: 10px;
+  }
+  .dc-tech{
+    font-size: 10px;
+  }
+}
 
 @media (max-width: 1200px) {
+  .card-info{
+    font-size: 12px;
+  }
+  .card-body{
+    font-size: 12px;
+  }
+  .dc-tech{
+    font-size: 12px;
+  }
+  .info{
+    font-size: 10px;
+  }
+  .card-info{
+    font-size: 14px;
+  }
+
+  .text-wrap{
+    font-size: 12px;
+  }
+
+  .client2{
+    font-size: 12px;
+  }
   .reportee-card {
     padding: 0;
   }
@@ -224,7 +264,7 @@ line-height: normal;
 .council1 {
   color: rgba(0, 0, 0, 0.30);
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -234,7 +274,7 @@ line-height: normal;
 .col-6 {
   color: rgba(51, 54, 63, 0.60);
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

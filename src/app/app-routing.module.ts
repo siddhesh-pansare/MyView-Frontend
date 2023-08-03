@@ -5,6 +5,7 @@ import { DashboardComponent } from './modules/employee/dashboard/dashboard.compo
 import { RoleComponent } from './modules/shared-modules/shared-components/role/role.component';
 import { ReporteesComponent } from './modules/manager/associates-component/reportees/reportees.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MenteesComponent } from './modules/manager/associates-component/mentees/mentees.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
@@ -18,7 +19,8 @@ const routes: Routes = [
     }
   ]
 },
-  {path: 'reportees', component:ReporteesComponent}
+  {path: 'reportees', component:ReporteesComponent},
+  {path: 'mentees', component:MenteesComponent}
 ];
 
 @NgModule({

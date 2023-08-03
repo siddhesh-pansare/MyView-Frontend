@@ -11,7 +11,7 @@ export class ECInformationComponent {
   loggedUserData: any;     //variable to store complete data from MIS
 
   constructor(private userDataService: LoggedUserDataService ){
-    const email = 'mansi.mukesh@geminisolutions.com';
+    const email = 'mohit.choudhary1@geminisolutions.com';
 
     this.userDataService.fetchDataByEmail(email).subscribe((filteredData) => {
       this.loggedUserData = filteredData[0];

@@ -7,11 +7,13 @@ import { DcInformationComponent } from './associates-component/dc-information/dc
 import { ECInformationComponent } from './associates-component/ec-information/ec-information.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { MenteesComponent } from './associates-component/mentees/mentees.component';
 @NgModule({
   declarations: [
     ReporteesComponent,
     ECInformationComponent,
-    DcInformationComponent
+    DcInformationComponent,
+    MenteesComponent
   ],
   imports: [
     CommonModule,

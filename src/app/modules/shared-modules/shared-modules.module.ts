@@ -9,6 +9,7 @@ import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component'
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -21,7 +22,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SharedModulesRoutingModule,
     MatButtonModule,
     MatDialogModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule
   ]
+ 
 })
 export class SharedModulesModule { }

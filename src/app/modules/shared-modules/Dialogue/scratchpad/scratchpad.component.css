@@ -19,37 +19,46 @@
 body{
     background-color: rgb(255, 255, 161);
 }
-    .text {
-        margin: 0px;
-        padding: 0px;
-        position: absolute;
-       overflow: hidden;
-    }
-    .text img {
-        display: block;
-        margin-top:-10%;
-        margin-bottom: -12%;
-        margin-left: -20%;
-        width: 140%;
-        height: 100%;
-        overflow: hidden;
-    }
-    
-    .text textarea {
-        font-family: Rock Salt;
-        margin-top: 0px;
-        margin-left:0px;
-        position: absolute;
-        padding-left: 3%;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(255,255,255,0);
+    .expand{
+        position:absolute;
+        height: 30px;
+        width: 35px;
+        opacity: 0.4;
+        top: 0px;
+        left: 0px;
         border: none;
         outline: none;
-        font-size: 14px;
-        line-height: 1.8;
-        font-weight: 400;
-        color: rgba(32, 80, 114, 0.80);
-        resize: none;
-    }
 
+    }
+    .shrink {
+        position: absolute;
+        /* Adjust the desired distance from the left */
+        bottom: 0px;
+        right: 0px;
+        opacity: 0.4;
+        border: none;
+        outline: none;
+      }
+.text {
+   
+  background-color: rgb(235, 207, 52);
+  width: 100%;
+  height: 100%;
+}
+.textarea{
+    font-family: Rock Salt;
+    background-color: rgb(235, 207, 52);
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color:(32, 80, 114, 0.80);
+    font-weight: 400;
+
+}
+
+
+     

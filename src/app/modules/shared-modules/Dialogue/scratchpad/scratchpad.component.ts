@@ -7,15 +7,15 @@ import { MatDialogRef, MatDialogConfig } from '@angular/material/dialog';
   styleUrls: ['./scratchpad.component.css']
 })
 export class ScratchpadComponent {
-  private originalWidth = '300px';
-  private originalHeight = '310px';
-  private expandedWidth = '500px';
-  private expandedHeight = '450px';
+  private originalWidth = '370px';
+  private originalHeight = '380px';
+  private expandedWidth = '550px';
+  private expandedHeight = '520px';
   
-  private isExpanded = false;
+  public isExpanded = false;
 
   constructor(public dialogRef: MatDialogRef<ScratchpadComponent>) {
-    // Initially, set the dialog size to its original size
+
     this.dialogRef.updateSize(this.originalWidth, this.originalHeight);
    }
   expandDialog() {
@@ -27,5 +27,8 @@ export class ScratchpadComponent {
 
     // Toggle the dialog state
     this.isExpanded = !this.isExpanded;
+
+    
+    
   }
 }

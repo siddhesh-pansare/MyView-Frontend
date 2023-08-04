@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
 import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
+import { OpenposComponent } from './openpos/openpos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OpenposComponent
   ],
   imports: [
     BrowserModule,

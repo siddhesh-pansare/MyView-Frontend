@@ -1,7 +1,11 @@
 
-<div mat-dialog-content class = "text">
-  <button id="expandButton" [ngClass]="{'expand': !isExpanded, 'shrink': isExpanded}" (click)="expandDialog()">
-    <img src="assets/images/expand.png" alt="Sidebarlogo">
+<div mat-dialog-content class="text" [@expandCollapse]="isExpanded">
+  <button
+    id="expandButton"
+    [ngClass]="{ expand: isExpanded === 'collapsed', shrink: isExpanded === 'expanded' }"
+    (click)="expandDialog()"
+  >
+    <img src="assets/images/expand.png" alt="Sidebarlogo" />
   </button>
   <textarea class="textarea" placeholder="Type Your Text....."></textarea>
 </div>

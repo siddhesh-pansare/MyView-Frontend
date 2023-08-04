@@ -12,10 +12,10 @@ body{
      padding: 0;
      margin-top: 0.2vw;
      bottom: 1vw;
-      border-radius: 10px; 
-      box-shadow: 0px 0px 3px 3px #0074FC;
-        border: 1px solid #205072;
-        background: #FFF;
+     border-radius: 10px;
+     border: 1px solid #205072;
+     background: #FFF;
+     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.50);
         overflow: hidden;
         position: fixed;
  }

@@ -36,7 +36,7 @@ td{
 
   .container{
     width: 80vw;
-    height: 70vh;
+    max-height: 130vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -151,7 +151,7 @@ td{
 @media (min-width:601px) and (max-width:1024px) {
     .container{
     width: 80vw;
-    height: 90vh;
+    max-height: 110vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;

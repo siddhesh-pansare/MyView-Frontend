@@ -44,51 +44,57 @@
     }
 
     .certilogo{
-        width: 12vw;
-    height: 12vw;
+        width: 10vw;
+    height: 10vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
     /* align-items: flex-end;   */
     position: absolute; 
-    margin-right: 22vw;
+    margin-right: 12vw;
     margin-left: 45vw;
-    top: 4vw;
+    top: 5vw;
     
     }
     
     
     .line {
-        width: 66vw; /* Adjust the width as needed */
+        width: 68vw; /* Adjust the width as needed */
         height: 0.1vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
     
-    .rounded-table {
-        margin-left: 10vw;
+    .table {
+        margin-left: 14vw;
         border-collapse: collapse;
-        border-radius: 10px;
+        border-radius: 10px 10px 10px 10px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         align-items: center;
         border: #205072;
-        height: 15vh;
+        height: min-content;
+        width: min-content;
         
       }
       
       th, td {
-        padding: 1vw;
+        padding: 10px;
         border: 1px solid #ccc;
-        color: #205072;
+        
 text-align: center;
 font-family: Outfit;
-font-size: 2.5vw;
+font-size: 2vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
-
+border: 1px solid #205072;
+background: #FFF;
       }
 
+      .logo{
+        height: 6vw;
+        width: 8vw;
+      }
       td{
         color: #38A3A5;
 text-align: center;
@@ -100,14 +106,12 @@ line-height: normal;
       }
       
       th {
-        background-color: #f2f2f2;
-        font-weight: bold;
+        background: #FFF;;
+        font-weight: 900;
+        color: #205072;
       }
       
-      tr:last-child td {
-        border-bottom: none;
-      }
-      
+            
       tr:hover {
         background-color: #f9f9f9;
       }
@@ -133,7 +137,7 @@ flex-shrink: 0;
 
     .container{
         width: 60vw;
-    height: 80vh;
+    height: 90vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -146,6 +150,7 @@ flex-shrink: 0;
     
     }
 
+    
     h1{
         color: #205072;
     text-align: center;
@@ -154,13 +159,13 @@ flex-shrink: 0;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-       
+      
     
     }
 
     .imgsize{
         width: 8vw;
-    height: 5vw;
+    height: 8vw;
     flex-shrink: 0;
     border-radius: 100px;
     /* border: 1px solid #38A3A5; */
@@ -169,8 +174,8 @@ flex-shrink: 0;
     }
 
     .certilogo{
-        width: 8vw;
-    height: 5vw;
+        width: 7vw;
+    height: 7vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
     align-items: flex-end;  
@@ -182,25 +187,27 @@ flex-shrink: 0;
     
     .line {
         width: 57vw; /* Adjust the width as needed */
-        height: 0.5vh; /* Adjust the height as needed */
+        height: 0.1vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 
     }
     
-    .rounded-table {
-        margin-left: 10vw;
-        margin-right: 7vw;
+    .table {
+        margin-left: 5vw;
+        margin-right: 3vw;
         border-collapse: collapse;
-        border-radius: 10px;
+        border-radius: 10px 10px 10px 10px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         align-items: center;
         border: #205072;
+        height: max-content;
+        width: max-content;
         
       }
       
       th, td {
-        padding: 1vw;
+        padding: 20px;
         border: 1px solid #ccc;
         color: #205072;
 text-align: center;
@@ -209,6 +216,8 @@ font-size: 1.5vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+border: 1px solid #205072;
+background: #FFF;
 
       }
 
@@ -223,13 +232,11 @@ line-height: normal;
       }
       
       th {
-        background-color: #f2f2f2;
+        background: #FFF;;
         font-weight: bold;
       }
       
-      tr:last-child td {
-        border-bottom: none;
-      }
+     
       
       tr:hover {
         background-color: #f9f9f9;
@@ -254,9 +261,9 @@ flex-shrink: 0;
   @media (min-width: 769px) and (max-width: 1024px) {
     .container{
         width: 60vw;
-    height: 90vh;
+    height: 70vh;
     flex-shrink: 0;
-    border-radius: 10px;
+    border-radius: 10px 0px 0px 0px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
@@ -288,15 +295,15 @@ flex-shrink: 0;
     }
 
     .certilogo{
-        width: 10vw;
-    height: 10vw;
+        width: 9vw;
+    height: 9vw;
     flex-shrink: 0;
     background: lightgray 50% / cover no-repeat;
     align-items: flex-end;  
     position: absolute;
     margin-right: 2vw;
     margin-left: 34vw;
-    top: 8vh;
+    top: 7vh;
     }
     
     
@@ -307,28 +314,37 @@ flex-shrink: 0;
 
     }
     
-    .rounded-table {
+    .table {
         margin-left: 10vw;
         margin-right: 10vw;
         border-collapse: collapse;
-        border-radius: 10px;
+        border-radius: 10px 10px 10px 10px;
         overflow: hidden;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         align-items: center;
         border: #205072;
+        height: min-content;
+        width: min-content;
         
+      }
+      .logo{
+        height: 5vw ;
+        width: 8vw;
       }
       
       th, td {
-        padding: 1vw;
+        padding: 10px;
         border: 1px solid #ccc;
-        color: #205072;
+        
 text-align: center;
 font-family: Outfit;
 font-size: 2vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+border: 1px solid #205072;
+background: #FFF;
+
 
       }
 
@@ -343,13 +359,12 @@ line-height: normal;
       }
       
       th {
-        background-color: #f2f2f2;
+        background: #FFF;;
         font-weight: bold;
+        color: #205072;
       }
       
-      tr:last-child td {
-        border-bottom: none;
-      }
+    
       
       tr:hover {
         background-color: #f9f9f9;
@@ -374,7 +389,7 @@ flex-shrink: 0;
       width: 45vw;
       height: 80vh;
       flex-shrink: 0;
-      border-radius: 10px;
+      border-radius: 10px 10px 10px 10px;
       border: 1px solid #205072;
       background: #FFF;
       box-shadow: 0px 0px 3px 3px #0074FC;
@@ -383,6 +398,7 @@ flex-shrink: 0;
       margin-left: 30vw;
       margin-right: 20vw;
       position: relative;
+      
     }
   
     h1 {
@@ -420,22 +436,24 @@ flex-shrink: 0;
       background: rgba(51, 54, 63, 0.60);
     }
   
-    .rounded-table {
+    .table {
      
       margin-left: 3vw;
       margin-right: 10vw;
-      width: 38vw;
       border-collapse: collapse;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       align-items: center;
       border: #205072;
+      height: max-content;
+      width: max-content;
+     
     }
   
    
      th, td {
-      padding: 10px;
+      padding: 20px;
       border: 1px solid #ccc;
       color: #205072;
   text-align: center;
@@ -444,6 +462,8 @@ flex-shrink: 0;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  border: 1px solid #205072;
+background: #FFF;
   
     }
   
@@ -462,9 +482,7 @@ flex-shrink: 0;
       font-weight: bold;
     }
     
-    tr:last-child td {
-      border-bottom: none;
-    }
+    
     
     tr:hover {
       background-color: #f9f9f9;

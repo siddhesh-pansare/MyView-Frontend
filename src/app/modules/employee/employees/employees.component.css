@@ -50,7 +50,7 @@
 .rounded-table {
     position: relative;
     top:100px;
-    margin-left: 11vw;
+    margin-left: 14vw;
     margin-right: 11vw;
     border-collapse: collapse;
     border-radius: 10px;
@@ -205,6 +205,7 @@ body{
 }
 
 .page-heading{
+  top:0.50rem;
   width: fit-content;
   height: fit-content;
   display: flex;

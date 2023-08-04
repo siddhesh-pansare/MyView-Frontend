@@ -29,7 +29,8 @@ body{
         margin-top: 6vw;
         margin-left: 50vw;
         margin-bottom: 1vw;
-        width: 23vw;
+        width: 20vw;
+        height: 5vw;
  }
 
 
@@ -55,7 +56,7 @@ body{
 
     .imgsize{
 
-    width: 7vw;
+    width: 9vw;
 
     height: 10vw;
 
@@ -67,6 +68,7 @@ body{
 
     margin-left: 1vw;  
     margin-bottom: 4vw; 
+    margin-top: 2vw;
    
 
     /* background: lightgray 50% / cover no-repeat; */
@@ -92,9 +94,9 @@ body{
 
     margin-right: 22vw;
 
-    margin-left: 54vw;
+    margin-left: 45vw;
 
-    top: 7vw;
+    top: 8vw;
 
    
 
@@ -106,7 +108,7 @@ body{
 
     .line {
 
-        width: 76vw; /* Adjust the width as needed */
+        width: 70vw; /* Adjust the width as needed */
 
         height: 0.1vw; /* Adjust the height as needed */
 
@@ -120,7 +122,7 @@ body{
 
     .rounded-table {
 
-        margin-left: 3vw;
+        margin-left: 0vw;
 
         border-collapse: collapse;
 
@@ -134,7 +136,7 @@ body{
 
         border: #205072;
         margin-right: 8vw;
-        width: 70vw;
+        width: 72vw;
       }
 
      
@@ -249,7 +251,7 @@ flex-shrink: 0;
 
  .remark3{
         margin-top: 2vw;
-        margin-left: 45vw;
+        margin-left: 47.6vw;
         margin-bottom: 5vw;
         width: 9vw;
  }
@@ -372,7 +374,7 @@ flex-shrink: 0;
 
     .rounded-table {
 
-        margin-left: 4vw;
+        margin-left: 1.5vw;
 
         margin-right: 5vw;
 
@@ -387,7 +389,7 @@ flex-shrink: 0;
         align-items: center;
 
         border: #205072;
-        width: 50vw;
+        width: 55vw;
 
        
 
@@ -620,7 +622,7 @@ flex-shrink: 0;
 
     .rounded-table {
 
-        margin-left: 1vw;
+        margin-left: -0.5vw;
 
         margin-right: 50vw;
 
@@ -635,7 +637,7 @@ flex-shrink: 0;
         align-items: center;
 
         border: #205072;
-        width: 55vw;
+        width: 58vw;
 
        
 

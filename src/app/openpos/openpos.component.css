@@ -18,13 +18,179 @@
     border:1px;
   } */
 
-  .col {
-    width: 100%; /* Default to full width for mobile */
-    max-width: 640px; /* Set a maximum width for larger screens */
-    height: 200px;
-    margin-bottom: 36px;
-    margin-top:50px;
-  }
+ .btn-primary{
+  width:fixed(160px);
+  height:Hug(38px);
+   top:157px;
+  margin-left:1400px;
+  margin-top:100px;
+ }
+ .active{
+  width:68px;
+  height:30px;
+  font:Outfit;
+  font-weight:500;
+  size:24px;
+  line-height:30.24px;
+  align-items:center;
+  margin-left:550px;
+  color:#00AC2B;
+ }
+ .act{
+  width:400px;
+  height:60px;
+  padding:15px,20px,15px,20px;
+  Gap:10px;
+ }
+ .cl{
+  width:73px;
+  height:30px;
+  font:Outfit;
+  font-weight:400;
+  size:24px;
+  line-height:30.24px;
+  align-items:center;
+  color:#FF0606;
+ }
+ 
+ .imgbut{
+  margin-left:375px;
+  margin-top:-40px;
+ }
+ .th{
+  width:1510.99px;
+  height:48px;
+  top:143px;
+  left:47.52px;
+  border:1px;
+  border: 1px solid #205072;
+  padding: 10px 20px; /* Adjust the padding values as needed */
+  background-color: #f0f0f0;
+ }
+ .styled-table {
+  border-collapse: separate;
+  border-spacing: 10px; /* Adjust the spacing as needed */
+  width:1511.01px;
+  height:188px;
+  border: 1px solid #205072;
+  
+}
+.styled-table {
+  border-collapse: collapse;
+  border-radius: 10px 10px 0px 0px; /* Top-left and bottom-left rounded */
+  overflow: hidden; /* Hide overflow content due to border radius */
+
+  max-width: 100%; /* Ensure the table doesn't exceed its container */
+}
+.styled-table {
+  border-collapse: collapse;
+  
+}
+
+.design {
+  border: 1px solid #205072;
+  border-radius: 10px 10px 0 0; /* Top-left and top-right rounded */
+  overflow: hidden; /* Hide overflow content due to border radius */
+}
+
+/* ... Rest of your styles ... */
+
+
+/* ... Rest of your styles ... */
+
+
+th {
+  padding: 10px 20px; /* Adjust the padding values as needed */
+  width:1510.99px;
+  
+}
+.btn{
+  width:160px;
+  height:38px;
+  border-radius:10px;
+  padding:9px,8px,9px,8px;
+  Gap:10px;
+  top:157px;
+  left:1563px;
+  background-color:#0074FCB8;
+  margin-left:1400px;
+  margin-top:50px;
+  color:
+  #FFFFFF;
+}
+
+
+.design{
+  border:1px solid #205072;
+  
+}
+ .close{
+  width:400px;
+  height:60px;
+  padding:15px,20px,15px,20px;
+  Gap:10px;
+
+ }
+ .act {
+  display: flex; /* Use flexbox to align items horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:600px;
+  Gap:150px;
+  
+}
+.acti{
+  
+  margin-left:175px;
+  Gap:150px;
+}
+.acti {
+  
+  justify-content: center;
+  align-items: center;
+  margin-left:200px;
+}
+.active{
+  margin-left:200px;
+}
+
+
+.img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+.act p {
+  margin: 0; /* Remove default margin to prevent spacing issues */
+}
+
+.active, .cl {
+  display: inline-block; /* Display paragraphs inline */
+  margin: 0 10px; /* Add some spacing between paragraphs if needed */
+  margin-left:200px;
+  font-size: 24px;
+}
+.td{
+  width:1510.99px;
+  height:48px;
+  top:143px;
+  left:47.52px;
+  border:1px;
+  color:#33363F;
+  width:93px;
+  height:20px;
+  font:Outfit;
+  font-weight:500;
+  size:16px;
+  line-height:20.16px;
+  align-items:center;
+  padding: 10px 20px; /* Adjust the padding values as needed */
+  color: #33363F; /* Set the font color to #33363F */
+}
+
+
   
   .reduced-img-width,
   .reduced-img {
@@ -32,6 +198,38 @@
     height: auto;
     
   }
+  .center-content {
+  
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding:15px,20px,15px,20px;
+  Gap:20px;
+  
+}
+
+
+
+.active, .cl {
+  margin: 0;
+  font-size: 24px;
+}
+
+.img {
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-left:1000px;
+}
+.center-content {
+  text-align: center;
+}
+
+.active, .cl {
+  margin: 0;
+  font-size: 24px;
+
+}
+
+
   .reduced-img{
     margin-top:100px;
   }
@@ -58,5 +256,171 @@
       height: auto; /* Adjust height for mobile */
       border: 1px solid #ccc; /* Add border for visibility */
     }
+    
 
   }
+  
+  .styled-table {
+
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+  }
+  .img{
+    margin-left:20px;
+  }
+  .tab{
+    margin-top:40px;
+    width:1574.25px;
+    height:94px;
+    border-collapse: collapse;
+  }
+  
+  .header-cell, .data-cell, .action-cell {
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Apply border styles to each table row */
+  tbody tr {
+    border-bottom: 1px solid #205072;
+  }
+  
+  /* Apply border styles to columns */
+  .data-cell:before,
+  .header-cell:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1px;
+    bottom: 0;
+    width: 1px;
+    background-color: #205072;
+  }
+  
+  /* Apply border styles to the last column */
+  .action-cell:before {
+    display: none; /* Hide vertical line for the last column */
+  }
+  
+  /* Styling for the table data cells */
+  td {
+    color: #33363F;
+    font-weight: 500;
+  }
+  
+  /* Styling for Action column */
+  .action-cell {
+    text-align: center;
+  }
+  .icon {
+    margin-right: 10px; /* Adjust the value to control the gap */
+  }
+  @media (max-width: 768px) {
+    .btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+
+  /* Button styles */
+
+
+/* Notification icon styles (adjust as needed) */
+.act {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Image styles */
+.imgbut {
+  display: block;
+  margin: 20px auto; /* Center the image */
+  max-width: 100%;
+  height: auto;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+  margin: 20px auto; /* Center the table */
+}
+
+/* Table styles */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header cell styles */
+.header-cell {
+  /* Your header cell styles... */
+}
+
+/* Table data cell styles */
+.data-cell {
+  /* Your data cell styles... */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .btn {
+    font-size: 14px;
+  }
+  
+  /* Adjustments for the table container */
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+/* Table container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table container */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table styles */
+.tab {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header cell styles */
+.header-cell {
+  padding: 10px;
+  color: #205072;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Table data cell styles */
+.data-cell {
+  padding: 8px;
+  color: #33363F99;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .header-cell,
+  .data-cell {
+    padding: 8px 6px; /* Adjust padding as needed */
+  }
+}
+
+
+
+
+  
+
+  
+
+  
+  

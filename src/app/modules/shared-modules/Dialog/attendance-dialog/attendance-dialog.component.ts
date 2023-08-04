@@ -6,6 +6,17 @@ interface ClientVisit {
   status: string;
 }
 
+interface InternalMeeting {
+  date: string;
+  event: string;
+  status: string;
+}
+
+interface OfficeVisit{
+  date: string;
+  context: string;
+  status: string;
+}
 @Component({
   selector: 'app-attendance-dialog',
   templateUrl: './attendance-dialog.component.html',
@@ -13,16 +24,38 @@ interface ClientVisit {
 })
 export class AttendanceDialogComponent implements OnInit {
   clientvisit: ClientVisit[] = [];
+  internalmeetings: InternalMeeting[] = [];
+  officevisits: OfficeVisit[] = [];
+  activeTab: string = 'Client Visits'; // Default active tab
 
+  setActiveTab(tab: string) {
+    this.activeTab = tab;
+     this.fetchData(this.activeTab);
+  }
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.fetchClientVisit();
+    this.fetchData(this.activeTab);
   }
 
-  fetchClientVisit() {
-    this.http.get<{ clientvisit: ClientVisit[] }>('assets/temp_data/clientvisit.json').subscribe((data) => {
-      this.clientvisit = data.clientvisit;
+  fetchData(tab:string) {
+    let url = '';
+
+    if (tab === 'Client Visits') {
+      url = 'assets/temp_data/clientvisit.json';
+    } else if (tab === 'Internal Meetings') {
+      url = 'assets/temp_data/internalmeetings.json';
+    } else if (tab === 'Office Visits') {
+      url = 'assets/temp_data/officevisits.json';
+    }
+    this.http.get<any>(url).subscribe((data) => {
+      if (tab === 'Client Visits') {
+        this.clientvisit = data.clientvisit;
+      } else if (tab === 'Internal Meetings') {
+        this.internalmeetings = data.internalmeetings;
+      } else if (tab === 'Office Visits') {
+        this.officevisits = data.officevisits;
+      }
     });
   }
 }

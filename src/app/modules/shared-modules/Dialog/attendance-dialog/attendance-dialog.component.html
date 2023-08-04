@@ -16,13 +16,13 @@
     <div class="attendance-tabs">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link" (click)="setActiveTab('Client Visits')" [class.active]="activeTab == 'Client Visits'" >Client Visits</a>
+              <a class="nav-link" (click)="setActiveTab('Client Visits')" [class.active]="activeTab == 'Client Visits'" href="#" >Client Visits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="setActiveTab('Internal Meetings')" [class.active]="activeTab == 'Internal Meetings'" >Internal Meetings</a>
+              <a class="nav-link" (click)="setActiveTab('Internal Meetings')" [class.active]="activeTab == 'Internal Meetings'" href="#">Internal Meetings</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" (click)="setActiveTab('Office Visits')" [class.active]="activeTab == 'Office Visits'" >Office Visits</a>
+              <a class="nav-link" (click)="setActiveTab('Office Visits')" [class.active]="activeTab == 'Office Visits'" href="#">Office Visits</a>
             </li>
           </ul>
           <div class="line2"></div><br>
@@ -39,8 +39,8 @@
           <tbody class="text-center">
             <tr *ngFor="let cv of clientvisit">
               <td>{{cv.date}}</td>
-              <td>{{cv.event}}</td>
-              <td>{{cv.status}}</td>
+              <td class="eventcolor">{{cv.event}}</td>
+              <td [style.color]="getStatusColor(cv.status)">{{cv.status}}</td>
             </tr>
           </tbody>
       </table>
@@ -56,8 +56,8 @@
       <tbody class="text-center">
         <tr *ngFor="let im of internalmeetings">
           <td>{{im.date}}</td>
-          <td>{{im.event}}</td>
-          <td>{{im.status}}</td>
+          <td class="eventcolor">{{im.event}}</td>
+          <td [style.color]="getStatusColor(im.status)">{{im.status}}</td>
         </tr>
       </tbody>
       </table>
@@ -73,8 +73,8 @@
       <tbody class="text-center">
         <tr *ngFor="let ov of officevisits">
           <td>{{ov.date}}</td>
-          <td>{{ov.context}}</td>
-          <td>{{ov.status}}</td>
+          <td class="eventcolor">{{ov.context}}</td>
+          <td [style.color]="getStatusColor(ov.status)">{{ov.status}}</td>
         </tr>
       </tbody>
       </table>

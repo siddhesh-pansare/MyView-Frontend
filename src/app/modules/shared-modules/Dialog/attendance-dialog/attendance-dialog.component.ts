@@ -58,4 +58,17 @@ export class AttendanceDialogComponent implements OnInit {
       }
     });
   }
+
+  getStatusColor(status: string): string {
+    switch (status) {
+      case 'Leave':
+      case 'WFH':
+      case 'Not Present':
+        return 'red';
+      default:
+        return '#00ac2b'; // Default color (or you can set it to another color)
+    }
+  }
+
+
 }

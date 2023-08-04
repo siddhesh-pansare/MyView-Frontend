@@ -410,7 +410,6 @@ flex-shrink: 0;
     .container{
     width: 60vw;
     height: 90vh;
-  
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -516,7 +515,24 @@ flex-shrink: 0;
     margin-left: 12vw;
 }
 
-    .rounded-table {
+table {
+  border-color: #205072;
+  border: 1;
+  font-family: Outfit;
+  border-radius: 2px;
+  
+}
+
+table.table tr td {
+  color: #38a3a5;
+}
+
+table.table tr th {
+  color: #205072;
+}
+
+
+    /* .rounded-table {
         margin-left: 10vw;
         margin-right: 7vw;
         border-collapse: collapse;
@@ -551,7 +567,7 @@ flex-shrink: 0;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-      }
+      } */
 #present{
   color: #00ac2b;
 }

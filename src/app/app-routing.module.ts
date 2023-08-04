@@ -5,9 +5,9 @@ import { HeaderComponent } from './modules/shared-modules/shared-components/head
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'attendance', pathMatch:'full' },
+  { path:'', redirectTo: '', pathMatch:'full' },
   { path:'attendance', component:AttendanceDialogComponent },
-  {path:'header',component:HeaderComponent}
+  { path:'header', component:HeaderComponent}
 ];
 
 @NgModule({

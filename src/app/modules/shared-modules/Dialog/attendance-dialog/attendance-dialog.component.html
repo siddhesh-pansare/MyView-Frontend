@@ -27,32 +27,43 @@
           </ul>
           <div class="line2"></div><br>
     </div>
-    <table class="rounded-table">
-        <tr>
-          <th>Date</th>
-          <th>Event</th>
-          <th>Status</th>
-        </tr>
-        <tr>
-          <td>01-January-2023</td>
-          <td>Client Name 1</td>
-          <td id="present">Present</td>
-        </tr>
-        <tr>
-            <td>01-February-2023</td>
-            <td>Client Name 2</td>
-            <td id="leave">Leave</td>
-          </tr>
-          <tr>
-            <td>01-March-2023</td>
-            <td>Client Name 3</td>
-            <td id="present">Present</td>
-          </tr>
-          <tr>
-            <td>01-April-2023</td>
-            <td>Client Name 4</td>
-            <td id="wfh">WFH</td>
-          </tr>
-
+    <div class="table-responsive rounded">
+      <table class="table table-bordered">
+          <thead class="text-center">
+              <tr>
+                  <th>Date</th>
+                  <th>Event</th>
+                  <th>Status</th>
+              </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr *ngFor="let cv of clientvisit">
+              <td>{{cv.date}}</td>
+              <td>{{cv.event}}</td>
+              <td id="present">{{cv.status}}</td>
+            </tr>
+            <!--
+            <tr>
+              <td>01-January-2023</td>
+              <td>Client Name 1</td>
+              <td id="present">Present</td>
+            </tr>
+            <tr>
+                <td>01-February-2023</td>
+                <td>Client Name 2</td>
+                <td id="leave">Leave</td>
+              </tr>
+              <tr>
+                <td>01-March-2023</td>
+                <td>Client Name 3</td>
+                <td id="present">Present</td>
+              </tr>
+              <tr>
+                <td>01-April-2023</td>
+                <td>Client Name 4</td>
+                <td id="wfh">WFH</td>
+              </tr> -->
+          </tbody>
       </table>
+  </div>
  </div>

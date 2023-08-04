@@ -1,45 +1,38 @@
 {
     "clientvisit": [
       {
-        "id": 1,
-        "event": "Client Name 1",
         "date": "01-January-2023",
+        "event": "Client Name 1",
         "status":"Present"
       },
       {
-        "id": 2,
-        "event": "Client Name 2",
         "date": "01-February-2023",
+        "event": "Client Name 2",
         "status": "Leave"
       },
       {
-        "id": 3,
-        "event": "Client Name 3",
         "date": "01-March-2023",
+        "event": "Client Name 3",
         "status": "Present"
       },
       {
-        "id": 4,
-        "event": "Client Name 4",
         "date": "01-April-2023",
+        "event": "Client Name 4",
         "status":"WFH"
       },
       {
-        "id": 5,
-        "event": "Client Name 5",
         "date": "01-May-2023",
+        "event": "Client Name 5",
         "status": "Present"
       },
       {
-        "id": 6,
-        "event": "Client Name 6 - Day 1",
         "date": "29-June-2023",
+        "event": "Client Name 6 - Day 1",
         "status": "Present"
       },
       {
-        "id": 7,
-        "event": "Client Name 6 - Day 2",
         "date": "30-July-2023",
+        "event": "Client Name 6 - Day 2",
         "status": "Present"
       }
     ]

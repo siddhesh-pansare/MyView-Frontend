@@ -6,6 +6,7 @@ import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { AttendanceDialogComponent } from './Dialog/attendance-dialog/attendance-dialog.component';
+import { HttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { AttendanceDialogComponent } from './Dialog/attendance-dialog/attendance
   exports:[
     AttendanceDialogComponent,
     SharedModulesRoutingModule,
+    HeaderComponent
   ]
 })
 export class SharedModulesModule { }

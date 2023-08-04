@@ -1,0 +1,28 @@
+{
+    "internalmeetings":[
+        {
+            "id": 1,
+            "event": "Meeting Agenda - 1",
+            "date": "01-January-2023",
+            "status":"Present"
+          },
+          {
+            "id": 2,
+            "event": "Meeting Agenda - 3",
+            "date": "01-February-2023",
+            "status": "Not Present"
+          },
+          {
+            "id": 3,
+            "event": "Meeting Agenda - 3",
+            "date": "01-March-2023",
+            "status": "Present"
+          },
+          {
+            "id": 4,
+            "event": "Meeting Agenda - 4",
+            "date": "01-April-2023",
+            "status":"Leave"
+          }
+    ]
+}

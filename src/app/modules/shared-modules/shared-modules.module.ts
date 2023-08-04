@@ -18,6 +18,10 @@ import { AttendanceDialogComponent } from './Dialog/attendance-dialog/attendance
   imports: [
     CommonModule,
     SharedModulesRoutingModule
+  ],
+  exports:[
+    AttendanceDialogComponent,
+    SharedModulesRoutingModule,
   ]
 })
 export class SharedModulesModule { }

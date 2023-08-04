@@ -38,6 +38,15 @@
   margin-right: 1vw;
 }
 
+.line {
+  position: absolute;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 90%;
+  height: 0.06rem;
+  top:50px;
+}
+
 .btn-all-employees-icon {
     position: relative;
     object-fit: cover;

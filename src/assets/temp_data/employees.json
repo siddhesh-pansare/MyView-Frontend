@@ -1,0 +1,74 @@
+{
+    "employeedata":[
+        {
+            "EmpCode": "E001",
+            "Name": "John Doe",
+            "Designation": "Software Engineer",
+            "Email": "john.doe@gemini.com",
+            "MentorName": "Jane Smith"
+          },
+          {
+            "EmpCode": "E002",
+            "Name": "Alice Johnson",
+            "Designation": "Data Analyst",
+            "Email": "alice.johnson@gemini.com",
+            "MentorName": "David Brown"
+          },
+          {
+            "EmpCode": "E003",
+            "Name": "Bob Smith",
+            "Designation": "UI/UX Designer",
+            "Email": "bob.smith@gemini.com",
+            "MentorName": "Alice Johnson"
+          },
+          {
+            "EmpCode": "E004",
+            "Name": "Emily Davis",
+            "Designation": "Product Manager",
+            "Email": "emily.davis@gemini.com",
+            "MentorName": "John Doe"
+          },
+          {
+            "EmpCode": "E005",
+            "Name": "Michael Clark",
+            "Designation": "Frontend Developer",
+            "Email": "michael.clark@gemini.com",
+            "MentorName": "Alice Johnson"
+          },
+          {
+            "EmpCode": "E006",
+            "Name": "Sarah Wilson",
+            "Designation": "HR Manager",
+            "Email": "sarah.wilson@gemini.com",
+            "MentorName": "John Doe"
+          },
+          {
+            "EmpCode": "E007",
+            "Name": "David Brown",
+            "Designation": "Project Manager",
+            "Email": "david.brown@gemini.com",
+            "MentorName": "Jane Smith"
+          },
+          {
+            "EmpCode": "E008",
+            "Name": "Jennifer Adams",
+            "Designation": "Marketing Specialist",
+            "Email": "jennifer.adams@gemini.com",
+            "MentorName": "Emily Davis"
+          },
+          {
+            "EmpCode": "E009",
+            "Name": "William Roberts",
+            "Designation": "Backend Developer",
+            "DeminiEmail": "william.roberts@gemini.com",
+            "MentorName": "Michael Clark"
+          },
+          {
+            "EmpCode": "E010",
+            "Name": "Linda Martinez",
+            "Designation": "Finance Manager",
+            "Email": "linda.martinez@gemini.com",
+            "MentorName": "Sarah Wilson"
+          }
+    ]
+}

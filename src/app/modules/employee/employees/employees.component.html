@@ -9,9 +9,36 @@
 </div>
 
 
-
-
-<table class="rounded-table">
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-sm-6">
+      <div class="searchCandidate">
+        <div class="search-container">
+          <input
+            type="text"
+            [(ngModel)]="searchTerm"
+            (input)="applyFilter()"
+            placeholder="Search a Candidate"
+            class="search-input"
+          />
+        </div>
+        <img class="icon" alt="" src="assets/employees/3077325 1.png">
+      </div>
+    </div>
+    <div class="col-sm-6 text-right">
+      <div class="filterIcon">
+        <img class="icon2" alt="" src="assets/employees/566737 1.png">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="line-div-container">
+<div class="line-div">
+</div>
+</div>
+<!-- <div class="table-responsive rounded">
+  <table class="table table-bordered">
+      <thead class="tableheader">
     <tr>
       <th>Emp Code</th>
       <th>Name</th>
@@ -19,32 +46,42 @@
       <th>Gemini Email</th>
       <th>EC Mentor Name</th>
     </tr>
-    <tr>
-      <td>GSI GI 882</td>
-      <td>Shobhit Singh</td>
-      <td>Technical Trainee</td>
-      <td><img class="emailicon" src="assets/employees/email_icon.png"></td>
-      <td>Garima Sharma</td>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ed of employeedata">
+      <td>{{ed.empCode}}</td>
+      <td>{{ed.name}}</td>
+      <td>{{ed.designation}}</td>
+      <td><a href="mailto:{{ ed.geminiEmail }}">
+        <img class="emailicon" src="assets/employees/email_icon.png">
+      </a></td>
+      <td>{{ed.ecMentorName}}</td>
     </tr>
-    <tr>
-        <td>GSI GI 880 </td>
-        <td>Shivanshu Khanna</td>
-        <td>Technical Trainee</td>
-        <td><img class="emailicon" src="assets/employees/email_icon.png"></td>
-        <td>Garima Sharma</td>
-      </tr>
-      <tr>
-        <td>GSI GI 1006 </td>
-        <td>Garima Sharma</td>
-        <td> Senior Software Engineer L1</td>
-        <td><img class="emailicon" src="assets/employees/email_icon.png"></td>
-        <td>Charanjeev Singh Uppal</td>
-      </tr>
-      <tr>
-        <td>GSI GI 883</td>
-        <td>Aditya Kumar Kushwah</td>
-        <td>Technical Trainee</td>
-        <td><img class="emailicon" src="assets/employees/email_icon.png"></td>
-        <td>Kavish Baranwal</td>
-      </tr>
+    </tbody>
   </table>
+  </div> -->
+  <div class="table-responsive rounded">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+        <th  mat-header-cell *matHeaderCellDef>{{ column }}</th>
+        <td  *matCellDef="let element">
+          <ng-container *ngIf="column !== 'Email'; else emailColumn">
+            {{ element[column] }}
+          </ng-container>
+          <ng-template #emailColumn>
+            <a href="mailto:{{ element.geminiEmail }}">
+              <img class="emailicon" src="assets/employees/email_icon.png">
+            </a>
+          </ng-template>
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="[5, 10, 25]" [pageSize]="pageSize" [pageIndex]="pageIndex" [length]="totalItems" (page)="onPageChange($event)">
+    </mat-paginator>
+    
+  </div>
+  

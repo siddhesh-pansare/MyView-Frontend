@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeesComponent } from './employees/employees.component';
-
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,13 @@ import { EmployeesComponent } from './employees/employees.component';
   ],
   imports: [
     CommonModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FormsModule
+  ],
+  exports:[
+    EmployeesComponent
   ]
 })
 export class EmployeeModule { }

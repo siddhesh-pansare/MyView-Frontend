@@ -163,6 +163,7 @@ table{
   text-align: center;
   font-weight: 600;
   height: 35px;
+
 }
 
 .mat-mdc-header-cell{
@@ -172,6 +173,7 @@ table{
   color: #205072;
   font-size: 1rem;
   border-right: 1px solid #205072;
+  border-bottom: 1px solid #205072;
 }
 
 .mat-mdc-row{

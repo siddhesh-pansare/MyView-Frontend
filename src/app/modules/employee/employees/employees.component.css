@@ -118,11 +118,21 @@ input::placeholder {
 }
 
 
-.filterIcon {
+.icon1{
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon2{
+  margin-left: 40px;
+}
+
+.filterExport {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 80px;
+  
 }
 
 .line-div-container {

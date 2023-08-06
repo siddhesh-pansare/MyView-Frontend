@@ -26,8 +26,9 @@
       </div>
     </div>
     <div class="col-sm-6 text-right">
-      <div class="filterIcon">
-        <img class="icon2" alt="" src="assets/employees/566737 1.png">
+      <div class="filterExport">
+       <a href="#"><img class="icon1" alt="" src="assets/employees/export1.png" (click)="exportToExcel()"></a>
+       <a href="#"><img class="icon2" alt="" src="assets/employees/566737 1.png"></a>
       </div>
     </div>
   </div>
@@ -36,30 +37,7 @@
 <div class="line-div">
 </div>
 </div>
-<!-- <div class="table-responsive rounded">
-  <table class="table table-bordered">
-      <thead class="tableheader">
-    <tr>
-      <th>Emp Code</th>
-      <th>Name</th>
-      <th>Designation</th>
-      <th>Gemini Email</th>
-      <th>EC Mentor Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let ed of employeedata">
-      <td>{{ed.empCode}}</td>
-      <td>{{ed.name}}</td>
-      <td>{{ed.designation}}</td>
-      <td><a href="mailto:{{ ed.geminiEmail }}">
-        <img class="emailicon" src="assets/employees/email_icon.png">
-      </a></td>
-      <td>{{ed.ecMentorName}}</td>
-    </tr>
-    </tbody>
-  </table>
-  </div> -->
+
   <div class="table-responsive rounded">
     <table mat-table [dataSource]="dataSource">
       <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
@@ -80,7 +58,7 @@
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     </table>
   
-    <mat-paginator [pageSizeOptions]="[5, 10, 25]" [pageSize]="pageSize" [pageIndex]="pageIndex" [length]="totalItems" (page)="onPageChange($event)">
+    <mat-paginator [pageSizeOptions]="pageSizeOptions" [pageSize]="pageSize" [pageIndex]="pageIndex" [length]="totalItems" (page)="onPageChange($event)">
     </mat-paginator>
     
   </div>

@@ -9,6 +9,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     EmployeeModule,
     MatPaginatorModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

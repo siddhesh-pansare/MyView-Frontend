@@ -69,6 +69,41 @@
             "Designation": "Finance Manager",
             "Email": "linda.martinez@gemini.com",
             "MentorName": "Sarah Wilson"
+          },
+          {
+            "EmpCode": "EMP011",
+            "Name": "Ella Miller",
+            "Designation": "Frontend Developer",
+            "Email": "ella.miller@example.com",
+            "MentorName": "Robert Johnson"
+          },
+          {
+            "EmpCode": "EMP012",
+            "Name": "Henry Wilson",
+            "Designation": "Backend Developer",
+            "Email": "henry.wilson@example.com",
+            "MentorName": "Olivia Brown"
+          },
+          {
+            "EmpCode": "EMP013",
+            "Name": "Grace Davis",
+            "Designation": "Database Administrator",
+            "Email": "grace.davis@example.com",
+            "MentorName": "James Smith"
+          },
+          {
+            "EmpCode": "EMP014",
+            "Name": "Isaac Anderson",
+            "Designation": "Network Engineer",
+            "Email": "isaac.anderson@example.com",
+            "MentorName": "Sophia Johnson"
+          },
+          {
+            "EmpCode": "EMP015",
+            "Name": "Mia Robinson",
+            "Designation": "Graphic Designer",
+            "Email": "mia.robinson@example.com",
+            "MentorName": "Ethan White"
           }
     ]
 }

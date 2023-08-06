@@ -7,7 +7,8 @@ import { EmployeesComponent } from './employees/employees.component';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     EmployeeRoutingModule,
     MatPaginatorModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   exports:[
     EmployeesComponent

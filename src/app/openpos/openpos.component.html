@@ -1,17 +1,18 @@
-<div class="column">
+
   
-<div class="col">
+
   <a class="nav-link" href="#">
     <img src="assets/openpos/Page Sub Header.png" alt="Button 3" >
 </a>
 <button class="btn">Add New Opening</button>
     <!-- Notification icon -->
     <div class="act">
-    <p class="active" (click)="showActiveTable = true">Active</p>
-    <p class="cl" (click)="showActiveTable = false">Closed</p>
+    <p class="active" (click)="showActiveTable = true"  style="width:400px;height:40px;padding:15px 20px 15px 20px;Gap:10px" >Active</p>
+    <p class="cl" (click)="showActiveTable = false" style="width:400px;height:10px;padding:15px,20px,15px,20px;Gap:10px">Closed</p>
     </div>
-    <img src="assets/openpos/Line 2.png" alt="Button 3"  class="imgbut">
-    </div>
+    <img src="assets/openpos/lineimage.png" alt="Button 3"  class="imgbut">
+  
+
   <table class="styled-table" *ngIf="showActiveTable">
     <div class="design">
       <tbody>
@@ -57,7 +58,7 @@
     </tbody>
     </div>
   </table>
-  </div>
+
 
 
 
@@ -65,7 +66,7 @@
   
   
     
-  <div class="button-container">
+  <div class="table-container">
     <table class="tab" *ngIf="!showActiveTable">
       <div class="design">
         <tbody>

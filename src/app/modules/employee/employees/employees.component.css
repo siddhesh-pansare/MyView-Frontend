@@ -198,6 +198,8 @@ table{
   border-right: 1px solid #205072;
 }
 
+
+
 @media (min-width:1000px) and (max-width:1500px) {
     .page-heading1{
       font-size: 1.25rem;

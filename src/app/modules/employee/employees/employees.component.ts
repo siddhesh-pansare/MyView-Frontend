@@ -5,6 +5,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { FormsModule } from '@angular/forms';
 import { saveAs } from 'file-saver';
 import * as XLSX from 'xlsx';
+import { MatIconModule } from '@angular/material/icon';
 
 interface EmployeeData{
    EmpCode:string;
@@ -70,6 +71,24 @@ onPageChange(event: PageEvent): void {
   this.paginator.pageSize = event.pageSize;
   this.applyFilter();
 
+}
+
+goToFirstPage(): void {
+  this.paginator.firstPage();
+  this.onPageChange({
+    pageIndex: this.paginator.pageIndex,
+    pageSize: this.paginator.pageSize,
+    length: this.paginator.length
+  });
+}
+
+goToLastPage(): void {
+  this.paginator.lastPage();
+  this.onPageChange({
+    pageIndex: this.paginator.pageIndex,
+    pageSize: this.paginator.pageSize,
+    length: this.paginator.length
+  });
 }
 
 exportToExcel() {

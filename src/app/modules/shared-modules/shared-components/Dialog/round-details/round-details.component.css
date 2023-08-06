@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+.nested-div {
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #205072; /* Border color and width */
+    background: #FFF;
+    margin-left: 15%;
+    margin-top: 2%;
+    width: 70%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  .navbar{
+    justify-content: center;
+  }
+.navbar_heading{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.line {
+    width: 98%;
+    height: 1px;
+    background: rgba(51, 54, 63, 0.60);
+    margin: 4px;
+  }
+.profile_image{
+    width: 50%;
+    border-radius: 50%;
+    border: 1px solid #38A3A5;
+}
+.col-4{
+    justify-content: center;
+}
+.col-8{
+    justify-content: left;
+    margin-left: -10%;
+}
+.col-7{
+    margin-left: 2%;
+}
+.profile_status{
+    color: #E50202;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 8%;
+    width: 60%;
+}
+  .profile_name{
+    color: #205072;
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  .profile_email{
+    color: #205072;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  .profile_designation{
+    color: #9747FF;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+  }
+  .pdf_logo{
+    width: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+  .resume_link{
+    color: rgba(0, 116, 252, 0.72);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: -70%;
+  }
+  .feedback_container{
+    overflow:scroll;
+    border-left: 3px solid #205072;
+  }
+  .lower_details_param{
+    color: #205072;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .lower_details{
+    color: rgba(51, 54, 63, 0.60);
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .status_text{
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .timeline{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: .5rem;
+    overflow: auto;
+  }
+
+  .round_2{
+    box-shadow: 0px 0px 4px 0px#E50202;
+    stroke: #E50202;
+    border: 4px solid  #E50202;
+  }
+  .round_1,.gd{
+    box-shadow: 0px 0px 4px 0px#00AC2B;
+    stroke: #00AC2B;
+    border: 4px solid #00AC2B; ;
+  }
+ 
+  .right_container{
+    display: flex;
+    background-color:rgba(231, 231, 231, 0.644); 
+    width: 50%; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 5%;
+    gap:1px;
+    margin: 5%;
+    margin-left: 30%;
+    flex-wrap: wrap;
+    border: 2px solid rgba(231, 231, 231, 0.644);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px
+  }
+  .up_arrow {
+    width: 72px;
+    stroke-width: 1px;
+    stroke: #205072;
+    margin-left: 45%;
+  }  
+  .round_img_container{
+    display: flex;
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: #FFF;
+    stroke-width: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-left: 31%;
+    position: relative;
+    margin-top: 5%;
+    
+    
+  }
+  .round_img_container:hover{
+    transform: scale(1.1);
+  }
+  .round_img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: auto;
+    
+  }
+  
+  .scrollspy-example{
+    border-left: 3px solid #205072;
+    gap: 10px;
+  }
+  .rounds_name{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1%;
+  }
+ 
+  
+  
+  
+  
+  

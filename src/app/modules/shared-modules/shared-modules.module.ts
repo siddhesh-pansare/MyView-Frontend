@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { ClientFeedbackComponent } from './shared-components/Dialog/client-feedback/client-feedback.component';
 import { OtherContributionsComponent } from './shared-components/Dialog/other-contributions/other-contributions.component';
+import { RoundDetailsComponent } from './shared-components/Dialog/round-details/round-details.component';
 
 
 
@@ -17,7 +18,8 @@ import { OtherContributionsComponent } from './shared-components/Dialog/other-co
     HeaderComponent,
     SideBarComponent,
     ClientFeedbackComponent,
-    OtherContributionsComponent
+    OtherContributionsComponent,
+    RoundDetailsComponent
   ],
   imports: [
     CommonModule,

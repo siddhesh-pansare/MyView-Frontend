@@ -18,10 +18,9 @@
 }
 
 .text-wrap{
-  color: rgba(51, 54, 63, 0.60);
+  color: rgba(51, 54, 63, 0.80);
   font-family: Outfit;
-  font-size: 12px;
-  font-style: normal;
+  font-size: 14px;
   font-weight: bold;
   line-height: normal;
 }

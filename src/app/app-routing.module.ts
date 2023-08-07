@@ -6,7 +6,7 @@ import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/atten
 import { OpenposComponent } from './modules/openpos/openpos.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'attendance', pathMatch:'full' },
+  { path:'', redirectTo: '', pathMatch:'full' },
   { path:'attendance', component:AttendanceDialogComponent },
   { path:'header', component:HeaderComponent},
   {path:'openpos',component:OpenposComponent}

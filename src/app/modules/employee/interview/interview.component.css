@@ -11,8 +11,28 @@
   border: none;
 }
 
+/* Add your other CSS styles here */
+
+.hired-color {
+  background-color: #00ac2b; /* Green color for "Hired" status */
+}
+
+.in-progress-color {
+  background-color: #ff9900; /* Orange color for "In Progress" status */
+}
+
+.rejected-color {
+  background-color: #e50202; /* Red color for "Rejected" status */
+}
+
+.arrow {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
 .title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -32,10 +52,56 @@
   background-color: black;
 }
 
+.status {
+  border: none;
+  background: none;
+  color: #38a3a5;
+  font-weight: 600;
+}
+
+.profImg {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-right: 15px;
+}
+
 table {
   border-color: #205072;
-  border: 1;
+  border: 1px;
   border-radius: 2px;
+}
+
+tr:hover td {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:first-child {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:last-child {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:after {
+  cursor: pointer;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #f5f8fb;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
 }
 
 table.table tr td {
@@ -44,6 +110,7 @@ table.table tr td {
 
 table.table tr th {
   color: #205072;
+  background-color: rgba(0, 240, 255, 0.1);
 }
 
 @media screen and (width: 320px) {

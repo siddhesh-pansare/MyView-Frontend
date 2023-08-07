@@ -10,6 +10,7 @@ table {
   border-radius: 2px;
   max-height: fit-content;
   font-weight: 600;
+  table-layout: fixed;
 }
 
 table.table th {
@@ -18,11 +19,14 @@ table.table th {
 
 th{
   font-size: 1rem;
+  width: 20%;
 }
 
 td{
   color:#38a3a5;
   font-size: 0.80rem;
+  width: 20%;
+
 }
 
 .eventcolor{
@@ -78,17 +82,16 @@ td{
     font-style: normal;
     font-weight: 200;
     line-height: normal;
+    font-weight: 600;
     }
 
 
     .imgsize{
-    width: 10vw;
-    height: 10vw;
+    width: 70px;
+    height: 70px;
     flex-shrink: 0;
-    /* border-radius: 2vw; */
-    /* border: 1px solid #38A3A5; */
     margin-left: 1vw;    
-    /* background: lightgray 50% / cover no-repeat; */
+    
 
     }
 
@@ -97,8 +100,7 @@ td{
     width: 10vw;
     height: 10vw;
     flex-shrink: 0;
-    position: absolute;
-    margin-right: 22vw;
+    margin-right: 2vw;
     margin-left: -15vw;
     top: 10vw;
     }
@@ -202,8 +204,8 @@ td{
  
 
     .imgsize{
-    width: 10vw;
-    height: 10vw;
+    width: 80px;
+    height: 80px;
     flex-shrink: 0;
     margin-left: 1vw;    
     }
@@ -212,7 +214,6 @@ td{
     width: 7vw;
     height: 7vw;
     flex-shrink: 0;
-    
     margin-right: 2vw;
     margin-left: -15vw;
     top: 6vw;
@@ -327,9 +328,8 @@ td{
     height: 80px;
     flex-shrink: 0;
     border-radius: 100px;
-    /* border: 1px solid #38A3A5; */
     margin-left: 1vw;
-    /* background: lightgray 50% / cover no-repeat; */
+    
 
     }
 
@@ -339,7 +339,7 @@ td{
     flex-shrink: 0;
     align-items: flex-end;  
     margin-left: -120px;
-    margin-top: -30px;
+    margin-top: 10px;
     }
 
 

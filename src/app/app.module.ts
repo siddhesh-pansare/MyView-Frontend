@@ -7,10 +7,12 @@ import { SharedModulesModule } from './modules/shared-modules/shared-modules.mod
 import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { OpenposComponent } from './modules/openpos/openpos.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OpenposComponent
   ],
   imports: [
     BrowserModule,

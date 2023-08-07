@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./openpos.component.css']
 })
 export class OpenposComponent {
-
+showActiveTable:boolean=false;
 }

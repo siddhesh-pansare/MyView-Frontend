@@ -120,10 +120,12 @@ td{
    
   .attendance-tabs .nav-item .nav-link.active{
     color: #205072;
+    cursor:pointer;
  }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);
+    cursor:pointer;
   }
   
   .line2{
@@ -235,10 +237,12 @@ td{
    
   .attendance-tabs .nav-item .nav-link.active{
     color: #205072;
+    cursor:pointer;
  }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);
+    cursor:pointer
   }
   
   .line2{
@@ -360,10 +364,12 @@ td{
 
 .attendance-tabs .nav-item .nav-link.active{
    color: #205072;
+   cursor:pointer
 }
 
 .nav-link{
   color: rgba(51, 54, 63, 0.6);
+  cursor:pointer;
 }
 
 .line2{
@@ -473,10 +479,12 @@ td{
    
   .attendance-tabs .nav-item .nav-link.active{
     color: #205072;
+    cursor:pointer
  }
   
   .nav-item .nav-link{
     color: rgba(51, 54, 63, 0.6);
+    cursor:pointer;
   }
   
   .line2{

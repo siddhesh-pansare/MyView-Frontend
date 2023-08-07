@@ -28,7 +28,7 @@
           <div class="line2"></div><br>
     </div>
     <div class="table-responsive rounded">
-      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'">
+      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" [class.fade-in]="activeTab === 'Client Visits'">
           <thead class="text-center">
               <tr>
                   <th>Date</th>
@@ -45,7 +45,7 @@
           </tbody>
       </table>
 
-      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'">
+      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" [class.fade-in]="activeTab === 'Internal Meetings'">
         <thead class="text-center">
           <tr>
               <th>Date</th>
@@ -62,7 +62,7 @@
       </tbody>
       </table>
 
-      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'">
+      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" [class.fade-in]="activeTab === 'Office Visits'">
         <thead class="text-center">
           <tr>
               <th>Date</th>

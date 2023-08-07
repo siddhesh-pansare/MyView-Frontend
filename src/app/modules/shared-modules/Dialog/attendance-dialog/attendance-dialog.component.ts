@@ -1,5 +1,7 @@
 import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { trigger, transition, style, animate, state } from '@angular/animations';
+
 interface ClientVisit {
   date: string;
   event: string;
@@ -20,7 +22,16 @@ interface OfficeVisit{
 @Component({
   selector: 'app-attendance-dialog',
   templateUrl: './attendance-dialog.component.html',
-  styleUrls: ['./attendance-dialog.component.css']
+  styleUrls: ['./attendance-dialog.component.css'],
+  animations: [
+    trigger('fadeInOut', [
+      state('in', style({ opacity: 1, transform: 'translateY(0)' })),
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(-10px)' }),
+        animate('0.5s ease-in-out')
+      ]),
+    ]),
+  ]
 })
 export class AttendanceDialogComponent implements OnInit {
   clientvisit: ClientVisit[] = [];

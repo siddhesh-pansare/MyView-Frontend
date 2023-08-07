@@ -29,7 +29,7 @@ export class SideBarComponent {
 
     const dialogRef = this.dialog.open(ScratchpadComponent, {
       panelClass: ['animate__animated', 'animate__slideInUp'],
-      position: { right: '60px', bottom: '40px' },
+      position: { right: '3%', bottom: '40px' },
       backdropClass: 'cdk-overlay-transparent-backdrop',
       enterAnimationDuration,
       exitAnimationDuration,

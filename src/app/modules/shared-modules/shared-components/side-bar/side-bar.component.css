@@ -14,8 +14,9 @@ body{
 .scratchbutton img{
   position: fixed;
   bottom: 70px;
-  right: 70px;
+  right: 3.2%;
   cursor: pointer;
+  background: transparent;
   
 }
 .scratchbutton img:hover{

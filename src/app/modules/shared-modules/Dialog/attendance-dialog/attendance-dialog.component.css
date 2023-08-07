@@ -112,7 +112,7 @@ td{
 
     .attendance-tabs{
       margin-top: -20px;
-      font-size: 2.0vw ;
+      font-size: 2.2vw ;
       margin-left: 10px;
       font-family: Outfit;
       font-weight: 600;
@@ -329,9 +329,7 @@ td{
     height: 80px;
     flex-shrink: 0;
     border-radius: 100px;
-    /* border: 1px solid #38A3A5; */
     margin-left: 1vw;
-    /* background: lightgray 50% / cover no-repeat; */
 
     }
 
@@ -395,7 +393,7 @@ td{
 
   
 
-  @media (min-width: 2281px){
+   @media (min-width: 2281px){
     .container {
       width: 45vw;
       height: 80vh;
@@ -456,7 +454,7 @@ td{
       width: 5vw;
       height: 5vw;
       
-      /* align-items: flex-end; */
+      
       position: absolute;
       margin-left: 30vw;
       top: 4.5vw;
@@ -503,6 +501,6 @@ td{
     }
     
        
-  }
+  } 
 
   

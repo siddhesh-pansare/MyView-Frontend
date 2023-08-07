@@ -7,20 +7,24 @@ import { HttpClientModule } from '@angular/common/http';
 import { ECInformationComponent } from './dashboard/ec-information/ec-information.component';
 import { DcInformationComponent } from './dashboard/dc-information/dc-information.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { PseudoDashboardComponent } from './pseudo-dashboard/pseudo-dashboard.component';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ECInformationComponent,
-    DcInformationComponent
+    DcInformationComponent,
+    PseudoDashboardComponent
   ],
   imports: [
     CommonModule,
     EmployeeRoutingModule,
     MatTabsModule,
     HttpClientModule,
-    MatTooltipModule
+    MatTooltipModule,
+    DragDropModule
   ]
 })
 export class EmployeeModule { }

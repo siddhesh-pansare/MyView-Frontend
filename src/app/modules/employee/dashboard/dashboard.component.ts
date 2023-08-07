@@ -1,4 +1,5 @@
 
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
@@ -12,6 +13,7 @@ export class DashboardComponent implements OnInit {
 
   //declare variables
   loggedUserData: any;     //variable to store complete data from MIS
+  selectedTab = 'EC';
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },
@@ -35,6 +37,14 @@ export class DashboardComponent implements OnInit {
       this.loggedUserData = filteredData[0];
       //console.log('here', this.loggedUserData);
     });
+  }
+
+  selectTab(tab: string) {
+    this.selectedTab = tab;
+  }
+
+  drop(event: CdkDragDrop<{title: string; poster: string}[]>) {
+    moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }
 
 }

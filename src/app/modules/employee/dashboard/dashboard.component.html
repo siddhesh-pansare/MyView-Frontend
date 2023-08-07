@@ -1,8 +1,8 @@
-<div class="container-fluid" *ngIf="loggedUserData">
+<div class="container-fluid example-boundary g-0" *ngIf="loggedUserData">
   <div class="row dashboard-container">
 
     <div class="col-12 col-md-12 col-lg-8">
-      <div class="top center">
+      <div class="top center example-box" cdkDragBoundary=".example-boundary" cdkDrag>
 
         <div class="container-fluid personal-info-container">
           <div class="row personal-info-row">
@@ -37,21 +37,37 @@
             </div>
           </div>
         </div>
+        <div class="example-handle" cdkDragHandle>
+          <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
+        </div>
       </div>
 
 
-      <div class="row">
-        <div class="bottom col-sm-10 col-md-8 col-lg-8 col-xl-6">
-          <mat-tab-group>
-            <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
-            <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
-          </mat-tab-group>
+      <div class="row m-1">
+        <div class="bottom col-sm-10 col-md-8 col-lg-8 col-xl-6 example-box" cdkDragBoundary=".example-boundary"
+          cdkDrag>
+          <div class="example-handle" cdkDragHandle>
+            <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
+          </div>
+          <div class="tab-group">
+            <mat-tab-group>
+              <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
+              <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
+            </mat-tab-group>
+          </div>
         </div>
 
-        <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2">
-          <div class="row menu-cards-row">
-            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
+        <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"
+        cdkDrag>
+        <div class="example-handle" cdkDragHandle>
+          <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
+        </div>
+          <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">
+            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards" cdkDrag>
               <div class="menu-card-box" [matTooltip]="card.cardTitle">
+                <div cdkDragHandle>
+                  <span class="empty-handler">.</span>
+                </div>
                 <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
               </div>
               <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
@@ -65,8 +81,8 @@
 
 
     <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0">
-      <div class="card">
-        <div class="pending-task-header">
+      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+        <div class="pending-task-header" cdkDragHandle>
           <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
           <span class="head">Pending Tasks</span>
         </div>
@@ -79,8 +95,8 @@
         </div>
       </div>
 
-      <div class="card">
-        <div class="upcoming-events-header">
+      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+        <div class="upcoming-events-header" cdkDragHandle>
           <img src="assets/images/icons/events.svg">
           <span class="head">Upcoming Events</span>
         </div>

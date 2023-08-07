@@ -36,8 +36,9 @@ body{
 .parent{
     justify-content: center;
     align-self: center;
-    position:absolute;
-    left:100 px;
+    position:relative;
+    left: 80px;
+    bottom: 30px;
 }
 .loading span{
     width:30%;

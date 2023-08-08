@@ -28,9 +28,7 @@ body{
     display: flex; 
     flex-wrap: wrap;
     justify-content:space-between;
-    /* align-items:center; */
     transform: rotate(45deg);
-    
     position:absolute;
 }
 .parent{
@@ -43,27 +41,27 @@ body{
 .loading span{
     width:30%;
     height: 30%;
-    /* animation: loading 2s linear infinite; */
+    animation: loading 2s linear infinite;
 }
 .c1{
     background-color: #3bf5a7;;
-    /* animation-delay: 0s!important; */
+    animation-delay: 0s!important;
 }
 .c2{
     background-color: #0afa8acb;
-    /* animation-delay: 0.2s!important; */
+    animation-delay: 0.2s!important;
 }
 .c3{
     background-color: #3cf398;
-    /* animation-delay: 0.4s!important; */
+    animation-delay: 0.4s!important;
 }
 .c4{
     background-color: #14cc7fcb;
-    /* animation-delay: 0.6s!important; */
+    animation-delay: 0.6s!important;
 }
 .c5{
     background-color: #2fe298;
-    /* animation-delay: 0.8s!important; */
+    animation-delay: 0.8s!important;
 }
 
 @keyframes loading {

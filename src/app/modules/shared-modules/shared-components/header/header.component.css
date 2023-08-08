@@ -5,27 +5,22 @@ html{
     padding: 0px 0px 0px 0px;
     height: 66px;
     background-color:rgba(255,255,255,1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.col{
-    padding: 0px 0px 0px 0px;
-}
+
 
 .sidebar_toggle{
     height: 66px;
-    padding-top: 0px;
-
+    padding-left: 0px;
 }
 
 .searchBar{
     border: 1px solid rgba(199, 192, 192, 0.744);
 }
 
-.notification{
-   
-   
-
-}
 
 a,a:hover{
     text-decoration: none;
@@ -55,7 +50,7 @@ a,a:hover{
 }
 
 .profile{
-   padding-right: 0px;
+   padding-right: 50px;
    margin-left: 50px;
 }
 

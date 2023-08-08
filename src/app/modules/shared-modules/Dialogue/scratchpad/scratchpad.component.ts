@@ -14,7 +14,7 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
           width: '{{expandedWidth}}',
           height: '{{expandedHeight}}'
         }),
-        { params: { expandedWidth: '550px', expandedHeight: '520px' } }
+        { params: { expandedWidth: '550px', expandedHeight: '500px' } }
       ),
       state(
         'collapsed',
@@ -22,7 +22,7 @@ import { trigger, state, style, animate, transition, keyframes } from '@angular/
           width: '{{originalWidth}}',
           height: '{{originalHeight}}'
         }),
-        { params: { originalWidth: '370px', originalHeight: '380px' } }
+        { params: { originalWidth: '340px', originalHeight: '350px' } }
       ),
       // transition(
       //   'expanded <=> collapsed',

@@ -30,32 +30,32 @@
         color: #205072;
     text-align: center;
     font-family: Outfit;
-    font-size: 2.5vw;
+    font-size: 16px;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
-    margin-top:19vh;
+    margin-top:10vh;
        
     
     }
 
     .imgsize{
-        width: 9vw;
-    height: 9vw;
+        width: 10vw;
+    height: 10vw;
     align-content: flex-start;
     margin-left: 1vw;    
-    margin-top:15vh;
+    margin-top:8vh;
     /* background: lightgray 50% / cover no-repeat; */
     }
 
     .certilogo{
-        width: 8vw;
-    height: 8vw;
+        width: 9vw;
+    height: 9vw;
     align-content: flex-end;
     background: lightgray 50% / cover no-repeat;
     /* align-items: flex-end;   */
     position: absolute; 
-    margin-top: 16vh;
+    margin-top: 8vh;
     margin-left: 5vw;
     
     }
@@ -72,7 +72,7 @@
         width: 101%; /* Adjust the width as needed */
         height: 0.1%; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-        margin-top: -3vh;
+        margin-top: -4vh;
 
     }
     .table-container {
@@ -91,7 +91,7 @@
         border: #205072;
         height: 10%;
         width: 100%;
-        
+        white-space: nowrap;
       }
       
       th, td {
@@ -104,17 +104,18 @@ font-weight: 500;
 line-height: normal;
 border: 1px solid #205072;
 background: #FFF;
+padding: 10px;
       }
 
       .logo{
-        height: 5vh;
-        width: 10vw;
+        height: 35%;
+        width: 39%;
       }
       td{
         color: #38A3A5;
 text-align: center;
 font-family: Outfit;
-font-size: 8px;
+font-size: 10px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
@@ -127,7 +128,7 @@ line-height: normal;
         background: #FFF;;
         font-weight: bold;
         color: #205072;
-        font-size: 12px;
+        font-size: 14px;
         /* padding: 2%; */
       }
       
@@ -226,7 +227,7 @@ flex-shrink: 0;
         border: #205072;
         height: 10%;
         width: 90%;
-        
+        white-space: nowrap;
       }
       
       
@@ -242,7 +243,7 @@ font-weight: 500;
 line-height: normal;
 border: 1px solid #205072;
 background: #FFF;
-
+padding: 10px;
 
       }
 
@@ -355,7 +356,7 @@ flex-shrink: 0;
         border: #205072;
         height: 10%;
         width: 90%;
-        
+        white-space: nowrap;
       }
       .logo{
         height: 5vw ;
@@ -374,7 +375,7 @@ font-weight: 500;
 line-height: normal;
 border: 1px solid #205072;
 background: #FFF;
-
+padding: 10px;
 
       }
 
@@ -484,8 +485,8 @@ flex-shrink: 0;
       align-items: center;
       border: #205072;
       height: 10%;
-        width: 90%;
-     
+      width: 90%;
+      white-space: nowrap;
     }
   
    
@@ -501,7 +502,7 @@ flex-shrink: 0;
   line-height: normal;
   border: 1px solid #205072;
 background: #FFF;
-  
+padding: 10px;
     }
   
     td{

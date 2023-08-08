@@ -102,6 +102,8 @@ top:50px;
     height:60px;
     padding:15px,20px,15px,20px;
     Gap:10px;
+    top: 10vh;
+    left: 5vw;
    }
    .cl{
     width:73px;
@@ -115,18 +117,17 @@ top:50px;
    }
    
    .imgbut{
+    position: relative;
     margin-left:375px;
     margin-top:-40px;
-    
-  .parent{
-    margin-left: 150px;
-    margin-right: 150px;
-  }
-
-
+    top: 7vh;
+    width: 50vw;
    }
+
+ 
+   
    .th{
-    width:1510.99px;
+    /* width:1510.99px; */
     height:48px;
     top:143px;
     left:47.52px;
@@ -136,18 +137,18 @@ top:50px;
     background-color: #f0f0f0;
    }
    .styled-table {
+    position: relative;
     border-collapse: separate;
     border-spacing: 10px; /* Adjust the spacing as needed */
-    width:1511.01px;
+    /* width:1511.01px; */
     height:188px;
     border: 1px solid #205072;
-    
+    top: 10vh;
   }
   .styled-table {
     border-collapse: collapse;
     border-radius: 10px 10px 0px 0px; /* Top-left and bottom-left rounded */
     overflow: hidden; /* Hide overflow content due to border radius */
-  
     max-width: 100%; /* Ensure the table doesn't exceed its container */
   }
   .styled-table {
@@ -175,17 +176,18 @@ top:50px;
   .btn{
     position: relative; 
     float: right;
-    right: 100px;
-    width:160px;
-    height:38px;
+    right: 140px;
+    width:140px;
+    height:35px;
     border-radius:10px;
     padding:9px,8px,9px,8px;
     Gap:10px;
     background-color:#0074FCB8;
-    margin-top:50px;
+    margin-top:45px;
     font-weight: 600;
     color:#FFFFFF;
     cursor: pointer;
+    font-size: 12px;
   }
   
   

@@ -14,7 +14,6 @@ import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialo
     LoginComponent,
     HeaderComponent,
     SideBarComponent,
-    CertificateDialogueComponent,
     RemarkDialogueComponent
   ],
   imports: [

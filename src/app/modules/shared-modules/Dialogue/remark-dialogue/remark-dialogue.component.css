@@ -24,23 +24,24 @@ table.table th {
 
 th{
   font-size: 0.9rem;
+  padding: 5px;
 }
 
 td{
   color:#38a3a5;
   font-size: 0.80rem;
-padding: 2px;
+padding: 1px;
 }
 
 
 #feed{
   color: #205072;
-text-align: center;
-font-family: Outfit;
-font-size: 13px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 @media (max-width:600px){
@@ -48,12 +49,12 @@ line-height: normal;
   
   .logo1{
     margin-left: 1vw;
-    width: 4vw;
+    width: 3vw;
   }
 
   .logo2{
 margin-left: 3vw;
-width: 4vw;
+width: 3vw;
   }
 
 
@@ -84,8 +85,9 @@ width: 4vw;
   }
 
   .box1{
-      margin-left: -50px;
+      margin-left: -70px;
       margin-top: 30px;
+      align-items: center;
   }
 
 .empname{
@@ -93,7 +95,7 @@ width: 4vw;
   margin-left: 10px;
   text-align: center;
   color: #205072;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: Outfit;
   font-weight: 600;
 }
@@ -112,7 +114,7 @@ width: 4vw;
 
     .imgsize{
     width: 14vw;
-    height: 8vh;
+    height: 9vh;
     flex-shrink: 0;
     margin-left: 1vw;    
     
@@ -133,7 +135,7 @@ width: 4vw;
         width: 75vw; /* Adjust the width as needed */
         height: 0.3vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-
+margin-top: -4vw;
     }
 
     .box3 {
@@ -192,7 +194,7 @@ width: 2.5vw;
     }
 
     .addremark{
-     width: 10vw;
+     width: 12vw;
      height: 3vh;
     }
 
@@ -205,8 +207,8 @@ width: 2.5vw;
   }
 
   .box1{
-      margin-left: -110px;
-      margin-top: 10vw;
+      margin-left: -70px;
+      margin-top: 3vw;
   }
 
 .empname{
@@ -233,19 +235,20 @@ width: 2.5vw;
  
 
     .imgsize{
-    width: 13vw;
-    height: 10vh;
+    width: 6vw;
+    height: 7vh;
     flex-shrink: 0;
-    margin-left: 1vw;    
+    margin-left: 1vw;   
+    margin-top: -6vw; 
     }
 
     .remlogo{
-    width: 13vw;
-    height: 13vw;
+    width: 8vw;
+    height: 7vw;
     flex-shrink: 0;
     margin-right: 2vw;
     margin-left: -12vw;
-    top: 6vw;
+    margin-top: -5vw;
     }
 
 
@@ -253,7 +256,7 @@ width: 2.5vw;
         width: 72vw; 
         height: 0.4vw; 
         background: rgba(51, 54, 63, 0.60);
-        margin-top: -2vw;
+        margin-top: -6vw;
     }
 
     .box3 {
@@ -282,12 +285,12 @@ width: 2.5vw;
 
     .logo1{
       margin-left: 1vw;
-      width: 2vw;
+      width: 1.5vw;
     }
 
     .logo2{
 margin-left: 3vw;
-width: 2vw;
+width: 1.5vw;
     }
 
     .box3 {

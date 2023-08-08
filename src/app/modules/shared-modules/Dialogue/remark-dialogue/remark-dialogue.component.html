@@ -23,21 +23,15 @@
             </tr>
         </thead>
         <tbody class="text-center">
-          <tr>
-            <td class="col1" id="date">01-Jan-2023</td>
-            <td id="feed">Completed the Niagara Task on time, Good!</td>
-            <td class="col3"><img src="assets/images/edit.png" class="logo1"><img src="assets/images/delete.png" class="logo2"></td>
+
+          <tr *ngFor="let cv of remarkdata">
+
+            <td>{{cv.Date}}</td>
+
+            <td id="feed">{{cv.Feedback}}</td>
+            <td><img src="assets/images/edit.png" class="logo1"><img src="assets/images/delete.png" class="logo2"></td>
           </tr>
-          <tr>
-            <td class="col1" id="date">02-Feb-2023</td>
-            <td id="feed">Infra Task Delayed</td>
-            <td class="col3"><img src="assets/images/edit.png" class="logo1"><img src="assets/images/delete.png" class="logo2"></td>
-          </tr>
-          <tr>
-            <td class="col1" id="date">01-Mar-2023</td>
-            <td id="feed">Client Name 3</td>
-            <td class="col3"><img src="assets/images/edit.png" class="logo1"><img src="assets/images/delete.png" class="logo2"></td>
-          </tr>
+
         </tbody>
     </table>
 

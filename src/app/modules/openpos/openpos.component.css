@@ -87,7 +87,7 @@ top:50px;
 
 
   .active{
-    width:68px;
+    width:300px;
     height:30px;
     font:Outfit;
     font-weight:600;
@@ -106,7 +106,7 @@ top:50px;
     left: 5vw;
    }
    .cl{
-    width:73px;
+    width:300px;
     height:30px;
     font:Outfit;
     font-weight:600;
@@ -118,12 +118,15 @@ top:50px;
    
    .imgbut{
     position: relative;
-    margin-left:375px;
     margin-top:-40px;
-    top: 7vh;
+    top: 9vh;
     width: 50vw;
    }
 
+   .icon{
+    width: 20px;
+    height: 20px;
+   }
  
    
    .th{
@@ -160,19 +163,24 @@ top:50px;
     border: 1px solid #205072;
     border-radius: 10px 10px 0 0; /* Top-left and top-right rounded */
     overflow: hidden; /* Hide overflow content due to border radius */
+    margin-left: 110px;
+    margin-right: 130px;
+    border: none;
+    outline: none;
   }
-  
-  /* ... Rest of your styles ... */
-  
-  
-  /* ... Rest of your styles ... */
   
   
   th {
     padding: 10px 20px; /* Adjust the padding values as needed */
     width:1510.99px;
+    font-size: 1rem;
     
   }
+
+  .td{
+    font-size: 0.75rem;
+  }
+  
   .btn{
     position: relative; 
     float: right;
@@ -221,14 +229,19 @@ top:50px;
     margin-top: 80px auto;
   }
   
+
+
+
   /* Responsive adjustments for .act */
-  @media screen and (min-width: 768px) {
+  @media (min-width: 768px) and (max-width:1025px) {
     .act {
+      display: flex;
       flex-direction: row; /* Revert to horizontal layout on larger screens */
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 20px;
-      margin-left: 600px;
+      left: 10px;
+      top: 3vh;
     }
   }
   
@@ -302,10 +315,7 @@ top:50px;
   
   
   
-  .active, .cl {
-    margin: 0;
-    font-size: 24px;
-  }
+ 
   
   .img {
     margin-top: 10px; /* Adjust the margin as needed */
@@ -317,7 +327,7 @@ top:50px;
   
   .active, .cl {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
   
   }
   
@@ -409,6 +419,9 @@ top:50px;
     margin: 20px auto; /* Center the image */
     max-width: 100%;
     height: auto;
+    top: 2vh;
+    width: 50vh;
+    left: 4vh;
   }
   
   /* Table container */
@@ -423,17 +436,6 @@ top:50px;
     border-collapse: collapse;
   }
   
-  /* Table header cell styles */
-  .header-cell {
-    /* Your header cell styles... */
-  }
-  
-  /* Table data cell styles */
-  .data-cell {
-    /* Your data cell styles... */
-  }
-  
-  /* Responsive adjustments */
   
   /* Table container */
   .button-container {
@@ -492,15 +494,7 @@ top:50px;
     font-weight: 500;
   }
   
-  /* Responsive adjustments for smaller screens */
-  @media screen and (max-width: 768px) {
-    
-    
-    
   
-  
-    
-  }
   
   
   /* Active and close text styles */

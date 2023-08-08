@@ -28,7 +28,7 @@ interface OfficeVisit{
       state('in', style({ opacity: 1, transform: 'translateY(0)' })),
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(-10px)' }),
-        animate('0.5s ease-in-out')
+        animate('0.5s')
       ]),
     ]),
   ]

@@ -1,0 +1,97 @@
+<div class="page-sub-header">
+    <div class="page-heading">
+    <img class="arrow-back-icon" alt="" src="assets/openpos/Arrow back.svg">
+    <div class="page-heading1">Open Positions</div>
+    </div>
+    <div class="line"></div>
+    <img class="btn-all-employees-icon" alt="" src="assets/openpos/btn_hiring.png">
+  </div>
+  <button class="btn">Add New Opening</button>
+
+  <div class="tabs">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active"  (click)="showActiveTable = true" style="cursor:pointer">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link closed" (click)="showActiveTable = false" style="cursor:pointer">Closed</a>
+        </li>
+      </ul>
+      <div class="line2"></div><br>
+</div>
+<div class="table-responsive rounded">
+<table class="table table-bordered" *ngIf="showActiveTable">
+    <thead class="text-center">
+    <tr>
+      <th>Priority</th>
+      <th >Role</th>
+      <th >Council</th>
+      <th >Skills Required</th>
+      <th >Experience</th>
+      <th >Count</th>
+      <th >Action</th>
+    
+    </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr>
+      <td ><img src="assets/openpos/high priority.png" alt="Button 3"></td>
+      <td >Data Analyst</td>
+      <td >Engineering</td>
+      <td >Python,AWS,SQL,Linux,Data Modeling</td>
+      <td >2-5 years</td>
+      <td >2</td>
+      <td ><img src="assets/openpos/open.png" alt="Button 3" class="icon"><img src="assets/openpos/edit_pencil_button.png" alt="Button 3" class="icon"><img src="assets/openpos/delete.png" alt="Button 3" class="icon"></td>
+    </tr>
+    <tr>
+      <td ><img src="assets/openpos/mediumperiority.png" alt="Button 3"></td>
+      <td >Data Analyst</td>
+      <td >Engineering</td>
+      <td >Python,AWS,SQL,Linux,Data Modeling</td>
+      <td >2-5 years</td>
+      <td >2</td>
+      <td ><img src="assets/openpos/open.png" alt="Button 3" class="icon"><img src="assets/openpos/edit_pencil_button.png" alt="Button 3" class="icon"><img src="assets/openpos/delete.png" alt="Button 3" class="icon"></td>
+    </tr>
+    <tr>
+      <td ><img src="assets/openpos/lowpriority.png" alt="Button 3"></td>
+      <td >Data Analyst</td>
+      <td >Engineering</td>
+      <td >Python,AWS,SQL,Linux,Data Modeling</td>
+      <td >2-5 years</td>
+      <td >2</td>
+      <td ><img src="assets/openpos/open.png" alt="Button 3" class="icon"><img src="assets/openpos/edit_pencil_button.png" alt="Button 3" class="icon"><img src="assets/openpos/delete.png" alt="Button 3"class=icon></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="table-responsive rounded">
+    <table class="table table-bordered ctable" *ngIf="!showActiveTable">
+        <thead>
+      <tr>
+        <th >Priority</th>
+        <th >Role</th>
+        <th >Council</th>
+        <th >Skills Required</th>
+        <th >Experience</th>
+        <th>Count</th>
+        <th >Status</th>
+        <th >Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td ><img src="assets/openpos/high priority.png" alt="Button 3"></td>
+        <td >Data Analyst</td>
+        <td >Engineering</td>
+        <td >Python,AWS,SQL,Linux</td>
+        <td >2-5 years</td>
+        <td >2</td>
+        <td >Completed</td>
+        <td ><img src="assets/openpos/open.png" alt="Button 3" class="icon"></td>
+      </tr>
+      </tbody>
+      </table>
+</div>
+      

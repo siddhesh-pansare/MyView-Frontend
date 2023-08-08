@@ -8,11 +8,13 @@ import { HeaderComponent } from './modules/shared-modules/shared-components/head
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { OpenposComponent } from './modules/openpos/openpos.component';
+import { OpenpositionsComponent } from './openpositions/openpositions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OpenposComponent
+    OpenposComponent,
+    OpenpositionsComponent
   ],
   imports: [
     BrowserModule,

@@ -10,12 +10,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { LoaderComponent } from './Dialogue/loader/loader.component';
+
 @NgModule({
   declarations: [
     LoginComponent,
     HeaderComponent,
     SideBarComponent,
-    ScratchpadComponent
+    ScratchpadComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,

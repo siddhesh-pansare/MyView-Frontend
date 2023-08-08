@@ -12,6 +12,10 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { MatOptionModule } from '@angular/material/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from '@angular/material/list';
 
 
 
@@ -28,7 +32,12 @@ import { MatIconModule } from '@angular/material/icon';
     MatTableModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    MatTooltipModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

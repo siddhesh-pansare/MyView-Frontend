@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { saveAs } from 'file-saver';
 import * as XLSX from 'xlsx';
 import { MatIconModule } from '@angular/material/icon';
+import { Clipboard } from '@angular/cdk/clipboard';
+import { DataSource } from '@angular/cdk/collections';
 
 interface EmployeeData{
    EmpCode:string;
@@ -22,39 +24,150 @@ interface EmployeeData{
 })
 export class EmployeesComponent implements OnInit , AfterViewInit{
     employeedata: EmployeeData[] = [];
-    dataSource!: MatTableDataSource<EmployeeData>;
+    
     displayedColumns: string[] = ['EmpCode', 'Name', 'Designation', 'Email', 'MentorName'];
     pageIndex = 0;
     pageSize = 5;
     totalItems = 0;
     searchTerm: string = '';
     pageSizeOptions: number[] = [5, 10, 25];
-
+    initiallyCheckedColumns = [
+      'EmpCode',
+      'Name',
+      'Designation',
+    ];
+    filteredData = new MatTableDataSource<any>;
+    dataSource = new MatTableDataSource<any>;
+    initiallyCheckedColumnsCount: number = this.initiallyCheckedColumns.length;
+    checkedColumnsCount: number = this.initiallyCheckedColumns.length;
+    allColumnsVisible: boolean = false;
+    selectAllChecked: boolean = false;
+    hideColumns: boolean[] = [];
+    flag:any;
+    dataLength!: number;
    @ViewChild(MatPaginator) paginator!: MatPaginator;
+   
+  hideColumnHeaders: boolean = false;
 
-   constructor(private http : HttpClient) { 
+   constructor(private http : HttpClient,private clipboard: Clipboard) { 
     this.pageSize=this.pageSizeOptions[0];
-    this.dataSource = new MatTableDataSource<EmployeeData>(this.employeedata);
+  
    }
+   data:any;
 
    ngOnInit() {
-     this.fetchdata();
-
-   }
-   
-   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
+    this.fetchdata(); // Assuming you're populating the data source here
+  
+                    // const keys = Object.keys(this.data[0]);
+                    // this.displayedColumns = keys;
+                  
+                    // const initiallyCheckedColumns = [
+                    //   'EmpCode',
+                    //   'Name',
+                    //   'Designation',
+                    
+                    // ];
+                    // // Set up the hideColumns array to track column visibility
+                    // this.hideColumns = keys.map(
+                    //   (column) => !initiallyCheckedColumns.includes(column)
+                    // );
+                    // console.log(this.hideColumns)
+                    // this.filteredData = new MatTableDataSource(this.data);
+                    
+                    // this.filteredData.paginator = this.paginator;
+                    // this.dataLength = this.filteredData.data.length;
+                    this.http.get<{ employeedata: EmployeeData[] }>('assets/temp_data/employees.json').subscribe((data) => {
+                      this.data = data;
+                    
+                    
+                    const keys = Object.keys(this.data[0]);
+                    console.log(keys);
+                  
+                    this.displayedColumns = keys;
+                  
+                    const initiallyCheckedColumns = [
+                      'EmpCode',
+                      'Name',
+                      'Designation',
+            
+                    ];
+                    // Set up the hideColumns array to track column visibility
+                    this.hideColumns = keys.map(
+                      (column) => !initiallyCheckedColumns.includes(column)
+                    );
+                  
+                    this.filteredData = new MatTableDataSource(this.data);
+                  
+                    this.filteredData.paginator = this.paginator;
+                    this.dataLength = this.filteredData.data.length;
+                      });
   }
+  
+  // Other methods and logic in your component
+
+  
+   ngAfterViewInit() {
+    //this.dataSource.paginator = this.paginator;
+  }
+  
 
    fetchdata(){
     this.http.get<{ employeedata: EmployeeData[] }>('assets/temp_data/employees.json').subscribe((data) => {
       this.employeedata = data.employeedata;
       this.totalItems = this.employeedata.length;
+      const keys = Object.keys(this.employeedata[0]);
+      console.log(keys);
+      this.displayedColumns = keys;
+                  
+      const initiallyCheckedColumns = [
+        'EmpCode',
+        'Name',
+        'Designation',
+
+      ];
+      // Set up the hideColumns array to track column visibility
+      this.hideColumns = keys.map(
+        (column) => !initiallyCheckedColumns.includes(column)
+      );
+    
+      this.filteredData = new MatTableDataSource(this.data);
+    
+      this.filteredData.paginator = this.paginator;
+      this.dataLength = this.filteredData.data.length;
+    
       this.applyFilter();
       });
    
     }
-
+   
+  
+    copyEmail(email: string): void {
+      this.clipboard.copy(email);
+      const outlookURL =
+        'https://outlook.office.com/mail/deeplink/compose?to=' +
+        encodeURIComponent(email);
+      const windowOptions = 'width=800,height=600,scrollbars=yes,resizable=yes';
+      window.open(outlookURL, 'Outlook', windowOptions);
+    }
+  
+    toggleColumnVisibility(index: number) {
+      const column = this.displayedColumns[index];
+      const columnIndex = this.initiallyCheckedColumns.indexOf(column);
+      if (columnIndex !== -1) {
+        // Column is already in initiallyCheckedColumns, so remove it
+        this.initiallyCheckedColumns.splice(columnIndex, 1);
+      } else {
+        // Column is not in initiallyCheckedColumns, so add it
+        this.initiallyCheckedColumns.push(column);
+      }
+      this.updateColumnVisibility();
+      this.updateCheckedColumnsCount();
+    }
+    
+    
+    
+    
+    
 applyFilter() {
   const filterValue = this.searchTerm.toLowerCase();
     const filteredData = this.employeedata.filter(
@@ -63,14 +176,24 @@ applyFilter() {
         employee.Designation.toLowerCase().includes(filterValue) ||
         employee.MentorName.toLowerCase().includes(filterValue)
     );
-    this.dataSource.data = filteredData;
-    this.dataSource.paginator = this.paginator;
+    this.filteredData.data = filteredData;
+    console.log(this.filteredData.data)
+    this.filteredData.paginator = this.paginator;
 }
 onPageChange(event: PageEvent): void {
   this.paginator.pageIndex = event.pageIndex;
   this.paginator.pageSize = event.pageSize;
   this.applyFilter();
 
+}
+convertToTitleCase(input: string): string {
+  const words = input.split('_');
+  const capitalizedWords = words.map(word => {
+    const firstLetter = word.charAt(0).toUpperCase();
+    const restOfWord = word.slice(1).toLowerCase();
+    return firstLetter + restOfWord;
+  });
+  return capitalizedWords.join(' ');
 }
 
 goToFirstPage(): void {
@@ -92,7 +215,7 @@ goToLastPage(): void {
 }
 
 exportToExcel() {
-  const data = this.dataSource.filteredData.map((item) => ({
+  const data = this.filteredData.filteredData.map((item) => ({
     'Emp Code': item.EmpCode,
     'Name': item.Name,
     'Designation': item.Designation,
@@ -110,6 +233,34 @@ exportToExcel() {
   const fileName = `employee_data_${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}.xlsx`;
 
   saveAs(blob, fileName);
+}
+areAllColumnsVisible(): boolean {
+  //return this.hideColumns.every(column => !column);
+  return this.displayedColumns.length === this.initiallyCheckedColumns.length;
+}
+toggleAllColumnVisibility() {
+  if (this.areAllColumnsVisible()) {
+    this.initiallyCheckedColumns = ['EmpCode', 'Name', 'Designation'];
+  } else if (!this.selectAllChecked) {
+    this.initiallyCheckedColumns = this.displayedColumns.slice();
+  }
+  this.updateColumnVisibility();
+  this.updateCheckedColumnsCount();
+}
+updateColumnVisibility() {
+  if (!this.selectAllChecked) {
+    // Show only the initially checked columns
+    this.hideColumns = this.displayedColumns.map(column =>
+      !this.initiallyCheckedColumns.includes(column)
+    );
+  } else {
+    // Show all columns when "select all" is checked
+    this.hideColumns = this.displayedColumns.map(() => false);
+  }
+  this.allColumnsVisible = this.areAllColumnsVisible();
+}
+updateCheckedColumnsCount() {
+  this.checkedColumnsCount = this.initiallyCheckedColumns.length;
 }
 
 

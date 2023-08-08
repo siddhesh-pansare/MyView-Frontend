@@ -2,7 +2,6 @@
 
 *{
   font-family: Outfit;
-  font-weight: 600;
 }
 
 /* .col{
@@ -30,7 +29,7 @@
     width:68px;
     height:30px;
     font:Outfit;
-    font-weight:500;
+    font-weight:600;
     size:24px;
     line-height:30.24px;
     align-items:center;
@@ -47,7 +46,7 @@
     width:73px;
     height:30px;
     font:Outfit;
-    font-weight:400;
+    font-weight:600;
     size:24px;
     line-height:30.24px;
     align-items:center;
@@ -58,6 +57,12 @@
     margin-left:375px;
     margin-top:-40px;
     
+  .parent{
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+
    }
    .th{
     width:1510.99px;
@@ -131,7 +136,7 @@
     height:60px;
     padding:15px,20px,15px,20px;
     Gap:10px;
-  
+    
    }
    .act {
     display: flex; /* Use flexbox to align items horizontally */

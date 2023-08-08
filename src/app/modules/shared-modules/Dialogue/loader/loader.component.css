@@ -32,3 +32,49 @@ body{
   
     object-fit: cover;
   }
+  @media (max-width: 575.98px) {
+    /* Your styles for extra small devices */
+    .circle {
+        width: 140px;
+        height: 140px;
+      }
+      .circular-container img {
+        
+        width: 170px;
+        height: 170px;
+
+      }
+  }
+  
+  /* Small Devices (Tablets) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    /* Your styles for small devices */
+    .circle {
+        width: 170px;
+        height: 170px;
+      }
+      .circular-container img {
+        
+        width: 190px;
+        height: 190px;
+
+      }
+  }
+  
+  /* Medium Devices (Laptops, Small Desktops) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Your styles for medium devices */
+    .circle {
+        width: 200px;
+        height: 200px;
+      }
+      .circular-container img {
+        
+        width: 220px;
+        height: 220px;
+
+      }
+  }
+  
+  /* Large Devices (Desktops) */
+ 

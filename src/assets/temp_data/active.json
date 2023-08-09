@@ -1,0 +1,32 @@
+{
+    "active": [
+      {
+        "Role": "Data Analyst",
+        "Council": "Engineering",
+        "SkillsRequired":"Python,AWS,SQL,Linux,Data Modeling",
+        "Experience":"2-5 years",
+        "Count":"2"
+      },
+      {
+        "Role": "Data Engineer",
+        "Council": "Engineering",
+        "SkillsRequired":"Python,AWS,SQL,Linux",
+        "Experience":"2-5 years",
+        "Count":"2"
+      },
+      {
+        "Role": "Power BI Developer",
+        "Council": "Engineering",
+        "SkillsRequired":"Power BI,SQL",
+        "Experience":"2-5 years",
+        "Count":"2"
+      },
+      {
+        "Role": "Data Analyst",
+        "Council": "Engineering",
+        "SkillsRequired":"Python,AWS,SQL,Linux,Data Modeling",
+        "Experience":"2-5 years",
+        "Count":"2"
+      }
+    ]
+}     

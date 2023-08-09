@@ -92,14 +92,19 @@ top:50px;
     left: 5vw;
 }   
 
-.active{
+.actived{
     color:rgba(0, 172, 43, 1);
     width: 300px;
+    cursor: pointer;
+    text-decoration: none;
+    --bs-nav-link-disabled-color: rgba(0, 172, 43, 0.5);
 }
 
 .closed{
    color:rgba(255, 6, 6, 0.5);
    width: 300px;
+   cursor: pointer;
+   text-decoration: none;
 }
 
 .line2{
@@ -153,10 +158,17 @@ td{
     color :rgba(0, 172, 43, 1);
 }
 
+.icon2{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
 .icon{
     width: 20px;
     height: 20px;
 }
+
 
 
 @media (max-width:1000px) {
@@ -207,6 +219,12 @@ td{
         cursor: pointer;
         font-size: 10px;
       }
+
+      .icon{
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+    }
 
 }
 

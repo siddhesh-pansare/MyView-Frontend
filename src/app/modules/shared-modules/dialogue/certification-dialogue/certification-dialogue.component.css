@@ -295,6 +295,13 @@ flex-shrink: 0;
 
     
   }
+
+  @media (min-width: 1025px) and (max-width: 1200px){
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
   @media (min-width: 1400px) and (max-width: 1800px){
     .btncross{
       right: 0.5vw;
@@ -366,7 +373,7 @@ flex-shrink: 0;
     
     .table {
         margin-left: 4vw;
-        margin-right: 8vw;
+        margin-right: 4vw;
         border-collapse: collapse;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
@@ -377,6 +384,7 @@ flex-shrink: 0;
         width: 90%;
         white-space: nowrap;
       }
+      
       .logo{
         height: 5vw ;
         width: 8vw;

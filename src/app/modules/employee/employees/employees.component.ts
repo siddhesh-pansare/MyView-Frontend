@@ -8,6 +8,8 @@ import * as XLSX from 'xlsx';
 import { MatIconModule } from '@angular/material/icon';
 import { Clipboard } from '@angular/cdk/clipboard';
 import { DataSource } from '@angular/cdk/collections';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 interface EmployeeData{
    EmpCode:string;
@@ -34,6 +36,11 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
     pageSize = 5;
     totalItems = 0;
     searchTerm: string = '';
+    searchTerm1: string = '';
+
+    searchTerm2: string = '';
+    searchTerm3: string = '';
+    searchTerm4: string = '';
     pageSizeOptions: number[] = [5, 10, 25];
     initiallyCheckedColumns = [
       'EmpCode',
@@ -52,22 +59,33 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
    @ViewChild(MatPaginator) paginator!: MatPaginator;
    showSearchInput: boolean = false;
    enabledSearchColumns: string[] = [];
+   copied: boolean = false;
+   
 
    
   hideColumnHeaders: boolean = false;
 
-   constructor(private http : HttpClient,private clipboard: Clipboard) { 
+   constructor(private snackBar: MatSnackBar,private http : HttpClient,private clipboard: Clipboard) { 
     this.pageSize=this.pageSizeOptions[0];
   
    }
    data:any;
-   addSearchOption() {
+  //  addSearchOption() {
+  //   const newSearchOption: any = {};
+  //   for (const column of this.displayedColumns) {
+  //     newSearchOption[column] = '';
+  //   }
+  //   this.searchOptions.push(newSearchOption);
+  // }
+  addSearchOption() {
     const newSearchOption: any = {};
     for (const column of this.displayedColumns) {
       newSearchOption[column] = '';
     }
     this.searchOptions.push(newSearchOption);
   }
+  
+  
   removeSearchOption(rowIndex: number) {
     if (rowIndex >= 0 && rowIndex < this.searchOptions.length) {
       this.searchOptions.splice(rowIndex, 1);
@@ -174,10 +192,23 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
       });
    
     }
+   copy(email:string){
+    this.clipboard.copy(email);
+    this.copied = true;
+    setTimeout(() => {
+      this.copied = false;
+    }, 500); // Reset the "copied" class after 500ms
+
+    // Show copied tooltip using MatSnackBar
+    this.snackBar.open('Copied!', 'Close', {
+      duration: 2000,
+    });
+  
    
+   }
   
     copyEmail(email: string): void {
-      this.clipboard.copy(email);
+      
       const outlookURL =
         'https://outlook.office.com/mail/deeplink/compose?to=' +
         encodeURIComponent(email);
@@ -209,12 +240,20 @@ applyFilter() {
       (employee) =>
         employee.Name.toLowerCase().includes(filterValue) ||
         employee.Designation.toLowerCase().includes(filterValue) ||
-        employee.MentorName.toLowerCase().includes(filterValue)
+        employee.MentorName.toLowerCase().includes(filterValue) ||
+        employee.EmpCode.toLowerCase().includes(filterValue) 
+
+
     );
     this.filteredData.data = filteredData;
     console.log(this.filteredData.data)
     this.filteredData.paginator = this.paginator;
 }
+
+
+
+
+
 onPageChange(event: PageEvent): void {
   this.paginator.pageIndex = event.pageIndex;
   this.paginator.pageSize = event.pageSize;

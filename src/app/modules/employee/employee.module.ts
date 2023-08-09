@@ -14,6 +14,8 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
+import {MatButtonModule} from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -30,7 +32,10 @@ import { MatListModule } from '@angular/material/list';
     MatOptionModule,
     MatTooltipModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule,
+    MatSnackBarModule
+    
 
   ],
   exports:[

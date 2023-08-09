@@ -308,6 +308,463 @@ display: flex;
 
 
 
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  margin-left: 100px; /* Adjust this margin as needed */
+}
+
+.email-cell {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon {
+  margin-left: 10px; /* Adjust this margin as needed */
+  width: 20px; /* Set a fixed width for the email icon */
+  height: 20px; /* Set a fixed height for the email icon */
+}
+.email-cell {
+  display: flex;
+  align-items: center;
+}
+
+.email-icon-img {
+  margin-left: 30px;
+  width: 20px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-family: 'Lato' !important;
+}
+
+.options-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-box,
+.export-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 10px;
+}
+
+
+
+.btn-export {
+  height: 50px;
+  width: 50px;
+  background-color: #205072;
+  color: #fff;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  outline: #fff;
+  border-radius: 50%;
+  align-items: center;
+  transition: all .5s ease-in-out;
+  background-color: #205072;
+  padding-right: 40px;
+  color: #205072;
+}
+
+.input-search::placeholder {
+  color: #205072;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #fff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus {
+  color: #002b5c;
+}
+
+.btn:hover {
+  color: #38A3A5
+}
+
+.btn-search:focus~.input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #205072;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+
+  background-color: transparent;
+  border-bottom: 1px solid #205072;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+mat-toolbar {
+  background: #205072;
+  color: white;
+}
+
+mat-sidenav {
+  width: 200px;
+  border-right: none;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+
+.content {
+  height: calc(100vh - 98px);
+  border-radius: 10px;
+  margin: 16px;
+  margin-left: 32px;
+
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2rem;
+  color: lightgray;
+}
+
+mat-sidenav-container {
+  height: calc(100vh - 65px);
+}
+
+.menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+}
+
+.menu-button mat-icon {
+  margin-right: 8px;
+}
+
+.menu-button:hover {
+  color: #38A3AF;
+
+
+}
+
+.avatar {
+  margin-top: 16px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 8px;
+  font-weight: normal;
+}
+
+.designation {
+  margin-top: 2px;
+  font-size: 0.7rem;
+  color: lightgrey;
+}
+
+mat-divider {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* .custom-table {
+    max-width: calc(100% - 10px);
+    max-height: calc(100vh - 140px);
+    overflow-x: auto;
+    overflow-y: auto;
+} */
+
+.custom-table {
+  width: 100%;
+  max-height: calc(100vh - 140px);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.custom-dropdown {
+  width: 200px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 13px;
+  font-size: 13px;
+}
+
+.form-select {
+  background-image: none;
+  padding: 5px;
+  border-color: #002b5c;
+  font-size: 13px;
+  justify-content: center;
+}
+
+a {
+  cursor: pointer;
+}
+
+.dropdown-button {
+  width: 100%;
+  text-align: center;
+}
+
+.records-count {
+  text-align: right;
+  font-size: 14px;
+  color: #333;
+}
+
+th.mat-header-cell.highlight {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+td {
+  font-size: 12px;
+}
+
+input {
+  
+  border-radius: 4px;
+  padding: 0.3rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-dropdown {
+  border: 2px solid #ccc;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0.3rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-option {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 5px;
+}
+
+
+input[disabled] {
+  border: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  color: grey;
+
+
+
+  font-size: 13px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  margin-left: 0;
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkmark::after {
+  content: "\2713";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.5rem;
+
+  color: black;
+
+
+  opacity: 1;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 3px solid #205072;
+  border-radius: 0.25rem;
+  margin: 0;
+  margin-right: 0.2rem;
+}
+
+.mat-option-text-content {
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.middle-position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-columns {
+  padding: 5px;
+  color: #999595;
+  font-size: 13px;
+  border-radius: 4px;
+}
+
+.centered-placeholder .mat-select-placeholder {
+  text-align: center !important;
+}
+
+.custom-table th {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1;
+
+  background-color: #f5f5f5;
+
+}
+
+
+
+
+.custom-table th, .custom-table td {
+padding: 10px;
+text-align: left;
+}
+
+.table-wrapper {
+  position: relative;
+  max-height: 500px; /* Set the maximum height for the table container */
+  overflow-y: auto; /* Use auto instead of scroll to show scrollbar only when needed */
+}
+
+.table-wrapper th {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5;
+  z-index: 1; /* Ensure the header appears above the table content */
+}
+
+.table-wrapper td,
+.table-wrapper th {
+  white-space: nowrap; /* Prevent the table cells from wrapping to a new line */
+}
+
+.table-wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  border-radius: 3px;
+}
+.email-icon-img{
+
+
+  height: auto;
+  margin-top: -15px; 
+  /* Adjust the margin-top value as needed */
+
+}
+.email-cell{
+  text-align:center;
+}
+.email-cell {
+  display: flex;
+  align-items: center;
+  
+  
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add 10px gap between the icons */
+ 
+}
+.bi-clipboard{
+  height: auto;
+  margin-top: -15px; 
+  
+}
+.email-content{
+  text-align:center;
+  margin-left:10px;
+
+}
+.email-cell{
+  
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+  
+  
+}
 
 
 

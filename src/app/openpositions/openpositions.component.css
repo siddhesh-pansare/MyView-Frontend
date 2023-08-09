@@ -145,8 +145,13 @@ td{
     text-align: center;
 }
 
+#council{
+    color: rgba(229, 2, 85, 1);
+}
 
-
+#status{
+    color :rgba(0, 172, 43, 1);
+}
 
 .icon{
     width: 20px;

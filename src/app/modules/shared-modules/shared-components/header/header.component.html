@@ -1,1 +1,44 @@
-<p>header works!</p>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <!-- Left-aligned content -->
+    <div class="row align-items-center">
+
+      <div class="col">
+        <!-- Brand/logo (optional) -->
+        <a class="navbar-brand" href="#"></a>
+        <img class="sidebar_toggle" src="assets/header/Sidebar Toggle.png" alt="Button 1">
+      </div>
+      <div class="col searchBar">
+        <!-- Search bar -->
+        <form class="searchBox" role="search"> 
+          <input class="searchText" type="search" placeholder="Search an Employee" aria-label="Search">
+          <a href="#" class="searchBtn">
+          <img class="empsearch" src="assets/header/emp_search2.png" alt="Button 2">
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right-aligned content -->
+    <div class="row align-items-center">
+      <div class="col">
+        <!-- Notification icon -->
+        <a class="nav-link" href="#">
+          <img class="notification" src="assets/header/btn_notfication.png" alt="Button 3">
+        </a>
+      </div>
+      <div class="col-auto">
+        <!-- Profile icon with dropdown -->
+        <div class="nav-item">
+            <img class="profile" src="assets/header/btn_profile.png" (click)="toggleDropdown()" alt="Button 4">
+        </div>
+        <div class="dropdown" [ngClass]="{ 'show': isDropdownOpen }" >
+          <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen }">
+            <a class="dropdown-item" href="#" >My Profile</a>
+            <a class="dropdown-item" href="#" >Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

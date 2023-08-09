@@ -319,10 +319,10 @@ td{
         margin-right: 1vw;
         }
 
-        .btn-all-employees-icon {
+    .btn-all-employees-icon {
             position: relative;
             object-fit: cover;
             height: 40px;
             width: 40px;
-          }
+    }
 }

@@ -12,10 +12,10 @@
   <div class="tabs">
     <ul class="nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link actived"  (click)="setActiveTab('Active')" [class.active]="activeTab == 'Active'">Active</a>
+          <a class="nav-link actived" [ngClass]="{'actived': activeTab === 'Active', 'aclosed': activeTab !== 'Active'}" (click)="setActiveTab('Active')" [class.active]="activeTab == 'Active'">Active</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link closed" (click)="setActiveTab('Closed')" [class.active]="activeTab == 'Closed'">Closed</a>
+          <a class="nav-link closed" [ngClass]="{'closed': activeTab === 'Closed', 'cclosed': activeTab !== 'Closed'}" (click)="setActiveTab('Closed')" [class.active]="activeTab == 'Closed'">Closed</a>
         </li>
       </ul>
       <div class="line2"></div><br>

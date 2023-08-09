@@ -94,19 +94,25 @@ top:50px;
 
 .actived{
     color:rgba(0, 172, 43, 1);
-    width: 300px;
+    width: 200px;
     cursor: pointer;
     text-decoration: none;
-    --bs-nav-link-disabled-color: rgba(0, 172, 43, 0.5);
 }
 
 .closed{
-   color:rgba(255, 6, 6, 0.5);
-   width: 300px;
+   color:#e50202;
+   width: 200px;
    cursor: pointer;
    text-decoration: none;
 }
 
+.aclosed{
+   color: rgba(0, 172, 43, 0.5) ;
+}
+
+.cclosed{
+    color:rgba(255, 6, 6, 0.5);
+}
 .line2{
     position: relative;
     border-top: 1px solid #000;
@@ -189,7 +195,7 @@ td{
     }
     
     .closed{
-       color:rgba(255, 6, 6, 0.5);
+        color:#e50202;
        width: 200px;
     }
     
@@ -246,7 +252,7 @@ td{
     }
     
     .closed{
-       color:rgba(255, 6, 6, 0.5);
+        color:#e50202;
        width: 100px;
     }
     
@@ -296,7 +302,7 @@ td{
     }
     
     .closed{
-       color:rgba(255, 6, 6, 0.5);
+        color:#e50202;
        width: 100px;
     }
     

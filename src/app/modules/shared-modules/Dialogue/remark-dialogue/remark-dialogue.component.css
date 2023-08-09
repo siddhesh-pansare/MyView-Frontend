@@ -4,6 +4,25 @@
   font-family: Outfit;
 }
 
+.logo1:hover,
+.logo2:hover,
+.logo-hover:hover {
+  /* Add desired hover styles here */
+  opacity: 0.3; /* For example, reduce opacity on hover */
+}
+
+.addremark:hover,
+.addremark-hover:hover {
+  /* Add desired hover styles here */
+  opacity: 0.6; /* For example, reduce opacity on hover */
+}
+
+.btncross img:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
 .table-responsive.rounded{
   margin-left: 15px;
   margin-right: 15px;
@@ -29,7 +48,7 @@ th{
 td{
   color:#38a3a5;
   font-size: 0.80rem;
-padding: 1px;
+padding: 2px;
 }
 
 
@@ -43,17 +62,29 @@ padding: 1px;
   line-height: normal;
 }
 
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width:656px){
+.table-container{
+  width: 100%;
+  overflow-x: scroll;
+}
+}
+
 @media (max-width:600px){
 
   
   .logo1{
-    margin-left: -1vw;
-    width: 2vw;
+    margin-left: 0vw;
+    width: 3.5vw;
   }
 
   .logo2{
-margin-left: 0.5vw;
-width: 2vw;
+margin-left: 0vw;
+width: 3.5vw;
   }
 
 
@@ -133,7 +164,7 @@ width: 2vw;
 
     .line {
         width: 75vw; /* Adjust the width as needed */
-        height: 0.3vw; /* Adjust the height as needed */
+        height: 0.1vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
 margin-top: -4vw;
 margin-left: -2vw;
@@ -171,15 +202,22 @@ margin-left: -2vw;
 
 @media (min-width:601px) and (max-width:1024px) {
 
+  .add-icon {
+    display: block; /* Show the icon for mobile screens */
+  }
+  
+  .addremark {
+    display: none; /* Hide the "Add New Remark" image for mobile screens */
+  }
 
   .logo1{
     margin-left: 0vw;
-    width: 1.5vw;
+    width: 2.5vw;
   }
 
   .logo2{
-margin-left: 3vw;
-width: 1.5vw;
+margin-left: 2vw;
+width: 2.5vw;
   }
 
     .container{
@@ -257,7 +295,7 @@ width: 1.5vw;
 
     .line {
         width: 67vw; 
-        height: 0.4vw; 
+        height: 0.1vw; 
         background: rgba(51, 54, 63, 0.60);
         margin-top: -6vw;
         margin-left: 0.5vw;
@@ -289,12 +327,12 @@ width: 1.5vw;
   @media (min-width: 1025px){
 
     .logo1{
-      margin-left: 1vw;
+      margin-left: 0vw;
       width: 1.5vw;
     }
 
     .logo2{
-margin-left: 3vw;
+margin-left: 1vw;
 width: 1.5vw;
     }
 
@@ -388,7 +426,7 @@ width: 1.5vw;
     .line {
       position: absolute;
         width: 57vw; /* Adjust the width as needed */
-        height: 0.5vh; /* Adjust the height as needed */
+        height: 0.2vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
         top:12.5vw;
     }
@@ -496,7 +534,7 @@ width: 2vw;
 
     .line {
       width: 42vw;
-      height: 0.5vh;
+      height: 0.1vh;
       background: rgba(51, 54, 63, 0.60);
     }
  

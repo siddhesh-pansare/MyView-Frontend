@@ -9,11 +9,15 @@
   <div class="box2"><img class="remlogo" src="assets/images/remark1.png"></div>
   
   </div>
-  <span class="btncross" ><img  src="assets/images/close.png"></span>
+
+  <a href="...">
+  <span class="btncross" ><img  src="assets/images/close.png"></span></a>
   <br>
   <div class="line"></div><br>
 
+  
   <div class="table-responsive rounded">
+    <div class="table-container">
     <table class="table table-bordered">
         <thead class="text-center">
             <tr>
@@ -24,20 +28,25 @@
         </thead>
         <tbody class="text-center">
 
-          <tr *ngFor="let cv of remarkdata">
+          <tr *ngFor="let cv of remarkdata; let i=index">
 
             <td>{{cv.Date}}</td>
 
-            <td id="feed">{{cv.Feedback}}</td>
-            <td><img src="assets/images/edit.png" class="logo1"><img src="assets/images/delete.png" class="logo2"></td>
+            <td id="feed">
+              {{cv.Feedback}}
+            </td>
+
+            <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
           </tr>
 
         </tbody>
     </table>
+  </div>
+</div>
 
     <div class="box3">
-    <img src="assets/images/remark3.png" class="addremark">
+      <a href="...">
+    <img src="assets/images/remark3.png" class="addremark addremark-hover"></a>
   </div>
     
-</div>
 </div>

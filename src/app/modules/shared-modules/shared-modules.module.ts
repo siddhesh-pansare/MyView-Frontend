@@ -22,7 +22,7 @@ import { LoaderComponent } from './Dialogue/loader/loader.component';
     SideBarComponent,
     ClientFeedbackComponent,
     OtherContributionsComponent,
-    RoundDetailsComponent
+    RoundDetailsComponent,
     ScratchpadComponent,
     LoaderComponent
   ],

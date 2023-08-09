@@ -15,7 +15,8 @@ const routes: Routes = [
   { path:'client-feedback',component:ClientFeedbackComponent},
   { path:'other-contributions',component:OtherContributionsComponent},
   {path:'round-details',component:RoundDetailsComponent},
-  { path:'loader', component:LoaderComponent }
+  { path:'loader', component:LoaderComponent },
+  { path: 'sidebar', component:SideBarComponent}
 
 ]
 

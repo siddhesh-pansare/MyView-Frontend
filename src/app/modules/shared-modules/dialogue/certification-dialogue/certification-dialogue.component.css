@@ -39,7 +39,7 @@
         color: #205072;
     text-align: center;
     font-family: Outfit;
-    font-size: 16px;
+    font-size: 3vw;
     font-style: normal;
     font-weight: bold;
     line-height: normal;
@@ -58,8 +58,8 @@
     }
 
     .certilogo{
-        width: 9vw;
-    height: 9vw;
+        width: 8vw;
+    height: 8vw;
     align-content: flex-end;
     background: lightgray 50% / cover no-repeat;
     /* align-items: flex-end;   */

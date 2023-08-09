@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  isDropdownOpen = false;
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  onProfileClick() {
+    console.log('My Profile clicked');
+    this.isDropdownOpen = false; 
+  }
+
+  onLogoutClick() {
+    console.log('Log out clicked');
+    this.isDropdownOpen = false; 
+  }
+
+  closeDropdown() {
+    this.isDropdownOpen = false;
+  }
+
 
 }

@@ -16,19 +16,16 @@ export class HeaderComponent {
   }
 
   onProfileClick() {
-    // Add your logic for the "My Profile" option here
     console.log('My Profile clicked');
-    this.isDropdownOpen = false; // Close the dropdown
+    this.isDropdownOpen = false; 
   }
 
   onLogoutClick() {
-    // Add your logic for the "Log out" option here
     console.log('Log out clicked');
-    this.isDropdownOpen = false; // Close the dropdown
+    this.isDropdownOpen = false; 
   }
 
   closeDropdown() {
-    // Close the dropdown when the mouse leaves it
     this.isDropdownOpen = false;
   }
 

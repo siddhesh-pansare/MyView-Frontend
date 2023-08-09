@@ -95,7 +95,7 @@
         border-collapse: collapse;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
         border: #205072;
         height: 10%;
@@ -231,7 +231,7 @@ flex-shrink: 0;
         border-collapse: collapse;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
         border: #205072;
         height: 10%;
@@ -377,7 +377,7 @@ flex-shrink: 0;
         border-collapse: collapse;
         border-radius: 10px 10px 0px 0px;
         overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
         border: #205072;
         height: 10%;
@@ -508,7 +508,7 @@ flex-shrink: 0;
       border-collapse: collapse;
       border-radius: 10px 10px 0px 0px;
       overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
       align-items: center;
       border: #205072;
       height: 10%;

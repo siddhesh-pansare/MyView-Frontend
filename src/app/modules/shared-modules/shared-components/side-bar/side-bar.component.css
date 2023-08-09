@@ -1,0 +1,272 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: yellow;
+}
+
+.scratchbutton {
+  position: relative;
+  /* margin-top: 39%;
+  margin-left: 92%;
+   */
+   
+}
+.scratchbutton img{
+  position: fixed;
+  bottom: 70px;
+  right: 3.2%;
+  cursor: pointer;
+  background: transparent;
+  
+}
+.scratchbutton img:hover{
+  
+  transform: perspective(6.5cm) scale(1.2) rotateX(10deg); 
+}
+#sidebar {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: -20px;
+    height: 100% ;
+    width: 81px;
+    background: #082737;
+    text-align: center;
+  overflow: visible;
+
+  }
+
+  .hero-con{
+    overflow:visible;
+  }
+ #sidebar .sidebar-header{
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+ }
+ #sidebar ul.components li a img {
+    display: block;
+    
+    margin: 0 auto; /* Center the images horizontally */
+ 
+  }
+  #sidebar .sidebar-header img {
+    width: 40%;
+    height: 40%;
+    
+  }
+
+  
+
+  
+  #sidebar ul li a {
+    color: white;
+    
+    display: block;
+  }
+  
+.container {
+  position: absolute;
+  display: inline-block;
+  overflow:visible;
+}
+
+#sidebar ul.components li {
+    position: relative;
+    padding: 8%;
+  }
+  
+  #sidebar ul.components li a img {
+    width: 40%; /* Adjust the width as per your requirement */
+    height: 40%; /* Adjust the height as per your requirement */
+    transition: transform 0.3s ease; /* Apply a transition for smooth animation */
+    box-shadow: #00070b; /* Add a subtle shadow */
+    transform: perspective(800px) scale(1) rotateX(0deg); /* Set the initial perspective and rotation */
+      
+  }
+  
+  #sidebar ul.components li .image-name {
+    position: relative;
+    
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #082737;
+    padding: 3%;
+    opacity: 0;
+    pointer-events: none; /* This prevents the name from being clickable */
+    transition: opacity 0.3s ease;
+    font-size: 10px;
+  }
+  #sidebar ul.components li a:hover img {
+    transform: perspective(6.5cm) scale(1.2) rotateX(10deg); /* Increase the image size by 20% on hovering */
+  }
+  #sidebar ul.components li:hover .image-name {
+    opacity: 1;
+    
+  }
+  /* @media (max-height: 700px){
+    .scratchbutton {
+      position: absolute;
+      margin-top: 40%;
+      margin-left: 93%;
+    }
+    .scratchbutton:hover{
+      transform: perspective(6.5cm) scale(1.2) rotateX(10deg); 
+    }
+    
+  } */
+  @media (max-width: 767px) {
+    .scratchbutton img{
+      width: 35px;
+      height: 35px;
+    }
+    
+    .scratchbutton:hover{
+      transform: perspective(6.5cm) scale(1.2) rotateX(10deg); 
+    }
+    #sidebar {
+      width: 40px; /* Adjust the width for mobile devices */
+      
+    }
+  
+    #sidebar ul.components li a img {
+      width: 40%; /* Adjust the image width for mobile devices */
+      height: 40%; /* Adjust the image height for mobile devices */
+    }
+    #sidebar ul.components li {
+      display: relative;
+      
+      padding: 8%;
+   
+    }
+    #sidebar ul.components li .image-name {
+      font-size: 9px; /* Adjust the font size for mobile devices */
+      padding: 6px; /* Adjust the padding for mobile devices */
+    }
+    #sidebar ul.components li .image-name {
+      position: relative;
+      top: 50%;
+      left: calc(100% + 10px);
+      width: auto;
+      
+      color: white;
+      transform: translate(-30%, -170%);
+      border-radius: 5px;
+      background-color: rgba(8, 39, 55, 0.6);
+      padding: 2px;
+      opacity: 0;
+      pointer-events: none; /* This prevents the name from being clickable */
+      transition: opacity 0.3s ease;
+      font-size: 10px;
+      z-index: 1;
+      display: inline-block;
+    }
+   
+    #sidebar ul.components li a:hover img {
+      transform: perspective(6.5cm) scale(1.3) rotateX(10deg); /* Increase the image size by 20% on hovering */
+    }
+    
+  }
+  @media screen and (min-width: 768px) and (max-width: 1250px) {
+    #sidebar {
+      padding: 0px;
+      margin: 0px;
+      height: 100%;
+      width: 75px;
+      background: #082737;
+      text-align: center;
+   
+  
+    }
+    .scratchbutton img{
+      height: 40px;
+      width: 40px;
+    }
+    
+    .scratchbutton:hover{
+      transform: perspective(6.5cm) scale(1.2) rotateX(10deg); 
+    }
+    
+
+    .hero-con{
+      overflow: hidden;
+    }
+   #sidebar .sidebar-header{
+      
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid white;
+      margin-bottom: 25px;
+   }
+   #sidebar ul.components li {
+    display: block;
+   
+ 
+  }
+   #sidebar ul.components li a img {
+      display: block;
+      
+      margin: 0 auto; /* Center the images horizontally */
+   
+    }
+    #sidebar .sidebar-header img {
+      width: 40%;
+      height: 40%;
+      
+    }
+  
+    
+  
+    
+    #sidebar ul li a {
+      color: white;
+      
+      display: block;
+    }
+    
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  #sidebar ul.components li {
+      position: relative;
+     
+    }
+    
+    #sidebar ul.components li a img {
+      width: 40%; /* Adjust the width as per your requirement */
+      height: 40%; /* Adjust the height as per your requirement */
+      transition: transform 0.3s ease; /* Apply a transition for smooth animation */
+      box-shadow: #00070b; /* Add a subtle shadow */
+      transform: perspective(800px) scale(1) rotateX(0deg); /* Set the initial perspective and rotation */
+        
+    }
+    
+    #sidebar ul.components li .image-name {
+      position: relative;
+      
+      left: 0;
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: #082737;
+      padding: 2px;
+      opacity: 0;
+      pointer-events: none; /* This prevents the name from being clickable */
+      transition: opacity 0.3s ease;
+      font-size: 9px;
+    }
+    #sidebar ul.components li a:hover img {
+      transform: perspective(6.5cm) scale(1.2) rotateX(10deg); /* Increase the image size by 20% on hovering */
+    }
+    #sidebar ul.components li:hover .image-name {
+      opacity: 1;
+      
+    }
+  
+  }
+ 

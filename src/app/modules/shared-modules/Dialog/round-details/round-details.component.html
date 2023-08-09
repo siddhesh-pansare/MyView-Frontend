@@ -1,0 +1,124 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="nested-div ">
+    <div class="contanier ">
+        <div class="modal-header border-0 d-flex justify-content-end pt-2 mb-3">
+            <button type="button" class="close">
+                <img class="close_btn" src="../../../../../../assets/images/btn_close.png">
+            </button>
+        </div>
+        <div class="navbar">
+            <h1 class="navbar_heading">Interview Details</h1>
+        </div>
+      <div class="line"></div>
+      <div class="d-flex">  <!--lower part of page below the line -->
+        <div class="col-7">  <!--left side content part  including info related to profile-->
+            <div class="row" >  
+                <div class="col-4">
+                        <div class="row profile_image"></div>
+                </div>
+                <div class="col-8">  <!--profile info part container-->
+                    <div class="row prfoile_data">
+                        <h1 class="profile_name">Shivam Bansal</h1>
+                        <h2 class="profile_email">shivam.bansal@gmail.com</h2>
+                        <h3 class="profile_designation">Fresher</h3>
+                    </div>
+                </div>
+                <div class="row profile_status_div">
+                    <h1 class="profile_status"  >Rejected</h1>
+                </div>
+            </div><br>
+           <div class="row ">
+            <div class=" col-2 pdf_logo">
+                <img src="assets/images/pdf_logo.png" class="pdf_logo">
+            </div>
+            <div class="col-5  resume_link">Click here to download</div>
+           </div>
+            <br>
+            <div class="row">
+                <div class="container">
+                    <div class="row lower_details"  >
+                        <p ><b class="lower_details_param">Date:</b> </p>
+                    </div>
+                    <div class="row lower_details"  >
+                        <p ><b class="lower_details_param">Step:</b> </p>
+                    </div>
+                    <div class="row lower_details"  >
+                        <p  ><b class="lower_details_param">Status:</b> </p>
+                    </div>
+                    <div class="row lower_details"  >
+                        <p ><b class="lower_details_param">Interviewer:</b> </p>
+                    </div>
+                    <div class="row lower_details" >
+                        <b class="lower_details_param">Feedback: </b>
+                    </div>
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                        <p  style="margin-left: 1%; "></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-5" style="flex-wrap:wrap ;"> <!--right side content part-->
+            <br>
+            <h1 class="timeline">Timeline</h1>
+            <div class="right_container">
+                <div class="row d-flex justify-content-center" >
+                    <div  class="round_img_container round_2  d-flex justify-content-center" (click)="fetchRound2Data()">
+                        <img src="assets/images/round_2_logo.png" >
+                    </div>
+                    <h1 class="rounds_name">Round-2 Interview</h1>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="up_arrow d-flex justify-content-center">
+                        <img src="assets/images/up_arrow.png">
+                    </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                    <div   class="round_img_container round_1 d-flex justify-content-center" (click)="fetchRound1Data()" >
+                        <img src="assets/images/round_2_logo.png" >
+                    </div>
+                    <h1 class="rounds_name">Round-1 Interview</h1>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="up_arrow d-flex justify-content-center">
+                        <img src="assets/images/up_arrow.png">
+                    </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                    <div   class="round_img_container gd" (click)="fetchGdData()" >
+                        <img src="assets/images/gd_logo.png" >
+                    </div>
+                    <h1 class="rounds_name">Group Discussion</h1>
+                    <img class="img_container">
+                    
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="up_arrow d-flex justify-content-center">
+                        <img src="assets/images/up_arrow.png">
+                    </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                    <div   class="round_img_container gd" (click)="fetchOnlineTestData()" >
+                        <img src="assets/images/online_test_logo.png" >
+                    </div>
+                    <h1 class="rounds_name">Online Test</h1>
+                    <img class="img_container">   
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="up_arrow d-flex justify-content-center">
+                        <img src="assets/images/up_arrow.png">
+                    </div>
+                </div>
+                <div class="row justify-content-center d-flex">
+                    <div   class="round_img_container gd" (click)="fetchResumeData() " >
+                        <img src="assets/images/resume_scr_logo.png" >
+                    </div>
+                    <h1 class="rounds_name">Resume Screening</h1>  
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+

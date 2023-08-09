@@ -231,7 +231,7 @@ td{
 @media (max-width:650px) {
     .tabs{
         position: relative;
-        top: 20vh;
+        top: 15vh;
         font-size: 1rem;
         font-family: Outfit;
         font-weight: 600;
@@ -281,7 +281,7 @@ td{
 @media (max-width:450px) {
     .tabs{
         position: relative;
-        top: 20vh;
+        top: 15vh;
         font-size: 1rem;
         font-family: Outfit;
         font-weight: 600;

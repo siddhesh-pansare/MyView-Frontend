@@ -7,6 +7,7 @@ import { RoundDetailsComponent } from './modules/shared-modules/shared-component
 import { SideBarComponent } from './modules/shared-modules/shared-components/side-bar/side-bar.component';
 import { ScratchpadComponent } from './modules/shared-modules/Dialogue/scratchpad/scratchpad.component';
 import { LoaderComponent } from './modules/shared-modules/Dialogue/loader/loader.component';
+import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path:'other-contributions',component:OtherContributionsComponent},
   {path:'round-details',component:RoundDetailsComponent},
   { path:'loader', component:LoaderComponent },
-  { path: 'sidebar', component:SideBarComponent}
+  { path: 'sidebar', component:SideBarComponent},
+  {path:'header',component:HeaderComponent}
 
 ]
 

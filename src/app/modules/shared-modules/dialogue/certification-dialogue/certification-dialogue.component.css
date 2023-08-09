@@ -8,6 +8,15 @@
 .clicktext{
   color: #0074FC;
 }
+.clicktext:hover{
+  color:#0074FC;
+  transform: scale(1.1);
+  text-shadow: 1px 1px #0074FC;
+}
+.clickHere:hover{
+  transform: scale(1.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 768px) {
     .container{
@@ -72,7 +81,7 @@
         width: 101%; /* Adjust the width as needed */
         height: 0.1%; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-        margin-top: -4vh;
+        margin-top: -2vh;
 
     }
     .table-container {
@@ -147,8 +156,8 @@ flex-shrink: 0;
         position: absolute;  
         top: 1vw;   
         cursor: pointer;   
-        height: 2vh;
-      width: 2vw;
+        height: 1.5vh;
+      width: 1.95vw;
       }
   
     
@@ -159,7 +168,7 @@ flex-shrink: 0;
 
     .container{
         width: 60vw;
-    height: 85vh;
+    height: 92vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -169,7 +178,7 @@ flex-shrink: 0;
     margin-bottom: 10vh;
     margin-left: 20vw;
     position: fixed;
-    
+    display: flexbox;
     }
 
     
@@ -193,7 +202,7 @@ flex-shrink: 0;
     /* border: 1px solid #38A3A5; */
     margin-left: 1vw;
     align-content: flex-start;
-    margin-top:10vh;
+    margin-top:11vh;
     /* background: lightgray 50% / cover no-repeat; */
     }
 
@@ -210,10 +219,10 @@ flex-shrink: 0;
     
     
     .line {
-        width: 57vw; /* Adjust the width as needed */
+        width: 100%; /* Adjust the width as needed */
         height: 0.1vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-
+        margin-top: -2vh;
     }
     
     .table {
@@ -276,15 +285,25 @@ flex-shrink: 0;
 
       } */
       .btncross{
-        right: 1vw;
+        right: 0.5vw;
         position: absolute;  
         top: 0.5vw;   
         cursor: pointer; 
-        height: 2vh;
-        width: 1.5vw;  
+        height: 2.5vh;
+        width: 1.25vw;  
       }
 
     
+  }
+  @media (min-width: 1400px) and (max-width: 1800px){
+    .btncross{
+      right: 0.5vw;
+      position: absolute;  
+      top: 0.5vw;   
+      cursor: pointer; 
+      height: 2.5vh;
+      width: 1vw;  
+    }
   }
   
   /* Media query for tablet screens */
@@ -413,8 +432,8 @@ flex-shrink: 0;
         position: absolute;  
         top: 1vw;   
         cursor: pointer; 
-        height: 2vh;
-        width: 2vw;  
+        height: 2.5vh;
+        width: 1.75vw;  
       }
     
   } 
@@ -441,9 +460,9 @@ flex-shrink: 0;
       color: #205072;
       text-align: center;
       font-family: Outfit;
-      font-size: 2.5vw;
+      font-size: 2vw;
       font-style: normal;
-      font-weight: 500;
+      font-weight: bold;
       line-height: normal;
       margin-top:15vh;
     }
@@ -534,7 +553,7 @@ padding: 10px;
       top: 10px;   
       cursor: pointer;   
       height: 2vh;
-      width: 2vw;
+      width: 1vw;
     }
   
     /* You can also add any other styles or adjustments for larger screens here*/

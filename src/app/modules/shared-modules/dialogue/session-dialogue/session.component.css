@@ -4,11 +4,30 @@
   font-family: Outfit;
 
 } */
+
+/* @media (min-width: 300px) and (max-width: 532px){
+  .nav{
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: justify;
+
+  }
+  .nav-link{
+  color: gray;
+  padding-bottom: 3px;
+  border-bottom: 0.2px solid gray;
+  width: 400%; 
+
+  font-size: 2vw;
+  }
+
+}  */
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .container{
       width: 80vw;
-      height: 76vh; 
+      height: 65vh; 
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
@@ -23,9 +42,9 @@
    
     }
     .nav{
-      display: flex;
+      display: flexbox;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   text-align: center;
   
     }
@@ -33,20 +52,21 @@
   text-decoration: none;
   display: inline-block; /* Ensure proper hover and clickable effects */
   color: gray;
-  padding-bottom: 3px;
   border-bottom: 0.2px solid gray;
-   /* Add margin for spacing between links */
-  width: 100%; /* Set width to 100% on smaller screens */
+  width: auto; /* Set width to 100% on smaller screens */
   max-width: 200px;
-  font-size: 14px;
-  
+  font-size: 2vw;
+  font-family: Outfit;  
+  vertical-align: top;
+  box-sizing: border-box;  
+  padding: 10px 10px 10px 10px;
     }
     .nav-link:hover {
       color: 	#3fbdc2;
       border-bottom: transparent;
+      transform: scale(1.1);
     }
     
-
     .nodata{
       display: block;  
       margin-left: 18vw;
@@ -75,11 +95,11 @@ font-size: 14px;
       color: #205072;
       text-align: center;
       font-family: Outfit;
-      font-size: 4vw;
+      font-size: 3vw;
       font-style: normal;
       font-weight: bold;
       line-height: normal;
-      margin-top:22vh;
+      margin-top:10vh;
        
     
     }
@@ -89,7 +109,7 @@ font-size: 14px;
       height: 10vw;
       align-content: flex-start;
       margin-left: 1vw;    
-      margin-top:20vh;
+      margin-top:8vh;
     }
 
     .logo{
@@ -99,7 +119,7 @@ font-size: 14px;
       background: white;
       /* align-items: flex-end;   */
       position: absolute; 
-      margin-top: 21vh;
+      margin-top: 8vh;
       margin-left: 5vw;
     
     }
@@ -178,8 +198,8 @@ flex-shrink: 0;
         position: absolute;  
         top: 1vw;   
         cursor: pointer;   
-        height: 2vh;
-      width: 3vw;
+        height: 1.5vh;
+      width: 1.95vw;
       }
   
     
@@ -197,28 +217,34 @@ flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
     margin-top: 5vh;
-    margin-bottom: 10vh;
     margin-left: 20vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px #7BE495;
     display: flexbox;
     }
     .nav{
-      display: flex;
+      display: flexbox;
   justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
   
     }
     .nav-link{
   text-decoration: none;
-  display: inline-block; /* Ensure proper hover and clickable effects */
+  display: inline-table; /* Ensure proper hover and clickable effects */
   color: gray;
-  padding-bottom: 3px;
   border-bottom: 0.2px solid gray;
-  
+  width: 100%; /* Set width to 100% on smaller screens */
+  max-width: 200px;
+  font-size: 16px;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
     }
     .nav-link:hover {
       color: #3fbdc2;
       border-bottom: transparent;
+      transform: scale(1.1);
     }
     
     
@@ -255,7 +281,7 @@ top: 90vh;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      margin-top:22vh;
+      margin-top:18vh;
        
     
     }
@@ -267,17 +293,17 @@ top: 90vh;
       /* border: 1px solid #38A3A5; */
       margin-left: 1vw;
       align-content: flex-start;
-      margin-top:10vh;
+      margin-top:11vh;
     /* background: lightgray 50% / cover no-repeat; */
     }
 
     .logo{
-      width: 6vw;
-      height: 6vw;
+      width: 7vw;
+      height: 7vw;
       background: white;
       align-items: flex-end;  
       position: absolute;
-      margin-top: 13vh;
+      margin-top: 12vh;
       margin-left: 5vw;
     }
     
@@ -286,9 +312,7 @@ top: 90vh;
       width: 100%; /* Adjust the width as needed */
       height: 0.1vh; /* Adjust the height as needed */
       background: rgba(51, 54, 63, 0.60);
-      margin-top: -3vh;
-
-
+      margin-top: -2vh;
     }
     .left-cell {
       border-right: none;
@@ -359,10 +383,20 @@ flex-shrink: 0;
         top: 0.5vw;   
         cursor: pointer; 
         height: 2.5vh;
-        width: 1.5vw;   
+        width: 1.25vw;   
       }
 
     
+  }
+  @media (min-width: 1400px) and (max-width: 1800px){
+    .btncross{
+      right: 0.5vw;
+      position: absolute;  
+      top: 0.5vw;   
+      cursor: pointer; 
+      height: 2.5vh;
+      width: 1vw;  
+    }
   }
   
   /* Media query for tablet screens */
@@ -380,10 +414,10 @@ flex-shrink: 0;
     margin-left: 20vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px #7BE495;
-    
+    display: flexbox;
     }
     .nav{
-      display: flex;
+      display: flexbox;
   justify-content: center;
   
     }
@@ -392,7 +426,10 @@ flex-shrink: 0;
   display: inline-block; /* Ensure proper hover and clickable effects */
   color: gray;
   padding-bottom: 3px;
-  border-bottom: 0.2px solid gray;
+  border-bottom: 0.2px solid gray;  
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
   
     }
     .nav-link:hover {
@@ -533,7 +570,9 @@ flex-shrink: 0;
         right: 1vw;
         position: absolute;  
         top: 1vw;   
-        cursor: pointer;   
+        cursor: pointer; 
+        height: 2.5vh;
+        width: 1.75vw;   
       }
     
   } 
@@ -541,7 +580,7 @@ flex-shrink: 0;
   @media (min-width: 2281px){
     .container {
       width: 50vw;
-      height: 85vh;
+      height: 83vh;
       flex-shrink: 0;
       border-radius: 10px;
       border: 1px solid #205072;
@@ -553,9 +592,10 @@ flex-shrink: 0;
       margin-right: 20vw;
       position: relative;
       box-shadow: 0px 0px 3px 3px #7BE495;
+      display: flexbox;
     }
     .nav{
-      display: flex;
+      display: flexbox;
   justify-content: center;
   
     }
@@ -564,8 +604,10 @@ flex-shrink: 0;
   display: inline-block; /* Ensure proper hover and clickable effects */
   color: gray;
   padding-bottom: 3px;
-  border-bottom: 0.2px solid gray;
-  
+  border-bottom: 0.2px solid gray;  
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 10px 10px 10px 10px;
     }
     .nav-link:hover {
       color: #3fbdc2;
@@ -602,9 +644,9 @@ top: 90vh;
       color: #205072;
       text-align: center;
       font-family: Outfit;
-      font-size: 2.5vw;
+      font-size: 2vw;
       font-style: normal;
-      font-weight: 500;
+      font-weight: bold;
       line-height: normal;
       margin-top:15vh;
     }
@@ -700,7 +742,7 @@ top: 90vh;
       top: 10px;   
       cursor: pointer;   
       height: 2vh;
-      width: 2vw;   
+      width: 1vw;   
     }
   
     /* You can also add any other styles or adjustments for larger screens here*/

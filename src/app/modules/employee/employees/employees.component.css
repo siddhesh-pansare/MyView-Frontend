@@ -290,7 +290,21 @@ table{
      font-size: 0.50rem;
    }
   }
+.emailicon{
+text-align: center;
+display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-button {
+  margin-right:150px; /* Adjust the value to control the gap between buttons */
+}
 
+.email-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

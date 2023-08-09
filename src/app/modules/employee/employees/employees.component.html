@@ -71,7 +71,15 @@
     <div class="col-sm-6 text-right">
       <div class="filterExport">
        <a href="#"><img class="icon1" alt="" src="assets/employees/export1.png" (click)="exportToExcel()"></a>
-       <a href="#"><img class="icon2" alt="" src="assets/employees/566737 1.png"></a>
+       <div class="filter-columns">
+        
+        <a  (click)="toggleSearchInput()">
+          <img class="icon2" alt="" src="assets/employees/566737 1.png">
+        </a>
+      </div>
+      
+       
+      
       </div>
     </div>
   </div>
@@ -86,14 +94,42 @@
 
 
   <div class="table-responsive rounded">
+  
+    
+    <div class="searchCandidate" *ngIf="showSearchInput">
+      <div class="search-container">
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          (input)="applyFilter()"
+          placeholder="Search a Candidate"
+          class="search-input"
+        />
+      </div>
+      <img class="icon" alt="" src="assets/employees/3077325 1.png">
+    </div>
+    
+    <div class="search-options" *ngIf="showSearchInput">
+      <div *ngFor="let option of searchOptions; let rowIndex = index" class="search-option">
+        <ng-container *ngFor="let column of displayedColumns">
+          <input type="text" [(ngModel)]="option[column]" class="search-option-input">
+        </ng-container>
+        <mat-icon (click)="removeSearchOption(rowIndex)">close</mat-icon>
+      </div>
+      <button mat-icon-button (click)="addSearchOption()">
+        <mat-icon>note_add</mat-icon>
+      </button>
+    </div>
+    
+    
     <table mat-table [dataSource]="filteredData">
       <ng-container matColumnDef="{{ column }}" *ngFor="let column of displayedColumns; let i = index"
             class="cl{{ i }}" [class.hide-column]="hideColumnHeaders || hideColumns[i]">
-            <th mat-header-cell *matHeaderCellDef class="highlight" style="padding: 10px; text-align: left"
+            <th mat-header-cell *matHeaderCellDef 
             [hidden]="hideColumnHeaders || hideColumns[i]">
             {{ convertToTitleCase(column) }}
           </th>
-          <td mat-cell *matCellDef="let element" class="cl{{ i }}" style="padding: 10px; text-align: left"
+          <td mat-cell *matCellDef="let element" class="cl{{ i }}" 
           [hidden]="hideColumnHeaders || hideColumns[i]" [ngSwitch]="column">
           <ng-container *ngIf="column !== 'Email'; else emailColumn">
             {{ element[column] }}
@@ -101,7 +137,7 @@
           <ng-template #emailColumn>
             <a href="mailto:{{ element.geminiEmail }}" >
               <img
-              class="emailicon"
+              
               src="assets/employees/email_icon.png"
               (mouseenter)="element.isHovered = true"
               (mouseleave)="element.isHovered = false"

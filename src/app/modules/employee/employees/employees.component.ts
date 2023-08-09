@@ -24,6 +24,10 @@ interface EmployeeData{
 })
 export class EmployeesComponent implements OnInit , AfterViewInit{
     employeedata: EmployeeData[] = [];
+    searchValue: string = '';
+    currentFilterColumn: string = 'EmpCode'; 
+    searchOptions: any[] = [];
+
     
     displayedColumns: string[] = ['EmpCode', 'Name', 'Designation', 'Email', 'MentorName'];
     pageIndex = 0;
@@ -46,6 +50,9 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
     flag:any;
     dataLength!: number;
    @ViewChild(MatPaginator) paginator!: MatPaginator;
+   showSearchInput: boolean = false;
+   enabledSearchColumns: string[] = [];
+
    
   hideColumnHeaders: boolean = false;
 
@@ -54,6 +61,20 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
   
    }
    data:any;
+   addSearchOption() {
+    const newSearchOption: any = {};
+    for (const column of this.displayedColumns) {
+      newSearchOption[column] = '';
+    }
+    this.searchOptions.push(newSearchOption);
+  }
+  removeSearchOption(rowIndex: number) {
+    if (rowIndex >= 0 && rowIndex < this.searchOptions.length) {
+      this.searchOptions.splice(rowIndex, 1);
+    }
+  }
+  
+  
 
    ngOnInit() {
     this.fetchdata(); // Assuming you're populating the data source here
@@ -109,7 +130,21 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
    ngAfterViewInit() {
     //this.dataSource.paginator = this.paginator;
   }
+  toggleSearchInput() {
+    this.showSearchInput = !this.showSearchInput;
+  }
+  toggleSearchColumn(column: string) {
+    if (this.enabledSearchColumns.includes(column)) {
+      this.enabledSearchColumns = this.enabledSearchColumns.filter(c => c !== column);
+    } else {
+      this.enabledSearchColumns.push(column);
+    }
+  }
   
+  
+  changeFilterColumn(column: string) {
+    this.currentFilterColumn = column;
+  }
 
    fetchdata(){
     this.http.get<{ employeedata: EmployeeData[] }>('assets/temp_data/employees.json').subscribe((data) => {

@@ -27,7 +27,8 @@ export class DashboardComponent implements OnInit {
   constructor(private userDataService: LoggedUserDataService ){}
 
   ngOnInit(): void {
-    this.loadData();
+      this.restoreBoxPositions();
+      this.loadData();
   }
 
   loadData(): void {
@@ -45,6 +46,34 @@ export class DashboardComponent implements OnInit {
 
   drop(event: CdkDragDrop<{title: string; poster: string}[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
+  }
+
+  private getAndSaveBoxCoordinates(): void {
+    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+
+    boxes.forEach((box: HTMLElement, index: number) => {
+      const boxRect = box.getBoundingClientRect();
+      const boxCoordinates = { left: boxRect.left, top: boxRect.top };
+      localStorage.setItem(`dashboard_move_com_${index + 1}_coordinates`, JSON.stringify(boxCoordinates));
+    });
+  }
+
+  onDragEnded(event: any){
+    this.getAndSaveBoxCoordinates();
+  }
+
+  private restoreBoxPositions(): void {
+    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+
+    boxes.forEach((box: HTMLElement, index: number) => {
+      const storedCoordinates = localStorage.getItem(`dashboard_move_com_${index + 1}_coordinates`);
+      if (storedCoordinates) {
+        const { left, top } = JSON.parse(storedCoordinates);
+        box.style.position = 'absolute'; // Use absolute positioning
+        box.style.left = `${left}px`;
+        box.style.top = `${top}px`;
+      }
+    });
   }
 
 }

@@ -2,9 +2,10 @@
   <div class="row dashboard-container">
 
     <div class="col-12 col-md-12 col-lg-8">
-      <div class="top center example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+      <div class="top center example-box" cdkDragBoundary=".example-boundary" cdkDrag
+        (cdkDragEnded)="onDragEnded($event)">
 
-        <div class="container-fluid personal-info-container">
+        <div class="container personal-info-container">
           <div class="row personal-info-row">
             <!-- Left Column - Image -->
             <div class="image-outer-container col-4 col-md-4 col-lg-4 pr-sm-0 m-0 ">
@@ -45,7 +46,7 @@
 
       <div class="row m-1">
         <div class="bottom col-sm-10 col-md-8 col-lg-8 col-xl-6 example-box" cdkDragBoundary=".example-boundary"
-          cdkDrag>
+          (cdkDragEnded)="onDragEnded($event)" cdkDrag>
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
@@ -58,12 +59,13 @@
         </div>
 
         <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"
-        cdkDrag>
-        <div class="example-handle" cdkDragHandle>
-          <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
-        </div>
+          cdkDrag>
+          <div class="example-handle" cdkDragHandle>
+            <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
+          </div>
           <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">
-            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards" cdkDrag>
+            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards"
+              cdkDrag>
               <div class="menu-card-box" [matTooltip]="card.cardTitle">
                 <div cdkDragHandle>
                   <span class="empty-handler">.</span>
@@ -80,8 +82,8 @@
 
 
 
-    <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0">
-      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+    <!-- <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0">
+      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag (cdkDragEnded)="onDragEnded($event)">
         <div class="pending-task-header" cdkDragHandle>
           <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
           <span class="head">Pending Tasks</span>
@@ -95,7 +97,7 @@
         </div>
       </div>
 
-      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag>
+      <div class="card example-box" cdkDragBoundary=".example-boundary" cdkDrag (cdkDragEnded)="onDragEnded($event)">
         <div class="upcoming-events-header" cdkDragHandle>
           <img src="assets/images/icons/events.svg">
           <span class="head">Upcoming Events</span>
@@ -109,7 +111,7 @@
         </div>
       </div>
 
-    </div>
+    </div> -->
   </div>
   <img src="../../../../assets/images/icons/scratchpad.svg" alt="scratchpad" class="scratchpad-logo">
   <span class="company-logo">

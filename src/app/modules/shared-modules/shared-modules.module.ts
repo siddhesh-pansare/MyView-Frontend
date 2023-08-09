@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { SharedModulesRoutingModule } from './shared-modules-routing.module';
 import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
@@ -14,6 +13,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { LoaderComponent } from './Dialogue/loader/loader.component';
+import { RoleComponent } from './shared-components/role/role.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { LoaderComponent } from './Dialogue/loader/loader.component';
     OtherContributionsComponent,
     RoundDetailsComponent,
     ScratchpadComponent,
-    LoaderComponent
+    LoaderComponent,
+    RoleComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +35,8 @@ import { LoaderComponent } from './Dialogue/loader/loader.component';
     MatButtonModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ]
 
 })

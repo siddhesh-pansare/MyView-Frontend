@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
-
+*{
+  font-family: Outfit;
+}
 .nested-div {
     display: flex;
     padding-top: 20px;
@@ -11,7 +13,7 @@
     margin-left: 15%;
     margin-top: 2%;
     width: 70%;
-    height: 90vh;
+    height: 95vh;
     overflow: hidden;
   }
   .navbar{
@@ -26,6 +28,20 @@
     font-weight: 400;
     line-height: normal;
 }
+.btn{
+  border: 1px solid #205072;
+  background-color: #205072;
+  color: #FFF;
+}
+.modal-header{
+  margin-top: -2%;
+  margin-right: 2%;
+}
+.close {
+  background: none;
+  padding: 0;
+  border: 0;
+}
 .line {
     width: 98%;
     height: 1px;
@@ -33,20 +49,40 @@
     margin: 4px;
   }
 .profile_image{
-    width: 50%;
-    border-radius: 50%;
+    width: 48%;
+    height: 80%;
+    border-radius: 60%;
     border: 1px solid #38A3A5;
+    margin-left: 0.5%;
+    background-image: url('../../../../../../assets/images/Ellipse_52.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .col-4{
     justify-content: center;
 }
 .col-8{
     justify-content: left;
-    margin-left: -10%;
+    margin-left: -14%;
 }
 .col-7{
     margin-left: 2%;
 }
+.col-5{
+  justify-content: center;
+  width: 40%;
+  height: 60%;
+}
+
+.profile_status_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: -7%;
+  margin-top: -3%;
+}
+
 .profile_status{
     color: #E50202;
     font-family: Outfit;
@@ -82,9 +118,10 @@
     line-height: normal;
   }
   .pdf_logo{
-    width: 10%;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    width: 20%;
+    flex-shrink: 0;
+    justify-self: start;
+    align-items: center;
   }
   .resume_link{
     color: rgba(0, 116, 252, 0.72);
@@ -93,7 +130,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-left: -70%;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    display: flex;
+    margin-left: -15%;
   }
   .feedback_container{
     overflow:scroll;
@@ -134,7 +176,7 @@
   }
   .scrollspy-example {
     position: relative;
-    height: 200px;
+    height: 20%;
     margin-top: .5rem;
     overflow: auto;
   }
@@ -143,36 +185,52 @@
     box-shadow: 0px 0px 4px 0px#E50202;
     stroke: #E50202;
     border: 4px solid  #E50202;
+    color: red;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
+
   .round_1,.gd{
     box-shadow: 0px 0px 4px 0px#00AC2B;
     stroke: #00AC2B;
     border: 4px solid #00AC2B; ;
+    color: green;
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
   }
+  
  
   .right_container{
     display: flex;
-    background-color:rgba(231, 231, 231, 0.644); 
-    width: 50%; 
+    background-color:#F5F5F5; 
+    width: 50%;
+    max-height: 70vh;
+    padding-top: 110%;
+    gap: 1px;
     justify-content: center; 
     align-items: center;
     border-radius: 20px;
-    margin-top: 5%;
-    gap:1px;
-    margin: 5%;
-    margin-left: 30%;
-    flex-wrap: wrap;
-    border: 2px solid rgba(231, 231, 231, 0.644);
+    margin-left: 25%;
+    border: 2px solid #B9B9B9;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1px
+    overflow-y: visible;
+    overflow-x: hidden;
+  
   }
   .up_arrow {
-    width: 72px;
+    width: 20%;
     stroke-width: 1px;
     stroke: #205072;
-    margin-left: 45%;
+    
   }  
   .round_img_container{
     display: flex;
@@ -182,19 +240,18 @@
     background-color: #FFF;
     stroke-width: 4px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 300ms ease-out;
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    margin-left: 31%;
-    position: relative;
     margin-top: 5%;
-    
+    position: relative;
     
   }
   .round_img_container:hover{
     transform: scale(1.1);
   }
+  
   .round_img{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -204,7 +261,9 @@
   
   .scrollspy-example{
     border-left: 3px solid #205072;
-    gap: 10px;
+    max-height: 100%;
+    gap:5%;
+    margin-top: 7%;
   }
   .rounds_name{
     color: #205072;
@@ -217,8 +276,60 @@
     margin-left: 1%;
   }
  
+  .rejected, .status_text {
+    color: red;
+  }
+  .considered,.status_text {
+    color: green;
+  }
+
   
-  
-  
-  
-  
+@media screen and (max-width:768px){
+  .round_img_container{
+    width: 80px;
+    height: 80px;
+    
+  }
+  .round_img{
+    width: 20px;
+  }
+}
+/* Styling the entire scrollbar */
+::-webkit-scrollbar {
+  width: 0px; /* Adjust this value to make the scrollbar thinner */
+}
+
+/* Styling the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+
+/* Media Query for Mobile Phones */
+@media screen and (max-width: 768px) {
+  .nested-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-7, .col-5 {
+    width: 50%;
+  }
+
+  .profile_status_div {
+    margin-left: 0;
+    margin-top: 1%;
+    text-align: center;
+  }
+  .pro
+
+  .right_container {
+    width: 90%;
+    margin: 5% auto;
+  }
+  .round_img{
+    width: 10px;
+  }
+}
+

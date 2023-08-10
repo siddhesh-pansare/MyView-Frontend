@@ -2,6 +2,7 @@ import { Component,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 interface ActiveData{
+  Priority:string;
    Role:String;
    Council:string;
    SkillsRequired:string;

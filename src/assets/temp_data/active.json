@@ -1,6 +1,7 @@
 {
     "active": [
       {
+        "Priority":"assets/openpos/high priority.png",
         "Role": "Data Analyst",
         "Council": "Engineering",
         "SkillsRequired":"Python,AWS,SQL,Linux,Data Modeling",
@@ -8,6 +9,7 @@
         "Count":"2"
       },
       {
+        "Priority":"assets/openpos/mediumperiority.png",
         "Role": "Data Engineer",
         "Council": "Engineering",
         "SkillsRequired":"Python,AWS,SQL,Linux",
@@ -15,6 +17,7 @@
         "Count":"2"
       },
       {
+        "Priority":"assets/openpos/lowpriority.png",
         "Role": "Power BI Developer",
         "Council": "Engineering",
         "SkillsRequired":"Power BI,SQL",
@@ -22,6 +25,7 @@
         "Count":"2"
       },
       {
+        "Priority":"assets/openpos/high priority.png",
         "Role": "Data Analyst",
         "Council": "Engineering",
         "SkillsRequired":"Python,AWS,SQL,Linux,Data Modeling",

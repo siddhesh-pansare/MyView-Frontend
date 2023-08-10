@@ -35,7 +35,7 @@
     </thead>
     <tbody class="text-center">
     <tr *ngFor="let a of active ">
-      <td ><img src="assets/openpos/high priority.png" alt="Button 3"></td>
+      <td ><img [src]="a.Priority" alt="Button 3"></td>
       <td >{{a.Role}}</td>
       <td >{{a.Council}}</td>
       <td >{{a.SkillsRequired}}</td>

@@ -35,7 +35,7 @@
     </thead>
     <tbody class="text-center">
     <tr *ngFor="let a of active ">
-      <td ><img [src]="a.Priority" alt="Button 3"></td>
+      <td ><img [src]="a.Priority" alt="Button 3" class="icon"></td>
       <td >{{a.Role}}</td>
       <td >{{a.Council}}</td>
       <td >{{a.SkillsRequired}}</td>
@@ -63,7 +63,7 @@
       </thead>
       <tbody>
       <tr *ngFor="let c of closed" >
-        <td ><img src="assets/openpos/high priority.png" alt="Button 3"></td>
+        <td ><img src="assets/openpos/high priority.png" alt="Button 3" class="icon" ></td>
         <td >{{c.Role}}</td>
         <td id="council">{{c.Council}}</td>
         <td >{{c.SkillsRequired}}</td>

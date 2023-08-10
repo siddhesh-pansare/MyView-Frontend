@@ -38,7 +38,9 @@ export class AttendanceDialogComponent implements OnInit {
   internalmeetings: InternalMeeting[] = [];
   officevisits: OfficeVisit[] = [];
   activeTab: string = 'Client Visits'; // Default active tab
-
+  isDataLoadedcv: boolean = true;
+  isDataLoadedim: boolean = true;
+  isDataLoadedov: boolean = true;
   setActiveTab(tab: string) {
     this.activeTab = tab;
      this.fetchData(this.activeTab);
@@ -62,10 +64,13 @@ export class AttendanceDialogComponent implements OnInit {
     this.http.get<any>(url).subscribe((data) => {
       if (tab === 'Client Visits') {
         this.clientvisit = data.clientvisit;
+        this.isDataLoadedcv=this.clientvisit.length > 0;
       } else if (tab === 'Internal Meetings') {
         this.internalmeetings = data.internalmeetings;
+        this.isDataLoadedim=this.internalmeetings.length > 0;
       } else if (tab === 'Office Visits') {
         this.officevisits = data.officevisits;
+        this.isDataLoadedov=this.officevisits.length > 0;
       }
     });
   }

@@ -28,7 +28,8 @@
           <div class="line2"></div><br>
     </div>
     <div class="table-responsive rounded">
-      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" >
+      <div *ngIf="activeTab === 'Client Visits'" >
+      <table class="table table-bordered" *ngIf="clientvisit.length > 0"  >
           <thead class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
               <tr>
                   <th>Date</th>
@@ -44,8 +45,15 @@
             </tr>
           </tbody>
       </table>
-
-      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" >
+      </div>
+      <div class="no_data d-flex justify-content-center" *ngIf="clientvisit.length === 0">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        </div>
+      
+      <div *ngIf="activeTab === 'Internal Meetings'" >
+      <table class="table table-bordered"  *ngIf="internalmeetings.length>0">
         <thead class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
           <tr>
               <th>Date</th>
@@ -61,8 +69,15 @@
         </tr>
       </tbody>
       </table>
-
-      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" >
+      </div>
+      <div class="no_data d-flex justify-content-center" *ngIf="internalmeetings.length === 0">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        </div>
+      
+      <div  *ngIf="activeTab === 'Office Visits'" >
+      <table class="table table-bordered" *ngIf="officevisits.length>0">
         <thead class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
           <tr>
               <th>Date</th>
@@ -78,5 +93,13 @@
         </tr>
       </tbody>
       </table>
-  </div>
+      </div>
+      <div class="no_data d-flex justify-content-center" *ngIf="officevisits.length === 0">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        </div>
+      
+    </div>
+    
  </div>

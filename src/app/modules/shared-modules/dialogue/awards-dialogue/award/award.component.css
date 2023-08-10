@@ -9,6 +9,7 @@
   width: 70vw !important;
   max-width: 100% !important;
   margin: 0 auto !important;
+  height: 80vh !important;
 }
 
 .modal-content {
@@ -228,6 +229,12 @@ table.table tr th {
     border-radius: 10px;
     border: 1px solid #205072;
     box-shadow: 0 0 3px 3px #ffd700;
+  }
+  .custom-modal-dialog {
+    width: 70vw !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    height: 80vh !important;
   }
 
   .modal-content {

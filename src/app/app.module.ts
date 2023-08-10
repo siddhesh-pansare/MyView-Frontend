@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
+import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
+import { EmployeeModule } from './modules/employee/employee.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +16,8 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     MatTableModule,
     CommonModule,
+    SharedModulesModule,
+    EmployeeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

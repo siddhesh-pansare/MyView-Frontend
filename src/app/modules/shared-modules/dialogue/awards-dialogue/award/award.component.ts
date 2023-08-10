@@ -25,7 +25,7 @@ export class AwardComponent implements OnInit {
 
   fetchData(): void {
     this.http
-      .get<{ awards: AwardData[] }>('./assets/data.json')
+      .get<{ awards: AwardData[] }>('./assets/temp_data/award.json')
       .subscribe((data) => {
         this.awardData = data.awards;
         this.isDataLoaded = true;

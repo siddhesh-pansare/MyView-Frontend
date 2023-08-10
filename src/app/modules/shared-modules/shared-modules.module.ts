@@ -17,6 +17,8 @@ import { RoleComponent } from './shared-components/role/role.component';
 import { RouterModule } from '@angular/router';
 import { CertificateDialogueComponent } from '../shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
 import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialogue.component';
+import { HttpClient } from '@angular/common/http';
+import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendance-dialog.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialo
     ScratchpadComponent,
     LoaderComponent,
     RoleComponent,
-    RemarkDialogueComponent
+    RemarkDialogueComponent,
+    AttendanceDialogComponent
   ],
   imports: [
     CommonModule,
@@ -39,7 +42,13 @@ import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialo
     MatDialogModule,
     BrowserAnimationsModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
+    SharedModulesRoutingModule
+  ],
+  exports:[
+    AttendanceDialogComponent,
+    SharedModulesRoutingModule,
+    HeaderComponent
   ]
 
 })

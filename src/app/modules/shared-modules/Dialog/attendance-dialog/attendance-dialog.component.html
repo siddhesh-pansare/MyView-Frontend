@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="box">
+    <div class="empname_img">
+        <img class="imgsize" src="assets/attendance/Ellipse 52.png">
+        <div class="empname">Mansi Goyal</div>
+    </div>
+
+    <div class="box1"><h1>Attendance</h1></div>
+    <div class="box2"><img class="attlogo" src="assets/attendance/8987710 1.png"></div>
+    
+    </div>
+    <span class="btncross" ><img  src="assets/attendance/btn_close.png"></span>
+    <br>
+    <div class="line"></div><br>
+
+    <div class="attendance-tabs">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" (click)="setActiveTab('Client Visits')" [class.active]="activeTab == 'Client Visits'"  >Client Visits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="setActiveTab('Internal Meetings')" [class.active]="activeTab == 'Internal Meetings'" >Internal Meetings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="setActiveTab('Office Visits')" [class.active]="activeTab == 'Office Visits'">Office Visits</a>
+            </li>
+          </ul>
+          <div class="line2"></div><br>
+    </div>
+    <div class="table-responsive rounded">
+      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" >
+          <thead class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
+              <tr>
+                  <th>Date</th>
+                  <th>Event</th>
+                  <th>Status</th>
+              </tr>
+          </thead>
+          <tbody class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
+            <tr *ngFor="let cv of clientvisit">
+              <td>{{cv.date}}</td>
+              <td class="eventcolor">{{cv.event}}</td>
+              <td [style.color]="getStatusColor(cv.status)">{{cv.status}}</td>
+            </tr>
+          </tbody>
+      </table>
+
+      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" >
+        <thead class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
+          <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Status</th>
+          </tr>
+      </thead>
+      <tbody class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
+        <tr *ngFor="let im of internalmeetings">
+          <td>{{im.date}}</td>
+          <td class="eventcolor">{{im.event}}</td>
+          <td [style.color]="getStatusColor(im.status)">{{im.status}}</td>
+        </tr>
+      </tbody>
+      </table>
+
+      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" >
+        <thead class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
+          <tr>
+              <th>Date</th>
+              <th>Context</th>
+              <th>Status</th>
+          </tr>
+      </thead>
+      <tbody class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
+        <tr *ngFor="let ov of officevisits">
+          <td>{{ov.date}}</td>
+          <td class="eventcolor">{{ov.context}}</td>
+          <td [style.color]="getStatusColor(ov.status)">{{ov.status}}</td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+ </div>

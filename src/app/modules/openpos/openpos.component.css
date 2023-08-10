@@ -1,0 +1,718 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+*{
+  font-family: Outfit;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.page-sub-header{
+display: flex;
+flex-direction: row;
+margin-left: 8vw;
+margin-right: 5vw;
+top:30px;
+position: relative;
+justify-content: space-between;
+
+}
+
+.page-heading{
+top:0.50rem;
+width: fit-content;
+height: fit-content;
+display: flex;
+position: relative;
+align-items: center;
+}
+
+.page-heading1{
+margin-left: 1vw;
+font-family: Outfit;
+font-weight: 600;
+font-size: 1.5rem;
+}
+.arrow-back-icon {
+top: 0.63rem;
+width: 2.5rem;
+height: 2.5rem;
+overflow: hidden;
+flex-shrink:0;
+margin-right: 1vw;
+}
+
+.line {
+position: absolute;
+border-top: 1px solid #000;
+box-sizing: border-box;
+width: 93%;
+height: 0.06rem;
+top:50px;
+}
+
+.btn-all-employees-icon {
+  position: relative;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* .col{
+    width:50%;
+    height:200px;
+    
+    Gap:36px;
+}
+.reduced-img-width {
+    width: 1280px; 
+  }
+  .reduced-img{
+    margin-top:200px;
+    width: 1280px;
+  }
+  .column{
+    
+    height:250px;
+    top:5407px;
+    border:1px;
+  } */
+
+
+  .active{
+    width:300px;
+    height:30px;
+    font:Outfit;
+    font-weight:600;
+    size:24px;
+    line-height:30.24px;
+    align-items:center;
+    margin-left:550px;
+    color:#00AC2B;
+   }
+   .act{
+    width:400px;
+    height:60px;
+    padding:15px,20px,15px,20px;
+    Gap:10px;
+    top: 10vh;
+    left: 5vw;
+   }
+   .cl{
+    width:300px;
+    height:30px;
+    font:Outfit;
+    font-weight:600;
+    size:24px;
+    line-height:30.24px;
+    align-items:center;
+    color:#FF0606;
+   }
+   
+   .imgbut{
+    position: relative;
+    margin-top:-40px;
+    top: 9vh;
+    width: 50vw;
+   }
+
+   .icon{
+    width: 20px;
+    height: 20px;
+   }
+ 
+   
+   .th{
+    /* width:1510.99px; */
+    height:48px;
+    top:143px;
+    left:47.52px;
+    border:1px;
+    border: 1px solid #205072;
+    padding: 10px 20px; /* Adjust the padding values as needed */
+    background-color: #f0f0f0;
+   }
+   .styled-table {
+    position: relative;
+    border-collapse: separate;
+    border-spacing: 10px; /* Adjust the spacing as needed */
+    /* width:1511.01px; */
+    height:188px;
+    border: 1px solid #205072;
+    top: 10vh;
+  }
+  .styled-table {
+    border-collapse: collapse;
+    border-radius: 10px 10px 0px 0px; /* Top-left and bottom-left rounded */
+    overflow: hidden; /* Hide overflow content due to border radius */
+    max-width: 100%; /* Ensure the table doesn't exceed its container */
+  }
+  .styled-table {
+    border-collapse: collapse;
+    
+  }
+  
+  .design {
+    border: 1px solid #205072;
+    border-radius: 10px 10px 0 0; /* Top-left and top-right rounded */
+    overflow: hidden; /* Hide overflow content due to border radius */
+    margin-left: 110px;
+    margin-right: 130px;
+    border: none;
+    outline: none;
+  }
+  
+  
+  th {
+    padding: 10px 20px; /* Adjust the padding values as needed */
+    width:1510.99px;
+    font-size: 1rem;
+    
+  }
+
+  .td{
+    font-size: 0.75rem;
+  }
+  
+  .btn{
+    position: relative; 
+    float: right;
+    right: 140px;
+    width:140px;
+    height:35px;
+    border-radius:10px;
+    padding:9px,8px,9px,8px;
+    Gap:10px;
+    background-color:#0074FCB8;
+    margin-top:45px;
+    font-weight: 600;
+    color:#FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  
+  .design{
+    border:1px solid #205072;
+    
+  }
+   .close{
+    width:400px;
+    height:60px;
+    padding:15px,20px,15px,20px;
+    Gap:10px;
+    
+   }
+   .act {
+    position: relative;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center;
+    align-items: center;
+    margin-left:600px;
+    Gap:150px;
+    
+  }
+  .act {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:884px;
+    height:61px;
+    Gap:36px;
+    margin-top: 80px auto;
+  }
+  
+
+
+
+  /* Responsive adjustments for .act */
+  @media (min-width: 768px) and (max-width:1025px) {
+    .act {
+      display: flex;
+      flex-direction: row; /* Revert to horizontal layout on larger screens */
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      left: 10px;
+      top: 3vh;
+    }
+  }
+  
+  .acti{
+    
+    margin-left:175px;
+    Gap:150px;
+  }
+  .acti {
+    
+    justify-content: center;
+    align-items: center;
+    margin-left:200px;
+  }
+  .active{
+    margin-left:200px;
+  }
+  
+  
+  .img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  
+  .act p {
+    margin: 0; /* Remove default margin to prevent spacing issues */
+  }
+  
+  .active, .cl {
+    display: inline-block; /* Display paragraphs inline */
+    margin: 0 10px; /* Add some spacing between paragraphs if needed */
+    margin-left:200px;
+    font-size: 24px;
+  }
+  .td{
+    width:1510.99px;
+    height:48px;
+    top:143px;
+    left:47.52px;
+    border:1px;
+    color:#33363F;
+    width:93px;
+    height:20px;
+    font:Outfit;
+    font-weight:500;
+    size:16px;
+    line-height:20.16px;
+    align-items:center;
+    padding: 10px 20px; /* Adjust the padding values as needed */
+    color: #33363F; /* Set the font color to #33363F */
+  }
+  
+  
+    
+    .reduced-img-width,
+    .reduced-img {
+      width: 100%; /* Make images responsive within their parent container */
+      height: auto;
+      
+    }
+    .center-content {
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding:15px,20px,15px,20px;
+    Gap:20px;
+    
+  }
+  
+  
+  
+ 
+  
+  .img {
+    margin-top: 10px; /* Adjust the margin as needed */
+    margin-left:1000px;
+  }
+  .center-content {
+    text-align: center;
+  }
+  
+  .active, .cl {
+    margin: 0;
+    font-size: 20px;
+  
+  }
+  
+  
+    .reduced-img{
+      margin-top:100px;
+    }
+    
+    .column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    /* Media Query for Mobile Devices */
+   
+    
+    .styled-table {
+  
+      border-collapse: collapse;
+      margin-top: 20px;
+      
+    }
+    .img{
+      margin-left:20px;
+    }
+    .tab{
+      margin-top:40px;
+      width:1574.25px;
+      height:94px;
+      border-collapse: collapse;
+    }
+    
+    .header-cell, .data-cell, .action-cell {
+      padding: 10px 20px;
+      text-align: center;
+      position: relative;
+    }
+    
+    /* Apply border styles to each table row */
+    tbody tr {
+      border-bottom: 1px solid #205072;
+    }
+    
+    /* Apply border styles to columns */
+    .data-cell:before,
+    .header-cell:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -1px;
+      bottom: 0;
+      width: 1px;
+      background-color: #205072;
+    }
+    
+    /* Apply border styles to the last column */
+    .action-cell:before {
+      display: none; /* Hide vertical line for the last column */
+    }
+    
+    /* Styling for the table data cells */
+    td {
+      color: #33363F;
+      font-weight: 500;
+    }
+    
+    /* Styling for Action column */
+    .action-cell {
+      text-align: center;
+    }
+    .icon {
+      margin-right: 10px; /* Adjust the value to control the gap */
+    }
+   
+  
+    /* Button styles */
+  
+  
+  /* Notification icon styles (adjust as needed) */
+  .act {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Image styles */
+  .imgbut {
+    display: block;
+    margin: 20px auto; /* Center the image */
+    max-width: 100%;
+    height: auto;
+    top: 2vh;
+    width: 50vh;
+    left: 4vh;
+  }
+  
+  /* Table container */
+  .table-container {
+    
+    margin: 20px auto; /* Center the table */
+  }
+  
+  /* Table styles */
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  
+  /* Table container */
+  .button-container {
+    overflow-x: auto;
+  }
+  
+  /* Table container */
+  .button-container {
+    overflow-x: auto;
+  }
+  
+  /* Table styles */
+  .tab {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table header cell styles */
+  .header-cell {
+    padding: 10px;
+    color: #205072;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  /* Table data cell styles */
+  .data-cell {
+    padding: 8px;
+    color: #33363F99;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  
+  /* Table container */
+  .table-container {
+  
+  }
+  
+  /* Table styles */
+  .tab {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Table header cell styles */
+  .header-cell {
+    padding: 10px;
+    color: #205072;
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  
+  /* Table data cell styles */
+  .data-cell {
+    padding: 8px;
+    color: #33363F99;
+    font-weight: 500;
+  }
+  
+  
+  
+  
+  /* Active and close text styles */
+  .act {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto; /* Center the container */
+  }
+  
+  /* Responsive adjustments for .act */
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      padding: 4px;
+      font-size: 8px;
+    }
+  
+    /* Add border to table rows for better readability */
+    .tab tr {
+      border-bottom: 1px solid #205072;
+    }
+  
+    /* Hide labels on small screens */
+    .tab tbody td:before {
+      display: none;
+    }
+  
+    /* Improve responsiveness for the table */
+    .table-container {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+  
+    /* Adjust button size and margin for smaller screens */
+    .btn {
+      
+      height: 38px;
+      margin-top: 20px; /* Adjust margin as needed */
+    }
+    
+    /* Make the image responsive */
+    .nav-link img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Further adjustments for even smaller screens */
+  @media screen and (max-width: 600px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      font-size: 8px;
+      padding: 4px;
+    }
+  
+    /* Center content horizontally */
+    .table-container, .act, .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    /* Hide labels on small screens */
+    .tab tbody td:before {
+      display: none;
+    }
+  
+    /* Adjust button size and margin */
+    .btn {
+    
+      height: 30px;
+      margin-top: 10px;
+    }
+  
+    /* Make the image responsive */
+    .nav-link img, .imgbut {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Additional adjustments for even smaller screens (down to 400px) */
+  @media screen and (max-width: 400px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      font-size: 6px;
+      padding: 2px;
+    }
+  
+    /* Adjust button size and margin for smaller screens */
+    .btn {
+      height: 30px;
+      margin-top: 10px;
+    }
+  }
+  /* Base styles for larger screens */
+  .data-cell {
+    padding: 8px;
+    font-size: 14px;
+    color: #33363F99;
+    font-weight: 500;
+  }
+  
+  .tab {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Mobile responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      padding: 4px;
+      font-size: 8px;
+    }
+  
+    /* Add border to table rows for better readability */
+    .tab tr {
+      border-bottom: 1px solid #205072;
+    }
+  
+    /* Hide labels on small screens */
+    .tab tbody td:before {
+      display: none;
+    }
+  
+    /* Improve responsiveness for the table */
+    .table-container {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+  
+    /* Adjust button size and margin for smaller screens */
+    .btn {
+      height: 30px;
+      margin-top: 10px;
+      
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+    /* Make the image responsive */
+    .nav-link img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Center content horizontally */
+    .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  
+  /* Further adjustments for even smaller screens */
+  @media screen and (max-width: 600px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      font-size: 8px;
+      padding: 4px;
+    }
+  
+    /* Center content horizontally */
+    .table-container, .act, .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    /* Hide labels on small screens */
+    .tab tbody td:before {
+      display: none;
+    }
+  
+    /* Adjust button size and margin */
+    .btn {
+      height: 30px;
+      margin-top: 10px;
+      
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  
+    /* Make the image responsive */
+    .nav-link img, .imgbut {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Additional adjustments for even smaller screens (down to 400px) */
+  @media screen and (max-width: 400px) {
+    /* Adjust data cell font size and padding */
+    .data-cell {
+      font-size: 6px;
+      padding: 2px;
+    }
+  
+    /* Adjust button size and margin for smaller screens */
+    .btn {
+      height: 30px;
+      margin-top: 10px;
+      
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  }
+  /* Adjust the button's position and styling */
+  
+  /* Adjust button size and margin for smaller screens */
+  @media screen and (max-width: 600px) {
+    .btn {
+      height: 30px;
+      margin-top: 10px;
+      
+      margin-left: 0; /* Reset margin for smaller screens */
+    }
+  }

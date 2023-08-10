@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+* {
+  font-family: Outfit;
+}
+
+.table-responsive.rounded{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+table {
+  border-color: #205072;
+  border: 1;
+  border-radius: 2px;
+  max-height: fit-content;
+  font-weight: 600;
+  table-layout: fixed;
+
+}
+
+table.table th {
+  color: #205072;
+}
+
+th{
+  font-size: 1rem;
+  width: 20%;
+}
+
+td{
+  color:#38a3a5;
+  font-size: 0.80rem;
+  width: 20%;
+
+}
+
+.eventcolor{
+  color:#205072;
+}
+
+.fade-in {
+  animation: fadeInAnimation 0.8s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes fadeInAnimation {
+  0% { opacity: 0; transform: translateY(0px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Media query for mobile screens */
+
+@media (max-width:600px){
+
+  .container{
+    width: 80vw;
+    max-height: 130vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background-color: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: relative;
+    }
+
+    .box{
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .box1{
+      margin-left: -50px;
+      margin-top: 30px;
+  }
+
+.empname{
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #205072;
+  font-size: 1.5vw;
+  font-family: Outfit;
+  font-weight: 500;
+}
+
+    h1{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    font-weight: 500;
+    }
+
+
+    .imgsize{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-left: 1vw;    
+    
+
+    }
+
+
+    .attlogo{
+    width: 10vw;
+    height: 10vw;
+    flex-shrink: 0;
+    margin-right: 2vw;
+    margin-left: -15vw;
+    top: 10vw;
+    }
+
+    .line {
+        width: 75vw; /* Adjust the width as needed */
+        height: 0.3vw; /* Adjust the height as needed */
+        background: rgba(51, 54, 63, 0.60);
+
+    }
+
+    .attendance-tabs{
+      margin-top: -20px;
+      font-size: 2.0vw ;
+      margin-left: 10px;
+      font-family: Outfit;
+      font-weight: 600;
+  }    
+   
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+    cursor:pointer;
+ }
+  
+  .nav-item .nav-link{
+    color: rgba(51, 54, 63, 0.6);
+    cursor:pointer;
+  }
+  
+  .line2{
+      position: relative;
+      border-top: 1px solid #000;
+      box-sizing: border-box;
+      width: 60vw;
+      height: 0.06rem;
+      margin-left: 5vw;
+    
+  }
+
+  th  {
+    font-size: 0.75rem;
+  }
+
+  td{
+    font-size: 0.50rem;
+  }
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+        size: 40px;
+      }
+
+
+}
+
+
+@media (min-width:601px) and (max-width:1024px) {
+    .container{
+    width: 80vw;
+    max-height: 110vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background-color: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    position: relative;
+    }
+
+    .box{
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+      height: 120px;
+  }
+
+  .box1{
+      margin-left: -110px;
+      margin-top: 30px;
+  }
+
+.empname{
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: #205072;
+  font-size: 1.75vw;
+  font-family: Outfit;
+  font-weight: 500;
+}
+
+    h1{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+    }
+
+ 
+
+    .imgsize{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    margin-left: 1vw;    
+    }
+
+    .attlogo{
+    width: 7vw;
+    height: 7vw;
+    flex-shrink: 0;
+    margin-right: 2vw;
+    margin-left: -15vw;
+    top: 6vw;
+    }
+
+
+    .line {
+        width: 72vw; 
+        height: 0.4vw; 
+        background: rgba(51, 54, 63, 0.60);
+
+    }
+
+    .attendance-tabs{
+      margin-top: -25px;
+      font-size: 2.0vw ;
+      margin-left: 10px;
+      font-size: 1rem;
+      font-family: Outfit;
+      font-weight: 600;
+  }    
+   
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+    cursor:pointer;
+ }
+  
+  .nav-item .nav-link{
+    color: rgba(51, 54, 63, 0.6);
+    cursor:pointer
+  }
+  
+  .line2{
+      position: relative;
+      border-top: 1px solid #000;
+      box-sizing: border-box;
+      width: 50vw;
+      height: 0.06rem;
+      margin-left: 12vw;
+    
+  } 
+    
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+        size: 40px;
+      }
+
+  }
+
+ 
+
+   /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
+
+  @media (min-width: 1025px){
+
+    .container{
+    width: 60vw;
+    height: 90vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background-color: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 20vw;
+    position: fixed;
+    overflow:auto;
+    }
+
+    .box{
+        display: flex;
+        margin-top: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .box1{
+        margin-left: -100px;
+        margin-top: 30px;
+    }
+
+.empname{
+    margin-top: 10px;
+    margin-left: 13.18px;
+    text-align: center;
+    color: #205072;
+    font-family: Outfit;
+    font-size:1rem;
+    font-weight: 500;
+}
+
+
+    h1{
+    color: #205072;
+    align-items: center;
+    font-family: Outfit;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+    }
+
+ 
+
+    .imgsize{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    margin-left: 1vw;
+    
+
+    }
+
+    .attlogo{
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    align-items: flex-end;  
+    margin-left: -120px;
+    margin-top: 10px;
+    }
+
+
+    .line {
+      position: absolute;
+        width: 57vw; /* Adjust the width as needed */
+        height: 0.5vh; /* Adjust the height as needed */
+        background: rgba(51, 54, 63, 0.60);
+        top:160px;
+    }
+ 
+.attendance-tabs{
+    margin-top:-25px;
+    font-family: Outfit;
+    font-size: 1rem;
+    font-weight: 600;
+}    
+ 
+.nav-item{
+  margin-left: 20px;
+}
+
+.attendance-tabs .nav-item .nav-link.active{
+   color: #205072;
+   cursor:pointer
+}
+
+.nav-link{
+  color: rgba(51, 54, 63, 0.6);
+  cursor:pointer;
+}
+
+.line2{
+    position: relative;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 35vw;
+    height: 0.06rem;
+    margin-left: 12vw;
+}
+   
+
+      .btncross{
+        right: 1vw;
+        position: absolute;  
+        top: 1vw;  
+        cursor: pointer;  
+      }
+
+    }
+
+  /* Media query for tablet screens */
+
+  
+
+  @media (min-width: 2281px){
+    .container {
+      width: 45vw;
+      height: 80vh;
+      flex-shrink: 0;
+      border-radius: 10px;
+      border: 1px solid #205072;
+      background-color: #FFF;
+      box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.5);
+      margin-top: 15vh;
+      margin-bottom: 5vh;
+      margin-left: 30vw;
+      margin-right: 20vw;
+      position: relative;
+    }
+
+    .box{
+      display: flex;
+      margin-top: 40px;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .box1{
+      margin-left: -110px;
+  }
+
+.empname{
+  margin-top: 10px;
+  margin-left: 13.18px;
+  text-align: center;
+  color: #205072;
+  font-family: Outfit;
+  font-weight: 300;
+}
+
+    h1 {
+      color: #205072;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 4vw;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+ 
+
+    .imgsize {
+      width: 5vw;
+      height: 5vw;
+      flex-shrink: 0;
+      margin-left: 1vw;
+     }
+
+ 
+
+    .attlogo {
+      width: 5vw;
+      height: 5vw;
+      
+      /* align-items: flex-end; */
+      position: absolute;
+      margin-left: 30vw;
+      top: 4.5vw;
+    }
+
+ 
+
+    .line {
+      width: 42vw;
+      height: 0.5vh;
+      background: rgba(51, 54, 63, 0.60);
+    }
+
+    .attendance-tabs{
+      margin-top: -20px;
+      font-family: Outfit;
+      font-weight: 500;
+  
+  }    
+   
+  .attendance-tabs .nav-item .nav-link.active{
+    color: #205072;
+    cursor:pointer
+ }
+  
+  .nav-item .nav-link{
+    color: rgba(51, 54, 63, 0.6);
+    cursor:pointer;
+  }
+  
+  .line2{
+      position: relative;
+      border-top: 1px solid #000;
+      box-sizing: border-box;
+      width: 30px ;
+      height: 0.06rem;
+      margin-left: 140px;
+  }
+
+    
+    .btncross{
+      right: 10px;
+      position: absolute;  
+      top: 10px;  
+      cursor: pointer;  
+    }
+    
+       
+  }
+
+  

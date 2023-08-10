@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
@@ -19,7 +19,8 @@ import { OpenpositionsComponent } from './openpositions/openpositions.component'
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModulesModule
+    SharedModulesModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

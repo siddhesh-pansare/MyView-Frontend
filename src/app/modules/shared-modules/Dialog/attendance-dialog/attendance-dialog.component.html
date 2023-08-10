@@ -29,7 +29,7 @@
     </div>
     <div class="table-responsive rounded">
       <div *ngIf="activeTab === 'Client Visits'" >
-      <table class="table table-bordered" *ngIf="clientvisit.length > 0"  >
+      <table class="table table-bordered" *ngIf="isDataLoadedcv"  >
           <thead class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
               <tr>
                   <th>Date</th>
@@ -45,15 +45,16 @@
             </tr>
           </tbody>
       </table>
-      </div>
-      <div class="no_data d-flex justify-content-center" *ngIf="clientvisit.length === 0">
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedcv">
         <img
         src="assets/attendance/3024051 1.png"
         alt="No Data" />
         </div>
+      </div>
+      
       
       <div *ngIf="activeTab === 'Internal Meetings'" >
-      <table class="table table-bordered"  *ngIf="internalmeetings.length>0">
+      <table class="table table-bordered"  *ngIf="isDataLoadedim">
         <thead class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
           <tr>
               <th>Date</th>
@@ -69,15 +70,16 @@
         </tr>
       </tbody>
       </table>
-      </div>
-      <div class="no_data d-flex justify-content-center" *ngIf="internalmeetings.length === 0">
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedim">
         <img
         src="assets/attendance/3024051 1.png"
         alt="No Data" />
         </div>
+      </div>
+      
       
       <div  *ngIf="activeTab === 'Office Visits'" >
-      <table class="table table-bordered" *ngIf="officevisits.length>0">
+      <table class="table table-bordered" *ngIf="isDataLoadedov">
         <thead class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
           <tr>
               <th>Date</th>
@@ -93,12 +95,13 @@
         </tr>
       </tbody>
       </table>
-      </div>
-      <div class="no_data d-flex justify-content-center" *ngIf="officevisits.length === 0">
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedov">
         <img
         src="assets/attendance/3024051 1.png"
         alt="No Data" />
         </div>
+      </div>
+      
       
     </div>
     

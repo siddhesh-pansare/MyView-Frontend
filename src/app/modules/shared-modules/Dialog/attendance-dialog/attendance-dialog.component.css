@@ -40,7 +40,7 @@ td{
 }
 
 .fade-in {
-  animation: fadeInAnimation 0.8s ease-in-out;
+  animation: fadeInAnimation 0.3s ease-out;
   opacity: 1;
 }
 

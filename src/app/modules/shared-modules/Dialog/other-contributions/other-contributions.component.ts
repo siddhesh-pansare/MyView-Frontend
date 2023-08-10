@@ -23,9 +23,9 @@ export class OtherContributionsComponent implements OnInit {
   }
 
   fetchData() {
-    this.http.get<ContributionData[]>('assets/temp_data/contributions.json').subscribe(data => {
-      this.contributions = data;
-      this.hasContributions = this.contributions.length > 0; // Update the hasContributions property
+    this.http.get<{ contributions: ContributionData[] }>('assets/temp_data/remarks.json').subscribe((data) => {
+      this.contributions = data.contributions;
+      // this.hasContributions = this.contributions.length > 0; // Update the hasContributions property
     });
   }
 }

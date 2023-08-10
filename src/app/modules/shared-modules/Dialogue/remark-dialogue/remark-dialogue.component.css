@@ -105,8 +105,9 @@ td{
     .addremark{
       width: 20vw;
       height: 5vh;
-      border-radius: 10px;
+      border-radius: 8px;
       background: rgba(0, 116, 252, 0.72);
+      border-color:rgba(0, 116, 252, 0.72);
       color: #FFF;
       text-align: center;
       font-family: Outfit;
@@ -242,17 +243,19 @@ td{
     }
 
     .addremark{
-     width: 12vw;
+     width: 14vw;
      height: 5vh;
      border-radius: 10px;
      background: rgba(0, 116, 252, 0.72);
+     border-color:rgba(0, 116, 252, 0.72);
      color: #FFF;
      text-align: center;
      font-family: Outfit;
-     font-size: 12px;
+     font-size: 10px;
      font-style: normal;
      font-weight: 400;
      line-height: normal;
+     margin-left:-2%;
     }
 
     .box{
@@ -321,8 +324,8 @@ td{
     .box3 {
       position: absolute;
       bottom: 6vw;
-      left:53vw;
-      padding: 10px; /* Add padding to create space between image and container edges */
+      left:52vw;
+      padding: 6px; /* Add padding to create space between image and container edges */
     }
 
 
@@ -355,8 +358,8 @@ td{
     .box3 {
       position: absolute;
       bottom: 3vw;
-      left: 47vw;
-      padding: 10px; /* Add padding to create space between image and container edges */
+      left: 44.5vw;
+      padding: 8px; /* Add padding to create space between image and container edges */
     }
 
     .col1, .col3 {
@@ -379,14 +382,15 @@ td{
     }
 
     .addremark{
-      width: 10vw;
+      width: 12vw;
       height: 5vh;
       border-radius: 10px;
       background: rgba(0, 116, 252, 0.72);
+      border-color:rgba(0, 116, 252, 0.72);
       color: #FFF;
       text-align: center;
       font-family: Outfit;
-      font-size: 12px;
+      font-size: 11px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;

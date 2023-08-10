@@ -58,7 +58,11 @@ fetchData(tab:string) {
   });
 }
 
+deleteRow(index: number) {
 
+  this.active.splice(index, 1);
+
+};
 
 }
 

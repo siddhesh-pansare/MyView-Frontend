@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="box">
+  <div class="empname_img">
+      <img class="imgsize" src="assets/images/remark.png">
+      <div class="empname">Mansi Goyal</div>
+  </div>
+
+  <div class="box1"><h1>Your Remarks</h1></div>
+  <div class="box2"><img class="remlogo" src="assets/images/remark1.png"></div>
+  
+  </div>
+
+  <a href="...">
+  <span class="btncross" ><img  src="assets/images/close.png"></span></a>
+  <br>
+  <div class="line"></div><br>
+
+  
+  <div class="table-responsive rounded">
+    <div class="table-container">
+    <table class="table table-bordered">
+        <thead class="text-center">
+            <tr>
+                <th>Date</th>
+                <th>Feedback</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+
+          <tr *ngFor="let cv of remarkdata; let i=index">
+
+            <td>{{cv.Date}}</td>
+
+            <td id="feed">
+              {{cv.Feedback}}
+            </td>
+
+            <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+          </tr>
+
+        </tbody>
+    </table>
+  </div>
+</div>
+
+    <div class="box3">
+      <a href="...">
+    <!-- <img src="assets/images/remark3.png" class="addremark addremark-hover">-->
+    <button class="addremark addremark-hover">Add New Remark</button>
+      </a>
+  </div>
+    
+</div>

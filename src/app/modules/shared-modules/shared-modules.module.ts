@@ -15,6 +15,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { LoaderComponent } from './Dialogue/loader/loader.component';
 import { RoleComponent } from './shared-components/role/role.component';
 import { RouterModule } from '@angular/router';
+import { CertificateDialogueComponent } from '../shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
+import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialogue.component';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { RouterModule } from '@angular/router';
     RoundDetailsComponent,
     ScratchpadComponent,
     LoaderComponent,
-    RoleComponent
+    RoleComponent,
+    RemarkDialogueComponent
   ],
   imports: [
     CommonModule,

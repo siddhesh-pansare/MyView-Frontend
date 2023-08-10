@@ -7,8 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
-
-
+import{ FormsModule} from '@angular/forms';
+import { CertificateDialogueComponent } from './modules/shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
+import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SharedModulesModule } from './modules/shared-modules/shared-modules.mod
     AppRoutingModule,
     EmployeeModule,
     HttpClientModule,
-    SharedModulesModule
+    SharedModulesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

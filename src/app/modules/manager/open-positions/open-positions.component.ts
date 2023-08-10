@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component ,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 interface ActiveData{
@@ -20,11 +20,11 @@ interface ClosedData{
 }
 
 @Component({
-  selector: 'app-openpositions',
-  templateUrl: './openpositions.component.html',
-  styleUrls: ['./openpositions.component.css']
+  selector: 'app-open-positions',
+  templateUrl: './open-positions.component.html',
+  styleUrls: ['./open-positions.component.css']
 })
-export class OpenpositionsComponent implements OnInit{
+export class OpenPositionsComponent implements OnInit {
   active: ActiveData[] = [];
   closed: ClosedData[] = [];
   activeTab: string = 'Active';
@@ -63,8 +63,4 @@ deleteRow(index: number) {
   this.active.splice(index, 1);
 
 };
-
 }
-
-
-

@@ -1,0 +1,25 @@
+.icon{
+    width:100px;
+    height:100px;
+    top:67px;
+    left:87px;
+    border:1px;
+
+}
+.hiring{
+    width:60px;
+    height:60px;
+    top:84px;
+    margin-left:1000px;
+}
+.hiring-data{
+    width:1000px;
+    height:750px;
+    top:5px;
+    left:12px;
+   border-radius:10px;
+   background: linear-gradient(0deg, #205072, #205072),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+border:1px solid #205072;
+
+}

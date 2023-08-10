@@ -16,12 +16,15 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
+import { OpenposdialogComponent } from './openposdialog/openposdialog.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OpenposdialogComponent,
+    
   ],
   imports: [
     BrowserModule,

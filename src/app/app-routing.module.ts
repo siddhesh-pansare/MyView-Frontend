@@ -4,12 +4,14 @@ import { LoginComponent } from './modules/shared-modules/shared-components/login
 import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
+import { OpenposdialogComponent } from './openposdialog/openposdialog.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'employees', pathMatch:'full' },
   { path:'attendance', component:AttendanceDialogComponent },
   { path:'header',component:HeaderComponent },
-  { path:'employees',component:EmployeesComponent }
+  { path:'employees',component:EmployeesComponent },
+  {path:'openposdialog',component:OpenposdialogComponent}
 ];
 
 @NgModule({

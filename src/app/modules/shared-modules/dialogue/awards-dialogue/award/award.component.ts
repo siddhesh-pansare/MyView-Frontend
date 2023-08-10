@@ -16,7 +16,7 @@ interface AwardData {
 export class AwardComponent implements OnInit {
   awardData: AwardData[] = [];
   displayedColumns: string[] = ['Date', 'Award', 'Nominated_By'];
-  isDataLoaded: boolean = false;
+  // isDataLoaded: boolean = false;
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
@@ -28,7 +28,7 @@ export class AwardComponent implements OnInit {
       .get<{ awards: AwardData[] }>('./assets/temp_data/award.json')
       .subscribe((data) => {
         this.awardData = data.awards;
-        this.isDataLoaded = true;
+        // this.isDataLoaded = true;
       });
   }
 }

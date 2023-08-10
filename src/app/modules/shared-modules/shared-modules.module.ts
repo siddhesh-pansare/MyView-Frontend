@@ -21,6 +21,9 @@ import { HttpClient } from '@angular/common/http';
 import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendance-dialog.component';
 
 
+import { CertificationDialogueComponent } from './dialogue/certification-dialogue/certification-dialogue.component';
+import { InterviewComponent } from './dialogue/interview-dialogue/interview/interview.component';
+import { SessionComponent } from './dialogue/session-dialogue/session/session.component';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -34,6 +37,9 @@ import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendan
     RoleComponent,
     RemarkDialogueComponent,
     AttendanceDialogComponent
+    CertificationDialogueComponent,
+    InterviewComponent,
+    SessionComponent
   ],
   imports: [
     CommonModule,

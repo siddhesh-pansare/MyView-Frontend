@@ -18,6 +18,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { OpenposComponent } from './modules/openpos/openpos.component';
 import { OpenpositionsComponent } from './openpositions/openpositions.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

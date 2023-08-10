@@ -1,25 +1,53 @@
 .icon{
     width:100px;
     height:100px;
-    top:67px;
-    left:87px;
+    margin-top:67px;
+    margin-left:87px;
     border:1px;
+    
 
 }
 .hiring{
-    width:60px;
-    height:60px;
-    top:84px;
-    margin-left:1000px;
+    width:45px;
+    margin-top:-100px;
+    
+    margin-left:900px;
+}
+.line{
+
+    
+    margin-top:-90px;
+    margin-left:40px;
+    border-radius:10px;
+    border:1px solid#205072;
+}
+.mid{
+    
+    height:68px;
+    margin-top:-80px;
+    margin-left:447px;
+    font-size:20px;
+   text-decoration: 
+   #205072;
+
+
 }
 .hiring-data{
+    
+    height:550px;
     width:1000px;
-    height:750px;
-    top:5px;
-    left:12px;
+    margin-top:10px;
+    margin-left:30px;
    border-radius:10px;
-   background: linear-gradient(0deg, #205072, #205072),
-linear-gradient(0deg, #FFFFFF, #FFFFFF);
+ 
 border:1px solid #205072;
+
+}
+.close{
+    width:20px;
+    height:20px;
+    margin-top:-300px;
+    margin-left:960px;
+    
 
 }

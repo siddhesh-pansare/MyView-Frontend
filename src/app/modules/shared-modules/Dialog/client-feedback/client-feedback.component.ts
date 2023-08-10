@@ -30,4 +30,9 @@ export class ClientFeedbackComponent implements OnInit {
       this.feedbackdata = data.feedback;
     });
   }
+
+  deleteRow(index: number) {
+    // Remove the row from the array based on the given index
+    this.feedbackdata.splice(index, 1);
+  };
 }

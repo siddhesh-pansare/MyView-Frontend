@@ -67,12 +67,6 @@ td{
   overflow-x: auto;
 }
 
-@media (max-width:656px){
-.table-container{
-  width: 100%;
-  overflow-x: scroll;
-}
-}
 
 @media (max-width:600px){
 
@@ -206,6 +200,13 @@ td{
         height: -2vw;
       }
 
+      .no_data{
+        width: 46vw;
+        height: 40vw;
+        margin-top: 16vw;
+        margin-left: 14vw;
+      }
+
 
 }
 
@@ -245,7 +246,7 @@ td{
     .addremark{
      width: 14vw;
      height: 5vh;
-     border-radius: 10px;
+     border-radius: 7px;
      background: rgba(0, 116, 252, 0.72);
      border-color:rgba(0, 116, 252, 0.72);
      color: #FFF;
@@ -337,6 +338,13 @@ td{
         size: 35px;
       }
 
+      .no_data{
+        width: 38vw;
+        height: 30vw;
+        margin-top: 10vw;
+        margin-left: 15vw;
+      }
+
   }
 
  
@@ -344,6 +352,13 @@ td{
    /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
 
   @media (min-width: 1025px){
+
+    .no_data{
+      width: 22vw;
+      height: 18vw;
+      margin-left: 17vw;
+      margin-top: 3vw;
+    }
 
     .logo1{
       margin-left: 0vw;
@@ -384,7 +399,7 @@ td{
     .addremark{
       width: 12vw;
       height: 5vh;
-      border-radius: 10px;
+      border-radius: 7px;
       background: rgba(0, 116, 252, 0.72);
       border-color:rgba(0, 116, 252, 0.72);
       color: #FFF;

@@ -5,6 +5,8 @@ interface RemarkData {
   Date: string;
   Feedback: string;  
   editable: boolean; 
+  Action: string;
+  Action1: string;
 }
 
 @Component({
@@ -15,6 +17,7 @@ interface RemarkData {
 export class RemarkDialogueComponent implements OnInit {
   remarkdata: RemarkData[] = [];
   displayedColumns: string[] = ['Date', 'Feedback'];
+  isDataLoaded: boolean = false;
 
   constructor(private http: HttpClient) { }
 
@@ -22,9 +25,10 @@ export class RemarkDialogueComponent implements OnInit {
     this.fetchData();
   }
 
-  fetchData() {
+  fetchData():void {
     this.http.get<{ remarks: RemarkData[] }>('assets/temp_data/remarks.json').subscribe((data) => {
       this.remarkdata = data.remarks;
+      this.isDataLoaded=this.remarkdata.length > 0;
     });
   }
   

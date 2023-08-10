@@ -17,8 +17,7 @@
 
   
   <div class="table-responsive rounded">
-    <div class="table-container">
-    <table class="table table-bordered">
+    <table class="table table-bordered" *ngIf="remarkdata.length > 0">
         <thead class="text-center">
             <tr>
                 <th>Date</th>
@@ -36,17 +35,21 @@
               {{cv.Feedback}}
             </td>
 
-            <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+            <td><img [src]="cv.Action" class="logo1 logo-hover"><img [src]="cv.Action1" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
           </tr>
 
         </tbody>
     </table>
+   
   </div>
-</div>
-
+  <div class="no_data d-flex justify-content-center" *ngIf="remarkdata.length === 0">
+  <img
+  src="../../../../../../assets/images/no_data.png"
+  alt="No Data" />
+  </div>
+ 
     <div class="box3">
       <a href="...">
-    <!-- <img src="assets/images/remark3.png" class="addremark addremark-hover">-->
     <button class="addremark addremark-hover">Add New Remark</button>
       </a>
   </div>

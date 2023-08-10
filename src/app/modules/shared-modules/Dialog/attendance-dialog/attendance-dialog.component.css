@@ -40,7 +40,7 @@ td{
 }
 
 .fade-in {
-  animation: fadeInAnimation 0.4s ease-in-out;
+  animation: fadeInAnimation 0.5s ease-in-out;
   opacity: 1;
 }
 
@@ -86,7 +86,7 @@ td{
   color: #205072;
   font-size: 1.5vw;
   font-family: Outfit;
-  font-weight: 600;
+  font-weight: 500;
 }
 
     h1{
@@ -97,7 +97,7 @@ td{
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-    font-weight: 600;
+    font-weight: 500;
     }
 
 
@@ -209,7 +209,7 @@ td{
   color: #205072;
   font-size: 1.75vw;
   font-family: Outfit;
-  font-weight: 600;
+  font-weight: 500;
 }
 
     h1{
@@ -218,7 +218,7 @@ td{
     font-family: Outfit;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
     
     }
@@ -327,8 +327,8 @@ td{
     text-align: center;
     color: #205072;
     font-family: Outfit;
-    font-size:0.80rem;
-    font-weight: 600;
+    font-size:1rem;
+    font-weight: 500;
 }
 
 

@@ -27,7 +27,7 @@ interface OfficeVisit{
     trigger('fadeInOut', [
       state('in', style({ opacity: 1, transform: 'translateY(0)' })),
       transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(-10px)' }),
+        style({ opacity: 0, transform: 'translateY(0px)' }),
         animate('0.5s')
       ]),
     ]),

@@ -28,15 +28,15 @@
           <div class="line2"></div><br>
     </div>
     <div class="table-responsive rounded">
-      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" [class.fade-in]="activeTab === 'Client Visits'">
-          <thead class="text-center">
+      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" >
+          <thead class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
               <tr>
                   <th>Date</th>
                   <th>Event</th>
                   <th>Status</th>
               </tr>
           </thead>
-          <tbody class="text-center">
+          <tbody class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
             <tr *ngFor="let cv of clientvisit">
               <td>{{cv.date}}</td>
               <td class="eventcolor">{{cv.event}}</td>
@@ -45,15 +45,15 @@
           </tbody>
       </table>
 
-      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" [class.fade-in]="activeTab === 'Internal Meetings'">
-        <thead class="text-center">
+      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" >
+        <thead class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
           <tr>
               <th>Date</th>
               <th>Event</th>
               <th>Status</th>
           </tr>
       </thead>
-      <tbody class="text-center">
+      <tbody class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
         <tr *ngFor="let im of internalmeetings">
           <td>{{im.date}}</td>
           <td class="eventcolor">{{im.event}}</td>
@@ -62,15 +62,15 @@
       </tbody>
       </table>
 
-      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" [class.fade-in]="activeTab === 'Office Visits'">
-        <thead class="text-center">
+      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" >
+        <thead class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
           <tr>
               <th>Date</th>
               <th>Context</th>
               <th>Status</th>
           </tr>
       </thead>
-      <tbody class="text-center">
+      <tbody class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
         <tr *ngFor="let ov of officevisits">
           <td>{{ov.date}}</td>
           <td class="eventcolor">{{ov.context}}</td>

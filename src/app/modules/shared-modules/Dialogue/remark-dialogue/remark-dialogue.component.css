@@ -48,7 +48,7 @@ th{
 td{
   color:#38a3a5;
   font-size: 0.80rem;
-padding: 2px;
+  padding: 2px;
 }
 
 
@@ -83,8 +83,8 @@ padding: 2px;
   }
 
   .logo2{
-margin-left: 0vw;
-width: 3.5vw;
+   margin-left: 0vw;
+   width: 3.5vw;
   }
 
 
@@ -103,8 +103,17 @@ width: 3.5vw;
     }
 
     .addremark{
-      width: 13vw;
-      height: 3vh;
+      width: 20vw;
+      height: 5vh;
+      border-radius: 10px;
+      background: rgba(0, 116, 252, 0.72);
+      color: #FFF;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
 
     .box{
@@ -166,8 +175,8 @@ width: 3.5vw;
         width: 75vw; /* Adjust the width as needed */
         height: 0.1vw; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-margin-top: -4vw;
-margin-left: -2vw;
+        margin-top: -4vw;
+        margin-left: -2vw;
     }
 
     .box3 {
@@ -191,9 +200,9 @@ margin-left: -2vw;
         position: absolute;  
         top: 1vw;  
         cursor: pointer;  
-       size: 40px;
-       width: -2vw;
-       height: -2vw;
+        size: 40px;
+        width: -2vw;
+        height: -2vw;
       }
 
 
@@ -206,9 +215,7 @@ margin-left: -2vw;
     display: block; /* Show the icon for mobile screens */
   }
   
-  .addremark {
-    display: none; /* Hide the "Add New Remark" image for mobile screens */
-  }
+  
 
   .logo1{
     margin-left: 0vw;
@@ -216,8 +223,8 @@ margin-left: -2vw;
   }
 
   .logo2{
-margin-left: 2vw;
-width: 2.5vw;
+    margin-left: 2vw;
+    width: 2.5vw;
   }
 
     .container{
@@ -235,8 +242,17 @@ width: 2.5vw;
     }
 
     .addremark{
-     width: 10vw;
-     height: 4vh;
+     width: 12vw;
+     height: 5vh;
+     border-radius: 10px;
+     background: rgba(0, 116, 252, 0.72);
+     color: #FFF;
+     text-align: center;
+     font-family: Outfit;
+     font-size: 12px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
     }
 
     .box{
@@ -305,7 +321,7 @@ width: 2.5vw;
     .box3 {
       position: absolute;
       bottom: 6vw;
-      left:55vw;
+      left:53vw;
       padding: 10px; /* Add padding to create space between image and container edges */
     }
 
@@ -332,8 +348,8 @@ width: 2.5vw;
     }
 
     .logo2{
-margin-left: 1vw;
-width: 1.5vw;
+     margin-left: 1vw;
+     width: 1.5vw;
     }
 
     .box3 {
@@ -363,8 +379,17 @@ width: 1.5vw;
     }
 
     .addremark{
-      width: 9vw;
-      height: 4vh;
+      width: 10vw;
+      height: 5vh;
+      border-radius: 10px;
+      background: rgba(0, 116, 252, 0.72);
+      color: #FFF;
+      text-align: center;
+      font-family: Outfit;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
 
     .box{
@@ -424,7 +449,7 @@ width: 1.5vw;
 
 
     .line {
-      position: absolute;
+        position: absolute;
         width: 57vw; /* Adjust the width as needed */
         height: 0.2vh; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
@@ -460,8 +485,8 @@ width: 1.5vw;
     }
 
     .logo2{
-margin-left: 3vw;
-width: 2vw;
+     margin-left: 3vw;
+     width: 2vw;
     }
 
     .container {

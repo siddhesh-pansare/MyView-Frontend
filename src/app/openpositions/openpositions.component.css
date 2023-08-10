@@ -220,11 +220,12 @@ tr:last-child td:not(:first-child):not(:last-child):hover:after {
     z-index: 1;
 }
 
-@media (max-width:1900px){
+@media (min-width:1800px) and (max-width:2281px){
     .btn{
         position: relative; 
         float: right;
-        right: 200px;
+        right: 400px;
+        margin-right: 50px;
         width:120px;
         height:30px;
         border-radius:10px;
@@ -240,7 +241,7 @@ tr:last-child td:not(:first-child):not(:last-child):hover:after {
 }
 
 
-@media (min-width:1400px){
+@media (min-width:1500px){
     .btn{
         position: relative; 
         float: right;

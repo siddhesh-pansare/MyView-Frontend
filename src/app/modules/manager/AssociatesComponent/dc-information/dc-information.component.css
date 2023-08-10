@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+.container{
+  display: grid;
+  overflow: hidden;
+}
+
+body {
+  font-family: Outfit;
+}
+
+.council-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+}
+
+.card-info {
+
+  color: #082737;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.text-wrap{
+color: rgba(51, 54, 63, 0.60);
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+
+.dc-tech{
+  color: #205072;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+
+.attendence{
+  color: #205072;
+font-family: Outfit;
+font-size: 13px;
+font-style: normal;
+font-weight: bold;
+line-height: 0;
+letter-spacing: 0.5px;
+margin-left: 0vw;
+}
+
+.small-card {
+  border: none;
+}
+
+.small-card .card-img {
+  object-fit: cover;
+  height: 35px;
+  width: 35px;
+  border-radius: 40px;
+}
+
+.border-top{
+  margin-top: -3vw;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+
+.mentor-card {
+  height: 120px;
+  overflow-y: auto;
+
+}
+
+.card-img-top {
+  height: 70%;
+  width: 70%;
+  margin-top: 15px;
+}
+
+.card-title {
+  color: #205075;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.7px;
+}
+
+.card-text {
+  color: #56C596;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.client{
+  color: #205072;
+  font-family: Outfit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+
+.client1{
+  color: #56C596;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.client2{
+  color: rgba(51, 54, 63, 0.60);
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: bold;
+line-height: normal;
+}
+
+.col-6 {
+  color: #205072;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+ height: 3vw;
+background: rgba(0, 240, 255, 0.10);
+
+}
+
+.attendence{
+  display: flex;
+width: 240px;
+height: 45px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.percent{
+margin-left: 4vw;
+width: 3vw;
+height: 6vh;
+}
+
+.card-body{
+  border-radius: 5px;
+  background: #FFF;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.council2 {
+  color: #082737;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.mentee-work-status {
+  color: #F90;
+  font-family: Outfit;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: end;
+}
+
+.arrows{
+  display: flex;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.arrows:hover{
+  background-color: #205075;
+  color: rgba(0, 240, 255, 0.10);
+}
+
+.record-number {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #33363F;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .reportee-card {
+    padding: 0;
+  }
+
+  .img-container {
+    padding: 0;
+  }
+
+  .inner-card-body {
+    padding: 0;
+  }
+
+  .details-container {
+    padding: 0;
+  }
+
+  .small-card {
+    padding-right: 5px;
+    ;
+  }
+
+  .mentee-work-status {
+    padding-right: 10px;
+  }
+}
+
+.council1 {
+  color: rgba(0, 0, 0, 0.30);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.col-6 {
+  color: rgba(51, 54, 63, 0.60);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

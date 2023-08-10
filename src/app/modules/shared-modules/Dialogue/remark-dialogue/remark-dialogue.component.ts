@@ -3,8 +3,8 @@ import { HttpClient } from '@angular/common/http';
 
 interface RemarkData {
   Date: string;
-  Feedback: string;  
-  editable: boolean; 
+  Feedback: string;
+  editable: boolean;
 }
 
 @Component({
@@ -27,12 +27,12 @@ export class RemarkDialogueComponent implements OnInit {
       this.remarkdata = data.remarks;
     });
   }
-  
+
 
   deleteRow(index: number) {
     // Remove the row from the array based on the given index
     this.remarkdata.splice(index, 1);
   };
-  
-  
+
+
 }

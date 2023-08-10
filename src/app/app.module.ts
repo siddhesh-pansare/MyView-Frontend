@@ -11,6 +11,8 @@ import{ FormsModule} from '@angular/forms';
 import { CertificateDialogueComponent } from './modules/shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
 import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
 
+import { ManagerModule } from './modules/manager/manager.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,9 @@ import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remar
     EmployeeModule,
     HttpClientModule,
     SharedModulesModule,
-    FormsModule
+    FormsModule,
+    ManagerModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

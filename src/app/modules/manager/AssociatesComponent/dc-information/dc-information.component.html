@@ -1,0 +1,148 @@
+<div class="container" *ngIf="loggedUserData">
+  <!-- <div class="card  m-2">
+    <div class="council-head p-2  m-0 d-flex align-items-center ">
+      <p class="council1">Delivery Council</p>
+      <p class="council2">Council <span><i class="fa-solid fa-caret-down"></i></span></p>
+    </div>
+  </div> -->
+
+  
+  <div class="card m-2"> <!--DC information card-->
+    <div class="card-header">
+      <span class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+      &nbsp;DC Information</span>
+    </div>
+    <div class="card-body p-2 pl-4 pr-4">
+      <div class="row">
+        <div class="col-6">
+          <p class="text-wrap">Name</p>
+        </div>
+        <div class="col-6 align-items-center">
+          <p class="dc-tech">{{loggedUserData.DCTech}}</p></div>
+       
+      </div>
+      <div class="row align-items-center justify-content-center mt-2">
+        <div class="col-6">
+          <p class="text-wrap">Experience</p>
+        </div>
+        <div class="col-6 p-0">
+          <div class="row">
+            <div class="col p-0">
+              <div class="card small-card">
+                <div class="row">
+                  <!-- <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                    <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                  </div> -->
+                  <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                    <div class="card-exp p-0">
+                      <!-- <h5 class="card-title">{{loggedUserData.Experience}}</h5> -->
+                      <p class="card-text">&nbsp;&nbsp;&nbsp;{{loggedUserData.Experience}} </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card m-2">
+    <div class="card-header">
+      <span class="card-info">
+        <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
+
+      &nbsp;CLIENT</span>
+      <span class="arrows" (click)="toggleClient()" *ngIf="collapseClient"><i class="fa-solid fa-caret-down"></i></span>
+      <span (click)="toggleClient()" *ngIf="!collapseClient"><i class="fa-solid fa-caret-up"></i></span>
+    </div>
+    <div class="card-body p-2 pl-4 pr-4" *ngIf="!collapseClient">
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">Name</p>
+        </div>
+        <div class="col-6">
+          <p class="client">Client</p></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">Manager</p>
+        </div>
+        <div class="col-6"><p class="client">Manager</p></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">Team</p>
+        </div>
+        <div class="col-6"><p class="client">Team</p></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">Experience</p>
+        </div>
+        <div class="col-6"><p class="client1">{{loggedUserData.Experience}}</p></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">Billing Status</p>
+        </div>
+        <div class="col-6"><p class="client1">{{loggedUserData.Billing}}</p></div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <p class="client2">RAG Status</p>
+        </div>
+        <div class="col-6"><p class="client1">{{loggedUserData.RAG}}</p></div>
+      </div>
+    </div>
+  </div>
+
+  <span class="border-top"><br>
+    <div class="row">
+      <div class="col-6">
+        <span class="attendence">Clients Visits Attendence </span><span><img class="percent" src="assets/images/icons/percentage.png"></span>
+      </div>
+      <div class="col-6">
+        <span class="attendence">Office Visits Attendence </span><img class="percent" src="assets/images/icons/100percent.png">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <span class="attendence">Internal Meetings Attendence </span><img class="percent" src="assets/images/icons/80percent.png">
+      </div>
+    </div>   
+  </span>
+
+  <!-- <div class="card m-2"> 
+    <div class="card-header">
+      <span class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+      Details</span>
+    </div>
+    <div class="card-body p-2 pl-4 pr-4">
+      <div class="row">
+        <div class="col-6">Email</div>
+        <div class="col-6 align-items-center">{{loggedUserData.Email}}</div>
+      </div><br>
+      <div class="row">
+        <div class="col-6">Phone</div>
+        <div class="col-6 align-items-center">{{loggedUserData.Phone}}</div>
+      </div><br>
+      <div class="row">
+        <div class="col-6">Birthday</div>
+        <div class="col-6 align-items-center">{{loggedUserData.Birthday}}</div>
+      </div><br>
+      <div class="row">
+        <div class="col-6">Joining Date</div>
+        <div class="col-6 align-items-center">{{loggedUserData.Joining}}</div>
+      </div><br>
+      <div class="row">
+        <div class="col-6">Visa Status</div>
+        <div class="col-6 align-items-center">{{loggedUserData.Visa}}</div>
+      </div><br>
+      
+    </div>
+  </div> -->
+
+
+</div>

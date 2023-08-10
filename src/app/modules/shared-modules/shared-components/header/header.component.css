@@ -3,7 +3,7 @@ html{
 }
 .navbar{
     padding: 0px 0px 0px 0px;
-    height: 66px;
+    height: 50px;
     background-color:rgba(255,255,255,1);
     display: flex;
     justify-content: space-between;
@@ -32,19 +32,19 @@ a,a:hover{
     width: 431px;
     height: 66px;
     background: white;
-    display: flex;    
+    display: flex;
     justify-content: center;
 
 }
 
-.searchText{  
+.searchText{
   border: none;
   outline: none;
   width: 0rem;
 }
 
 .empsearch{
-   align-items: center;    
+   align-items: center;
    justify-content: center;
    width: 87.94px;
    height: 66px;
@@ -55,7 +55,7 @@ a,a:hover{
    margin-left: 50px;
 }
 
-.searchBox:hover{  
+.searchBox:hover{
     cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ a,a:hover{
     width: 20rem;
     transition: all 0.2s linear;
     display: block;
-    
+
 }
 
 .searchBox:hover .empsearch,
@@ -83,6 +83,6 @@ a,a:hover{
         max-width: max-content;
         max-height: min-content;
         overflow: none;
-    
+
     }
 }

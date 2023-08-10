@@ -13,7 +13,6 @@ import { OpenpositionsComponent } from './openpositions/openpositions.component'
 @NgModule({
   declarations: [
     AppComponent,
-    OpenposComponent,
     OpenpositionsComponent
   ],
   imports: [

@@ -142,13 +142,11 @@ top:50px;
     position: relative;
     width: 82vw;
     left: 8vw;
-    border-radius: 10px 10px 0 0;
-    border-bottom: none;
     
   }
 
 .table-bordered{
-   border: 1px solid #205072;
+   border: 1.5px solid #205072;
    border-radius: 10px 10px 0 0;
    
 }
@@ -156,6 +154,7 @@ top:50px;
 th{
     color:#205072;
     background-color:#3DE50233;
+    border: 1.5px solid #205072;
 }
 
 td{
@@ -163,6 +162,7 @@ td{
     font-weight:600;
     font-size: 0.80rem;
     text-align: center;
+    border: 1.5px solid #205072;
 }
 
 .ctable th{
@@ -195,6 +195,24 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 
 }
 
+tr:last-child td:not(:first-child):not(:last-child):hover {
+    cursor: pointer;
+    -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+    -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+    box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+
+tr:last-child td:not(:first-child):not(:last-child):hover:after {
+    cursor: pointer;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: #f5f8fb;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
 
 @media (max-width:1000px) {
     .tabs{
@@ -207,7 +225,11 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
         text-align: center;
         left: 5vw;
     }   
-    
+    .nav-link{
+        width: 200px;
+        cursor: pointer;
+        
+    }
     .active{
         color:rgba(0, 172, 43, 1);
         width: 200px;
@@ -264,7 +286,11 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
         text-align: center;
         left: 10vw;
     }   
-    
+    .nav-link{
+        width: 100px;
+        cursor: pointer;
+        
+    }
     .active{
         color:rgba(0, 172, 43, 1);
         width: 100px;
@@ -279,9 +305,9 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
         position: relative;
         border-top: 1px solid #000;
         box-sizing: border-box;
-        width: 40vw;
+        width: 45vw;
         height: 0.06rem;
-        left: 20vw;
+        left: 18vw;
     
     }
 
@@ -314,15 +340,19 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
         text-align: center;
         left: 15vw;
     }   
-    
+    .nav-link{
+        width: 70px;
+        cursor: pointer;
+        
+    }
     .active{
         color:rgba(0, 172, 43, 1);
-        width: 100px;
+        width: 70px;
     }
     
     .closed{
         color:#e50202;
-       width: 100px;
+       width: 70px;
     }
     
     .line2{
@@ -331,7 +361,7 @@ box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
         box-sizing: border-box;
         width: 45vw;
         height: 0.06rem;
-        left: 12vw;
+        left: 13vw;
     
     }
 

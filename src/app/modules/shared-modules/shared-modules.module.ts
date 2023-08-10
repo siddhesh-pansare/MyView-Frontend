@@ -22,8 +22,8 @@ import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendan
 
 
 import { CertificationDialogueComponent } from './dialogue/certification-dialogue/certification-dialogue.component';
-import { InterviewComponent } from './dialogue/interview-dialogue/interview/interview.component';
-import { SessionComponent } from './dialogue/session-dialogue/session/session.component';
+import { InterviewComponent } from './dialogue/interview-dialogue/interview.component';
+import { SessionComponent } from './dialogue/session-dialogue/session.component';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -36,7 +36,7 @@ import { SessionComponent } from './dialogue/session-dialogue/session/session.co
     LoaderComponent,
     RoleComponent,
     RemarkDialogueComponent,
-    AttendanceDialogComponent
+    AttendanceDialogComponent,
     CertificationDialogueComponent,
     InterviewComponent,
     SessionComponent

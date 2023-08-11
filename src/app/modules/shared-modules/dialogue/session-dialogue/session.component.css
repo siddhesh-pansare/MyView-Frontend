@@ -193,6 +193,8 @@ flex-shrink: 0;
   
     
 }
+
+
  
    /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
   @media (min-width: 1025px){
@@ -246,7 +248,7 @@ flex-shrink: 0;
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 61%;
+      width: 60%;
       height: 0.06rem;
       margin-left: 20%;
       margin-top: -1.5rem;
@@ -389,6 +391,17 @@ flex-shrink: 0;
     
   }
 
+  @media (min-width: 1190px) and (max-width: 1479px){
+  .line2{
+    position: relative;
+    border-top: 1px solid #000;
+    box-sizing: border-box;
+    width: 53%;
+    height: 0.06rem;
+    margin-left: 24%;
+    margin-top: -1.5rem;
+  }
+  }
   @media (min-width: 1480px) and (max-width: 2180px){
     .line2{
       position: relative;
@@ -401,16 +414,7 @@ flex-shrink: 0;
     }
   }
   
-  @media (min-width: 1400px) and (max-width: 1800px){
-    .btncross{
-      right: 0.5vw;
-      position: absolute;  
-      top: 0.5vw;   
-      cursor: pointer; 
-      height: 15px;
-      width: 15px;  
-    }
-  }
+
   
   /* Media query for tablet screens */
   @media (min-width: 769px) and (max-width: 1024px) {
@@ -459,10 +463,10 @@ flex-shrink: 0;
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 44vw;
+      width: 65%;
       height: 0.06rem;
-      margin-left: 9vw;
-      margin-top: -2.75vh;
+      margin-left: 17%;
+      margin-top: -4vh;
     }
     .nodata{
       display: block;  

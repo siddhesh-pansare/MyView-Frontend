@@ -1,3 +1,12 @@
+<app-childdialog *ngIf="shouldShowChildComponent()"></app-childdialog>
+<div *ngIf="isAdmin">
+    <p>Admin</p>
+    <p>Anchor</p>
+    <p>Data</p>
+  </div>
+ 
+  <button (click)="switchToAdminRole()">Switch to Admin</button>
+  
 <div class="hiring-data">
     <img src="assets/openpos/Ellipse 52.png" class="icon">
     <img src="assets/openpos/btn_hiring.png" class="hiring">

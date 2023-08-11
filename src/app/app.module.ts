@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatPaginatorModule} from '@angular/material/paginator';
@@ -16,7 +17,9 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
-import { OpenposdialogComponent } from './openposdialog/openposdialog.component';
+import { OpenposdialogComponent } from './modules/shared-modules/Dialog/openposdialog/openposdialog.component';
+import { ChilddialogComponent } from './modules/shared-modules/Dialog/openposdialog/childdialog/childdialog.component';
+
 
 
 
@@ -24,6 +27,8 @@ import { OpenposdialogComponent } from './openposdialog/openposdialog.component'
   declarations: [
     AppComponent,
     OpenposdialogComponent,
+    ChilddialogComponent,
+
     
   ],
   imports: [

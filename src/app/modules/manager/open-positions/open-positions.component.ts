@@ -29,7 +29,9 @@ export class OpenPositionsComponent implements OnInit {
   closed: ClosedData[] = [];
   activeTab: string = 'Active';
   displayedColumns: string[] = ['Role', 'Council', 'SkillsRequired' , 'Experience' , 'Count'];
+  isButtonClicked: boolean = false;
 
+  
 constructor(private http: HttpClient){ }
 
 setActiveTab(tab: string) {
@@ -56,6 +58,10 @@ fetchData(tab:string) {
       this.closed = data.closed;
     } 
   });
+}
+
+toggleButtonClass() {
+  this.isButtonClicked = !this.isButtonClicked;
 }
 
 deleteRow(index: number) {

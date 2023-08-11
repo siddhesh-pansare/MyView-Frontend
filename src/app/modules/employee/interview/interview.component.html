@@ -45,74 +45,34 @@
                         <th>Last Update</th>
                     </tr>
                 </thead>
+                <!-- ... your existing HTML code ... -->
+
                 <tbody class="text-center">
-                    <tr>
-                        <td><button
-                                class="status">
-                                <img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">
-                                Ishita Aggarwal
+                    <tr *ngFor="let cv of interviewRec">
+                        <td><button class="status"><img class="profImg"
+                                    src="../../../../assets/awards-images/awards.png">{{
+                                cv.Candidate_Name }}</button></td>
+                        <td><button class="status">{{ cv.Email }}</button></td>
+                        <td><button class="status">{{ cv.Category }}</button></td>
+                        <td>
+                            <button class="status"
+                                [style.color]="getStatusColor(cv.Status)">
+                                {{ cv.Status }}
                             </button>
                         </td>
-                        <td><button class="status">ishitaaggarwal@gmail.com</button></td>
-                        <td><button class="status">Lateral</button></td>
-                        <td><button
-                                class="status"
-                                style="color: #00AC2B; font-weight: 700">Hired</button></td>
-                        <td><button class="status">10-Jul-2023</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="status"><img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">
-                                Ishita Aggarwal</button></td>
-                        <td><button class="status">ishitaaggarwal@gmail.com</button></td>
-                        <td><button class="status">Lateral</button></td>
-                        <td><button
-                                class="status"
-                                style="color: #FF9900; font-weight: 700">In
-                                Progress</button></td>
-                        <td><button class="status">10-Jul-2023</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="status"><img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">
-                                Ishita Aggarwal</button></td>
-                        <td><button class="status">ishitaaggarwal@gmail.com</button></td>
-                        <td><button class="status">Lateral</button></td>
-                        <td><button
-                                class="status"
-                                style="color: #E50202; font-weight: 700">Rejected</button></td>
-                        <td><button class="status">10-Jul-2023</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="status"><img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">
-                                Ishita Aggarwal</button></td>
-                        <td><button class="status">ishitaaggarwal@gmail.com</button></td>
-                        <td><button class="status">Lateral</button></td>
-                        <td><button
-                                class="status"
-                                style="color: #FF9900; font-weight: 700">In
-                                Progress</button></td>
-                        <td><button class="status">10-Jul-2023</button></td>
-                    </tr>
-                    <tr>
-                        <td><button class="status"><img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">
-                                Ishita Aggarwal</button></td>
-                        <td><button class="status">ishitaaggarwal@gmail.com</button></td>
-                        <td><button class="status">Lateral</button></td>
-                        <td><button
-                                class="status"
-                                style="color: #FF9900; font-weight: 700">In
-                                Progress</button></td>
-                        <td><button class="status">10-Jul-2023</button></td>
+                        <td><button class="status">{{ cv.Last_Update }}</button></td>
                     </tr>
                 </tbody>
+
+                <!-- ... your existing HTML code ... -->
+
             </table>
         </div>
         <div class="d-flex mx-5 mt-2 justify-content-end">
-            <p class="text-end">Page 1 - Showing results 4 out of 4</p>
+            <p class="text-end" *ngIf="interviewRec">Page 1 - Showing results
+                {{interviewRec.length}}
+                out
+                of {{interviewRec.length}}</p>
         </div>
         <br>
         <br>

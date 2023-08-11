@@ -11,20 +11,6 @@
   border: none;
 }
 
-/* Add your other CSS styles here */
-
-.hired-color {
-  background-color: #00ac2b; /* Green color for "Hired" status */
-}
-
-.in-progress-color {
-  background-color: #ff9900; /* Orange color for "In Progress" status */
-}
-
-.rejected-color {
-  background-color: #e50202; /* Red color for "Rejected" status */
-}
-
 .arrow {
   height: 24px;
   width: 24px;

@@ -17,7 +17,6 @@ interface AwardData {
 export class AwardComponent implements OnInit {
   awardData: AwardData[] = [];
   displayedColumns: string[] = ['Date', 'Award', 'Nominated_By'];
-  // isDataLoaded: boolean = false;
   constructor(private http: HttpClient, private snackBar: MatSnackBar) {}
 
   ngOnInit() {

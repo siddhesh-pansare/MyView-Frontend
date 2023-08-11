@@ -11,21 +11,21 @@
             <h1 class="navbar_heading">Interview Details</h1>
         </div>
       <div class="line"></div>
-      <div class="d-flex">  <!--lower part of page below the line -->
+      <div class="d-flex ">  <!--lower part of page below the line -->
         <div class="col-7">  <!--left side content part  including info related to profile-->
             <div class="row" >  
                 <div class="col-4">
                         <div class="row profile_image"></div>
                 </div>
                 <div class="col-8" >  <!--profile info part container-->
-                    <div class="row prfoile_data">
-                        <h1 class="profile_name">Shivam Bansal</h1>
-                        <h2 class="profile_email">shivam.bansal@gmail.com</h2>
-                        <h3 class="profile_designation">Fresher</h3>
+                    <div class="row prfoile_data" *ngFor="let pd of profile">
+                        <h1 class="profile_name" >{{pd.Name}}</h1>
+                        <h2 class="profile_email">{{pd.Email}}</h2>
+                        <h3 class="profile_experience">{{pd.Experience}}</h3>
                     </div>
                 </div>
-                <div class="row profile_status_div">
-                    <h1 class="profile_status"  >Rejected</h1>
+                <div class="row profile_status_div"*ngFor="let pd of profile">
+                    <h1 class="profile_status"  >{{pd.Status}}</h1>
                 </div>
             </div><br>
            <div class="row ">
@@ -36,26 +36,66 @@
            </div>
             <br>
             <div class="row">
-                <div class="container">
-                    <div class="row lower_details"  >
-                        <p ><b class="lower_details_param">Date:</b> </p>
-                    </div>
-                    <div class="row lower_details"  >
-                        <p ><b class="lower_details_param">Step:</b> </p>
-                    </div>
-                    <div class="row lower_details"  >
-                        <p  ><b class="lower_details_param">Status:</b> </p>
-                    </div>
-                    <div class="row lower_details"  >
-                        <p ><b class="lower_details_param">Interviewer:</b> </p>
-                    </div>
-                    <div class="row lower_details" >
-                        <b class="lower_details_param">Feedback: </b>
-                    </div>
-                    <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
-                        <p  style="margin-left: 1%; ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ea similique incidunt labore explicabo maiores, odio architecto maxime adipisci placeat quam possimus, provident blanditiis facere id dolorum nemo at quaerat!</p>
+                <div class="container"  *ngIf="activeTab === 'Resume Screening'"> <!--for resume screening round-->
+                    <div class="lower_details"*ngFor="let item of resume">
+                        <p><b class="lower_details_param">Date:</b> {{ item.Date }}</p>
+                        <p><b class="lower_details_param">Step:</b> {{ item.Step }}</p>
+                        <p [ngClass]="getStatusColor(item.Status)"><b class="lower_details_param">Status:</b> {{ item.Status }}</p>
+                        <p><b class="lower_details_param">Interviewer:</b> {{ item.Interviewer }}</p>
+                        <b class="lower_details_param">Feedback:</b>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                            <p  style="margin-left: 1%; ">{{ item.Feedback }}</p>
+                        </div>
                     </div>
                 </div>
+                <div class="container"  *ngIf="activeTab === 'Online Test'"> <!--for Online Test round-->
+                    <div class="lower_details"*ngFor="let item of onlineTest">
+                        <p><b class="lower_details_param">Date:</b> {{ item.Date }}</p>
+                        <p><b class="lower_details_param">Step:</b> {{ item.Step }}</p>
+                        <p [ngClass]="getStatusColor(item.Status)"><b class="lower_details_param">Status:</b> {{ item.Status }}</p>
+                        <p><b class="lower_details_param">Interviewer:</b> {{ item.Interviewer }}</p>
+                        <b class="lower_details_param">Feedback:</b>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                            <p  style="margin-left: 1%; ">{{ item.Feedback }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"  *ngIf="activeTab === 'Group Discussion'"> <!--for Group Discussion round-->
+                    <div class="lower_details"*ngFor="let item of groupdiscussion">
+                        <p><b class="lower_details_param">Date:</b> {{ item.Date }}</p>
+                        <p><b class="lower_details_param">Step:</b> {{ item.Step }}</p>
+                        <p [ngClass]="getStatusColor(item.Status)"><b class="lower_details_param">Status:</b> {{ item.Status }}</p>
+                        <p><b class="lower_details_param">Interviewer:</b> {{ item.Interviewer }}</p>
+                        <b class="lower_details_param">Feedback:</b>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                            <p  style="margin-left: 1%; ">{{ item.Feedback }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"  *ngIf="activeTab === 'Round 1'"> <!--for  Round 1 interview-->
+                    <div class="lower_details"*ngFor="let item of round1">
+                        <p><b class="lower_details_param">Date:</b> {{ item.Date }}</p>
+                        <p><b class="lower_details_param">Step:</b> {{ item.Step }}</p>
+                        <p [ngClass]="getStatusColor(item.Status)"><b class="lower_details_param">Status:</b> {{ item.Status }}</p>
+                        <p><b class="lower_details_param">Interviewer:</b> {{ item.Interviewer }}</p>
+                        <b class="lower_details_param">Feedback:</b>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                            <p  style="margin-left: 1%; ">{{ item.Feedback }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"  *ngIf="activeTab === 'Round 2'"> <!--for  Round 2 interview-->
+                    <div class="lower_details"*ngFor="let item of round2">
+                        <p><b class="lower_details_param">Date:</b> {{ item.Date }}</p>
+                        <p><b class="lower_details_param">Step:</b> {{ item.Step }}</p>
+                        <p [ngClass]="getStatusColor(item.Status)"><b class="lower_details_param">Status:</b> {{ item.Status }}</p>
+                        <p><b class="lower_details_param">Interviewer:</b> {{ item.Interviewer }}</p>
+                        <b class="lower_details_param">Feedback:</b>
+                        <div data-bs-spy="scroll" data-bs-target="#navbar-scrollspy" data-bs-offset="0" tabindex="0" class="scrollspy-example"  >
+                            <p  style="margin-left: 1%; ">{{ item.Feedback }}</p>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
         <div class="col-5" style="flex-wrap:wrap ;"> <!--right side content part-->
@@ -63,7 +103,7 @@
             <h1 class="timeline">Timeline</h1>
             <div class="right_container">
                 <div class="row d-flex justify-content-center" >
-                    <div  class="round_img_container round_2  d-flex justify-content-center" (click)="fetchRound2Data()">
+                    <div  class="round_img_container round_2  d-flex justify-content-center" (click)="setActiveTab('Round 2')" [class.active]="activeTab == 'Round 2'">
                         <img src="assets/images/round_2_logo.png" >
                     </div>
                     <h1 class="rounds_name">Round-2 Interview</h1>
@@ -74,7 +114,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center d-flex">
-                    <div   class="round_img_container round_1 d-flex justify-content-center" (click)="fetchRound1Data()" >
+                    <div   class="round_img_container round_1 d-flex justify-content-center" (click)="setActiveTab('Round 1')" [class.active]="activeTab == 'Round 1'">
                         <img src="assets/images/round_2_logo.png" >
                     </div>
                     <h1 class="rounds_name">Round-1 Interview</h1>
@@ -85,7 +125,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center d-flex">
-                    <div   class="round_img_container gd" (click)="fetchGdData()" >
+                    <div   class="round_img_container gd" (click)="setActiveTab('Group Discussion')" [class.active]="activeTab == 'Group Discussion'" >
                         <img src="assets/images/gd_logo.png" >
                     </div>
                     <h1 class="rounds_name">Group Discussion</h1>
@@ -98,7 +138,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center d-flex">
-                    <div   class="round_img_container gd" (click)="fetchOnlineTestData()" >
+                    <div   class="round_img_container gd" (click)="setActiveTab('Online Test')" [class.active]="activeTab == 'Online Test'" >
                         <img src="assets/images/online_test_logo.png" >
                     </div>
                     <h1 class="rounds_name">Online Test</h1>
@@ -110,7 +150,7 @@
                     </div>
                 </div>
                 <div class="row justify-content-center d-flex">
-                    <div   class="round_img_container gd" (click)="fetchResumeData() " >
+                    <div   class="round_img_container gd" (click)="setActiveTab('Resume Screening')" [class.active]="activeTab == 'Resume Screening'" >
                         <img src="assets/images/resume_scr_logo.png" >
                     </div>
                     <h1 class="rounds_name">Resume Screening</h1>  

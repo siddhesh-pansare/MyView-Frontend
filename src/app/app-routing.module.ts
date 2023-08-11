@@ -9,7 +9,7 @@ const routes: Routes = [
   { path:'', redirectTo: 'openpositions', pathMatch:'full' },
   { path:'attendance', component:AttendanceDialogComponent },
   { path:'header', component:HeaderComponent},
-  { path:'open' , component: OpenPositionsComponent}
+  { path:'openpositions' , component: OpenPositionsComponent}
 ];
 
 @NgModule({

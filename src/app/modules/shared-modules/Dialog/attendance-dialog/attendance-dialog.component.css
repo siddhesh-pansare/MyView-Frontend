@@ -7,6 +7,15 @@
 .table-responsive.rounded{
   margin-left: 15px;
   margin-right: 15px;
+  overflow-y: auto;
+  max-height: 55h;
+}
+
+.table-responsive.rounded table thead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 
 table {
@@ -38,6 +47,37 @@ td{
 .eventcolor{
   color:#205072;
 }
+
+.no_data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.no_data img {
+    max-width: 25vw;
+    max-height: 15vw;
+}
+
+.ndf{
+  position: relative;
+  font-size: 1rem;
+  font-family: Outfit;
+  color: #e50255;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25.5rem;
+  height: 4.19rem;
+  text-shadow: 0px 0px 4px rgba(151, 71, 255, 0.5);
+  }
+  
+
+
 
 .fade-in {
   animation: fadeInAnimation 0.3s ease-out;
@@ -169,7 +209,9 @@ td{
         cursor: pointer;  
         size: 40px;
       }
-
+.ndf{
+  font-size: 0.60rem;
+}
 
 }
 

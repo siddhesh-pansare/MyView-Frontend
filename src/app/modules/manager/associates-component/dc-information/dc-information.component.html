@@ -9,8 +9,8 @@
   
   <div class="card m-2"> <!--DC information card-->
     <div class="card-header">
-      <span class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
-      &nbsp;DC Information</span>
+      <div class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+      &nbsp;DC Information</div>
     </div>
     <div class="card-body p-2 pl-4 pr-4">
       <div class="row">
@@ -27,7 +27,7 @@
         <div class="col-6 ">
           <div class="text-wrap">Reporting Manager</div>
         </div>
-        <div class="col-6 p-0">
+        <div class="col-6 p-0 ">
           <div class="row">
             <div class="col p-0">
               <div class="card small-card">
@@ -35,7 +35,7 @@
                   <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
                     <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
                   </div>
-                  <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                  <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0 ">
                     <div class="card-body p-0">
                       <div class="card-title">{{loggedUserData.DCChairName}}</div>
                       <div class="card-text">{{loggedUserData.DCChairId}} </div>
@@ -53,15 +53,15 @@
         <div class="col-6">
           <div class="text-wrap">Experience</div>
         </div>
-        <div class="col-6 p-0">
+        <div class="col-6 p-0 m-0">
           <div class="row">
             <div class="col p-0">
               <div class="card small-card">
                 <div class="row">
-                  <div class="col-9 col-lg-9 col-xl-9 ">
+                  <div class="col-sm-6 col-lg-9 col-xl-9 mt-0 ">
                     <div class="card-body p-0">
                       <!-- <h5 class="card-title">{{loggedUserData.Experience}}</h5> -->
-                      <div class="card-text">{{loggedUserData.Experience}} months</div>
+                      <nav class="card-text">{{loggedUserData.Experience}} months</nav>
                     </div>
                   </div>
                 </div>

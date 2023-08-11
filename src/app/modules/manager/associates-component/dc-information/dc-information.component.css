@@ -74,7 +74,7 @@ letter-spacing: 0.8px;
 
 .mentor-card {
   height: 120px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 
 }
 
@@ -146,7 +146,7 @@ line-height: normal;
   border-radius: 5px 5px 0px 0px;
   background: rgba(255, 0, 0, 0.10);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
-  height: 7vh;
+  /* height: 7vh; */
 }
 
 
@@ -205,7 +205,67 @@ line-height: normal;
   max-height: 4vh;
 }
 
-@media (max-width: 992px){
+@media (max-width: 576px){
+  
+  .card-header{
+    max-height: 4vh;
+  }
+  .card-info{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .card-img{
+    max-height: 60%;
+    max-width: 100%;
+  }
+  .card-text{
+    padding: 0;
+    margin: 0;
+  }
+
+  
+}
+@media (min-width: 576px) and (max-width:767px){
+  .card-header{
+    max-height: 6vw;
+  }
+  .card-info{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .card-img{
+    max-height: 60%;
+    max-width: 100%;
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width:991px){
+  .card-header{
+    max-height: 5vw;
+  }
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+  .card-header{
+    max-height: 4vw;
+  }
+}
+@media (min-width: 1200px)and (max-width: 2000px) {
+  .card-header{
+    height: max-content;
+    max-height: 5vw;
+    color: #082737;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  }
+}
+
+/* @media (max-width: 992px){
   .card-info{
     font-size: 10px;
     font-weight: bold;
@@ -225,9 +285,9 @@ line-height: normal;
     color: rgba(51, 54, 63, 0.80);
     font-weight: bold;
   }
-}
+} */
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .card-info{
     font-size: 12px;
     font-weight: bold;
@@ -283,11 +343,11 @@ line-height: normal;
   }
   
 
-}
+} */
 
-@media (max-width: 1700px){
+/* @media (max-width: 1700px){
   .card-info{
-    height: 7vh;
+    height: 5vh;
     font-weight: bold;
   }
   .text-wrap{
@@ -295,11 +355,11 @@ line-height: normal;
     color: rgba(51, 54, 63, 0.80);
     font-weight: bold;
   }
-  .card-header{
+   .card-header{
     height: 7vh;
-  }
+  } 
 
-}
+} */
 
 
 .council1 {

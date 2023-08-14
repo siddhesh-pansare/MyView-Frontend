@@ -1,11 +1,11 @@
-<app-childdialog *ngIf="shouldShowChildComponent()"></app-childdialog>
+<!-- <app-childdialog *ngIf="shouldShowChildComponent()"></app-childdialog>
 <div *ngIf="isAdmin">
     <p>Admin</p>
     <p>Anchor</p>
     <p>Data</p>
   </div>
  
-  <button (click)="switchToAdminRole()">Switch to Admin</button>
+  <button (click)="switchToAdminRole()">Switch to Admin</button> -->
   
 <div class="hiring-data">
     <img src="assets/openpos/Ellipse 52.png" class="icon">
@@ -13,23 +13,26 @@
     <img src="assets/openpos/btn_close.png" class="close">
     <img src="assets/openpos/Line 8.png" class="line">
     <p class="mid">Open Position Details</p>
-    <table>
+    <div class="table-container">
+    <table class="table">
         <tr>
-           <th>Role</th>
-           <th>Technology</th>
-           <th>Experience(In Months)</th>
-           <th>No. of Openings</th>
+           <th style="color: #205072;font-weight: 500;background-color:rgba(61, 229, 2, 0.2)">Role</th>
+           <th style="color: #205072;font-weight:500;background-color:rgba(61, 229, 2, 0.2)">Technology</th>
+           <th style="color: #205072;font-weight:500;background-color:rgba(61, 229, 2, 0.2)">Experience(In Months)</th>
+           <th style="color: #205072;font-weight:500;background-color:rgba(61, 229, 2, 0.2)">No. of Openings</th>
         </tr>
         <tr>
-            <td>Sw1</td>
-            <td>14 months</td>
-            <td>3</td>
+            <td> <input class="input-field error" type="text" placeholder="Enter Role"></td>
+            <td><input class="input-field error" type="text" placeholder="Enter Technology"></td>
+            <td> <input class="input-field error" type="text" placeholder="Enter Experience"></td>
+            <td> <input class="input-field error" type="text" placeholder="Enter No. of Openings"></td>
         </tr>
-        <tr>
-            <td>Sw2</td>
-            <td>24 months</td>
-            <td>5</td>
-        </tr>
+      
     </table>
+    <div class="button-container">
+        <button class="submit-button">Add</button>
+      </div>
+      
+    </div>
 </div>
 

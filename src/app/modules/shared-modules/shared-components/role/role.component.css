@@ -21,7 +21,8 @@
 }
 
 .content {
-  position: absolute;
+  position: fixed;
+  padding: 0;
   top: 50px;
   left: 60px;
   overflow-y: scroll;

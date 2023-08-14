@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+*{
+    font-family: Outfit;
+    font-weight: 600;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -22,7 +28,7 @@ html{
 }
 
 .searchBar{
-    border: 1px solid rgba(199, 192, 192, 0.744);
+    border: 1.5px solid rgba(199, 192, 192, 0.744);
 }
 
 
@@ -44,6 +50,7 @@ a,a:hover{
   border: none;
   outline: none;
   width: 0rem;
+  padding-left: 20px;
 }
 
 .empsearch{
@@ -79,6 +86,50 @@ a,a:hover{
 .searchBar:hover{
     border: 1px solid #38a3a5;
 }
+
+.dropdown.show{
+    right: 50px;
+}
+
+.dropdown-menu{
+    margin: 0px;
+    padding: 0px;
+    margin-right: 100px;
+    border-radius: 0px;
+}
+
+.dropdown-item{
+    padding: 0px;
+    height: 35px;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(217, 217, 217, 1);
+  }
+  
+  .dropdown-item.first::before {
+    content: url('src\assets\header\User (1).png');
+    margin-right: 30px;
+    vertical-align: middle;
+    
+}
+
+.dropdown-item.first:hover::before {
+    content: url('src\assets\header\User.png'); 
+}
+
+
+.dropdown-item.second::before {
+    content: url('src\assets\header\Vector.svg');
+    margin-right: 30px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.dropdown-item.second:hover::before {
+    content: url('src\assets\header\Vector (1).svg'); 
+}
+
 
 @media (max-width:768px){
     .searchBox{

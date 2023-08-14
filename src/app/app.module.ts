@@ -31,12 +31,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSn
     SharedModulesModule,
     FormsModule,
     ManagerModule,
-    MatTabsModule,
-    MatTooltipModule,
-    ManagerModule,
-    MatTableModule,
     CommonModule,
-    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent],

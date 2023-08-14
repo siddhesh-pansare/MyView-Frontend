@@ -1,19 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .container{
-      width: 80vw;
-      height: 75vh; 
+      width: 70vw;
+      height: 70vh; 
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 20vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    position: relative;
+    margin-top: -30vh;
+    margin-left: 2%;
+    /* margin-top: -30vh;
+    margin-left: 2%; */
+    /* margin-right: 15vw; */
+    position: fixed;
     box-shadow: 0px 0px 3px 3px #7BE495;
     display: flexbox;
    
@@ -29,15 +32,16 @@
   text-decoration: none;
   display: inline-block; /* Ensure proper hover and clickable effects */
   color: gray;
+  padding-bottom: 3px;
   /* border-bottom: 0.2px solid gray; */
   width: auto; /* Set width to 100% on smaller screens */
   max-width: 200px;
-  font-size: 2vw;
-  font-family: Outfit;  
   vertical-align: top;
   box-sizing: border-box;  
   padding: 10px 10px 10px 10px;
     }
+    
+    
     .nav-link:hover {
       color: 	#3fbdc2;
       /* border-bottom: 0.2px solid #3fbdc2; */
@@ -52,9 +56,9 @@
       position: relative;
       border-top: 1px solid #000;
       box-sizing: border-box;
-      width: 42.5vw;
+      width: 74%;
       height: 0.06rem;
-      margin-left: 21%;
+      margin-left: 16%;
       margin-top: -1.5rem;
       align-items: center;
       
@@ -62,7 +66,7 @@
     
     .nodata{
       display: block;  
-      margin-left: 18vw;
+      margin-left: 15vw;
       margin-top: -5vh;     
       padding: 5px;  
       width: 35vw;
@@ -74,7 +78,7 @@
   }
     .image-caption{
       display: block;  
-      margin-left: 30vw;
+      margin-left: 27vw;
       margin-top: -15vh;     
       padding: 5px;  
       width: 14vw;
@@ -200,15 +204,15 @@ flex-shrink: 0;
   @media (min-width: 1025px){
 
     .container{
-      width: 60vw;
-      height: 95vh;
+      width: 70vw;
+      height: 80vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 3vh;
-    margin-left: 20vw;
+    margin-top: -40vh;
+    margin-left: -20vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px #7BE495;
     display: flexbox;
@@ -256,7 +260,7 @@ flex-shrink: 0;
     
     .nodata{
       display: block;  
-      margin-left: 15vw;
+      margin-left: 20vw;
       margin-top: -8vh;     
       padding: 5px;  
       width: 25vw;
@@ -268,7 +272,7 @@ flex-shrink: 0;
   }
     .image-caption{
       display: block;  
-      margin-left: 23.5vw;
+      margin-left: 28vw;
       margin-top: -18vh;     
       padding: 5px;  
       width: 10vw;
@@ -430,16 +434,16 @@ flex-shrink: 0;
   /* Media query for tablet screens */
   @media (min-width: 769px) and (max-width: 1024px) {
     .container{
-      width: 69vw;
-      height: 93vh;
+      width: 84vw;
+      height: 70vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 3vh;
-    margin-bottom: 20vh;
-    margin-left: 17vw;
+    margin-top: -35vh;
+    /* margin-bottom: 20vh; */
+    margin-left: -16vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px #7BE495;
     display: flexbox;
@@ -481,7 +485,7 @@ flex-shrink: 0;
     }
     .nodata{
       display: block;  
-      margin-left: 11vw;
+      margin-left: 17vw;
       margin-top: -8vh;     
       padding: 5px;  
       width: 40vw;
@@ -493,7 +497,7 @@ flex-shrink: 0;
   }
     .image-caption{
       display: block;  
-      margin-left: 25.5vw;
+      margin-left: 32vw;
       margin-top: -18vh;     
       padding: 5px;  
       width: 14vw;
@@ -628,17 +632,17 @@ flex-shrink: 0;
   }
   @media (min-width: 2281px){
     .container {
-      width: 50vw;
+      width: 100vw;
       height: 93vh;
       flex-shrink: 0;
       border-radius: 10px;
       border: 1px solid #205072;
       background: #FFF;
       box-shadow: 0px 0px 3px 3px #0074FC;
-      margin-top: 3vh;
+      /* margin-top: 3vh;
       margin-bottom: 5vh;
       margin-left: 30vw;
-      margin-right: 20vw;
+      margin-right: 20vw; */
       position: relative;
       box-shadow: 0px 0px 3px 3px #7BE495;
       display: flexbox;

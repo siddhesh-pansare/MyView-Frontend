@@ -6,12 +6,10 @@ import { DialogService } from 'src/app/services/dynamicDialogs/dialog.service';
 
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
-import { CertificateDialogueComponent } from '../../shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
+import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
 import { InterviewComponent } from '../../shared-modules/dialogue/interview-dialogue/interview.component';
 import { SessionComponent } from '../../shared-modules/dialogue/session-dialogue/session.component';
-import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
-import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
-
+// import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -104,11 +102,11 @@ export class DashboardComponent implements OnInit {
         width: '400px', // Set the width as needed
       });
     }
-    else if(dialogComponent === 'ClientFeedbackComponent'){
-      const dialogRef = this.dialog.open(ClientFeedbackComponent, {
-        width: '400px', // Set the width as needed
-      });
-    }
+    // else if(dialogComponent === 'ClientFeedbackComponent'){
+    //   const dialogRef = this.dialog.open(ClientFeedbackComponent, {
+    //     width: '400px', // Set the width as needed
+    //   });
+    // }
 
 
   }

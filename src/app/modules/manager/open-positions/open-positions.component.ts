@@ -1,6 +1,6 @@
 import { Component ,OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { trigger, state, style, animate, transition } from '@angular/animations';
 interface ActiveData{
   Priority:string;
    Role:String;
@@ -22,7 +22,20 @@ interface ClosedData{
 @Component({
   selector: 'app-open-positions',
   templateUrl: './open-positions.component.html',
-  styleUrls: ['./open-positions.component.css']
+  styleUrls: ['./open-positions.component.css'],
+  animations: [
+    trigger('slideOut', [
+      transition('* => void', [
+        style({ transform: 'translateX(0)' }),
+        animate('0.5s ease-in-out', style({ transform: 'translateX(100%)' }))
+      ]),
+      transition('void => *', [
+        style({ transform: 'translateX(100%)' }),
+        animate('0.5s ease-in-out', style({ transform: 'translateX(0)' }))
+      ])
+    ])
+  ]
+  
 })
 export class OpenPositionsComponent implements OnInit {
   active: ActiveData[] = [];

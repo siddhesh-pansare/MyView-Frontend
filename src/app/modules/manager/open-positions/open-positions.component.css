@@ -217,6 +217,9 @@ td:hover{
     cursor: pointer; 
 }
 
+table th{
+    transform: translateX(0);
+}
 
 tr:last-child td:not(:first-child):not(:last-child):hover {
     cursor: pointer;

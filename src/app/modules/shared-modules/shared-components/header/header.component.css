@@ -20,12 +20,25 @@ html{
     z-index: 100;
     width: 100%;
 }
-
-
-.sidebar_toggle{
+.sd{
+    display: flex;
     height: 66px;
-    padding-left: 0px;
+    width: 87.94px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
+
+
+.sd::before {
+    content: url('src\assets\header\st.png'); 
+    display: inline-block;
+}
+
+.sd:hover::before {
+    content: url('src\assets\header\sthover.png'); 
+}
+
 
 .searchBar{
     border: 1.5px solid rgba(199, 192, 192, 0.744);

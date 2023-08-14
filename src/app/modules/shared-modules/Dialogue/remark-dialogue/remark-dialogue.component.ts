@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 interface RemarkData {
   Date: string;
   Feedback: string;  
-  editable: boolean; 
   Action: string;
   Action1: string;
 }

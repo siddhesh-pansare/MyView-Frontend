@@ -30,7 +30,7 @@ a,a:hover{
 .searchBox{
     position: relative;
     width: 431px;
-    height: 66px;
+    height: 50px;
     background: white;
     display: flex;
     justify-content: center;

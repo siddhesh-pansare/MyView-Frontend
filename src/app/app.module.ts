@@ -34,7 +34,8 @@ import { OpenpositionsComponent } from './openpositions/openpositions.component'
     FormsModule,
     ManagerModule,
     MatTabsModule,
-    MatTooltipModule
+    MatTooltipModule,
+    ManagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

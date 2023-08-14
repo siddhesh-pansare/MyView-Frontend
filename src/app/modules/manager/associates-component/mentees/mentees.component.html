@@ -1,0 +1,198 @@
+<div class="popup">
+  
+    <div class="container-fluid" *ngIf="loggedUserData">
+      <div class="cross"><img src="assets/images/btn_close.svg"></div>
+      <div class="row dashboard-container">
+    
+        <div class="col-12 col-md-12 col-lg-12">
+          
+         
+          <div class="top center">
+            <div class="container-fluid personal-info-container">
+            <div class="row personal-info-row">
+               
+            <div class="row"></div>  
+                <!-- Left Column - Image -->
+            <div class="divison col-12 col-sm-5 col-md-5 col-lg-5 col-xl-4">
+                <div class="border-right">
+                <div class="row">
+                <div class="image-outer-container col-3 col-sm-2 col-md-2 col-lg-3 col-xl-3 pr-sm-0 m-0 ">
+                  <div class="text-img">
+                    <div class="image-container">
+                      <div class="circular-wrapper">
+                        <img src="../../../../assets/images/menteepic.png" alt="Image"
+                          class="image-fluid circular-image">
+                      </div>
+                      
+                    </div>
+                    
+                    
+                    <p class="custom-card-workStatus">Working From Home</p>
+                  </div>
+                </div>
+                
+    
+                <div class="col-1 col-sm-2 col-lg-1  pl-0 m-0"></div>
+    
+                <!-- Right Column - Employee Details -->
+                <div class="col-6 col-sm-8 col-lg-8 col-md-8 col-xl-8 pl-0 m-0">
+                  <div class="card-body">
+                    <!-- Name and Position -->
+                    <h5 class="custom-card-title">Mohit Choudhary</h5>
+                    <p class="custom-card-designation">Software Engineer - L1</p>
+                    <!-- Other Details -->
+                    <div class="details">
+                      <p class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G 1094</span></p>
+                      <p class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">4 years 6 months</span></p>
+                      <p class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">Canaan Tower</span></p>
+                    </div>
+                  </div>
+    
+                  
+                </div>
+              </div>
+               
+                <div class="card detaildc"> <!--DC information card-->
+                  <div class="card-header">
+                    <div class="card-info"><img class="headlogo" src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+                    &nbsp;Details</div>
+                  </div>
+                  <div class="card-body p-2 pl-4 pr-4">
+                    <div class="row">
+                      <div class="col-6"><img src="assets/images/email.png">&nbsp;Email</div>
+                      <!--<div class="col-6 align-items-center">{{loggedUserData.Email}}</div>-->
+                      <div class="col-6">
+                        <span class="email info">mohit.choudhary1@g..</span>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6"><img src="assets/images/phone.png">&nbsp;Phone</div>
+                      <!--<div class="col-6 align-items-center">{{loggedUserData.Phone}}</div>-->
+                      <div class="col-6">
+                        <p class="info">8800886771</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6"><img src="assets/images/birthday.png">&nbsp;Birthday</div>
+                      <!--<div class="col-6 align-items-center">{{loggedUserData.Birthday}}</div>-->
+                      <div class="col-6">
+                        <p class="info">24th October</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6"><img src="assets/images/joining.png">&nbsp;Joining Date</div>
+                      <!--<div class="col-6 align-items-center">{{loggedUserData.Joining}}</div>-->
+                      <div class="col-6">
+                        <p class="info">04-Oct-2021</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6"><img src="assets/images/visa.png">&nbsp;Visa Status</div>
+                      <!--<div class="col-6 align-items-center">{{loggedUserData.Visa}}</div>-->
+                      <div class="col-6">
+                        <p class="info">N/A</p>
+                      </div>
+                    </div>              
+                  </div>
+                </div>
+                
+                <div class="card "> <!--Skills-->
+                  <div class="card-header">            
+                    <div class="card-info"><img class="headlogo" src="../../../../../assets/images/skills logo.png" alt="info-icon">
+                        Skills</div>                      
+                  </div> 
+                  <div class="card-body" >
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="imgskill"><img src="assets/images/airflow.png"> </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="imgskill"><img src="assets/images/python.png"> </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="imgskill"><img src="assets/images/dbt.png"> </div>
+                      </div>
+                    </div><br>
+                    <div class="row">
+                      <div class="col-4">
+                        <div class="imgskill"><img src="assets/images/download 1.png"> </div>
+                      </div>
+                      <div class="col-4">
+                        <div class="imgskill"><img src="assets/images/download 2.png"> </div>
+                      </div>
+                    </div>
+                                  
+                </div>               
+                  
+              </div>
+    
+                </div>
+              </div>
+
+
+              
+                <div class="col-xs-12 col-sm-6 col-lg-6 col-xl-5 col-md-6 ">
+                  <mat-tab-group>
+                    <div class="row">
+                      <div class="col-6">
+                    <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
+                  </div>
+                  <div class="col-6">
+                    <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
+                  </div>
+                  </div>                  
+                  </mat-tab-group>  
+                  <a href=".."><img  class="remark-icon" src="assets/images/My Remarks Button.svg"></a>            
+                </div>
+              
+                
+                <div class="col-xs-12 col-sm-5 col-lg-5 col-xl-3 col-md-5 ">   
+                  <div class="border-left">         
+                  <div class="row-1>">
+                    <div class="card m-2 mb-0">            
+                      <div class="card-header">            
+                        <div class="card-info acti"><img class="headlogo" src="../../../../../assets/images/activities.png" alt="info-icon">            
+                          Recent Activities</div>            
+                      </div>            
+                      <div class="card-body p-2 pl-4 pr-4">            
+                        <ul>            
+                          <br>            
+                          <li>Completed 5 KM run in Gem Sports Activity</li><br>            
+                          <li>Completed BOW for June'23</li><br>            
+                          <li>Started Cyber-Security Training</li>            
+                        </ul>              
+                      </div>            
+                    </div>
+    
+                    <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2">
+                      <div class="row menu-cards-row">  
+                  <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
+                    
+                    <div class="menu-card-box" [matTooltip]="card.cardTitle">
+                      <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
+                      
+                    </div>
+                    <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
+                    
+                  </div></div></div><br><br>
+                  
+                </div>
+                  
+                </div>
+              </div> 
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      
+        
+    </div>
+    
+      </div>
+    
+    </div>
+    
+      
+    
+    

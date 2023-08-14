@@ -29,9 +29,6 @@ import { PseudoDashboardComponent } from './modules/employee/pseudo-dashboard/ps
 import { ReporteesComponent } from './modules/manager/AssociatesComponent/reportees/reportees.component';
 import { ECInformationComponent } from './modules/employee/dashboard/ec-information/ec-information.component';
 import { DcInformationComponent } from './modules/employee/dashboard/dc-information/dc-information.component';
-import { CertificationDialogueComponent } from './modules/shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
-import { InterviewComponent } from './modules/shared-modules/dialogue/interview-dialogue/interview.component';
-import { SessionComponent } from './modules/shared-modules/dialogue/session-dialogue/session.component';
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },

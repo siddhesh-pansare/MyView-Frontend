@@ -4,6 +4,13 @@
   font-family: Outfit;
 
 } */
+
+/* @media (min-width: 300px) and (max-width: 660px){
+  .container{
+    width: 80vw;
+    height: 100vh;
+  }
+} */
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .container{
@@ -69,15 +76,12 @@
       text-align: center;
   }
     .image-caption{
-      color: #E50255;
-      text-align: center;
-      text-shadow: 0px 0px 4px 0px rgba(255, 6, 6, 0.50);
-      font-family: Outfit;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: bold;
-      line-height: normal;
-      margin-top: 30vh;
+      display: block;  
+      margin-left: 30vw;
+      margin-top: -16vh;     
+      padding: 5px;  
+      width: 15vw;
+      height: 14vh;
     }
     
     .line {
@@ -145,8 +149,8 @@ flex-shrink: 0;
         position: absolute;  
         top: 1vw;   
         cursor: pointer;   
-        height: 1.5vh;
-      width: 1.95vw;
+        height: 15px;
+      width: 15px;
       }
   
     
@@ -185,16 +189,12 @@ flex-shrink: 0;
       text-align: center;
   }
     .image-caption{
-      color: #E50255;
-text-align: center;
-text-shadow: 0px 0px 4px 0px rgba(255, 6, 6, 0.50);
-font-family: Outfit;
-font-size: 22px;
-font-style: normal;
-font-weight:bold;
-margin-top: -30vh;
-line-height: normal;
-top: 90vh;
+      display: block;  
+      margin-left: 24vw;
+      margin-top: -18vh;     
+      padding: 5px;  
+      width: 10vw;
+      height: 10vh;
     }
 
     h1{
@@ -238,67 +238,14 @@ top: 90vh;
       background: rgba(51, 54, 63, 0.60);
       margin-top: -2vh;
     }
-/*     
-    .rounded-table {
-        margin-left: 10vw;
-        margin-right: 7vw;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        align-items: center;
-        border: #205072;
-        
-      }
-      
-      th, td {
-        padding: 1vw;
-        border: 1px solid #ccc;
-        color: #205072;
-text-align: center;
-font-family: Outfit;
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
 
-      }
-
-      td{
-        color: #38A3A5;
-text-align: center;
-font-family: Outfit;
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-      }
-      
-      th {
-        background-color: #f2f2f2;
-        font-weight: bold;
-      }
-      
-      tr:last-child td {
-        border-bottom: none;
-      }
-      
-      tr:hover {
-        background-color: #f9f9f9;
-      } */
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
       .btncross{
         right: 0.5vw;
         position: absolute;  
         top: 0.5vw;   
         cursor: pointer; 
-        height: 2.5vh;
-        width: 1.25vw;
+        height: 15px;
+        width: 15px;
       }
 
     
@@ -309,8 +256,16 @@ flex-shrink: 0;
       position: absolute;  
       top: 0.5vw;   
       cursor: pointer; 
-      height: 2.5vh;
-      width: 1vw;  
+      height: 15px;
+      width: 15px;  
+    }
+    .image-caption{
+      display: block;  
+      margin-left: 22vw;
+      margin-top: -20vh;     
+      padding: 5px;  
+      width: 13vw;
+      height: 14vh;
     }
   }
 
@@ -347,16 +302,12 @@ flex-shrink: 0;
       text-align: center;
   }
     .image-caption{
-      color: #E50255;
-text-align: center;
-text-shadow: 0px 0px 4px 0px rgba(255, 6, 6, 0.50);
-font-family: Outfit;
-font-size: 18px;
-font-style: normal;
-font-weight: bold;
-margin-top: -30vh;
-line-height: normal;
-top: 90vh;
+      display: block;  
+      margin-left: 24vw;
+      margin-top: -20vh;     
+      padding: 5px;  
+      width: 15vw;
+      height: 14vh;
     }
 
     h1{
@@ -458,8 +409,8 @@ flex-shrink: 0;
         position: absolute;  
         top: 1vw;   
         cursor: pointer; 
-        height: 2.5vh;
-        width: 1.75vw;  
+        height: 15px;
+        width: 15px;  
       }
     
   } 
@@ -493,18 +444,16 @@ flex-shrink: 0;
     .image-container {
       text-align: center;
   }
-    .image-caption{
-      color: #E50255;
-text-align: center;
-text-shadow: 0px 0px 4px 0px rgba(255, 6, 6, 0.50);
-font-family: Outfit;
-font-size: 24px;
-font-style: normal;
-font-weight: bold;
-margin-top: -30vh;
-line-height: normal;
-top: 90vh;
-    }
+    
+      .image-caption{
+        display: block;  
+        margin-left: 19vw;
+        margin-top: -18vh;     
+        padding: 5px;  
+        width: 10vw;
+        height: 14vh;
+      }
+    
   
     h1 {
       
@@ -599,8 +548,8 @@ top: 90vh;
       position: absolute;  
       top: 10px;   
       cursor: pointer;   
-      height: 2vh;
-      width: 1vw;   
+      height: 15px;
+      width: 15px;   
     }
   
     /* You can also add any other styles or adjustments for larger screens here*/

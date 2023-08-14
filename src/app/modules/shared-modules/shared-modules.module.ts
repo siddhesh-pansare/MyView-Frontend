@@ -21,11 +21,9 @@ import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialo
 import { HttpClient } from '@angular/common/http';
 import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendance-dialog.component';
 
-import { AwardComponent } from './dialogue/awards-dialogue/award/award.component';
-
-import { CertificationDialogueComponent } from './dialogue/certification-dialogue/certification-dialogue.component';
-import { InterviewComponent } from './dialogue/interview-dialogue/interview.component';
-import { SessionComponent } from './dialogue/session-dialogue/session.component';
+import { AwardComponent } from './Dialogue/awards-dialogue/award/award.component';
+import { InterviewComponent } from '../employee/interview/interview.component';
+import { SessionComponent } from './Dialogue/session-dialogue/session.component';
 @NgModule({
   declarations: [
     LoginComponent,
@@ -39,7 +37,7 @@ import { SessionComponent } from './dialogue/session-dialogue/session.component'
     RoleComponent,
     RemarkDialogueComponent,
     AttendanceDialogComponent,
-    CertificationDialogueComponent,
+    CertificateDialogueComponent,
     InterviewComponent,
     SessionComponent,
     AwardComponent,

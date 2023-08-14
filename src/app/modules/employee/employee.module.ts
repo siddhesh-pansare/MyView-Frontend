@@ -9,7 +9,7 @@ import { DcInformationComponent } from './dashboard/dc-information/dc-informatio
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PseudoDashboardComponent } from './pseudo-dashboard/pseudo-dashboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { InterviewComponent } from './interview/interview.component';
+// import { InterviewComponent } from './interview/interview.component';
 
 
 @NgModule({
@@ -18,7 +18,7 @@ import { InterviewComponent } from './interview/interview.component';
     ECInformationComponent,
     DcInformationComponent,
     PseudoDashboardComponent,
-    InterviewComponent
+    // InterviewComponent
   ],
   imports: [
     CommonModule,

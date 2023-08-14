@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
 @Component({
@@ -9,8 +9,12 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class DcInformationComponent implements OnInit{
 
   loggedUserData: any;     //variable to store complete data from MIS
-  collapseClient : boolean = true;
-  collapseReportee : boolean = true;
+  collapseClient : boolean = false;
+  collapseReportee : boolean = false;
+
+  @Input() showmanager: boolean = true;
+  @Input() showbill: boolean = true;
+  @Input() showrag: boolean = true;
 
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'mohit.choudhary1@geminisolutions.com';

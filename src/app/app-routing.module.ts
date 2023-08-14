@@ -30,6 +30,7 @@ import { ReporteesComponent } from './modules/manager/associates-component/repor
 import { ECInformationComponent } from './modules/employee/dashboard/ec-information/ec-information.component';
 import { DcInformationComponent } from './modules/employee/dashboard/dc-information/dc-information.component';
 import { MenteesComponent } from './modules/manager/associates-component/mentees/mentees.component';
+import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
 
 
 const routes: Routes = [
@@ -49,7 +50,8 @@ const routes: Routes = [
 {path:'ec',component:ECInformationComponent},
 {path:'dc', component:DcInformationComponent},
 {path:'dashboard', component:DashboardComponent},
-{path:'mentees', component:MenteesComponent}
+{path:'mentees', component:MenteesComponent},
+{path:'remarks',component:RemarkDialogueComponent}
 ];
 
 

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
+
+
 @Component({
   selector: 'app-reportees',
   templateUrl: './reportees.component.html',
@@ -8,6 +10,8 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 })
 export class ReporteesComponent implements OnInit{
   loggedUserData: any;     //variable to store complete data from MIS
+
+  
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },

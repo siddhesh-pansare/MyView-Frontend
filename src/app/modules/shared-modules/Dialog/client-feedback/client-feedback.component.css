@@ -1,547 +1,357 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
 * {
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
 }
+
 .logo1:hover,
 .logo2:hover,
 .logo-hover:hover {
   
   opacity: 0.3; 
 }
+
 .btn{
   border: 1px solid #205072;
   background:#205072;
   color: #FFF;
-  padding: 10px 20px;
-  font-size: 16px;
-}.btn:hover{
-  opacity: 0.7; 
 }
-.no_data{
-  margin-left: 30%;
-  justify-content: center;
-  align-items: center
-}
-.no_data_img{
-  max-width:60%;
-  height: 60%;
+/* Add this to your component's CSS or to a global stylesheet */
+.custom-modal-dialog {
+  width: 70vw !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  height: 80vh !important;
 }
 
-.table-responsive.rounded{
-  margin-left: 15px;
-  margin-right: 15px;
+.modal-content {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+.close {
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.close:hover {
+  box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
 }
 
 table {
   border-color: #205072;
   border: 1;
-  border-radius: 10px;
-  max-height: fit-content;
+  border-radius: 2px;
+}
+
+table.table tr td {
+  color: #38a3a5;
   font-weight: 600;
 }
 
-table.table th {
+table.table tr th {
   color: #205072;
+  font-weight: 900;
 }
 
-th{
-  font-size: 0.9rem;
-  padding: 5px;
-}
+@media screen and (min-width: 320px) {
+  .modal-dialog {
+    max-width: 310px;
+    height: 60vh;
+    border-radius: 4px;
+    margin-left: -30px;
+    margin-right: -30px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
+  }
 
-td{
-  color:#38a3a5;
-  font-size: 0.80rem;
-padding: 1px;
-}
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #205072;
+  }
 
+  .awardslogo {
+    height: 40px;
+    width: 40px;
+    background-position-y: bottom;
+  }
 
-#feed{
-  color: #205072;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
+  .close_btn {
+    height: 50%;
+    width: 50%;
+  }
 
-@media (max-width:600px){
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 9px;
+  }
 
-  
+  .btn {
+    size: 60%;
+    font-weight: 600;
+    font-size: 10px;
+    border: none; /* Remove the default border */
+    border: 1px solid #205072;
+    background:#205072;
+    color: #FFF;
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
+  .profile {
+    background-color: #205072;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .no_data {
+    height: 70%;
+    width: 70%;
+  }
   .logo1{
     margin-left: -1vw;
     width: 2vw;
   }
 
   .logo2{
-margin-left: 0.5vw;
-width: 2vw;
+    margin-left: 0.5vw;
+    width: 2vw;
   }
+}
 
-
-  .container{
-    width: 80vw;
-    height: 80vh;
-    flex-shrink: 0;
+@media screen and (min-width: 425px) {
+  .modal-dialog {
+    max-width: 90vw;
+    height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
-    margin-top: 13vh;
-    margin-left: 11vw;
-    margin-right: 15vw;
-    position: fixed;
-    }
-
-    .addremark{
-      width: 13vw;
-      height: 3vh;
-    }
-
-    .box{
-      display: flex;
-      margin-top: 40px;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 7vw;
   }
 
-  .box1{
-      margin-left: -14vw;
-      margin-top: 6vw;
-      align-items: center;
-  }
-
-.empname{
-  margin-top: 0vw;
-  margin-left: 4px;
-  text-align: center;
-  color: #205072;
-  font-size: 2vw;
-  font-family: Outfit;
-  font-weight: 600;
-}
-
-    h1{
+  .title {
+    font-size: 14px;
+    font-weight: 700;
     color: #205072;
-    text-align: center;
-    font-family: Outfit;
-    font-size: 3vw;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
+  }
+
+  .awardslogo {
+    height: 40px;
+    width: 40px;
+    background-position-y: bottom;
+  }
+
+  .close_btn {
+    height: 50%;
+    width: 50%;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+
+  .btn {
+    size: 60%;
     font-weight: 600;
-    margin-left: 3vw;
-    }
+    font-size: 10px;
+    border: none; /* Remove the default border */
+    border: 1px solid #205072;
+    background:#205072;
+    color: #FFF;
 
-
-    .imgsize{
-    width: 10vw;
-    height: 10vw;
-    flex-shrink: 0;
-    margin-left: 1vw;    
-
-    }
-
-
-    .clientlogo{
-    width: 13vw;
-    height: 11vw;
-    flex-shrink: 0;
-    margin-right: 2vw;
-    margin-left: -17vw;
-    top: 10vw;
-    }
-
-    .line {
-      width: 75vw; /* Adjust the width as needed */
-      height: 0.3vw; /* Adjust the height as needed */
-      background: rgba(51, 54, 63, 0.60);
-      margin-top: -4vw;
-      margin-left: -2vw;
-    }
-
-    .box3 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 28px; /* Add padding to create space between image and container edges */
-    }
-
-
-
-  th  {
-    font-size: 0.75rem;
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
   }
 
-  td{
-    font-size: 0.50rem;
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
   }
-      .btncross{
-        right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-       size: 40px;
-       width: -2vw;
-       height: -2vw;
-      }
-      .btn{
-        padding: 6px 12px;
-        font-size: 12px;
-        margin-right: 5%;
-        margin-bottom: 5%;
-        
-      }
 
+  .profile {
+    background-color: #205072;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
 
+  .no_data {
+    height: 60%;
+    width: 60%;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    max-width: 60vw;
+    height: 70vh;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
+  }
 
-@media (min-width:601px) and (max-width:1024px) {
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #205072;
+  }
 
+  .awardslogo {
+    height: 50px;
+    width: 50px;
+    background-position-y: bottom;
+  }
 
+  .close_btn {
+    height: 70%;
+    width: 70%;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  .btn {
+    size: 80%;
+    font-weight: 600;
+    font-size: 14px;
+    border: none; /* Remove the default border */
+    border: 1px solid #205072;
+    background:#205072;
+    color: #FFF;
+
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
+
+  .profile {
+    background-color: #205072;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  .no_data {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-dialog {
+    max-width: 70vw;
+    height: 70vh;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
+  }
+  .custom-modal-dialog {
+    width: 70vw !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    height: 80vh !important;
+  }
+
+  .modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .titleBar {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #205072;
+    margin: 0px;
+    margin-top: 20px;
+  }
+
+  .awardslogo {
+    height: 100px;
+    width: 100px;
+    background-position-y: bottom;
+  }
+
+  .close_btn {
+    height: 70%;
+    width: 70%;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  .btn {
+    size: 80%;
+    font-weight: 600;
+    font-size: 14px;
+    border: none; /* Remove the default border */
+    border: 1px solid #205072;
+    background:#205072;
+    color: #FFF;
+
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
+  .profile {
+    background-color: #205072;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .no_data {
+    height: 40%;
+    width: 40%;
+  }
   .logo1{
     margin-left: 0vw;
     width: 1.5vw;
   }
 
   .logo2{
-margin-left: 3vw;
-width: 1.5vw;
+    margin-left: 1.5vw;
+    width: 1.5vw;
   }
-
-    .container{
-    max-width: 70vw;
-    height: 90vh;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
-    margin-top: 5vh;
-    margin-left: 12vw;
-    margin-right: 15vw;
-    position: fixed;
-    }
-
-    .addremark{
-     width: 10vw;
-     height: 4vh;
-    }
-
-    .box{
-      display: flex;
-      margin-top: 3vw;
-      justify-content: space-between;
-      align-items: center;
-      height: 120px;
-  }
-
-  .box1{
-      margin-left: -6vw;
-      margin-top: 1vw;
-  }
-
-.empname{
-  margin-top: 0vw;
-  margin-left: 10px;
-  text-align: center;
-  color: #205072;
-  font-size: 1.3vw;
-  font-family: Outfit;
-  font-weight: 600;
 }
-
-    h1{
-    color: #205072;
-    text-align: center;
-    font-family: Outfit;
-    font-size: 1.1rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 1vw;
-    }
-
- 
-
-    .imgsize{
-    width: 6vw;
-    height: 7vw;
-    flex-shrink: 0;
-    margin-left: 1vw;   
-    margin-top: -4vw; 
-    }
-
-    .clientlogo{
-    width: 7vw;
-    height: 7vw;
-    flex-shrink: 0;
-    margin-right: 2vw;
-    margin-left: -10vw;
-    margin-top: -3vw;
-    }
-
-
-    .line {
-        width: 67vw; 
-        height: 0.4vw; 
-        background: rgba(51, 54, 63, 0.60);
-        margin-top: -6vw;
-        margin-left: 0.5vw;
-        
-    }
-
-    .box3 {
-      position: absolute;
-      bottom: 6vw;
-      left:55vw;
-      padding: 10px; /* Add padding to create space between image and container edges */
-    }
-
-
-      .btncross{
-        right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-        size: 35px;
-      }
-      .btn{
-        padding: 8px;
-        font-size: 12px;
-        margin-bottom: -5%;
-        margin-left: -6%;
-        }
-
-  }
-
- 
-
-   /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
-
-  @media (min-width: 1025px){
-
-    .logo1{
-      margin-left: 1vw;
-      width: 1.5vw;
-    }
-
-    .logo2{
-      margin-left: 3vw;
-      width: 1.5vw;
-    }
-
-    .box3 {
-      position: absolute;
-      bottom: 3vw;
-      left: 47vw;
-      padding: 10px; /* Add padding to create space between image and container edges */
-    }
-
-    .col1, .col3 {
-      width: 150px; /* Set the width as needed */
-    }
-
-    .container{
-    width: 60vw;
-    height: 90vh;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    margin-left: 20vw;
-    position: fixed;
-    overflow:auto;
-    }
-
-    .addremark{
-      width: 9vw;
-      height: 4vh;
-    }
-
-    .box{
-        display: flex;
-        margin-top: 3.5vw;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .box1{
-        margin-left: -100px;
-        margin-top: 5vw;
-    }
-
-.empname{
-    margin-top: 5px;
-    margin-left: 13.18px;
-    text-align: center;
-    color: #205072;
-    font-family: Outfit;
-    font-size:0.80rem;
-    font-weight: 600;
-}
-
-
-    h1{
-    color: #205072;
-    align-items: center;
-    font-family: Outfit;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    
-    }
-
- 
-
-    .imgsize{
-    width: 6vw;
-    height: 6vw;
-    flex-shrink: 0;
-    border-radius: 100px;
-    margin-left: 1vw;
-    
-
-    }
-
-    .clientlogo{
-    width: 7vw;
-    height: 7vw;
-    flex-shrink: 0;
-    align-items: flex-end;  
-    margin-left: -120px;
-    margin-top: 13px;
-    }
-
-
-    .line {
-      position: absolute;
-        width: 57vw; /* Adjust the width as needed */
-        height: 0.5vh; /* Adjust the height as needed */
-        background: rgba(51, 54, 63, 0.60);
-        top:12.5vw;
-    }
-
-    .btncross{
-        right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-      }
-    .btn{
-      padding: 8px 16px;
-      font-size: 14px;
-      margin-left: -2%;
-      
-      }
-    }
-
-  /* Media query for tablet screens */
-
-  
-
-  @media (min-width: 2281px){
-
-    .box3 {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      padding: 10px; /* Add padding to create space between image and container edges */
-    }
-
-    
-    .logo1{
-      margin-left: 1vw;
-      width: 2vw;
-    }
-
-    .logo2{
-      margin-left: 3vw;
-      width: 2vw;
-    }
-
-    .container {
-      width: 45vw;
-      max-height: 80vh;
-      flex-shrink: 0;
-      border-radius: 10px;
-      border: 1px solid #205072;
-      background: #FFF;
-      box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.50);
-      margin-top: 15vh;
-      margin-bottom: 5vh;
-      margin-left: 30vw;
-      margin-right: 20vw;
-      position: relative;
-    }
-
-    .box{
-      display: flex;
-      margin-top: 40px;
-      justify-content: space-between;
-      align-items: center;
-  }
-
-  .box1{
-      margin-left: -110px;
-  }
-
-  .empname{
-    margin-top: 10px;
-    margin-left: 13.18px;
-    text-align: center;
-    color: #205072;
-    font-family: Outfit;
-    font-weight: 300;
-  }
-
-    h1 {
-      color: #205072;
-      text-align: center;
-      font-family: Outfit;
-      font-size: 4vw;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
-
-    .imgsize {
-      width: 5vw;
-      height: 5vw;
-      flex-shrink: 0;
-      margin-left: 1vw;
-     }
-
-    .clientlogo {
-      width: 5vw;
-      height: 5vw;
-      
-      /* align-items: flex-end; */
-      position: absolute;
-      margin-left: 30vw;
-      top: 4.5vw;
-    }
-
-    .line {
-      width: 42vw;
-      height: 0.5vh;
-      background: rgba(51, 54, 63, 0.60);
-    }
- 
-    .btncross{
-      right: 10px;
-      position: absolute;  
-      top: 10px;  
-      cursor: pointer;  
-    }    
-  }
-
-  

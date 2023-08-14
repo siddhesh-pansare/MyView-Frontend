@@ -127,13 +127,46 @@ export class RoundDetailsComponent implements OnInit {
         return 'text-danger'; 
       case 'Considered':
       case 'Considered For Next Round':
-      case 'Match':
+      case 'Match ':
         return 'text-success';
       default:
         return 'rgba(51, 54, 63, 0.60)'; 
     }
   }
 
+
+  getStatusColorForRound(round: string): string {
+    const status = this.getStatusFromRound(round);
+    switch (status) {
+      case 'Considered':
+      case 'Considered For Next Round':
+      case 'Match(80%)':
+        return 'round_considered';
+      case 'Fail':
+      case 'Not Match':
+      case 'Rejected':
+        return 'round_fail';
+      default:
+        return '';
+    }
+  }
+
+  getStatusFromRound(round: string): string {
+    switch (round) {
+      case 'Round 1':
+        return this.round1[0]?.Status || ''; // Assuming you want the status of the first item
+      case 'Round 2':
+        return this.round2[0]?.Status || '';
+      case 'Gd':
+        return this.groupdiscussion[0]?.Status || '';
+      case 'Test':
+        return this.onlineTest[0]?.Status || '';
+      case 'Resume Screening':
+        return this.resume[0]?.Status || '';
+      default:
+        return '';
+    }
+  }
 }
 
 

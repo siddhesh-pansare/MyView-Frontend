@@ -8,15 +8,13 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
 import{ FormsModule} from '@angular/forms';
-import { CertificateDialogueComponent } from './modules/shared-modules/Dialogue/certificate-dialogue/certificate-dialogue.component';
-import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
 
 import { ManagerModule } from './modules/manager/manager.module';
-import { HeaderComponent } from './modules/shared-modules/shared-components/header/header.component';
-import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/attendance-dialog/attendance-dialog.component';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { OpenposComponent } from './modules/openpos/openpos.component';
+import { HttpClientModule } from '@angular/common/http';
 import { OpenpositionsComponent } from './openpositions/openpositions.component';
+import { MatTableModule } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSnackBar
 
 
 @NgModule({
@@ -35,9 +33,12 @@ import { OpenpositionsComponent } from './openpositions/openpositions.component'
     ManagerModule,
     MatTabsModule,
     MatTooltipModule,
-    ManagerModule
+    ManagerModule,
+    MatTableModule,
+    CommonModule,
+    MatSnackBarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

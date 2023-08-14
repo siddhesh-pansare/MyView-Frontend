@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.back {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.arrow {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navBar {
+  height: 60px;
+  background-color: blueviolet;
+  width: calc(100vh-70px);
+}
+
+.titleBar {
+  height: 60px;
+}
+
+.sideBar {
+  width: 70px;
+  height: 100vh;
+  background-color: black;
+}
+
+.status {
+  border: none;
+  background: none;
+  color: #38a3a5;
+  font-weight: 600;
+}
+
+.profImg {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin-right: 15px;
+}
+
+table {
+  border-color: #205072;
+  border: 1px;
+  border-radius: 2px;
+}
+
+tr:hover td {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:first-child {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:last-child {
+  cursor: pointer;
+  -moz-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  -webkit-box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+  box-shadow: 0 0 5px 0 rgba(32, 80, 114, 1);
+}
+tr:hover td:after {
+  cursor: pointer;
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #f5f8fb;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+table.table tr td {
+  color: #38a3a5;
+}
+
+table.table tr th {
+  color: #205072;
+  background-color: rgba(0, 240, 255, 0.1);
+}
+
+@media screen and (width: 320px) {
+  .page {
+    min-width: calc(100vw - 40px);
+  }
+  .navBar {
+    height: 30px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 40px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .page {
+    min-width: calc(100vw - 50px);
+  }
+
+  .navBar {
+    height: 40px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 50px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    min-width: calc(100vw - 65px);
+  }
+  .navBar {
+    height: 55px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 65px;
+    height: 100vh;
+    background-color: black;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .page {
+    min-width: calc(100vw - 70px);
+  }
+
+  .navBar {
+    height: 60px;
+    background-color: blueviolet;
+    width: 100%;
+  }
+
+  .sideBar {
+    width: 70px;
+    height: 100vh;
+    background-color: black;
+  }
+}

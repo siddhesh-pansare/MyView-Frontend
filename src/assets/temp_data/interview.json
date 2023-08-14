@@ -1,0 +1,25 @@
+{
+  "interview": [
+    {
+      "Candidate_Name": "Garvita Chauhan",
+      "Email": "garvita.chauhan@gmail.com",
+      "Category": "Lateral",
+      "Status": "Hired",
+      "Last_Update": "01-Jan-2023"
+    },
+    {
+      "Candidate_Name": "Shivam Bansal",
+      "Email": "shivam.bansal@gmail.com",
+      "Category": "Fresher",
+      "Status": "Rejected",
+      "Last_Update": "01-Jan-2023"
+    },
+    {
+      "Candidate_Name": "Ishita Aggarwal",
+      "Email": "ishitaaggarwal@gmail.com",
+      "Category": "Lateral",
+      "Status": "In Progress",
+      "Last_Update": "01-Jan-2023"
+    }
+  ]
+}

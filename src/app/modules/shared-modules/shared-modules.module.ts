@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSnackBar
 import { SharedModulesRoutingModule } from './shared-modules-routing.module';
 import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
@@ -20,6 +21,7 @@ import { RemarkDialogueComponent } from './Dialogue/remark-dialogue/remark-dialo
 import { HttpClient } from '@angular/common/http';
 import { AttendanceDialogComponent } from './Dialogue/attendance-dialog/attendance-dialog.component';
 
+import { AwardComponent } from './dialogue/awards-dialogue/award/award.component';
 
 import { CertificationDialogueComponent } from './dialogue/certification-dialogue/certification-dialogue.component';
 import { InterviewComponent } from './dialogue/interview-dialogue/interview.component';
@@ -39,7 +41,8 @@ import { SessionComponent } from './dialogue/session-dialogue/session.component'
     AttendanceDialogComponent,
     CertificationDialogueComponent,
     InterviewComponent,
-    SessionComponent
+    SessionComponent,
+    AwardComponent,
   ],
   imports: [
     CommonModule,
@@ -49,7 +52,8 @@ import { SessionComponent } from './dialogue/session-dialogue/session.component'
     BrowserAnimationsModule,
     MatIconModule,
     RouterModule,
-    SharedModulesRoutingModule
+    SharedModulesRoutingModule,
+    MatSnackBarModule
   ],
   exports:[
     AttendanceDialogComponent,
@@ -58,4 +62,4 @@ import { SessionComponent } from './dialogue/session-dialogue/session.component'
   ]
 
 })
-export class SharedModulesModule { }
+export class SharedModulesModule {}

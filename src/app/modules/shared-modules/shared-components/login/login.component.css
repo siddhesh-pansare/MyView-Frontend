@@ -64,7 +64,7 @@
   height: 60%;
   justify-content: space-around;
   align-items: center;
-  background-image: url("./../../../../../assets/images/Gemini_Vertical_Colored.png");
+  background-image: url("./../../../../../assets/login images/gemini.png");
   background-repeat: no-repeat;
   background-size: 80%;
   background-position-x: center;
@@ -74,10 +74,11 @@
   width: 50%;
   height: auto;
 }
+
 .ssoButton {
   height: 7vh;
   width: 70%;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #205072;
   color: #fff;
   border: none;
@@ -88,9 +89,11 @@
   .loginPage {
     flex-direction: column;
   }
+
   .leftSide {
     display: none;
   }
+
   .rightSide {
     width: 100%;
     height: 100vh;
@@ -98,9 +101,11 @@
     justify-content: center;
     position: fixed;
   }
+
   .main-bg {
     height: 60vh;
   }
+
   .box {
     width: 80%;
     height: 60%;
@@ -110,9 +115,10 @@
     font-size: 40px;
     align-self: center;
   }
+
   .ssoButton {
     width: 80%;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -122,9 +128,11 @@
     font-size: small;
     height: 5vh;
   }
+
   .leftSide {
     display: none;
   }
+
   .main-bg {
     background-color: #ffffff;
     align-items: left;
@@ -247,17 +255,20 @@
   .main-bg {
     height: 60vh;
   }
+
   .box {
-    width: 60%;
+    width: 80%;
     height: 60%;
     background-position-y: bottom;
   }
+
   .welcome {
     font-size: 40px;
     align-self: center;
   }
+
   .ssoButton {
-    width: 50%;
+    width: 80%;
   }
 }
 
@@ -359,7 +370,7 @@
     height: 60%;
     justify-content: space-around;
     align-items: center;
-    background-image: url("./../../../../../assets/images/Gemini_Vertical_Colored.png");
+    background-image: url("./../../../../../assets/login images/gemini.png");
     background-repeat: no-repeat;
     background-size: 80%;
     background-position-x: center;

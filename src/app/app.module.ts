@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 import { OpenposdialogComponent } from './modules/shared-modules/Dialog/openposdialog/openposdialog.component';
 import { ChilddialogComponent } from './modules/shared-modules/Dialog/openposdialog/childdialog/childdialog.component';
+import { DesignationDialogComponent } from './designation-dialog/designation-dialog.component';
 
 
 
@@ -28,6 +29,7 @@ import { ChilddialogComponent } from './modules/shared-modules/Dialog/openposdia
     AppComponent,
     OpenposdialogComponent,
     ChilddialogComponent,
+    DesignationDialogComponent,
 
     
   ],

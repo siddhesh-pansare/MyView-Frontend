@@ -11,6 +11,9 @@ import { DataSource } from '@angular/cdk/collections';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NzTableFilterFn, NzTableFilterList, NzTableSortFn, NzTableSortOrder } from 'ng-zorro-antd/table';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { DesignationDialogComponent } from 'src/app/designation-dialog/designation-dialog.component';
+
 
 interface EmployeeData{
    EmpCode:string;
@@ -80,7 +83,7 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
    
   hideColumnHeaders: boolean = false;
 
-   constructor(private snackBar: MatSnackBar,private http : HttpClient,private clipboard: Clipboard) { 
+   constructor(private snackBar: MatSnackBar,private http : HttpClient,private clipboard: Clipboard,private dialog:MatDialog) { 
     this.pageSize=this.pageSizeOptions[0];
   
    }
@@ -105,6 +108,21 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
     if (rowIndex >= 0 && rowIndex < this.searchOptions.length) {
       this.searchOptions.splice(rowIndex, 1);
     }
+  }
+  openDesignationDialog(): void {
+    const dialogRef = this.dialog.open(DesignationDialogComponent, {
+      width: '300px', // Adjust the width as needed
+      data: {
+        // Pass any required data to the dialog
+        // For example, the list of available designations
+        designations: ['Software Developer', 'Backend Developer', 'Data Analyst']
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      // Handle dialog close event here if needed
+      // For example, apply the selected filters to the table
+    });
   }
   
   

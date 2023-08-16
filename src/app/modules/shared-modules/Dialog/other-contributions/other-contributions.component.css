@@ -257,10 +257,6 @@ table.table tr th {
     border-radius: 50%;
   }
 
-  .no_data {
-    height: 80%;
-    width: 80%;
-  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -39,12 +39,24 @@ const routes: Routes = [
       path: 'employee',
       loadChildren: () => import('../app/modules/employee/employee.module')
       .then(module => module.EmployeeModule)
-    }
+    },
+    {
+      path: 'manager',
+      loadChildren: () => import('../app/modules/manager/manager.module')
+      .then(module => module.ManagerModule)
+    },
+    {
+      path: 'admin',
+      loadChildren: () => import('../app/modules/admin/admin.module')
+      .then(module => module.AdminModule)
+    },
+    {
+      path: 'shared',
+      loadChildren: () => import('../app/modules/shared-modules/shared-modules.module')
+      .then(module => module.SharedModulesModule)
+    },
   ]
 },
-{path:'ec',component:ECInformationComponent},
-{path:'dc', component:DcInformationComponent},
-{path:'dashboard', component:DashboardComponent}
 ];
 
 

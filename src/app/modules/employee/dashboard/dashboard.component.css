@@ -4,8 +4,9 @@ body {
   font-family: Outfit;
 }
 
-.card {
-  margin-top: 20px;
+.news-card {
+  margin: 20px;
+
 }
 
 .task1 {
@@ -45,6 +46,16 @@ body {
   align-items: center;
 }
 
+.personal-info-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.personal-info-container{
+  margin:  0 !important;
+}
+
 .custom-card-title {
   color: #082737;
   font-family: Outfit;
@@ -56,10 +67,11 @@ body {
 
 .custom-card-designation {
   color: rgba(8, 39, 55, 0.50);
+  font-family: Outfit;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px;
 }
 
 .custom-card-h2 {
@@ -68,7 +80,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 16px;
 }
 
 .custom-card-d2 {
@@ -77,7 +89,7 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 16px;
 }
 
 .custom-card-workStatus {
@@ -90,14 +102,14 @@ body {
   line-height: normal;
 }
 
+
+
 .tab-container {
   display: flex;
   flex-direction: row;
 }
 
-.tab-group {
-  margin-right: 30px;
-}
+
 
 .tab {
   padding: 10px 15px;
@@ -177,8 +189,8 @@ body {
 
 /* Styles for the image container */
 .image-container {
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -226,9 +238,7 @@ body {
 
 }
 
-.personal-info-row {
-  margin-top: 1rem;
-}
+
 
 .empty-handler {
   position: absolute;
@@ -241,7 +251,7 @@ body {
 }
 
 .dashboard-container {
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: 1rem;
   margin: 0;
 }
@@ -277,6 +287,10 @@ body {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14),
     0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.example-box:hover {
+  box-shadow: none;
 }
 
 .example-handle {
@@ -503,13 +517,7 @@ body {
 }
 
 
-@media (width > 768px) {
-
-
-
-
-
-}
+@media (width > 768px) {}
 
 
 @media (width < 768px) {

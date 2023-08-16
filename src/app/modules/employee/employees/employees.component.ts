@@ -13,6 +13,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NzTableFilterFn, NzTableFilterList, NzTableSortFn, NzTableSortOrder } from 'ng-zorro-antd/table';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { DesignationDialogComponent } from 'src/app/designation-dialog/designation-dialog.component';
+import { MatMenuTrigger } from '@angular/material/menu';
 
 
 interface EmployeeData{
@@ -47,7 +48,8 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
     searchValue: string = '';
     currentFilterColumn: string = 'EmpCode'; 
     searchOptions: any[] = [];
-
+    @ViewChild(MatMenuTrigger) filterMenu!: MatMenuTrigger; // Define the property
+    uniqueDesignations: string[] = [];
     
     displayedColumns: string[] = ['EmpCode', 'Name', 'Designation', 'Email', 'MentorName'];
     pageIndex = 0;
@@ -78,6 +80,7 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
    showSearchInput: boolean = false;
    enabledSearchColumns: string[] = [];
    copied: boolean = false;
+   selectedDesignations: { [key: string]: boolean } = {};
    
 
    
@@ -85,6 +88,7 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
 
    constructor(private snackBar: MatSnackBar,private http : HttpClient,private clipboard: Clipboard,private dialog:MatDialog) { 
     this.pageSize=this.pageSizeOptions[0];
+    
   
    }
    data:any;
@@ -104,26 +108,33 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
   }
   
   
+  
   removeSearchOption(rowIndex: number) {
     if (rowIndex >= 0 && rowIndex < this.searchOptions.length) {
       this.searchOptions.splice(rowIndex, 1);
     }
   }
-  openDesignationDialog(): void {
+  openDesignationDialog() {
     const dialogRef = this.dialog.open(DesignationDialogComponent, {
-      width: '300px', // Adjust the width as needed
+      width: '300px',
       data: {
-        // Pass any required data to the dialog
-        // For example, the list of available designations
-        designations: ['Software Developer', 'Backend Developer', 'Data Analyst']
+        designations: this.uniqueDesignations
       }
     });
-
+  
     dialogRef.afterClosed().subscribe(result => {
-      // Handle dialog close event here if needed
-      // For example, apply the selected filters to the table
+      if (result) {
+        // Apply the selected filters to the table
+        this.selectedDesignations = result.reduce((obj: { [x: string]: boolean; }, designation: string | number) => {
+          obj[designation] = true;
+          return obj;
+        }, {});
+  
+        this.applyFilt(); // Apply filters based on selected designations
+      }
     });
   }
+  
   
   
 
@@ -201,6 +212,7 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
     this.http.get<{ employeedata: EmployeeData[] }>('assets/temp_data/employees.json').subscribe((data) => {
       this.employeedata = data.employeedata;
       this.totalItems = this.employeedata.length;
+      this.uniqueDesignations = [...new Set(this.employeedata.map(employee => employee.Designation))];
       const keys = Object.keys(this.employeedata[0]);
       console.log(keys);
       this.displayedColumns = keys;
@@ -282,6 +294,24 @@ applyFilter() {
     console.log(this.filteredData.data)
     this.filteredData.paginator = this.paginator;
 }
+applyFilt() {
+  const selectedDesignationKeys = Object.keys(this.selectedDesignations)
+    .filter(key => this.selectedDesignations[key]);
+
+  if (selectedDesignationKeys.length === 0) {
+    // No filters selected, show all data
+    this.filteredData.data = this.employeedata;
+  } else {
+    // Apply filters based on selected designations
+    this.filteredData.data = this.employeedata.filter(employee => {
+      const lowercaseDesignation = employee.Designation;
+      return selectedDesignationKeys.includes(lowercaseDesignation);
+    });
+  }
+
+  this.filteredData.paginator = this.paginator;
+}
+
 
 
 

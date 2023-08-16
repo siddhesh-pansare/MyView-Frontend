@@ -14,9 +14,10 @@ import { MatOptionModule } from '@angular/material/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
-import {MatButtonModule} from '@angular/material/button';
+
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { NzTableModule } from 'ng-zorro-antd/table';
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -34,7 +35,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
     MatTooltipModule,
     MatSelectModule,
     MatListModule,
-    MatButtonModule,
+  
     MatSnackBarModule,
     NzTableModule
     

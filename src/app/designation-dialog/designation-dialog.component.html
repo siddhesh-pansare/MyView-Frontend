@@ -1,5 +1,6 @@
 <h2>Filter by Designation</h2>
-<mat-checkbox *ngFor="let designation of data.designations" [(ngModel)]="selectedDesignations[designation]">
+
+<mat-checkbox *ngFor="let designation of data.designations" [(ngModel)]="selectedDesignations[designation]" multiple="true">
   {{ designation }}
 </mat-checkbox>
 <button mat-raised-button color="primary" (click)="applyFilters()">Apply Filters</button>

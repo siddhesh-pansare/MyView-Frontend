@@ -23,4 +23,3 @@ export class DesignationDialogComponent {
     this.dialogRef.close(selectedFilters);
   }
 }
-

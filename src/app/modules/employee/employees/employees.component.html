@@ -133,28 +133,7 @@
      
       
     </div> -->
-    <nz-table #filterTable [nzData]="listOfData" nzTableLayout="fixed">
-      <thead>
-        <tr>
-          <th
-            *ngFor="let column of listOfColumns; trackBy: trackByName"
-            [(nzSortOrder)]="column.sortOrder"
-            [nzSortFn]="column.sortFn"
-            [nzFilters]="column.listOfFilter"
-            [nzFilterFn]="column.filterFn"
-          >
-            {{ column.name }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let data of filterTable.data">
-          <td>{{ data.name }}</td>
-          <td>{{ data.age }}</td>
-          <td>{{ data.address }}</td>
-        </tr>
-      </tbody>
-    </nz-table>
+   
     
     
     <table mat-table [dataSource]="filteredData">
@@ -167,6 +146,7 @@
               <a   style="cursor:pointer" (click)="openDesignationDialog()">
                 <img class="icon2" alt="" src="assets/employees/566737 1.png" matTooltip="filter header" >
               </a>
+              
               <td mat-cell *matCellDef="let element" class="cl{{ i }}" >
                 <!-- Your modification logic here -->
                 <!-- For example, display "Software Engineer" for 'designation' -->

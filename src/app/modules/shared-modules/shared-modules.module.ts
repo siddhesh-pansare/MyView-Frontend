@@ -6,6 +6,7 @@ import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
 import { AwardComponent } from './dialogue/awards-dialogue/award/award.component';
+import { InterviewDetailsComponent } from './dialogue/interview-details/interview-details.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AwardComponent } from './dialogue/awards-dialogue/award/award.component
     HeaderComponent,
     SideBarComponent,
     AwardComponent,
+    InterviewDetailsComponent,
   ],
   imports: [CommonModule, SharedModulesRoutingModule, MatSnackBarModule],
 })

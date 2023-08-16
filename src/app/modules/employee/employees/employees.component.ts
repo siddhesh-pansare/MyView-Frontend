@@ -107,7 +107,7 @@ export class EmployeesComponent implements OnInit , AfterViewInit{
   }
   openDesignationDialog() {
     const dialogRef = this.dialog.open(DesignationDialogComponent, {
-      width: '300px',
+      width: '350px', height:'400px',
       data: {
         designations: this.uniqueDesignations
       }
@@ -288,7 +288,6 @@ applyFilter() {
 applyFilt() {
   const selectedDesignationKeys = Object.keys(this.selectedDesignations)
     .filter(key => this.selectedDesignations[key]);
-
   if (selectedDesignationKeys.length === 0) {
     // No filters selected, show all data
     this.filteredData.data = this.employeedata;

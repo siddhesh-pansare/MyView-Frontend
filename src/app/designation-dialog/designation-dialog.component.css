@@ -7,14 +7,17 @@ h2{
     font-weight: bold;
 }
 
-.mat-mdc-dialog-container .mdc-dialog__surface {
-    max-width: ;
-  }
 
 button{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    left:80px;
+}
+
+
+.buttons{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
 }

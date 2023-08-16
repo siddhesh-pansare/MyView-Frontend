@@ -3,5 +3,7 @@
 <mat-checkbox *ngFor="let designation of data.designations" [(ngModel)]="selectedDesignations[designation]" multiple="true">
   {{ designation }}
 </mat-checkbox>
+<div class="buttons">
 <button mat-raised-button color="primary" (click)="applyFilters()">Apply Filters</button>
-
+<button mat-raised-button color="warn" (click)="clearFilters()">Clear</button>
+</div>

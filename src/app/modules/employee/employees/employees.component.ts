@@ -309,6 +309,8 @@ applyFilt() {
     });
   }
 
+
+  console.log(this.filteredData.data)
   this.filteredData.paginator = this.paginator;
 }
 

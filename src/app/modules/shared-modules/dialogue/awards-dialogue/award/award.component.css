@@ -7,6 +7,7 @@
 /* Add this to your component's CSS or to a global stylesheet */
 .custom-modal-dialog {
   width: 70vw !important;
+  background-color: white;
   max-width: 100% !important;
   margin: 0 auto !important;
   height: 80vh !important;

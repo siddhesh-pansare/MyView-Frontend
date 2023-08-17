@@ -5,9 +5,9 @@ import { SharedModulesRoutingModule } from './shared-modules-routing.module';
 import { LoginComponent } from './shared-components/login/login.component';
 import { HeaderComponent } from './shared-components/header/header.component';
 import { SideBarComponent } from './shared-components/side-bar/side-bar.component';
-import { ClientFeedbackComponent } from './Dialog/client-feedback/client-feedback.component';
-import { OtherContributionsComponent } from './Dialog/other-contributions/other-contributions.component';
-import { RoundDetailsComponent } from './Dialog/round-details/round-details.component';
+import { ClientFeedbackComponent } from './Dialogue/client-feedback/client-feedback.component';
+import { OtherContributionsComponent } from './Dialogue/other-contributions/other-contributions.component';
+import { RoundDetailsComponent } from './Dialogue/round-details/round-details.component';
 
 
 

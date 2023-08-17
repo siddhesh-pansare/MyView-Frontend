@@ -2,8 +2,29 @@
 
 body {
   font-family: Outfit;
+  
+}
+.scratchbutton {
+  position: relative;
+  /* margin-top: 39%;
+  margin-left: 92%;
+   */
+
 }
 
+.scratchbutton img {
+  position: fixed;
+  bottom: 270px;
+  right: 3.2%;
+  cursor: pointer;
+  
+
+}
+
+.scratchbutton img:hover {
+
+  transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
+}
 .news-card {
   margin: 20px;
 

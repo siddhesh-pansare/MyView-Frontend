@@ -1,8 +1,8 @@
 
-<div class="container-fluid example-boundary p-1 m-0" *ngIf="loggedUserData">
-  <a class="scratchbutton"  >
-    <img src="assets/images/maybe.png" (click)="OpenScratch('1000ms', '500ms')">
-  </a>
+<div class="container-fluid example-boundary " *ngIf="loggedUserData">
+
+   
+  
   <div class="row dashboard-container p-0">
 
     <div class="col-12 col-md-12 col-lg-8">
@@ -111,10 +111,15 @@
           </ul>
         </div>
       </div>
+      <div class="scratchpadbtn" style="margin-top:50px; margin-left:100px;">
+      <img src="assets/images/maybe.png" (click)="OpenScratch('1000ms', '500ms')">
+      </div>
     </div>
-
+    
+   
   </div>
   <!-- <img src="../../../../assets/images/icons/scratchpad.svg" alt="scratchpad" class="scratchpad-logo"> -->
+ 
   <span class="company-logo">
     <svg width="212" height="104" viewBox="0 0 212 104" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.3">

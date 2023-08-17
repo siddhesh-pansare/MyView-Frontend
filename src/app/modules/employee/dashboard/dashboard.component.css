@@ -547,4 +547,8 @@ body {
   .example-handle {
     visibility: hidden;
   }
+  .scratchpadbtn{
+    margin-top:800px;
+}
+ 
 }

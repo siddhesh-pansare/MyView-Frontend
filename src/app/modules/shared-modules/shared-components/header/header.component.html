@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg">
 
     <!-- Left-aligned content -->
@@ -5,8 +6,9 @@
 
       <div class="d-flex align-items-center">
         <!-- Brand/logo (optional) -->
-
-        <img class="sidebar_toggle" src="assets/header/btn_toggle_sidebar.png" alt="Button 1">
+        <div class="sd">
+          <!-- <img class="sidebar_toggle" src="assets/header/st1.png" alt="Button 1"> -->
+        </div>
       </div>
       <div class="col searchBar">
         <!-- Search bar -->
@@ -20,7 +22,7 @@
     </div>
 
     <!-- Right-aligned content -->
-    <div class="d-flex align-items-center">
+    <div class="d-flex align-items-center ri">
       <div class="col">
         <!-- Notification icon -->
         <a class="nav-link" href="#">
@@ -34,8 +36,8 @@
         </div>
         <div class="dropdown" [ngClass]="{ 'show': isDropdownOpen }" >
           <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen }">
-            <a class="dropdown-item" href="#" ><img src="assets/header/User (1).png" alt=""> My Profile</a>
-            <a class="dropdown-item" href="#" ><img src="assets/header/Vector.svg" alt="">   Log out</a>
+            <a class="dropdown-item first" href="#" >My Profile</a>
+            <a class="dropdown-item second" href="#" >Log out</a>
           </div>
         </div>
       </div>

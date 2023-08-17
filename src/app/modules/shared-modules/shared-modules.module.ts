@@ -8,7 +8,6 @@ import { SideBarComponent } from './shared-components/side-bar/side-bar.componen
 import { ScratchpadComponent } from './Dialogue/scratchpad/scratchpad.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatDialogModule} from '@angular/material/dialog';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { RoleComponent } from './shared-components/role/role.component';
 import { RouterModule } from '@angular/router';
 import { CertificationDialogueComponent } from './dialogue/certification-dialogue/certification-dialogue.component';
@@ -53,7 +52,6 @@ import { InterviewDetailsComponent } from './Dialogue/interview-details/intervie
     SharedModulesRoutingModule,
     MatButtonModule,
     MatDialogModule,
-    BrowserAnimationsModule,
     MatIconModule,
     RouterModule,
     SharedModulesRoutingModule,

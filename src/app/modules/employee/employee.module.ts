@@ -14,8 +14,6 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { InterviewComponent } from './interview/interview.component';
 
 
 @NgModule({
@@ -37,7 +35,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatPaginatorModule,
     MatTableModule,
     FormsModule,
-    BrowserAnimationsModule,
     MatIconModule
   ],
   exports:[

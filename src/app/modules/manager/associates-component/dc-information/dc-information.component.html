@@ -8,7 +8,7 @@
 
   
   <div class="card m-2"> <!--DC information card-->
-    <div class="card-header">
+    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
       &nbsp;DC Information</div>
     </div>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="card m-2">
-    <div class="card-header">
+    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info">
         <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 

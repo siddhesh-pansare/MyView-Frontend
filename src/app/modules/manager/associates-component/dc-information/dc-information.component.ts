@@ -9,12 +9,14 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class DcInformationComponent implements OnInit{
 
   loggedUserData: any;     //variable to store complete data from MIS
-  collapseClient : boolean = false;
-  collapseReportee : boolean = false;
+  collapseClient : boolean = true;
+  collapseReportee : boolean = true;
 
   @Input() showmanager: boolean = true;
   @Input() showbill: boolean = true;
   @Input() showrag: boolean = true;
+  @Input() isMentee: boolean = true; // Set to true for mentees screen
+  @Input() isReportee: boolean = false; 
 
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'mohit.choudhary1@geminisolutions.com';

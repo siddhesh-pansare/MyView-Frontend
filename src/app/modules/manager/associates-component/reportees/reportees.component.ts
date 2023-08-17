@@ -11,7 +11,8 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class ReporteesComponent implements OnInit{
   loggedUserData: any;     //variable to store complete data from MIS
 
-  
+  isMentee: boolean = false;
+  isReportee: boolean = true;
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },

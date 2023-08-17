@@ -50,12 +50,25 @@
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
-          <div class="tab-group">
-            <mat-tab-group>
-              <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
-              <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
-            </mat-tab-group>
+          <div class="tabs">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTab === 'dc'">Delivery Council</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" (click)="activateTab('ec')" [class.active]="activeTab === 'ec'">Engineering Council</a>
+              </li>
+            </ul>
+            <div class="line2"></div><br>
+          
+            <div *ngIf="activeTab === 'dc'">
+              <app-dc-information></app-dc-information>
+            </div>
+            <div *ngIf="activeTab === 'ec'">
+              <app-ec-information></app-ec-information>
+            </div>
           </div>
+          
         </div>
 
         <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"

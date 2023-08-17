@@ -23,6 +23,7 @@ export class DashboardComponent implements OnInit {
   //declare variables
   loggedUserData: any;     //variable to store complete data from MIS
   selectedTab = 'EC';
+  activeTab: string = 'dc';
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award', dialogComponent:'AwardComponent' },
@@ -47,6 +48,10 @@ export class DashboardComponent implements OnInit {
       this.loggedUserData = filteredData[0];
       //console.log('here', this.loggedUserData);
     });
+  }
+  
+  activateTab(tab: string) {
+    this.activeTab = tab;
   }
 
   selectTab(tab: string) {

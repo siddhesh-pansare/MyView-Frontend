@@ -1,6 +1,6 @@
 <div class="container example-boundary g-0">
   <div class="row">
-    <div class="col-12 col-md-8">
+    <div class="col-12 col-md-8" id="column1-container">
       <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag (cdkDragEnded)="onDragEnded($event)">
 
         <div class="container personal-info-container">
@@ -73,7 +73,7 @@
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-4" id="column2-container">
       <div class="example-box news" cdkDragBoundary=".example-boundary" cdkDrag  (cdkDragEnded)="onDragEnded($event)">
         I can only be dragged within the dotted container 2 (when data is not there)
       </div>

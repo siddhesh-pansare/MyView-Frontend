@@ -41,4 +41,8 @@ export class SideBarComponent {
       dialogRef.addPanelClass('animate__slideOutDown');
     });
   }
+
+  clicked(){
+
+  }
 }

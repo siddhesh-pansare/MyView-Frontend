@@ -2,7 +2,6 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import { DialogService } from 'src/app/services/dynamicDialogs/dialog.service';
 
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
@@ -31,7 +30,7 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions',dialogComponent:'OtherContributionsComponent' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private dynamicDialogService: DialogService ){}
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog ){}
 
   ngOnInit(): void {
       this.restoreBoxPositions();
@@ -70,13 +69,16 @@ export class DashboardComponent implements OnInit {
   }
 
   private restoreBoxPositions(): void {
+    console.log('restoring positions'
+    );
+
     const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
 
     boxes.forEach((box: HTMLElement, index: number) => {
       const storedCoordinates = localStorage.getItem(`dashboard_move_com_${index + 1}_coordinates`);
       if (storedCoordinates) {
         const { left, top } = JSON.parse(storedCoordinates);
-        box.style.position = 'absolute'; // Use absolute positioning
+        box.style.position = 'fixed'; // Use absolute positioning
         box.style.left = `${left}px`;
         box.style.top = `${top}px`;
       }

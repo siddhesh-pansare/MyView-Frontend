@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  
+
 })
 export class LoginComponent implements OnInit {
 
@@ -14,8 +14,6 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {}
 
   clicked(){
-    console.log('clicked');
-
     this.router.navigateByUrl('employee/dashboard');
   }
 }

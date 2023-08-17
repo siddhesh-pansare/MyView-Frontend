@@ -5,26 +5,21 @@
 
 } */
 
-/* @media (min-width: 300px) and (max-width: 660px){
-  .container{
-    width: 80vw;
-    height: 100vh;
-  }
-} */
+
 /* Media query for mobile screens */
 @media (max-width: 768px) {
     .container{
-    width: 80vw;
-    height: 60vh; 
+    width: 70vw;
+    height: 70vh; 
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 20vh;
-    margin-left: 15vw;
-    margin-right: 15vw;
-    position: relative;
+    margin-top: -30vh;
+    margin-left: 2%;
+    /* margin-right: 15vw; */
+    position: fixed;
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
     display: flexbox;
     
@@ -160,16 +155,16 @@ flex-shrink: 0;
   @media (min-width: 1025px){
 
     .container{
-        width: 60vw;
-    height: 92vh;
+        width: 70vw;
+    height: 80vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 5vh;
-    margin-bottom: 10vh;
-    margin-left: 20vw;
+    margin-top: -40vh;
+    /* margin-bottom: 10vh; */
+    margin-left: -20vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
     display: flexbox;
@@ -178,7 +173,7 @@ flex-shrink: 0;
          
     .nodata{
       display: block;  
-      margin-left: 13vw;
+      margin-left: 17vw;
       margin-top: -10vh;     
       padding: 5px;  
       width: 30vw;
@@ -190,7 +185,7 @@ flex-shrink: 0;
   }
     .image-caption{
       display: block;  
-      margin-left: 24vw;
+      margin-left: 28vw;
       margin-top: -18vh;     
       padding: 5px;  
       width: 10vw;
@@ -261,7 +256,7 @@ flex-shrink: 0;
     }
     .image-caption{
       display: block;  
-      margin-left: 22vw;
+      margin-left: 27vw;
       margin-top: -20vh;     
       padding: 5px;  
       width: 13vw;
@@ -274,16 +269,16 @@ flex-shrink: 0;
   /* Media query for tablet screens */
   @media (min-width: 769px) and (max-width: 1024px) {
     .container{
-        width: 65vw;
-    height: 85vh;
+        width: 84vw;
+    height: 70vh;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid #205072;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-    margin-left: 20vw;
+    margin-top: -35vh;
+    /* margin-bottom: 20vh; */
+    margin-left: -16vw;
     position: fixed;
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
     display: flexbox;
@@ -291,7 +286,7 @@ flex-shrink: 0;
         
     .nodata{
       display: block;  
-      margin-left: 7vw;
+      margin-left: 17vw;
       margin-top: -8vh;     
       padding: 5px;  
       width: 45vw;
@@ -303,7 +298,7 @@ flex-shrink: 0;
   }
     .image-caption{
       display: block;  
-      margin-left: 24vw;
+      margin-left: 34vw;
       margin-top: -20vh;     
       padding: 5px;  
       width: 15vw;
@@ -424,11 +419,11 @@ flex-shrink: 0;
       border: 1px solid #205072;
       background: #FFF;
       box-shadow: 0px 0px 3px 3px #0074FC;
-      margin-top: 15vh;
+      /* margin-top: 15vh;
       margin-bottom: 5vh;
       margin-left: 30vw;
-      margin-right: 20vw;
-      position: relative;
+      margin-right: 20vw; */
+      /* position: relative; */
       box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
       display: flexbox;
     }

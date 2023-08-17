@@ -312,6 +312,7 @@ body {
   font-size: 1.0vw ;
   font-family: Outfit;
   font-weight: 600;
+  left: 15px;
 }    
 
 .tabs .nav-item .nav-link.active{
@@ -335,7 +336,7 @@ cursor:pointer;
 }
 
 .nav-link{
-  width: 130px;
+  width: 140px;
   padding: 8px 0px;
 }
 

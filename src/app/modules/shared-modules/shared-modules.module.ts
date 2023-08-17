@@ -25,6 +25,9 @@ import { SessionComponent } from './dialogue/session-dialogue/session.component'
 import {MatIconModule} from '@angular/material/icon';
 import { InterviewDetailsComponent } from './Dialogue/interview-details/interview-details.component';
 
+
+
+
 @NgModule({
   declarations: [
     LoginComponent,
@@ -43,6 +46,7 @@ import { InterviewDetailsComponent } from './Dialogue/interview-details/intervie
     SessionComponent,
     AwardComponent,
     InterviewDetailsComponent,
+    RoundDetailsComponent
   ],
   imports: [
     CommonModule,

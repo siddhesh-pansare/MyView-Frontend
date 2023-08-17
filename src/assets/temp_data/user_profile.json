@@ -1,10 +1,11 @@
 {
-  "profile": [
-    {
-      "Name": "Shivam Bansal",
-      "Email": "shivam.bansal@gmail.com",
-      "Experience": "Fresher",
-      "Status": "Rejected"
-    }
-  ]
+    "profile": [
+      {
+        "Name":"Shivam Bansal",
+        "Email":"shivam.bansal@gmail.com",
+        "Experience":"Fresher",
+        "Status":"Rejected"
+
+      }
+    ]
 }

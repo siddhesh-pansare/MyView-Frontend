@@ -1,12 +1,12 @@
 {
-  "onlineTest": [
-    {
-      "Date": "08-July-2023",
-      "Step": "Online_Test",
-      "Status": "Match(80%)",
-      "Interviewer": "Athena Online Platform",
-      "Feedback": "Scored 80% ,matching to passing criteria",
-      "Profile_status": "Considered"
-    }
-  ]
+    "onlineTest": [
+      {
+        "Date": "08-July-2023",
+        "Step": "Online_Test",
+        "Status":"Match(80%)",
+        "Interviewer":"Athena Online Platform",
+        "Feedback": "Scored 80% ,matching to passing criteria",
+        "Profile_status":"Considered"
+      }
+    ]
 }

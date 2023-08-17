@@ -1,12 +1,12 @@
 {
-  "groupdiscussion": [
-    {
-      "Date": "07-July-2023",
-      "Step": "Group Discussion",
-      "Status": "Considered For Next Round",
-      "Interviewer": "Garima Sarma",
-      "Feedback": "N/A",
-      "Profile_status": "Considered"
-    }
-  ]
+    "groupdiscussion": [
+      {
+        "Date": "07-July-2023",
+        "Step": "Group Discussion",
+        "Status":"Considered For Next Round",
+        "Interviewer":"Garima Sarma",
+        "Feedback": "N/A",
+        "Profile_status":"Considered"
+      }
+    ]
 }

@@ -51,7 +51,7 @@
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
           <div class="tabs">
-            <ul class="nav justify-content-center">
+            <ul class="nav">
               <li class="nav-item">
                 <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTab === 'dc'">Delivery Council</a>
               </li>
@@ -61,12 +61,12 @@
             </ul>
             <div class="line2"></div><br>
           
-            <div *ngIf="activeTab === 'dc'">
+            <span *ngIf="activeTab === 'dc'">
               <app-dc-information></app-dc-information>
-            </div>
-            <div *ngIf="activeTab === 'ec'">
+            </span>
+            <span *ngIf="activeTab === 'ec'">
               <app-ec-information></app-ec-information>
-            </div>
+            </span>
           </div>
           
         </div>

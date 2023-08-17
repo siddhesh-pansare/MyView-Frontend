@@ -312,7 +312,7 @@ body {
   font-size: 1.0vw ;
   font-family: Outfit;
   font-weight: 600;
-  left: 15px;
+  
 }    
 
 .tabs .nav-item .nav-link.active{
@@ -323,6 +323,8 @@ cursor:pointer;
 .nav-item .nav-link{
 color: rgba(51, 54, 63, 0.6);
 cursor:pointer;
+text-align: center;
+
 }
 
 .line2{

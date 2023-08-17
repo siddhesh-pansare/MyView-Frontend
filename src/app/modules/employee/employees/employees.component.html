@@ -147,7 +147,7 @@
                 <img class="icon2" alt="" src="assets/employees/566737 1.png" matTooltip="filter header" >
               </a>
               
-              <td mat-cell *matCellDef="let element" class="cl{{ i }}" >
+              <td mat-cell *matCellDef="let element" class="cl{{ i }}"  [hidden]="hideColumnHeaders || hideColumns[i]">
                 <!-- Your modification logic here -->
                 <!-- For example, display "Software Engineer" for 'designation' -->
                

@@ -1,56 +1,59 @@
-<div class="position-relative center m-5">
-
-  <div class="modal-dialog modal-dialog-centered p-3">
-      <div class="modal-content">
-          <div class="modal-header border-0 d-flex justify-content-end pt-2 mb-3">
-              <button type="button" class="close">
-                  <img class="close_btn" src="../../../../../../assets/images/btn_close.png">
-              </button>
-          </div>
-          <div class="modal-body">
-              <div
-                  class="row d-flex justify-content-between">
-                  <div
-                      class="col-4 text-start"><img class=" profile" src="assets/images/Ellipse_52.png">
-                  </div>
-                  <div class="col-4 text-center">
-                      <p class="title">Other Contributions</p>
-                  </div>
-                  <div class="col-4 text-end">
-                      <img class="awardslogo" src="../../../../../../assets/images/contri_logo.png" alt="Image 2">
-                  </div>
-              </div>
-              <hr>
-              <div class="table-responsive rounded">
-                  <table class="table table-bordered">
-                      <thead class="text-center">
-                          <tr>
-                              <th>Date</th>
-                              <th>Feedback</th>
-                              <th>Given By</th>
-                          </tr>
-                      </thead>
-                      <tbody class="text-center">
-                          <tr>
-                              <td>2023-07-31</td>
-                              <td>Best Employee</td>
-                              <td>John Doe</td>
-                          </tr>
-                          <tr>
-                              <td>2023-08-15</td>
-                              <td>Outstanding Contribution</td>
-                              <td>Jane Smith</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-              <div class="d-flex justify-content-end mb-3"><button type="button" class="btn btn-warning">Add Contribution</button>
-              </div>
-          </div>
-      </div>
+<div class="position-fixed top-50 start-50 translate-middle">
+    <div class="modal-dialog custom-modal-dialog p-3">
+        <div class="modal-content">
+            <div
+                class="modal-header border-0 d-flex justify-content-end pt-2 mb-3 mt-0">
+                <button type="button" class="close">
+                    <img class="close_btn"
+                        src="/assets/images/btn_close.png">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-4 text-start">
+                        <img class=" profile" src="/assets/images/Ellipse_52.png">
+                    </div>
+                    <div class="col-4 text-center">
+                        <p class="title">Other Contributions</p>
+                    </div>
+                    <div class="col-4 text-end">
+                        <img class="awardslogo"
+                            src="/assets/images/contri_logo.png"
+                            alt="Image 2">
+                    </div>
+                </div>
+                <hr>
+                <div class="table-responsive ">
+                    <table class="table table-bordered"
+                        *ngIf="contributions.length>0">
+                        <thead class="text-center">
+                            <tr>
+                                <th>Date</th>
+                                <th>Feedback</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-center">
+                            <tr *ngFor="let cv of contributions;let i=index">
+                                <td>{{ cv.Date }}</td>
+                                <td>{{ cv.Details }}</td>
+                                <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div
+                        class="d-flex justify-content-center align-content-center"><img
+                            class="d-flex no_data  justify-content-center"
+                            *ngIf="contributions.length===0"
+                            src="/assets/images/contri_no_data.png"alt="No Data" />
+                            
+                    </div>
+                </div>
+  
+            </div>
+            <div class="modal-footer d-flex bottom-0 justify-content-end">
+                <button type="button" class="btn btn-warning">Add New contributions</button>
+            </div>
+        </div>
+    </div>
   </div>
-</div>
-
- 
- 
- 

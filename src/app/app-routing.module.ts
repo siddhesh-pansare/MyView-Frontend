@@ -9,12 +9,19 @@ import { ECInformationComponent } from './modules/employee/dashboard/ec-informat
 import { DcInformationComponent } from './modules/employee/dashboard/dc-information/dc-information.component';
 import { MenteesComponent } from './modules/manager/associates-component/mentees/mentees.component';
 import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
+import { ClientFeedbackComponent } from './modules/shared-modules/Dialogue/client-feedback/client-feedback.component';
+import { OtherContributionsComponent } from './modules/shared-modules/Dialogue/other-contributions/other-contributions.component';
+import { RoundDetailsComponent } from './modules/shared-modules/Dialogue/round-details/round-details.component';
 
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
+  {path:'client-feedback',component:ClientFeedbackComponent},
+  {path:'other-contributions',component:OtherContributionsComponent},
+  { path:'round-details', component:RoundDetailsComponent },
+  
   { path:'', component:RoleComponent ,
   children:[
     {

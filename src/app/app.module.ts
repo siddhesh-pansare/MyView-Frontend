@@ -7,20 +7,18 @@ import { HeaderComponent } from './modules/shared-modules/shared-components/head
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialog/attendance-dialog/attendance-dialog.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { OpenPositionsComponent } from './modules/manager/open-positions/open-positions.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    OpenPositionsComponent
-  ],
+  declarations: [AppComponent, OpenPositionsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     SharedModulesModule,
-
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

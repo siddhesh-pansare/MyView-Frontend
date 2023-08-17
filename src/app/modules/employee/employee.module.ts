@@ -15,8 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { InterviewComponent } from './interview/interview.component';
-
+import { InterviewComponent } from './interview/interview.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DcInformationComponent,
     PseudoDashboardComponent,
     DashboardComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    InterviewComponent,
   ],
   imports: [
     CommonModule,
@@ -38,10 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatTableModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
   ],
-  exports:[
-    EmployeesComponent
-  ]
+  exports: [EmployeesComponent],
 })
-export class EmployeeModule { }
+export class EmployeeModule {}

@@ -8,39 +8,48 @@ import { ReporteesComponent } from './modules/manager/associates-component/repor
 import { ECInformationComponent } from './modules/employee/dashboard/ec-information/ec-information.component';
 import { DcInformationComponent } from './modules/employee/dashboard/dc-information/dc-information.component';
 import { MenteesComponent } from './modules/manager/associates-component/mentees/mentees.component';
-import { RemarkDialogueComponent } from './modules/shared-modules/Dialogue/remark-dialogue/remark-dialogue.component';
-
+import { InterviewComponent } from './modules/employee/interview/interview.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'login', pathMatch:'full' },
-  { path:'login', component:LoginComponent },
-  { path:'p-dashboard', component:PseudoDashboardComponent },
-  { path:'', component:RoleComponent ,
-  children:[
-    {
-      path: 'employee',
-      loadChildren: () => import('../app/modules/employee/employee.module')
-      .then(module => module.EmployeeModule)
-    },
-    {
-      path: 'manager',
-      loadChildren: () => import('../app/modules/manager/manager.module')
-      .then(module => module.ManagerModule)
-    },
-    {
-      path: 'admin',
-      loadChildren: () => import('../app/modules/admin/admin.module')
-      .then(module => module.AdminModule)
-    },
-    {
-      path: 'shared',
-      loadChildren: () => import('../app/modules/shared-modules/shared-modules.module')
-      .then(module => module.SharedModulesModule)
-    },
-  ]
-},
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'p-dashboard', component: PseudoDashboardComponent },
+  { path: 'interview', component: InterviewComponent },
+  {
+    path: '',
+    component: RoleComponent,
+    children: [
+      {
+        path: 'employee',
+        loadChildren: () =>
+          import('../app/modules/employee/employee.module').then(
+            (module) => module.EmployeeModule
+          ),
+      },
+      {
+        path: 'manager',
+        loadChildren: () =>
+          import('../app/modules/manager/manager.module').then(
+            (module) => module.ManagerModule
+          ),
+      },
+      {
+        path: 'admin',
+        loadChildren: () =>
+          import('../app/modules/admin/admin.module').then(
+            (module) => module.AdminModule
+          ),
+      },
+      {
+        path: 'shared',
+        loadChildren: () =>
+          import('../app/modules/shared-modules/shared-modules.module').then(
+            (module) => module.SharedModulesModule
+          ),
+      },
+    ],
+  },
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

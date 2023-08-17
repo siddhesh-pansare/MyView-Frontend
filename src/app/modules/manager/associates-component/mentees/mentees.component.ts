@@ -7,7 +7,11 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
   styleUrls: ['./mentees.component.css']
 })
 export class MenteesComponent implements OnInit{
+
   loggedUserData: any;     //variable to store complete data from MIS
+
+  isMentee: boolean = true;
+  isReportee: boolean = false;
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },

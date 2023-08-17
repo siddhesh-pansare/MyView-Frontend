@@ -64,9 +64,6 @@ body{
     width: 60px;
 }
 
-.parent-container{
-  
-}
 
 
 .container{
@@ -162,6 +159,7 @@ input::placeholder {
   margin-left: 150px;
   margin-right: 150px;
   margin-top: 30px;
+  max-width: calc(100vw - 300px);
 }
 
 table{
@@ -170,6 +168,10 @@ table{
   font-weight: 600;
   text-align: center;
   
+}
+
+.mat-md-table{
+  right: 200px;
 }
 
 .mat-mdc-header-row{

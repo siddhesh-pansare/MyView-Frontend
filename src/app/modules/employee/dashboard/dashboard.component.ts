@@ -8,6 +8,8 @@ import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/aw
 import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
 import { InterviewComponent } from '../../shared-modules/dialogue/interview-dialogue/interview.component';
 import { SessionComponent } from '../../shared-modules/dialogue/session-dialogue/session.component';
+import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
+import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -104,11 +106,16 @@ export class DashboardComponent implements OnInit {
         width: '400px', // Set the width as needed
       });
     }
-    // else if(dialogComponent === 'ClientFeedbackComponent'){
-    //   const dialogRef = this.dialog.open(ClientFeedbackComponent, {
-    //     width: '400px', // Set the width as needed
-    //   });
-    // }
+    else if(dialogComponent === 'ClientFeedbackComponent'){
+      const dialogRef = this.dialog.open(ClientFeedbackComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
+    else if(dialogComponent === 'OtherContributionsComponent'){
+      const dialogRef = this.dialog.open(OtherContributionsComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
 
 
   }

@@ -18,11 +18,16 @@
   background:#205072;
   color: #FFF;
 }
-.btn:active{
-  background:#205072;
-  color: #FFF;
-  border: 1px solid #205072;
+.btn:hover{
+  background: rgba(32,80,114,0.80);
+  border:rgba(0, 0, 0, 0.4);
 }
+.btn:active{
+    border: 1px solid #205072;
+    background:#205072;
+    color: #FFF;
+}
+
 /* Add this to your component's CSS or to a global stylesheet */
 .custom-modal-dialog {
   width: 70vw !important;
@@ -264,10 +269,6 @@ table.table tr th {
     border-radius: 50%;
   }
 
-  .no_data {
-    height: 80%;
-    width: 80%;
-  }
 }
 
 @media screen and (min-width: 1024px) {

@@ -19,10 +19,14 @@
   background:rgba(250, 10, 10, 0.50);
   color: #FFF;
 }
+.btn:hover{
+  background:rgba(250, 10, 10, 0.40);
+  border:rgba(0, 0, 0, 0.4);
+}
 .btn:active{
-  background:rgba(250, 10, 10, 0.50);
-  color: rgba(250, 10, 10, 0.50);
   border: 1px solid rgba(250, 10, 10, 0.50);
+  background:rgba(250, 10, 10, 0.50);
+  color: #FFF;
 }
 /* Add this to your component's CSS or to a global stylesheet */
 .custom-modal-dialog {

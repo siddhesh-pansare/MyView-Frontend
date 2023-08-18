@@ -17,7 +17,15 @@ body{
   justify-content: center;
   align-items: center;
 }
-
+.menu-card-box:hover {
+  /* Define the styles you want to apply when hovering over the icon */
+  /* For example, you can change the background color or add a border */
+  
+  border: 1px solid red;
+  box-shadow: red;
+  transition: 0.3s ease;
+  transform: translate(-3%, -3%);
+}
 .arrows:hover{
   background-color: #205075;
   color: rgba(0, 240, 255, 0.10);
@@ -35,6 +43,11 @@ height: 20px;
 justify-content: center;
 align-items: center;
 flex-shrink: 0;
+}
+.cross:hover{
+  transition: transform 0.1s ease;
+  transform: scale(1.07);
+  /* box-shadow: 1px 1px 1px 1px red; */
 }
 .popup{
       flex-direction: column;
@@ -85,6 +98,13 @@ flex-shrink: 0;
   margin-left: 1vw;
  /* margin-right: 9vw; */
   width: 17vw;
+  
+ }
+
+ .remark-icon:hover{
+  transition: transform 0.1s ease;
+  transform: scale(1.02);
+  /* box-shadow: 1px 1px 1px 1px royalblue; */
  }
  
  .card-info{

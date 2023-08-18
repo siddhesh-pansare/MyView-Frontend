@@ -7,7 +7,7 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
   styleUrls: ['./dc-information.component.css']
 })
 export class DcInformationComponent implements OnInit{
-
+  drop : boolean = false;
   loggedUserData: any;     //variable to store complete data from MIS
   collapseClient : boolean = true;
   collapseReportee : boolean = true;

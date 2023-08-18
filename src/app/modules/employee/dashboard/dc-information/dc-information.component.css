@@ -11,6 +11,9 @@ body {
   background-color: #f5f5f5;
 }
 
+.dropdown{
+  float: right;
+}
 .card-info {
 
   color: #082737;

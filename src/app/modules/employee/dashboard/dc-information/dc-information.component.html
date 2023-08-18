@@ -14,11 +14,11 @@
     </div>
     <div class="card-body p-2 pl-4 pr-4">
       <div class="row">
-        <div class="col-6">Name</div>
-        <div class="col-6 align-items-center">{{loggedUserData.DCTech}}</div>
+        <div class="col-6 "><span class="name">Name</span></div>
+        <div class="col-6 align-items-center "><span class="bltag">{{loggedUserData.DCTech}}</span></div>
       </div>
       <div class="row align-items-center justify-content-center mt-2">
-        <div class="col-6 text-wrap">Reporting Manager</div>
+        <div class="col-6 text-wrap "><span class="name">Reporting Manager</span></div>
         <div class="col-6 p-0">
           <div class="row">
             <div class="col p-0">
@@ -29,8 +29,8 @@
                   </div>
                   <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
                     <div class="card-body p-0">
-                      <h5 class="card-title">{{loggedUserData.DCChairName}}</h5>
-                      <p class="card-text">{{loggedUserData.DCChairId}} </p>
+                      <h5 class="card-title"><span class="dcname">{{loggedUserData.DCChairName}}</span></h5>
+                      <p class="card-text"><span class="dcid">{{loggedUserData.DCChairId}}</span> </p>
                     </div>
                   </div>
                 </div>
@@ -53,20 +53,20 @@
     </div>
     <div class="card-body p-2 pl-4 pr-4" *ngIf="!collapseClient">
       <div class="row">
-        <div class="col-6">Name</div>
-        <div class="col-6">client</div>
+        <div class="col-6 "><span class="name">Client</span></div>
+        <div class="col-6 "><span class="bltag">client</span></div>
       </div>
       <div class="row">
-        <div class="col-6">Manager</div>
-        <div class="col-6">manager</div>
+        <div class="col-6 "><span class="name">Manager</span></div>
+        <div class="col-6 "><span class="bltag">manager</span></div>
       </div>
       <div class="row">
-        <div class="col-6">Team</div>
-        <div class="col-6">team</div>
+        <div class="col-6 "><span class="name">Team</span></div>
+        <div class="col-6 "><span class="bltag">team</span></div>
       </div>
       <div class="row">
-        <div class="col-6">Experience</div>
-        <div class="col-6">{{loggedUserData.Experience}}</div>
+        <div class="col-6 "><span class="name">Experience</span></div>
+        <div class="col-6 "><span class="bltag">{{loggedUserData.Experience}}</span></div>
       </div>
     </div>
   </div>
@@ -75,12 +75,70 @@
     <div class="card-header">
       <span class="card-info"><img src="../../../../../assets/images/icons/reportees.svg" alt="info-icon">
 
-      My Reportees</span> <span class="record-number">5</span>
+      My Reportees</span> <span class="record-number">4</span>
     </div>
     <div class="card-body mentor-card">
-      <div class="row mt-1">
+      <div class="row">
 
-        <div class="col-6 col-xl-6 reportee-card">
+        <!-- <div class="col-6 col-xl-6 reportee-card"> -->
+          <!-- <div class="card small-card"> -->
+            <!-- <div class="row mt-1"> -->
+              <!-- <div class="col-3 col-xl-2 d-flex align-items-center img-container"> -->
+                <!-- <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile Image"> -->
+              <!-- </div> -->
+              <!-- <div class="col-9 col-xl-10 align-items-start justify-content-center details-container">
+                <div class="card-body inner-card-body"> -->
+                  <!-- <p class="mentee-work-status m-0">WFH</p>
+                  <p class="card-title m-0">Mentee name</p>
+                  <p class="card-text">Mentee Designation</p> -->
+                  <div class="col-6 p-0">
+                    <div class="row">
+                      <div class="col p-0">
+                        <div class="card small-card">
+                          <div class="row">
+                            <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                              <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                            </div>
+                            <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                              <div class="card-body p-0">
+                                <p class="mentee-work-status m-0">WFH</p>
+                                <h5 class="card-title"><span class="dcname">Gourav Chauhan</span></h5>
+                                <p class="card-text"><span class="dcid">Software Engineer - L1</span> </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 p-0">
+                    <div class="row">
+                      <div class="col p-0">
+                        <div class="card small-card">
+                          <div class="row">
+                            <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                              <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                            </div>
+                            <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                              <div class="card-body p-0">
+                                <p class="mentee-work-status m-0">WFH</p>
+                                <h5 class="card-title"><span class="dcname">Mansi Goyal</span></h5>
+                                <p class="card-text"><span class="dcid">Software Engineer - L1</span> </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- </div>
+              </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="col-6 col-xl-6 reportee-card">
           <div class="card small-card">
             <div class="row mt-1">
               <div class="col-3 col-xl-2 d-flex align-items-center img-container">
@@ -95,26 +153,52 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
-        <div class="col-6 col-xl-6 reportee-card">
-          <div class="card small-card">
-            <div class="row mt-1">
-              <div class="col-3 col-xl-2 d-flex align-items-center img-container">
-                <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile Image">
-              </div>
-              <div class="col-9 col-xl-10 align-items-start justify-content-center details-container">
-                <div class="card-body inner-card-body">
-                  <p class="mentee-work-status m-0">WFH</p>
-                  <h5 class="card-title m-0">Mentee name</h5>
-                  <p class="card-text">Mentee Designation</p>
+
+    </div><br>
+    <div class="row">
+      <div class="col-6 p-0">
+        <div class="row">
+          <div class="col p-0">
+            <div class="card small-card">
+              <div class="row">
+                <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                  <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                </div>
+                <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">             
+                  <div class="card-body p-0">                    
+                    <p class="mentee-work-statusO m-0">WFO</p>
+                    <h5 class="card-title"><span class="dcname">Siwani</span></h5>
+                    <p class="card-text"><span class="dcid">Software Engineer - L1</span> </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-
+      <div class="col-6 p-0">
+        <div class="row">
+          <div class="col p-0">
+            <div class="card small-card">
+              <div class="row">
+                <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                  <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
+                </div>
+                <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                  <div class="card-body p-0">
+                    <p class="mentee-work-statusL m-0">Leave</p>
+                    <h5 class="card-title"><span class="dcname">Tanisha Ahuja</span></h5>
+                    <p class="card-text"><span class="dcid">Software Engineer - L1</span> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 

@@ -306,7 +306,7 @@ body {
 }
 
 .nav{
-  margin-left: 3vw;
+  margin-left: 4vw;
 }
 .tabs{
   position: relative;
@@ -333,15 +333,16 @@ text-align: center;
   position: relative;
   border-top: 1px solid #000;
   box-sizing: border-box;
-  width: 25vw;
+  width: 85%;
   height: 0.06rem;
   left: 30px;
 
 }
 
 .nav-link{
-  width: 140px;
+  width: 11vw;
   padding: 8px 0px;
+  align-items: center;
 }
 
 .nav-item .nav-link:hover{
@@ -378,10 +379,33 @@ text-align: center;
   .menu-card-title {
     font-size: 14px;
   }
+
+  .nav{
+    margin-left: 6vw;
+    gap: 30px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
 }
 
 /*  large or lg*/
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .nav{
+    margin-left: 15%;
+    gap: 20px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 16vw;
+    padding: 8px 0px;
+  }
+}
 
 /*medium or md*/
 @media (max-width: 768px) {
@@ -404,7 +428,20 @@ text-align: center;
   .menu-card-title {
     font-size: 14px;
   }
+  
+  .nav{
+    margin-left: 18%;
+    gap: 20px;
+  }
 
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 20vw;
+    padding: 8px 0px;
+  }
 }
 
 /*small or sm*/
@@ -437,7 +474,19 @@ text-align: center;
     width: 100px;
     height: 100px;
   }
+  .nav{
+    margin-left: 20%;
+    gap: 20px;
+  }
 
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 30vw;
+    padding: 8px 0px;
+  }
 }
 
 

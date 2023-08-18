@@ -1,8 +1,15 @@
 <div class="container" *ngIf="loggedUserData">
   <div class="card  m-2">
     <div class="council-head p-2  m-0 d-flex align-items-center ">
-      <p class="council1">Delivery Council</p>
-      <p class="council2">Council <span><i class="fa-solid fa-caret-down"></i></span></p>
+      <div class="council1">Delivery Council</div>
+      <div class="council2">Council <span>
+        <button><i class="fa-solid fa-caret-down"></i></button>></span></div>
+    </div>
+    
+    </div>
+    <div class="dropdown col-lg-6 col-xl-6" ngIf*="drop">
+      <p>Pimco-EC</p>
+      <p>Pimpco-Techops</p>
     </div>
   </div>
 

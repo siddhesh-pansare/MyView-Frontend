@@ -42,14 +42,15 @@
   align-self: center;
 }
 
-.close {
+.close{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: none;
-  padding: 0;
-  border: 0;
+  border: none;
 }
 
-.close:hover {
-  box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
+.close:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 table {

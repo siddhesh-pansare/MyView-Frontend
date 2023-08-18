@@ -15,6 +15,11 @@
 .addremark-hover:hover {
   /* Add desired hover styles here */
   opacity: 0.6; /* For example, reduce opacity on hover */
+  border: none;
+  background-color: rgba(0, 116, 252, 0.72);
+  
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0px 0px 3px 3px #205072;
 }
 
 .btncross img:hover {

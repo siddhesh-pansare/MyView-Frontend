@@ -20,6 +20,7 @@ const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
+  {path:'remarks',component:RemarkDialogueComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

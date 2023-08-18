@@ -37,7 +37,7 @@ table {
 
 table.table tr td {
   color: #38a3a5;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 table.table tr th {
@@ -265,11 +265,12 @@ table.table tr th {
   }
 
   .title {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 700;
     color: #205072;
     margin: 0px;
     margin-top: 20px;
+    padding-top: 10px;
   }
 
   .awardslogo {
@@ -308,7 +309,8 @@ table.table tr th {
     /* Medium sharp shadow around borders */
   }
   .profile {
-    background-color: #205072;
+    border: 1px solid #38a3a5;
+    background-image: url(https://picsum.photos/200);
     height: 100px;
     width: 100px;
     border-radius: 100%;

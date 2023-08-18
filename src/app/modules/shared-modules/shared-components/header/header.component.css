@@ -23,7 +23,7 @@ html{
 }
 .sd{
     display: flex;
-    height: 50px;
+    height: 45px;
     width: 65px;
     align-items: center;
     justify-content: center;

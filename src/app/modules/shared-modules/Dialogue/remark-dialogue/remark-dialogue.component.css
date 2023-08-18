@@ -4,6 +4,10 @@
   font-family: Outfit;
 }
 
+.logo,.logo1,.logo2{
+  cursor: pointer;
+}
+
 .logo1:hover,
 .logo2:hover,
 .logo-hover:hover {
@@ -86,6 +90,7 @@ td{
   .logo1{
     margin-left: 0vw;
     width: 3.5vw;
+   
   }
 
   .logo2{

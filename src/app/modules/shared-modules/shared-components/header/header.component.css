@@ -28,6 +28,7 @@ html{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-right: 1px solid rgba(199, 192, 192, 0.744);
 }
 
 
@@ -165,4 +166,31 @@ a,a:hover{
         overflow: none;
 
     }
+
+    .navbar{
+        left:40px;
+    }
+
+    .searchBar{
+        display:none;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1251px){
+   .navbar{
+    left:75px;
+   }
+
+   .searchBox{
+    margin-top: 0px;
+    top:0px;
+    padding-top: 0px;
+   }
+
+   .searchBar{
+    margin-top: 0px;
+    top:0px;
+    padding-top: 0px;
+   }
 }

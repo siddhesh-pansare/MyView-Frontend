@@ -34,5 +34,7 @@ export class DcInformationComponent implements OnInit{
   toggleClient(){
     this.collapseClient = !this.collapseClient;
   }
-
+  onClick(){
+    this.drop = !this.drop;
+  }
 }

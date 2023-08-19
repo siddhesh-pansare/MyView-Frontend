@@ -10,7 +10,9 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { PseudoDashboardComponent } from './pseudo-dashboard/pseudo-dashboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { InterviewComponent } from './interview/interview.component';
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,10 @@ import { InterviewComponent } from './interview/interview.component';
     MatTabsModule,
     HttpClientModule,
     MatTooltipModule,
-    DragDropModule
+    DragDropModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSelectModule
   ]
 })
 export class EmployeeModule { }

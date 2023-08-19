@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 @Component({
   selector: 'app-dc-information',
   templateUrl: './dc-information.component.html',
@@ -11,7 +13,7 @@ export class DcInformationComponent implements OnInit{
   loggedUserData: any;     //variable to store complete data from MIS
   collapseClient : boolean = true;
   collapseReportee : boolean = true;
-
+  selectedCouncil: string = 'pimco-de';
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'siddhesh.pansare@geminisolutions.com';
 

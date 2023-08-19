@@ -15,7 +15,9 @@ import { OpenpositionsComponent } from './openpositions/openpositions.component'
 import { MatTableModule } from '@angular/material/table';
 import { CommonModule } from '@angular/common';
 import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSnackBar
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSn
     FormsModule,
     ManagerModule,
     CommonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent],

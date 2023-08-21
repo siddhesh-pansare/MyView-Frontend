@@ -14,6 +14,7 @@ export class MenteesComponent implements OnInit{
     details: false,
     activity: false
   };
+  
   // isMobileScreen: boolean = false;
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },

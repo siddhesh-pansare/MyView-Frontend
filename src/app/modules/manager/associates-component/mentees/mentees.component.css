@@ -9,6 +9,15 @@ body{
 .collapsed{
   display: none;
 }
+.email{
+  color: #205072;
+  transition: color 0.3s;
+}
+.email:hover {
+  color: red; /* Color change on hover */
+  transform: scale(1.1);
+  text-shadow: 1px 1px #0074FC;
+}
 .arrows {
   display: flex;
   height: 20px;
@@ -228,14 +237,14 @@ flex-shrink: 0;
  font-family: Outfit;
  font-size: 12px;
  font-style: normal;
- font-weight: 500;
+ font-weight: 600;
  line-height: normal;
  
  }
- .email{
+ /* .email{
    overflow: hidden;
  text-overflow: ellipsis; 
- }
+ } */
  .menu-card-image {
    /* height: 90px;
    width: 90px; */
@@ -465,7 +474,7 @@ flex-shrink: 0;
   font-family: Outfit;
   font-size: 12px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
   
   }
@@ -584,7 +593,7 @@ flex-shrink: 0;
   }
   .info{
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .menu-card-title {

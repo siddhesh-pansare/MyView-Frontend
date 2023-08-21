@@ -45,16 +45,14 @@
 }
 
 .logoGemini {
-  height: 5vh;
-  width: auto;
+  margin-top: 20px;
+  height: 80%;
+  width: 19vw;
 }
 
 .main-bg {
-  background-color: #ffffff;
-  align-items: left;
-  background-size: cover;
+  height: 90%;
   width: auto;
-  height: 80vh;
 }
 
 .welcome {
@@ -89,21 +87,23 @@
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center bottom;
-  z-index: -1; /* Behind other content */
 }
 
 .app_logo {
   width: 50%;
   height: auto;
+  z-index: 10;
 }
 
 .ssoButton {
-  height: 7vh;
-  width: 70%;
-  border-radius: 5px;
+  height: 6vh;
+  width: 60%;
+  border-radius: 10px;
   background-color: #205072;
   color: #fff;
   border: none;
+  z-index: 10;
+  font-size: 1.25rem;
 }
 
 /* Responsive styles for mobile phones */
@@ -113,20 +113,16 @@
     flex-direction: column;
   }
 
-  .leftSide {
+  /* .leftSide {
     display: none;
-  }
+  } */
 
   .rightSide {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
     justify-content: center;
     position: fixed;
-  }
-
-  .main-bg {
-    height: 60vh;
   }
 
   .box {
@@ -138,28 +134,14 @@
     background-position-y: bottom;
   }
 
-  .box-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./../../../../../assets/login images/gemini.png");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center bottom;
-    z-index: -1; /* Behind other content */
-  }
-
   .welcome {
     font-size: 40px;
     align-self: center;
   }
 
   .ssoButton {
-    width: 80%;
-    font-size: 20px;
+    width: 60%;
+    font-size: 1.25rem;
   }
 }
 
@@ -172,14 +154,6 @@
 
   .leftSide {
     display: none;
-  }
-
-  .main-bg {
-    background-color: #ffffff;
-    align-items: left;
-    background-size: cover;
-    width: 60vh;
-    height: 60vh;
   }
 
   .rightSide {
@@ -195,11 +169,11 @@
   .ssoButton {
     height: 7vh;
     width: 70%;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #205072;
     color: #fff;
     border: none;
-    font-size: 25px;
+    font-size: 1.25rem;
   }
 }
 
@@ -218,14 +192,6 @@
     justify-content: space-between;
     margin-bottom: 300px;
     align-items: center;
-  }
-
-  .main-bg {
-    background-color: #ffffff;
-    align-items: left;
-    background-size: cover;
-    width: 60vh;
-    height: 60vh;
   }
 
   .rightSide {
@@ -259,10 +225,6 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  .main-bg {
-    height: 50%;
-    width: 75%;
-  }
 
   .box {
     width: 50%;
@@ -273,27 +235,14 @@
     background-position-y: bottom;
   }
 
-  .box-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./../../../../../assets/login images/gemini.png");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center bottom;
-    z-index: -1; /* Behind other content */
-  }
   .welcome {
     font-size: 48px;
     align-self: center;
   }
 
   .ssoButton {
-    width: 80%;
-    font-size: 30px;
+    width: 60%;
+    font-size: 1.25rem;
   }
 }
 
@@ -319,9 +268,6 @@
     align-items: center;
     flex-direction: column;
   }
-  /* .main-bg {
-    height: 100vh;
-  } */
 
   .box {
     width: 50%;
@@ -331,19 +277,6 @@
     background-position-x: center;
     background-position-y: bottom;
   }
-  .box-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./../../../../../assets/login images/gemini.png");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center bottom;
-    z-index: -1; /* Behind other content */
-  }
 
   .welcome {
     font-size: 40px;
@@ -351,7 +284,7 @@
   }
 
   .ssoButton {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -377,9 +310,6 @@
     align-items: center;
     flex-direction: column;
   }
-  .main-bg {
-    height: 100%;
-  }
 
   .box {
     width: 50%;
@@ -390,26 +320,13 @@
     background-position-y: bottom;
   }
 
-  .box-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./../../../../../assets/login images/gemini.png");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center bottom;
-    z-index: -1; /* Behind other content */
-  }
   .welcome {
     font-size: 40px;
     align-self: center;
   }
 
   .ssoButton {
-    width: 80%;
+    width: 60%;
   }
 }
 
@@ -449,26 +366,11 @@
     padding-left: 10vh;
   }
 
-  .logoGemini {
-    height: 5vh;
-    width: auto;
-  }
-
-  .main-bg {
-    background-color: #ffffff;
-    align-items: left;
-    background-size: cover;
-    width: auto;
-    height: 100vh;
-  }
-
   .welcome {
     color: #fff;
     font-size: 30px;
     font-weight: 400;
   }
-
-  /* ... Your existing CSS rules ... */
 
   .box {
     position: relative;
@@ -483,20 +385,6 @@
     align-items: center;
   }
 
-  .box-background {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("./../../../../../assets/login images/gemini.png");
-    background-repeat: no-repeat;
-    background-size: 70%;
-    background-position: center bottom;
-    z-index: -1; /* Behind other content */
-  }
-
   .app_logo {
     width: 50%;
     height: auto;
@@ -504,8 +392,8 @@
 
   .ssoButton {
     height: 7vh;
-    width: 70%;
-    border-radius: 5px;
+    width: 60%;
+    border-radius: 10px;
     background-color: #205072;
     color: #fff;
     border: none;

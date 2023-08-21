@@ -33,9 +33,10 @@ body {
 font-family: Outfit;
 font-size: 14px;
 font-style: normal;
-font-weight: bold;
+font-weight: 600;
 line-height: normal;
 height: 7vh;
+
 }
 
 .dc-tech{
@@ -43,7 +44,7 @@ height: 7vh;
 font-family: Outfit;
 font-size: 14px;
 font-style: normal;
-font-weight: bold;
+font-weight: 600;
 line-height: normal;
 }
 
@@ -91,9 +92,8 @@ letter-spacing: 0.8px;
   font-family: Outfit;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
-  letter-spacing: 0.7px;
 }
 
 .card-text {
@@ -101,34 +101,42 @@ letter-spacing: 0.8px;
 font-family: Outfit;
 font-size: 12px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
+line-height: normal;
+}
+.card-text1 {
+  color: #56C596;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
 line-height: normal;
 }
 
 .client{
   color: #205072;
   font-family: Outfit;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
 }
 
 .client1{
   color: #56C596;
 font-family: Outfit;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
 }
 
-.client2{
-  color: rgba(51, 54, 63, 0.80);;
+.client2{  
+color: rgba(51, 54, 63, 0.80);
 font-family: Outfit;
-font-size: 14px;
+font-size: 14px !important;
 font-style: normal;
-font-weight: bold;
+font-weight: 600;
 line-height: normal;
 }
 

@@ -25,25 +25,26 @@ body {
 
 .news-card {
   margin: 20px;
-
 }
 
 .task1 {
   font-family: Outfit;
   color: #205072;
   font-weight: bold;
+  font-size: 13px;
 }
 
 .task {
   color: #E50255;
+  font-size: 13px;
 }
 
 .head {
   color: #082737;
   font-family: Outfit;
-  font-size: 18px;
+  font-size: 16px !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700 !important;
   line-height: normal;
   letter-spacing: 0.9px;
 }
@@ -76,51 +77,55 @@ body {
 }
 
 .custom-card-title {
-  color: #082737;
-  font-family: Outfit;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
+  display: flex;
+    flex-direction: column;
+    justify-content: top;
+    flex-shrink: 0;
+color: #082737;
+font-family: Outfit;
+font-size: 25px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .custom-card-designation {
-  color: rgba(8, 39, 55, 0.50);
+  color: rgba(8, 39, 55, 0.95);
   font-family: Outfit;
-  font-size: 20px;
+  /* font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 20px; */
 }
 
 .custom-card-h2 {
   color: #38A3A5;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
+    font-family: Outfit;
+    line-height: 25px;
+    margin-top: -5vh;
+    font-weight: 600;
 }
 
 .custom-card-d2 {
   color: #205072;
   font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
+  line-height: 25px;
+  margin-top: -5vh;
+  font-weight: 600;
 }
 
 .custom-card-workStatus {
   color: #FF710A;
   text-align: center;
   font-family: Outfit;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
 }
-
+.link{
+  text-decoration: none;
+}
 
 
 .tab-container {
@@ -157,10 +162,11 @@ body {
 }
 
 .menu-card-container {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 12vh;
 }
 
 .menu-card-box {
@@ -171,6 +177,7 @@ body {
   padding: 1vw 3vw 1vw 3vw;
   width: fit-content;
   cursor: pointer;
+  
 }
 
 .menu-card-image {
@@ -243,7 +250,9 @@ body {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
-
+.border{
+  border-radius: 5px 5px 0px 0px;
+}
 .upcoming-events-header {
   cursor: move;
   border-radius: 5px 5px 0px 0px;

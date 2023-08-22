@@ -106,6 +106,12 @@
   font-size: 1.25rem;
 }
 
+.ssoButton:hover {
+  border-radius: 10px;
+  background: #205072;
+  box-shadow: 0px 0px 3px 3px #38a3a5;
+}
+
 /* Responsive styles for mobile phones */
 
 @media screen and (max-width: 767px) and (max-height: 1080px) {

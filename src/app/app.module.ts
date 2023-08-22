@@ -23,10 +23,10 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [AppComponent, OpenPositionsComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     EmployeeModule,
-    HttpClientModule,
     SharedModulesModule,
     FormsModule,
     ManagerModule,

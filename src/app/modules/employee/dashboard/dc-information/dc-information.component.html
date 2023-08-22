@@ -2,10 +2,10 @@
   <div class="card  m-2">
     <div class="council-head p-2  m-0 d-flex align-items-center ">
       <div class="council1">Delivery Council</div>
-      <div class="council2">Council
-        <button (click)="onClick()"><i class="fa-solid fa-caret-down"></i>
-        </button>
-        
+      <div class="council2">
+        Council
+        <span class="arrows" (click)="onClick()" *ngIf="drop"><i class="fa-solid fa-caret-down"></i></span>
+        <span (click)="onClick()" *ngIf="!drop"><i class="fa-solid fa-caret-up"></i></span>
       </div>
     </div>
     

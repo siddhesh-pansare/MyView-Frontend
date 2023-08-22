@@ -13,6 +13,8 @@ body {
 
 .dropdown{
   float: right;
+  position:absolute;
+  z-index: 10;
 }
 .card-info {
 
@@ -99,6 +101,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  
 }
 
 .mentee-work-status {

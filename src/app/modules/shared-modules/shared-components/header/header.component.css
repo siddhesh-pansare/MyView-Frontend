@@ -11,7 +11,7 @@ html{
 .navbar{
     position: fixed;
     padding: 0px 0px 0px 0px;
-    height: 50px;
+    height: 45px;
     background-color:rgba(255,255,255,1);
     display: flex;
     justify-content: space-between;
@@ -19,29 +19,32 @@ html{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 100;
     width: 100%;
+    left: 60px;
 }
 .sd{
     display: flex;
-    height: 66px;
-    width: 87.94px;
+    height: 45px;
+    width: 65px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-right: 1px solid rgba(199, 192, 192, 0.744);
 }
 
 
 .sd::before {
-    content: url('src\assets\header\st.png');
+    content: url('src\assets\header\st2.png');
     display: inline-block;
 }
 
 .sd:hover::before {
-    content: url('src\assets\header\sthover.png');
+    content: url('src\assets\header\hover.png');
 }
 
 
 .searchBar{
     border: 1.5px solid rgba(199, 192, 192, 0.744);
+    
 }
 
 
@@ -51,8 +54,8 @@ a,a:hover{
 
 .searchBox{
     position: relative;
-    width: 431px;
-    height: 50px;
+    width: 350px;
+    height: 45px;
     background: white;
     display: flex;
     justify-content: center;
@@ -69,15 +72,24 @@ a,a:hover{
 .empsearch{
    align-items: center;
    justify-content: center;
-   width: 187.39px;
-   height: 30px;
-   top:18px;
+   margin-top:7px;
    left:118.68px;
 }
 
+.notification{
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
 .profile{
+   margin-right: 30px;
    padding-right: 50px;
-   margin-left: 50px;
+   margin-left:10px;
+   height:35px;
+   width: 85px;
+   cursor: pointer;
+
 }
 
 .searchBox:hover{
@@ -103,7 +115,7 @@ a,a:hover{
 }
 
 .dropdown.show{
-    right: 50px;
+    right: 90px;
 }
 
 .dropdown-menu{
@@ -154,4 +166,31 @@ a,a:hover{
         overflow: none;
 
     }
+
+    .navbar{
+        left:40px;
+    }
+
+    .searchBar{
+        display:none;
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1251px){
+   .navbar{
+    left:75px;
+   }
+
+   .searchBox{
+    margin-top: 0px;
+    top:0px;
+    padding-top: 0px;
+   }
+
+   .searchBar{
+    margin-top: 0px;
+    top:0px;
+    padding-top: 0px;
+   }
 }

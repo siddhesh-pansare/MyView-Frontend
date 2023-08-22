@@ -6,25 +6,26 @@ body {
 
 .news-card {
   margin: 20px;
-
 }
 
 .task1 {
   font-family: Outfit;
   color: #205072;
   font-weight: bold;
+  font-size: 13px;
 }
 
 .task {
   color: #E50255;
+  font-size: 13px;
 }
 
 .head {
   color: #082737;
   font-family: Outfit;
-  font-size: 18px;
+  font-size: 16px !important;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700 !important;
   line-height: normal;
   letter-spacing: 0.9px;
 }
@@ -230,7 +231,9 @@ line-height: normal;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
-
+.border{
+  border-radius: 5px 5px 0px 0px;
+}
 .upcoming-events-header {
   cursor: move;
   border-radius: 5px 5px 0px 0px;

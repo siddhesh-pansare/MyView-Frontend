@@ -14,6 +14,7 @@ import { OtherContributionsComponent } from './modules/shared-modules/Dialogue/o
 import { RoundDetailsComponent } from './modules/shared-modules/Dialogue/round-details/round-details.component';
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/attendance-dialog/attendance-dialog.component';
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
+import { BrowserUtils } from "@azure/msal-browser";
 
 
 const routes: Routes = [
@@ -47,8 +48,19 @@ const routes: Routes = [
 ];
 
 
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule],
+// })
+const isIframe = window !== window.parent && !window.opener;
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes, {
+    // Don't perform initial navigation in iframes or popups
+    initialNavigation:
+      !BrowserUtils.isInIframe() && !BrowserUtils.isInPopup()
+        ? "enabledNonBlocking"
+        : "disabled", // Set to enabledBlocking to use Angular Universal
+  }),],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

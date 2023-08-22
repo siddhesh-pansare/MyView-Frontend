@@ -12,10 +12,13 @@ body {
    
 
 }
-.employees{
-  padding-left: -5px;
+/* .employees{
+  padding-left: -15px;
   background-color: red;
-}
+  
+} */
+
+
 .scratchbutton img {
   position: fixed;
   bottom: 70px;
@@ -35,7 +38,7 @@ body {
   margin: 0px;
   margin-bottom: -20px;
   height: 100%;
-  width: 70px;
+  width: 60px;
   background: #082737;
   text-align: center;
   overflow: visible;
@@ -96,9 +99,9 @@ ul{
 }
 
 #sidebar ul.components li a img {
-  width: 65%;
+  width: 70%;
   /* Adjust the width as per your requirement */
-  height: 65%;
+  height: 70%;
   /* Adjust the height as per your requirement */
   transition: transform 0.3s ease;
   /* Apply a transition for smooth animation */
@@ -130,7 +133,13 @@ ul{
   text-align: inherit;
   
 }
-
+a .employees{
+  
+  margin-left: -6px;
+}
+a .interviews{
+  margin-left: -4px;
+}
 #sidebar ul.components li a:hover img {
   transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
   /* Increase the image size by 20% on hovering */

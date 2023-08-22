@@ -21,7 +21,6 @@
 table {
   border-color: #205072;
   border: 1;
-  border-radius: 2px;
   max-height: fit-content;
   font-weight: 600;
   table-layout: fixed;
@@ -84,7 +83,7 @@ td{
 
 
 .fade-in {
-  animation: fadeInAnimation 0.3s ease-out;
+  animation: fadeInAnimation 0.5s ease-out;
   opacity: 1;
 }
 
@@ -266,9 +265,9 @@ td{
     font-family: Outfit;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: normal;
-    
+    margin-top: 50px;
     }
 
  
@@ -388,7 +387,7 @@ td{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
+    margin-top: 30px;
     }
 
  

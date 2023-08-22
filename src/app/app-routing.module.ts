@@ -6,7 +6,7 @@ import { OtherContributionsComponent } from './modules/shared-modules/Dialogue/o
 import { RoundDetailsComponent } from './modules/shared-modules/Dialogue/round-details/round-details.component';
 
 const routes: Routes = [
-  { path:'', redirectTo: 'round-details', pathMatch:'full' },
+  { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'client-feedback',component:ClientFeedbackComponent},
   { path:'other-contributions',component:OtherContributionsComponent},

@@ -6,17 +6,19 @@
   font-family: "Outfit", sans-serif;
 
 }
+
 .btncross{
  position:absolute;
  right: 2%;
+ width: 0%;
 }
- 
+
 
 .custom-modal-dialog {
   width: 65vw !important;
   max-width: 100% !important;
   margin: 0 auto !important;
-  height: 80vh !important;
+  height: 90vh !important;
   border: 1px solid #38a3a5;
   background: #fff;
   box-shadow: 0px 0px 4px 0px #38a3a5;
@@ -71,7 +73,6 @@
 }
 
  
-
 .profile_image {
   width: 100px;
   height: 100px;
@@ -213,7 +214,7 @@
 .box {
   display: flex;
   width: 201px;
-  height: 60vh;
+  height: 70vh;
   padding: 24px 0px;
   justify-content: center;
   align-items: center;
@@ -321,5 +322,11 @@
   }
   .profile_experience{
     font-size: 15px;
+  }
+}
+
+@media screen and (min-width:1025px){
+  .custom-modal-dialog{
+    height:75vh;
   }
 }

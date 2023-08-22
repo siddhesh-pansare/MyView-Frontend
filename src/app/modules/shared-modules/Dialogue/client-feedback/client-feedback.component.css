@@ -34,6 +34,7 @@
   max-width: 100% !important;
   margin: 0 auto !important;
   height: 80vh !important;
+  
 }
 
 .modal-content {
@@ -70,7 +71,7 @@ table.table tr th {
 
 @media screen and (min-width: 320px) {
   .modal-dialog {
-    max-width: 310px;
+    max-width: 30vw;
     height: 60vh;
     border-radius: 4px;
     margin-left: -30px;

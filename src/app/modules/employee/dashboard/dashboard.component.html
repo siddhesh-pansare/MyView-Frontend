@@ -60,10 +60,10 @@
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
-          <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">
+          <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)" style="height: 60vh;">
             <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards"
               cdkDrag>
-              <div class="menu-card-box" [matTooltip]="card.cardTitle" (click)="openDialog(card.dialogComponent)">
+              <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
                 <div cdkDragHandle>
                   <span class="empty-handler">.</span>
                 </div>

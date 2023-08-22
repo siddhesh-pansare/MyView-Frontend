@@ -2,13 +2,12 @@
   <div class="card  m-2">
     <div class="council-head p-2  m-0 d-flex align-items-center ">
       <p class="council1">Delivery Council</p>
-      <!-- <p class="council2">Council <span><i class="fa-solid fa-caret-down"></i></span></p> -->
-      <mat-form-field appearance="fill" class="council-dropdown">
-        <mat-select [(value)]="selectedCouncil">
-          <mat-option value="pimco-de">PIMCO-DE</mat-option>
-          <mat-option value="pimco-techops">PIMCO-TechOps</mat-option>
-        </mat-select>
-      </mat-form-field>
+      <div class="council-dropdown">
+        <select [(ngModel)]="selectedCouncil">
+          <option value="pimco-de">PIMCO-DE</option>
+          <option value="pimco-techops">PIMCO-TechOps</option>
+        </select>
+      </div>
     </div>
   </div>
 

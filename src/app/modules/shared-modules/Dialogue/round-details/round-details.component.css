@@ -72,7 +72,9 @@
   background: rgba(51, 54, 63, 0.6);
 }
 
- 
+ .profile_data{
+  margin-left: -1%;
+ }
 .profile_image {
   width: 100px;
   height: 100px;
@@ -306,7 +308,7 @@
   color: green;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:831px){
   .profile_image,.round_img_container{
     width: 80px;
     height: 80px;
@@ -315,13 +317,19 @@
     width: 20px;
   }
   .profile_name{
-    font-size: 28px;
+    font-size: 24px;
   }
   .profile_email{
-    font-size: 18px;
+    font-size: 16px;
   }
   .profile_experience{
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .profile_status{
+    font-size: 14px;
+  }
+  .profile_data{
+    margin-left: -2%;
   }
 }
 

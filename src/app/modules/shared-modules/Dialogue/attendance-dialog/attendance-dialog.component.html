@@ -28,7 +28,8 @@
           <div class="line2"></div><br>
     </div>
     <div class="table-responsive rounded">
-      <table class="table table-bordered" *ngIf="activeTab === 'Client Visits'" >
+      <div *ngIf="activeTab === 'Client Visits'" >
+      <table class="table table-bordered" *ngIf="isDataLoadedcv"  >
           <thead class="text-center" [class.fade-in]="activeTab === 'Client Visits'">
               <tr>
                   <th>Date</th>
@@ -44,8 +45,17 @@
             </tr>
           </tbody>
       </table>
-
-      <table class="table table-bordered" *ngIf="activeTab === 'Internal Meetings'" >
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedcv">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        <p class="ndf">No Data Found</p>
+        </div>
+      </div>
+      
+      
+      <div *ngIf="activeTab === 'Internal Meetings'" >
+      <table class="table table-bordered"  *ngIf="isDataLoadedim">
         <thead class="text-center" [class.fade-in]="activeTab === 'Internal Meetings'">
           <tr>
               <th>Date</th>
@@ -61,8 +71,18 @@
         </tr>
       </tbody>
       </table>
-
-      <table class="table table-bordered" *ngIf="activeTab === 'Office Visits'" >
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedim">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        <p class="ndf">No Data Found</p>
+        </div>
+        
+      </div>
+      
+      
+      <div  *ngIf="activeTab === 'Office Visits'" >
+      <table class="table table-bordered" *ngIf="isDataLoadedov">
         <thead class="text-center" [class.fade-in]="activeTab === 'Office Visits'">
           <tr>
               <th>Date</th>
@@ -78,5 +98,16 @@
         </tr>
       </tbody>
       </table>
-  </div>
+      <div class="no_data d-flex justify-content-center" *ngIf="!isDataLoadedov">
+        <img
+        src="assets/attendance/3024051 1.png"
+        alt="No Data" />
+        <p class="ndf">No Data Found</p>
+        </div>
+        
+      </div>
+      
+      
+    </div>
+    
  </div>

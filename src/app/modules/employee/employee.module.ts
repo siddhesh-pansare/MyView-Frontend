@@ -9,7 +9,11 @@ import { DcInformationComponent } from './dashboard/dc-information/dc-informatio
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PseudoDashboardComponent } from './pseudo-dashboard/pseudo-dashboard.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { InterviewComponent } from './interview/interview.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { FormsModule } from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -18,7 +22,8 @@ import { InterviewComponent } from './interview/interview.component';
     ECInformationComponent,
     DcInformationComponent,
     PseudoDashboardComponent,
-    InterviewComponent
+    DashboardComponent,
+    EmployeesComponent
   ],
   imports: [
     CommonModule,
@@ -26,7 +31,14 @@ import { InterviewComponent } from './interview/interview.component';
     MatTabsModule,
     HttpClientModule,
     MatTooltipModule,
-    DragDropModule
+    DragDropModule,
+    MatPaginatorModule,
+    MatTableModule,
+    FormsModule,
+    MatIconModule
+  ],
+  exports:[
+    EmployeesComponent
   ]
 })
 export class EmployeeModule { }

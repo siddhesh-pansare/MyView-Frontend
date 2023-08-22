@@ -1,0 +1,65 @@
+
+<div class="page-sub-header">
+    <div class="page-heading">
+    <img class="arrow-back-icon" alt="" src="assets/employees/Arrow back.svg">
+    <div class="page-heading1">All Employees</div>
+    </div>
+    <div class="line"></div>
+    <img class="btn-all-employees-icon" alt="" src="assets/employees/btn_all_employees.png">
+</div>
+
+<div class="parent-container">
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-sm-6">
+      <div class="searchCandidate">
+        <div class="search-container">
+          <input
+            type="text"
+            [(ngModel)]="searchTerm"
+            (input)="applyFilter()"
+            placeholder="Search a Candidate"
+            class="search-input"
+          />
+        </div>
+        <img class="icon" alt="" src="assets/employees/3077325 1.png">
+      </div>
+    </div>
+    <div class="col-sm-6 text-right">
+      <div class="filterExport">
+       <a href="#"><img class="icon1" alt="" src="assets/employees/export1.png" (click)="exportToExcel()"></a>
+       <a href="#"><img class="icon2" alt="" src="assets/employees/566737 1.png"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="line-div-container">
+<div class="line-div">
+</div>
+</div>
+
+  <div class="table-responsive rounded">
+    <table mat-table [dataSource]="dataSource">
+      <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
+        <th  mat-header-cell *matHeaderCellDef>{{ column }}</th>
+        <td  *matCellDef="let element">
+          <ng-container *ngIf="column !== 'Email'; else emailColumn">
+            {{ element[column] }}
+          </ng-container>
+          <ng-template #emailColumn>
+            <a href="mailto:{{ element.geminiEmail }}">
+              <img class="emailicon" src="assets/employees/email_icon.png">
+            </a>
+          </ng-template>
+        </td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  
+    <mat-paginator [pageSizeOptions]="pageSizeOptions" [pageSize]="pageSize" [pageIndex]="pageIndex" [length]="totalItems" (page)="onPageChange($event)" showFirstLastButtons>
+    </mat-paginator>
+    
+  </div>
+</div>  

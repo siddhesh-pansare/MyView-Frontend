@@ -8,12 +8,12 @@
 
   
   <div class="card m-2"> <!--DC information card-->
-    <div class="card-header">
+    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
       &nbsp;DC Information</div>
     </div>
     <div class="card-body p-2 pl-4 pr-4">
-      <div class="row">
+      <div class="row mb-0">
         <div class="col-6">
           <div class="text-wrap">Name</div>
         </div>
@@ -23,7 +23,7 @@
        </div>
 
 
-       <div class="row ">
+       <div class="row" *ngIf="showmanager">
         <div class="col-6 ">
           <div class="text-wrap">Reporting Manager</div>
         </div>
@@ -36,7 +36,7 @@
                     <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
                   </div>
                   <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0 ">
-                    <div class="card-body p-0">
+                    <div class="card-body p-2">
                       <div class="card-title">{{loggedUserData.DCChairName}}</div>
                       <div class="card-text">{{loggedUserData.DCChairId}} </div>
                     </div>
@@ -49,7 +49,7 @@
       </div>
 
 
-      <div class="row align-items-center justify-content-center mt-2">
+      <div class="row align-items-center justify-content-center mt-0">
         <div class="col-6">
           <br><div class="text-wrap">Experience</div>
         </div>
@@ -58,8 +58,8 @@
             <div class="col p-0">
               <div class="card small-card">
                 <div class="row">
-                  <div class="col-sm-6 col-lg-9 col-xl-9 mt-0 ">
-                    <div class="card-body p-0">
+                  <div class="col-sm-6 col-lg-9 col-xl-9 mt-0">
+                    <div class="card-body p-0" style="margin-top: 1.5vw;">
                       <!-- <h5 class="card-title">{{loggedUserData.Experience}}</h5> -->
                       <span class="card-text">{{loggedUserData.Experience}} months</span>
                     </div>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="card m-2">
-    <div class="card-header">
+    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info">
         <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 
@@ -107,6 +107,18 @@
           <p class="client2">Experience</p>
         </div>
         <div class="col-6"><p class="client1">{{loggedUserData.Experience}} months</p></div>
+      </div>
+      <div class="row" *ngIf="showbill">
+        <div class="col-6">
+          <p class="client2">Billing Status</p>
+        </div>
+        <div class="col-6"><p class="client1">PAID</p></div>
+      </div>
+      <div class="row" *ngIf="showrag">
+        <div class="col-6">
+          <p class="client2">RAG Status</p>
+        </div>
+        <div class="col-6"><p class="client1">N/A</p></div>
       </div>
       
     </div>

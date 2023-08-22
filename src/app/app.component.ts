@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ChildrenOutletContexts } from '@angular/router';
+import { AuthService } from './services/authservice.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'IntelliManager-Frontend';
+  isLoggedIn = false;
+  constructor(private contexts: ChildrenOutletContexts, private authService: AuthService) {
+    // this.isLoggedIn = false;
+    this.authService.isLoggedInObservable.subscribe((res: any) => {
+      this.isLoggedIn = res;
+    });
+  }
+
 }

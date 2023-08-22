@@ -1,7 +1,5 @@
 <div class="d-flex">
-    <div class="sideBar"></div>
     <div class="page g-2">
-        <div class="navBar d-flex justify-content-between"></div>
         <div class="titleBar d-flex justify-content-between px-2">
             <div class="d-flex m-1 p-2 justify-content-lg-start border-bottom"
                 style="width: 100%;">
@@ -49,9 +47,13 @@
 
                 <tbody class="text-center">
                     <tr *ngFor="let cv of interviewRec">
-                        <td><button class="status"><img class="profImg"
-                                    src="../../../../assets/awards-images/awards.png">{{
-                                cv.Candidate_Name }}</button></td>
+                        <td><div class="d-flex center-content">
+                                <button class="status">
+                                    <img class="profImg"
+                                        src="../../../../assets/awards-images/awards.png">
+                                    {{ cv.Candidate_Name }}
+                                </button>
+                            </div></td>
                         <td><button class="status">{{ cv.Email }}</button></td>
                         <td><button class="status">{{ cv.Category }}</button></td>
                         <td>

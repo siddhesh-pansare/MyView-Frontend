@@ -1,16 +1,22 @@
 {
-    "remarks": [
-      {
-        "Date": "01-Jan-2023",
-        "Feedback": "Completed the Niagara Task on time, Good!"
-      },
-      {
-        "Date": "01-Feb-2023",
-        "Feedback": "Infra Task Delayed"
-      },
-      {
-        "Date": "01-Mar-2023",
-        "Feedback": "Client Name 3"
-      }
-    ]
-  }
+  "remarks": [
+    {
+      "Date": "01-Jan-2023",
+      "Feedback": "Completed the Niagara Task on time, Good!",
+      "Action": "assets/images/edit.png",
+      "Action1":"assets/images/delete.png"
+    },
+    {
+      "Date": "01-Feb-2023",
+      "Feedback": "Infra Task Delayed",
+      "Action": "assets/images/edit.png",
+      "Action1":"assets/images/delete.png"
+    },
+    {
+      "Date": "01-Mar-2023",
+      "Feedback": "Client Name 3",
+      "Action": "assets/images/edit.png",
+      "Action1":"assets/images/delete.png"
+    }
+  ]
+}

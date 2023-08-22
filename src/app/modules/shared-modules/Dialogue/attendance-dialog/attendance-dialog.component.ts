@@ -24,7 +24,7 @@ interface OfficeVisit{
   templateUrl: './attendance-dialog.component.html',
   styleUrls: ['./attendance-dialog.component.css'],
   animations: [
-    trigger('fadeInOut', [
+    trigger('EastOut', [
       state('in', style({ opacity: 1, transform: 'translateY(0)' })),
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(0px)' }),
@@ -38,6 +38,9 @@ export class AttendanceDialogComponent implements OnInit {
   internalmeetings: InternalMeeting[] = [];
   officevisits: OfficeVisit[] = [];
   activeTab: string = 'Client Visits'; // Default active tab
+  isDataLoadedcv: boolean = true;
+  isDataLoadedim: boolean = true;
+  isDataLoadedov: boolean = true;
 
   setActiveTab(tab: string) {
     this.activeTab = tab;
@@ -47,6 +50,7 @@ export class AttendanceDialogComponent implements OnInit {
 
   ngOnInit() {
     this.fetchData(this.activeTab);
+    
   }
 
   fetchData(tab:string) {
@@ -59,13 +63,21 @@ export class AttendanceDialogComponent implements OnInit {
     } else if (tab === 'Office Visits') {
       url = 'assets/temp_data/officevisits.json';
     }
+
     this.http.get<any>(url).subscribe((data) => {
       if (tab === 'Client Visits') {
         this.clientvisit = data.clientvisit;
+          this.isDataLoadedcv=this.clientvisit.length > 0;
+        
+        
       } else if (tab === 'Internal Meetings') {
         this.internalmeetings = data.internalmeetings;
+          this.isDataLoadedim=this.internalmeetings.length > 0;
+        
       } else if (tab === 'Office Visits') {
         this.officevisits = data.officevisits;
+          this.isDataLoadedov=this.officevisits.length > 0;
+        
       }
     });
   }

@@ -59,8 +59,8 @@ body {
 }
 
 #sidebar .sidebar-header img {
-  width: 40%;
-  height: 40%;
+  width: 60%;
+  height: 60%;
 
 }
 
@@ -81,13 +81,13 @@ body {
 
 #sidebar ul.components li {
   position: relative;
-  padding: 8%;
+  padding: 10%;
 }
 
 #sidebar ul.components li a img {
-  width: 40%;
+  width: 55%;
   /* Adjust the width as per your requirement */
-  height: 40%;
+  height: 55%;
   /* Adjust the height as per your requirement */
   transition: transform 0.3s ease;
   /* Apply a transition for smooth animation */

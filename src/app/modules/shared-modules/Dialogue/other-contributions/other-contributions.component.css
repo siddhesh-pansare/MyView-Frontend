@@ -297,7 +297,7 @@ table.table tr th {
   }
 
   .title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 700;
     color: #205072;
     margin: 0px;
@@ -339,9 +339,6 @@ table.table tr th {
   .btn:hover{
     background:rgba(250, 10, 10, 0.40);
     border:rgba(0, 0, 0, 0.4);
-  }
-
-  .btn::cli{
   }
 
   .profile {

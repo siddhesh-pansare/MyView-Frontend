@@ -2,7 +2,7 @@
 
 
 .menu-card-container{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.s ease;
 }
 
 .menu-card-container:hover{

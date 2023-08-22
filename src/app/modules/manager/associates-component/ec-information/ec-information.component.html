@@ -10,7 +10,7 @@
   
   
     <div class="card m-2"> <!--EC information card-->
-      <div class="card-header">
+      <div class="card-header"  [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
         <span><img src="../../../../../assets/images/icons/information.svg" alt="info-icon"></span>
         EC Information
       </div>

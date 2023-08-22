@@ -3,20 +3,11 @@
     <div class="council-head p-2  m-0 d-flex align-items-center ">
       <p class="council1">Delivery Council</p>
       <div class="council-dropdown">
-        <select [(ngModel)]="selectedCouncil">
+        <select [(ngModel)]="selectedCouncil" (click)="toggleDropdownImage()">
           <option value="pimco-de">PIMCO-DE</option>
           <option value="pimco-techops">PIMCO-TechOps</option>
         </select>
       </div>
-      <!-- <div class="custom-dropdown">
-        
-        <select [(ngModel)]="selectedCouncil">
-          
-        </select>
-        <div class="dropdown-content">
-          <option value="pimco-de">PIMCO-DE</option>
-          <option value="pimco-techops">PIMCO-TechOps</option>
-        </div> -->
       </div>
     </div>
   </div>

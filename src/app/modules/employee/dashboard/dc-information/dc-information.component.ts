@@ -12,6 +12,7 @@ export class DcInformationComponent implements OnInit{
   collapseClient : boolean = true;
   collapseReportee : boolean = true;
   selectedCouncil: string = 'pimco-de';
+  isDropdownOpen: boolean = false;
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'siddhesh.pansare@geminisolutions.com';
 
@@ -30,6 +31,12 @@ export class DcInformationComponent implements OnInit{
   loadData(): void {
 
   }
+
+
+  toggleDropdownImage() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
 
   toggleClient(){
     this.collapseClient = !this.collapseClient;

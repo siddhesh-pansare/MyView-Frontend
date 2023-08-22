@@ -23,7 +23,11 @@
   background:rgba(250, 10, 10, 0.40);
   border:rgba(0, 0, 0, 0.4);
 }
-
+.btn:active{
+  border: 1px solid rgba(250, 10, 10, 0.50);
+  background:rgba(250, 10, 10, 0.50);
+  color: #FFF;
+}
 /* Add this to your component's CSS or to a global stylesheet */
 .custom-modal-dialog {
   width: 70vw !important;
@@ -113,11 +117,10 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
- 
   .profile {
     background-color: #205072;
     height: 40px;
@@ -188,11 +191,10 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
- 
 
   .profile {
     background-color: #205072;
@@ -254,11 +256,11 @@ table.table tr th {
     transition: box-shadow 0.3s ease;
   }
 
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
- 
 
   .profile {
     background-color: rgba(250, 10, 10, 0.50);
@@ -336,11 +338,10 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
-
   .profile {
     background-color: #205072;
     height: 100px;

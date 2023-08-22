@@ -33,7 +33,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+white-space: nowrap;
 }
+
 .dcname {
   color: #205072;
 font-family: Outfit;

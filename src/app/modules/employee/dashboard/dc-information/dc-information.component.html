@@ -4,8 +4,8 @@
       <p class="council1">Delivery Council</p>
       <div class="council-dropdown">
         <select [(ngModel)]="selectedCouncil">
-          <option value="pimco-de">PIMCO-DE</option>
-          <option value="pimco-techops">PIMCO-TechOps</option>
+          <option class="dropdown_style" value="pimco-de">PIMCO-DE</option>
+          <option class="dropdown_style" value="pimco-techops">PIMCO-TechOps</option>
         </select>
       </div>
       <!-- <div class="custom-dropdown">
@@ -17,36 +17,38 @@
           <option value="pimco-de">PIMCO-DE</option>
           <option value="pimco-techops">PIMCO-TechOps</option>
         </div> -->
-      </div>
     </div>
   </div>
+</div>
 
-
-  <div class="card m-2"> <!--DC information card-->
-    <div class="card-header">
-      <span class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
+<div class="card m-2"> <!--DC information card-->
+  <div class="card-header">
+    <span class="card-info"><img
+        src="../../../../../assets/images/icons/information.svg" alt="info-icon">
       DC Information</span>
+  </div>
+  <div class="card-body p-2 pl-4 pr-4">
+    <div class="row">
+      <div class="col-6">Name</div>
+      <div class="col-6 align-items-center">{{loggedUserData.DCTech}}</div>
     </div>
-    <div class="card-body p-2 pl-4 pr-4">
-      <div class="row">
-        <div class="col-6">Name</div>
-        <div class="col-6 align-items-center">{{loggedUserData.DCTech}}</div>
-      </div>
-      <div class="row align-items-center justify-content-center mt-2">
-        <div class="col-6 text-wrap">Reporting Manager</div>
-        <div class="col-6 p-0">
-          <div class="row">
-            <div class="col p-0">
-              <div class="card small-card">
-                <div class="row">
-                  <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
-                    <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
-                  </div>
-                  <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
-                    <div class="card-body p-0">
-                      <h5 class="card-title">{{loggedUserData.DCChairName}}</h5>
-                      <p class="card-text">{{loggedUserData.DCChairId}} </p>
-                    </div>
+    <div class="row align-items-center justify-content-center mt-2">
+      <div class="col-6 text-wrap">Reporting Manager</div>
+      <div class="col-6 p-0">
+        <div class="row">
+          <div class="col p-0">
+            <div class="card small-card">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                  <img src="../../../../assets/images/OtherImages/user.jpg"
+                    class="card-img" alt="Profile Image">
+                </div>
+                <div
+                  class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0">
+                  <div class="card-body p-0">
+                    <h5 class="card-title">{{loggedUserData.DCChairName}}</h5>
+                    <p class="card-text">{{loggedUserData.DCChairId}} </p>
                   </div>
                 </div>
               </div>
@@ -56,79 +58,86 @@
       </div>
     </div>
   </div>
+</div>
 
-  <div class="card m-2">
-    <div class="card-header">
-      <span class="card-info">
-        <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
+<div class="card m-2">
+  <div class="card-header">
+    <span class="card-info">
+      <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 
       CLIENT</span>
-      <span class="arrows" (click)="toggleClient()" *ngIf="collapseClient"><i class="fa-solid fa-caret-down"></i></span>
-      <span (click)="toggleClient()" *ngIf="!collapseClient"><i class="fa-solid fa-caret-up"></i></span>
+    <span class="arrows" (click)="toggleClient()" *ngIf="collapseClient"><i
+        class="fa-solid fa-caret-down"></i></span>
+    <span (click)="toggleClient()" *ngIf="!collapseClient"><i
+        class="fa-solid fa-caret-up"></i></span>
+  </div>
+  <div class="card-body p-2 pl-4 pr-4" *ngIf="!collapseClient">
+    <div class="row">
+      <div class="col-6">Name</div>
+      <div class="col-6">client</div>
     </div>
-    <div class="card-body p-2 pl-4 pr-4" *ngIf="!collapseClient">
-      <div class="row">
-        <div class="col-6">Name</div>
-        <div class="col-6">client</div>
-      </div>
-      <div class="row">
-        <div class="col-6">Manager</div>
-        <div class="col-6">manager</div>
-      </div>
-      <div class="row">
-        <div class="col-6">Team</div>
-        <div class="col-6">team</div>
-      </div>
-      <div class="row">
-        <div class="col-6">Experience</div>
-        <div class="col-6">{{loggedUserData.Experience}}</div>
-      </div>
+    <div class="row">
+      <div class="col-6">Manager</div>
+      <div class="col-6">manager</div>
+    </div>
+    <div class="row">
+      <div class="col-6">Team</div>
+      <div class="col-6">team</div>
+    </div>
+    <div class="row">
+      <div class="col-6">Experience</div>
+      <div class="col-6">{{loggedUserData.Experience}}</div>
     </div>
   </div>
+</div>
 
-  <div class="card m-2"> <!--DC information card-->
-    <div class="card-header">
-      <span class="card-info"><img src="../../../../../assets/images/icons/reportees.svg" alt="info-icon">
+<div class="card m-2"> <!--DC information card-->
+  <div class="card-header">
+    <span class="card-info"><img
+        src="../../../../../assets/images/icons/reportees.svg" alt="info-icon">
 
       My Reportees</span> <span class="record-number">5</span>
-    </div>
-    <div class="card-body mentor-card">
-      <div class="row mt-1">
+  </div>
+  <div class="card-body mentor-card">
+    <div class="row mt-1">
 
-        <div class="col-6 col-xl-6 reportee-card">
-          <div class="card small-card">
-            <div class="row mt-1">
-              <div class="col-3 col-xl-2 d-flex align-items-center img-container">
-                <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile Image">
-              </div>
-              <div class="col-9 col-xl-10 align-items-start justify-content-center details-container">
-                <div class="card-body inner-card-body">
-                  <p class="mentee-work-status m-0">WFH</p>
-                  <h5 class="card-title m-0">Mentee name</h5>
-                  <p class="card-text">Mentee Designation</p>
-                </div>
+      <div class="col-6 col-xl-6 reportee-card">
+        <div class="card small-card">
+          <div class="row mt-1">
+            <div class="col-3 col-xl-2 d-flex align-items-center img-container">
+              <img src="../../../../assets/images/OtherImages/user.jpg"
+                class="card-img mt-3" alt="Profile Image">
+            </div>
+            <div
+              class="col-9 col-xl-10 align-items-start justify-content-center details-container">
+              <div class="card-body inner-card-body">
+                <p class="mentee-work-status m-0">WFH</p>
+                <h5 class="card-title m-0">Mentee name</h5>
+                <p class="card-text">Mentee Designation</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-6 col-xl-6 reportee-card">
-          <div class="card small-card">
-            <div class="row mt-1">
-              <div class="col-3 col-xl-2 d-flex align-items-center img-container">
-                <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img mt-3" alt="Profile Image">
-              </div>
-              <div class="col-9 col-xl-10 align-items-start justify-content-center details-container">
-                <div class="card-body inner-card-body">
-                  <p class="mentee-work-status m-0">WFH</p>
-                  <h5 class="card-title m-0">Mentee name</h5>
-                  <p class="card-text">Mentee Designation</p>
-                </div>
+      <div class="col-6 col-xl-6 reportee-card">
+        <div class="card small-card">
+          <div class="row mt-1">
+            <div class="col-3 col-xl-2 d-flex align-items-center img-container">
+              <img src="../../../../assets/images/OtherImages/user.jpg"
+                class="card-img mt-3" alt="Profile Image">
+            </div>
+            <div
+              class="col-9 col-xl-10 align-items-start justify-content-center details-container">
+              <div class="card-body inner-card-body">
+                <p class="mentee-work-status m-0">WFH</p>
+                <h5 class="card-title m-0">Mentee name</h5>
+                <p class="card-text">Mentee Designation</p>
               </div>
             </div>
           </div>
         </div>
-
+      </div>
 
     </div>
   </div>

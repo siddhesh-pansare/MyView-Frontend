@@ -21,6 +21,7 @@ const routes: Routes = [
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
   {path:'remarks',component:RemarkDialogueComponent},
+  {path:'reportees',component:ReporteesComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

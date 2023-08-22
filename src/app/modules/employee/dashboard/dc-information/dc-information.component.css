@@ -134,7 +134,7 @@ body {
   text-align: center;
 }
 
-.council-dropdown {
+ .council-dropdown {
   background-color: rgba(217, 217, 217, 1);
   display: inline-block;
   margin: 10px;
@@ -146,13 +146,21 @@ body {
 .council-dropdown select {
   padding: 5px;
   font-size: 16px;
-  border: none; /* Remove the border */
-  background-color: rgba(245, 245, 245, 1); /* Add a transparent background */
-  outline: none; /* Remove the focus outline */
+  border: none; 
+  background-color: rgba(245, 245, 245, 1); 
+  outline: none; 
   
+} 
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
 }
+
 .council-dropdown::after {
-  content: "\25BC"; /* Unicode for down arrow */
+  content: url('src\assets\dropdown\Vector.svg'); 
   position: absolute;
   top: 50%;
   right: 10px;
@@ -163,7 +171,14 @@ body {
 /* Style the selected option */
 .council-dropdown select option:checked {
   background-color: rgba(217, 217, 217, 1);
-}
+} 
+
+
+
+
+
+
+
 
 
 

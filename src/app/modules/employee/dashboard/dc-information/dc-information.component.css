@@ -134,6 +134,56 @@ body {
   text-align: center;
 }
 
+ .council-dropdown {
+  background-color: rgba(217, 217, 217, 1);
+  display: inline-block;
+  margin: 10px;
+  border: none;
+  outline: none;
+  
+}
+
+.council-dropdown select {
+  padding: 5px;
+  font-size: 16px;
+  border: none; 
+  background-color: rgba(245, 245, 245, 1); 
+  outline: none; 
+  
+} 
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+.council-dropdown::after {
+  content: url('src\assets\dropdown\Vector.svg'); 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.council-dropdown.open::after {
+  content: url('src\assets\dropdown\Vector (1).svg');
+}
+
+.council-dropdown select option:checked {
+  background-color: rgba(217, 217, 217, 1);
+} 
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1200px) {
   .reportee-card {

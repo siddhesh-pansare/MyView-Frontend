@@ -14,7 +14,10 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { InterviewComponent } from './interview/interview.component';
+import { MatSelectModule } from '@angular/material/select';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { MatTableModule } from '@angular/material/table';
     MatPaginatorModule,
     MatTableModule,
     FormsModule,
-    MatIconModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatMenuModule,
+    MatSelectModule
   ],
   exports:[
     EmployeesComponent

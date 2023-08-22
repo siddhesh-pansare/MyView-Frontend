@@ -11,7 +11,7 @@ export class DcInformationComponent implements OnInit{
   loggedUserData: any;     //variable to store complete data from MIS
   collapseClient : boolean = true;
   collapseReportee : boolean = true;
-
+  selectedCouncil: string = 'pimco-de';
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'siddhesh.pansare@geminisolutions.com';
 

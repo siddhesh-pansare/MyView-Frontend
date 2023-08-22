@@ -319,6 +319,51 @@ body {
   transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
 }
 
+.nav{
+  margin-left: 2vw;
+}
+.tabs{
+  position: relative;
+  margin-top: 15px;
+  font-size: 1.0vw ;
+  font-family: Outfit;
+  font-weight: 600;
+  
+}    
+
+.tabs .nav-item .nav-link.active{
+color: #205072;
+cursor:pointer;
+}
+
+.nav-item .nav-link{
+color: rgba(51, 54, 63, 0.6);
+cursor:pointer;
+text-align: center;
+
+}
+
+.line2{
+  position: relative;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 85%;
+  height: 0.06rem;
+  left: 30px;
+
+}
+
+.nav-link{
+  width: 11vw;
+  padding: 8px 0px;
+  align-items: center;
+}
+
+.nav-item .nav-link:hover{
+  color: rgba(56, 163, 165, 1);
+}
+
+
 /*  extra-large or xl*/
 @media (max-width: 1200px) {
   .custom-card-title {
@@ -349,10 +394,37 @@ body {
   .menu-card-title {
     font-size: 14px;
   }
+  
+  .nav{
+    margin-left: 6vw;
+    gap: 30px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
 }
 
+
+
+
 /*  large or lg*/
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  .nav{
+    margin-left: 15%;
+    gap: 20px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 16vw;
+    padding: 8px 0px;
+  }
+
+}
 
 /*medium or md*/
 @media (max-width: 768px) {
@@ -374,6 +446,20 @@ body {
 
   .menu-card-title {
     font-size: 14px;
+  }
+
+  .nav{
+    margin-left: 18%;
+    gap: 20px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 20vw;
+    padding: 8px 0px;
   }
 
 }
@@ -407,6 +493,20 @@ body {
   .image-container {
     width: 100px;
     height: 100px;
+  }
+
+  .nav{
+    margin-left: 20%;
+    gap: 20px;
+  }
+
+  .tabs{
+    font-size: 12px;
+  }
+
+  .nav-link{
+    width: 30vw;
+    padding: 8px 0px;
   }
 
 }

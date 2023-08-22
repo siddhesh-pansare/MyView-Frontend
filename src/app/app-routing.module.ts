@@ -25,6 +25,7 @@ const routes: Routes = [
   { path:'round-details', component:RoundDetailsComponent },
   { path:'header', component:HeaderComponent },
   { path:'sidebar', component:SideBarComponent },
+  { path:'dashboard', component:DashboardComponent },
   { path:'', component:RoleComponent ,
   children:[
     {

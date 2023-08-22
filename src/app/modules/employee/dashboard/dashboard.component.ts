@@ -80,7 +80,7 @@ export class DashboardComponent implements OnInit {
       const storedCoordinates = localStorage.getItem(`dashboard_move_com_${index + 1}_coordinates`);
       if (storedCoordinates) {
         const { left, top } = JSON.parse(storedCoordinates);
-        box.style.position = 'fixed'; // Use absolute positioning
+        box.style.position = 'absolute'; // Use absolute positioning
         box.style.left = `${left}px`;
         box.style.top = `${top}px`;
       }

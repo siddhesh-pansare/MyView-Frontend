@@ -1,5 +1,5 @@
 import { CdkDragStart, CdkDragMove, CdkDragEnd, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, ElementRef, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
 @Component({
@@ -23,7 +23,16 @@ export class PseudoDashboardComponent implements OnInit {
      { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions' },
    ];
 
+   handleClick(event: MouseEvent): void {
+    const xCoordinate = event.clientX;
+    const yCoordinate = event.clientY;
+
+    console.log(`Mouse clicked at X: ${xCoordinate}, Y: ${yCoordinate}`);
+  }
+
    constructor(private userDataService: LoggedUserDataService ){}
+
+
 
 
   ngOnInit(): void {
@@ -73,7 +82,8 @@ export class PseudoDashboardComponent implements OnInit {
       const storedCoordinates = localStorage.getItem(`box${index + 1}_coordinates`);
       if (storedCoordinates) {
         const { left, top } = JSON.parse(storedCoordinates);
-        box.style.position = 's'; // Use absolute positioning
+        box.style.position = 'absolute'; // Use absolute positioning
+        box.style.display = 'block';
         box.style.left = `${left}px`;
         box.style.top = `${top}px`;
       }

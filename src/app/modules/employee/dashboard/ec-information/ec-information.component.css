@@ -1,10 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
 .council-head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #f5f5f5;
 }
+.name{
+  color: rgba(51, 54, 63, 0.75);
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+} 
+.bltag{
+  color: #205072;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.dcname {
+  color: #205072;
+font-family: Outfit;
+font-size: 10px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+} 
+.dcid{
+  color: rgba(51, 54, 63, 0.60);
+font-family: Outfit;
+font-size: 7px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.img-slightly-down {
+  margin-top: 7px; 
+}
+.card-text{
+  margin-top: -3vh;
 
+}
 .small-card {
   border: none;
 }
@@ -37,12 +77,13 @@
 .mentee-work-status {
   color: #F90;
   font-family: Outfit;
-  font-size: 10px;
+  font-size: 7px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: end;
+  padding-right: 10%;
 }
 
 
@@ -53,13 +94,23 @@
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
+.card-info {
 
+  color: #082737;
+  font-family: Outfit;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
 .record-number {
   display: inline-block;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   background-color: #33363F;
   border-radius: 50%;
   color: #fff;
   text-align: center;
+  margin-top: 1vh;
 }

@@ -104,6 +104,7 @@ body {
   font-weight: 700;
   line-height: normal;
   padding-right: 60px;
+  padding-left: 50px;
   
 }
 
@@ -118,16 +119,19 @@ body {
   text-align: end;
 }
 
-.arrows{
+span .arrows{
   display: flex;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  padding-left: 50px;
 }
 
-
+.fa-solid{
+  padding: 50px;
+}
 .arrows:hover{
   background-color: #205075;
   color: rgba(0, 240, 255, 0.10);

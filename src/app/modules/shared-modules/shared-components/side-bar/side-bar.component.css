@@ -140,6 +140,9 @@ a .employees{
 a .interviews{
   margin-left: -4px;
 }
+a .openposition{
+  margin-left: -3px;
+}
 #sidebar ul.components li a:hover img {
   transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
   /* Increase the image size by 20% on hovering */

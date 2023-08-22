@@ -2,7 +2,6 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
 import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';

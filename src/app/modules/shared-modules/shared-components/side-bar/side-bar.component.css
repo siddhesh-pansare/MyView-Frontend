@@ -4,27 +4,6 @@ body {
   background-color: yellow;
 }
 
-.scratchbutton {
-  position: relative;
-  /* margin-top: 39%;
-  margin-left: 92%;
-   */
-
-}
-
-.scratchbutton img {
-  position: fixed;
-  bottom: 70px;
-  right: 3.2%;
-  cursor: pointer;
-  background: transparent;
-
-}
-
-.scratchbutton img:hover {
-
-  transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
-}
 
 #sidebar {
   padding: 0px;

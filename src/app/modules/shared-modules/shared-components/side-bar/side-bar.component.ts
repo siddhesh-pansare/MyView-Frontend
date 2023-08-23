@@ -22,27 +22,5 @@ import { trigger, transition, style, animate, AnimationEvent } from "@angular/an
   ]
 })
 export class SideBarComponent {
-  constructor(private dialog: MatDialog) { }
-
-  OpenScratch(enterAnimationDuration: string, exitAnimationDuration: string) {
-    const dialogConfig = new MatDialogConfig();
-
-    const dialogRef = this.dialog.open(ScratchpadComponent, {
-      panelClass: ['animate__animated', 'animate__slideInUp'],
-      position: { right: '3%', bottom: '40px' },
-      backdropClass: 'cdk-overlay-transparent-backdrop',
-      enterAnimationDuration,
-      exitAnimationDuration,
-    });
-
-    // Subscribe to the beforeClosed event to handle the slideOutDown animation when the dialog is closing.
-    dialogRef.beforeClosed().subscribe(() => {
-      dialogRef.removePanelClass('animate__slideInUp'); // Remove the slideInUp class to prevent conflicts with the slideOutDown animation.
-      dialogRef.addPanelClass('animate__slideOutDown');
-    });
-  }
-
-  clicked(){
-
-  }
+ 
 }

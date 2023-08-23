@@ -8,83 +8,18 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
-  font-size: 16px;
-  font-weight: 700;
   background-color: #f5f5f5;
 }
 
-.council-dropdown {
-  position: relative;
-  width: 200px;
-}
-
-.council-dropdown select {
-  width: 100%;
-  padding: 5px;
-  font-size: 16px;
-  border: none;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.council-dropdown select:focus {
-  outline: none;
-}
-
-/* Customize the dropdown arrow icon */
-.council-dropdown::after {
-  content: "\25BC"; /* Unicode down arrow character */
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  height: 10px;
-  transform: translateY(-50%);
-  color: #082737;
-  pointer-events: none;
-}
-
-.council-dropdown select option {
+.dropdown_style {
   display: flex;
-  padding: 12px 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  gap: 10px;
-  align-self: stretch;
-  color: #205072;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
+  width: 191px;
+  height: 82px;
+  flex-direction: column;
+  align-items: flex-center;
+  flex-shrink: 0;
 }
 
-.council-dropdown select option:checked {
-  border-left: 2px solid #082737;
-  background: #fff;
-  display: flex;
-  padding: 12px 20px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  color: #38a3a5;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.council-dropdown select option:hover {
-  background-color: transparent;
-  border-left: 2px solid #082737;
-}
 .card-info {
   color: #082737;
   font-family: Outfit;
@@ -203,9 +138,59 @@
   text-align: center;
 }
 
+.council-dropdown {
+  position: relative;
+  width: 200px;
+  background-color: #fff; /* Set the background color to white */
+  margin: 0;
+  border: none;
+  outline: none;
+  display: flex;
+  height: 21px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #082737;
+  text-align: center;
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* .council-dropdown select {
+  /* padding: 5px;
+  font-size: 16px;
+  border: none; */
+/* background-color: rgba(245, 245, 245, 1);
+  outline: none;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch; */
+/* } */
+
 select {
   text-indent: 1px;
   text-overflow: "";
+}
+
+.council-dropdown::after {
+  content: url("src\assets\dropdown\Vector.svg");
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Style the selected option */
+.council-dropdown select option:checked {
+  background-color: rgba(217, 217, 217, 1);
+  width: 200px;
 }
 
 @media (max-width: 1200px) {

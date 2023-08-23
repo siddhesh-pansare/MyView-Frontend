@@ -10,27 +10,28 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class PseudoDashboardComponent implements OnInit {
 
 
-   //declare variables
-   loggedUserData: any;     //variable to store complete data from MIS
-   selectedTab = 'EC';
+  //declare variables
+  loggedUserData: any;     //variable to store complete data from MIS
+  selectedTab = 'EC';
+  activeTab: string = 'dc';
 
-   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
-     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },
-     { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt:'certification' },
-     { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt:'interviews' },
-     { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt:'sessions' },
-     { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt:'client_feedback' },
-     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions' },
-   ];
+  cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
+    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award' },
+    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt: 'certification' },
+    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt: 'interviews' },
+    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt: 'sessions' },
+    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt: 'client_feedback' },
+    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions' },
+  ];
 
-   handleClick(event: MouseEvent): void {
+  handleClick(event: MouseEvent): void {
     const xCoordinate = event.clientX;
     const yCoordinate = event.clientY;
 
     console.log(`Mouse clicked at X: ${xCoordinate}, Y: ${yCoordinate}`);
   }
 
-   constructor(private userDataService: LoggedUserDataService ){}
+  constructor(private userDataService: LoggedUserDataService) { }
 
 
 
@@ -38,6 +39,10 @@ export class PseudoDashboardComponent implements OnInit {
   ngOnInit(): void {
     //this.getAndSaveBoxCoordinates();
     this.loadData();
+  }
+
+  activateTab(tab: string) {
+    this.activeTab = tab;
   }
 
   ngAfterViewInit(): void {
@@ -57,7 +62,7 @@ export class PseudoDashboardComponent implements OnInit {
     this.selectedTab = tab;
   }
 
-  drop(event: CdkDragDrop<{title: string; poster: string}[]>) {
+  drop(event: CdkDragDrop<{ title: string; poster: string }[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }
 
@@ -71,7 +76,7 @@ export class PseudoDashboardComponent implements OnInit {
     });
   }
 
-  onDragEnded(event: any){
+  onDragEnded(event: any) {
     this.getAndSaveBoxCoordinates();
   }
 

@@ -50,14 +50,18 @@
   justify-content: start;
 }
 
+.personal-info-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  padding: 1rem;
+}
 
 
 .image-outer-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0;
-  padding-right: 0;
+  padding-right: 1rem;
 }
 
 .text-img {
@@ -65,6 +69,12 @@
   flex-direction: column;
   align-items: center;
 }
+
+.detail{
+  display: block;
+  margin: 0 0 8px;
+}
+
 
 .image-container {
   width: 130px;
@@ -115,12 +125,14 @@
 }
 
 .custom-card-designation {
+  display: block;
   color: rgba(8, 39, 55, 0.50);
   font-family: Outfit;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  margin: 0 0 10px;
 }
 
 .custom-card-h2 {
@@ -149,4 +161,54 @@
   cursor: move;
   width: 10px;
   height: 10px;
+}
+
+
+.bottom {
+  order: 2;
+}
+
+
+.nav{
+  margin-left: 2vw;
+}
+.tabs{
+  position: relative;
+  margin-top: 15px;
+  font-size: 1.0vw ;
+  font-family: Outfit;
+  font-weight: 600;
+
+}
+
+.tabs .nav-item .nav-link.active{
+color: #205072;
+cursor:pointer;
+}
+
+.nav-item .nav-link{
+color: rgba(51, 54, 63, 0.6);
+cursor:pointer;
+text-align: center;
+
+}
+
+.line2{
+  position: relative;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 85%;
+  height: 0.06rem;
+  left: 30px;
+
+}
+
+.nav-link{
+  width: 11vw;
+  padding: 8px 0px;
+  align-items: center;
+}
+
+.nav-item .nav-link:hover{
+  color: rgba(56, 163, 165, 1);
 }

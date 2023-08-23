@@ -9,6 +9,15 @@ body{
 .collapsed{
   display: none;
 }
+.email{
+  color: #205072;
+  transition: color 0.3s;
+}
+.email:hover {
+  color: #589ceb; /* Color change on hover */
+  transform: scale(1.1);
+  text-shadow: 1px 1px #589ceb;
+}
 .arrows {
   display: flex;
   height: 20px;
@@ -36,13 +45,18 @@ justify-content: center;
 align-items: center;
 flex-shrink: 0;
 }
+.cross:hover{
+  transition: transform 0.1s ease;
+  transform: scale(1.07);
+  /* box-shadow: 1px 1px 1px 1px red; */
+}
 .popup{
       flex-direction: column;
     display: flex;
      margin-right: 5vw;
      margin-left: 5vw;
      padding: 1vw 0.25vw 0.5vw 0.25vw;
-     margin-top: 0.1vw;
+     margin-top: 0vw ;
      bottom: 1vw;
      border-radius: 10px;
      border: 1px solid #205072;
@@ -76,7 +90,7 @@ flex-shrink: 0;
  font-family: Outfit;
  font-size: 12px;
  font-style: normal;
- font-weight: bold;
+ font-weight: 600;
  line-height: normal;
  letter-spacing: 0.8px;
  }
@@ -85,8 +99,16 @@ flex-shrink: 0;
   margin-left: 1vw;
  /* margin-right: 9vw; */
   width: 17vw;
+  transition: transform 0.3s ease;
+  
  }
- 
+ .remark-icon:hover{  
+  transform: scale(1.01);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 0px 4px 0px #000 inset;
+  border-radius: 10px;
+ }
+
  .card-info{
    color: #082737;
  font-family: Outfit;
@@ -117,10 +139,17 @@ flex-shrink: 0;
  letter-spacing: 0.9px;
  }
  
- 
+ .profile{
+  border: 1px solid #38a3a5;
+    background-image: url(https://picsum.photos/200);
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+ }
  .img-fluid {
-   max-height: 80px;
-   max-width: 25px;
+   max-height: 150px;
+   max-width: 150px;
+   
  }
  
  .text-img {
@@ -132,35 +161,35 @@ flex-shrink: 0;
  .custom-card-title {
    color: #082737;
    font-family: Outfit;
-   font-size: 30px;
+   font-size: 20px !important;
    font-style: normal;
-   font-weight: 200;
+   font-weight: 500 !important;
    line-height: normal;
  }
  
  .custom-card-designation {
-   color: rgba(8, 39, 55, 0.50);
+   color: rgba(8, 39, 55, 0.80);
    /* font-size: 16px; */
    font-style: normal;
-   font-weight: 400;
+   font-weight: 600;
    line-height: normal;
  }
  
  .custom-card-h2 {
-   color: #38A3A5;
+   color:#205072;
    font-family: Outfit;
-   font-size: 14px;
+   /* font-size: 14px; */
    font-style: normal;
-   font-weight: 500;
+   font-weight: 600;
    line-height: normal;
  }
  
  .custom-card-d2 {
-   color: #205072;
+   color: #38A3A5;
  font-family: Outfit;
- font-size: 14px;
+ /* font-size: 14px; */
  font-style: normal;
- font-weight: 500;
+ font-weight: 600;
  line-height: normal;
  }
  
@@ -172,6 +201,7 @@ flex-shrink: 0;
  font-style: normal;
  font-weight: bold;
  line-height: normal;
+ white-space: nowrap;
  }
  
  
@@ -180,14 +210,37 @@ flex-shrink: 0;
  .menu-cards-row {
    margin-top: 8vh;
  }
- 
+     
+.menu-card-container:nth-child(1):hover .menu-card-box {
+  box-shadow: 0 0 2px 2px #ffd700;
+}
+.menu-card-container:nth-child(2):hover .menu-card-box {
+  box-shadow: 0px 0px 2px 2px #0074FC;
+} 
+.menu-card-container:nth-child(3):hover .menu-card-box {
+  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+} 
+.menu-card-container:nth-child(4):hover .menu-card-box {
+  box-shadow: 0px 0px 2px 2px #7BE495;
+} 
+.menu-card-container:nth-child(5):hover .menu-card-box {
+  box-shadow: 0px 0px 2px 2px #205072;
+}
+.menu-card-container:nth-child(6):hover .menu-card-box {
+  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+}	
  .menu-card-container {
+  height: 15vh;
    display: grid;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
  }
- 
+ .menu-card-container:hover{
+  transform: scale(1.01);
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+}
  .menu-card-box {
    border-radius: 5px;
    border: 1px solid #38A3A5;
@@ -200,34 +253,27 @@ flex-shrink: 0;
    padding: 0.7vw 1.7vw 0.7vw 1.7vw;
     height: 10vh;
     width: 6vw;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
  }
- 
+ .menu-card-box:hover { 
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
  .info{
    color: #205072;
  text-align: center;
  font-family: Outfit;
  font-size: 12px;
  font-style: normal;
- font-weight: 500;
+ font-weight: 600;
  line-height: normal;
  
  }
- .email{
+ /* .email{
    overflow: hidden;
  text-overflow: ellipsis; 
- }
- .menu-card-image {
-   /* height: 90px;
-   width: 90px; */
- }
- .menu-card-container{
-   height: 15vh;
- }
- .menu-card-box{
-  /* padding: 0.7vw 1.7vw 0.7vw 1.7vw;
-  height: 10vh;
-  width: 6vw; */
- }
+ } */
+
  .menu-cards-row{
    margin-top: 0;
    
@@ -238,10 +284,16 @@ flex-shrink: 0;
    font-family: Outfit;
    font-size: 16px;
    font-style: normal;
-   font-weight: 400;
+   font-weight: 600;
    line-height: normal;
+   text-align: center;
+   white-space: nowrap;
+   transition: transform 0.3s ease, text-shadow 0.3s ease ;
  }
- 
+ .menu-card-title:hover{  
+  transform: scale(1.05);
+  text-shadow: 0 0 3px 3px #0074FC;;
+ }
  .container-fluid {
    position: relative;
    display: flex;
@@ -256,8 +308,8 @@ flex-shrink: 0;
  }
  
  .image-container {
-   width: 130px;
-   height: 130px;
+   /* width: 100%;
+   height: 100%; */
    border-radius: 50%;
    overflow: hidden;
    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -349,8 +401,8 @@ flex-shrink: 0;
   flex-shrink: 0;
   }
   .image-container {
-    width: 90px;
-    height: 90px;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -445,7 +497,7 @@ flex-shrink: 0;
   font-family: Outfit;
   font-size: 12px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   line-height: normal;
   
   }
@@ -564,7 +616,7 @@ flex-shrink: 0;
   }
   .info{
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .menu-card-title {
@@ -893,15 +945,15 @@ flex-shrink: 0;
   .popup{
  
     width: 90vw;
-       height: 90vh; 
+       height: 92vh; 
        margin-right: 5vw;
        margin-left: 5vw;
        /* margin-top: 20%; */
-       top:5vh;
+       top:3vh;
        padding: 1vw 0.25vw 0.5vw 0.25vw;
    }
    .container-fluid{
-    margin-top: 0.5%;
+    margin-top: 0.1%;
    }
   .cross{
     position: absolute;
@@ -965,11 +1017,11 @@ flex-shrink: 0;
   }
 
   .custom-card-h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .custom-card-d2 {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   /* .menu-card-title {

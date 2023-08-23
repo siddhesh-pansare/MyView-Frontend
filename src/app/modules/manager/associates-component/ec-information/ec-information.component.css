@@ -20,26 +20,26 @@
 .text-wrap{
   color: rgba(51, 54, 63, 0.80);
   font-family: Outfit;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 14px !important;
+  font-weight: 600;
   line-height: normal;
 }
 
 .ec-tech{
   color: #205072;
 font-family: Outfit;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
-font-weight: bold;
+font-weight: 600;
 line-height: normal;
 }
 
 .card-text {
   color: #56C596;
 font-family: Outfit;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
 }
 .card-header {

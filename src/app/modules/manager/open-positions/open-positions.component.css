@@ -167,7 +167,7 @@ td {
   font-weight: 600;
   font-size: 0.8rem;
   text-align: center;
-  border: 1.5px solid #205072;
+   border: 1.5px solid #205072; 
 }
 
 td:hover {
@@ -235,7 +235,17 @@ tr:last-child td:not(:first-child):not(:last-child):hover:after {
   z-index: 1;
 }
 
-/* ... Your existing CSS rules ... */
+.company-logo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 16px; 
+  margin-bottom: 2px; 
+
+}
+
+
+
 
 @keyframes slideIn {
   from {

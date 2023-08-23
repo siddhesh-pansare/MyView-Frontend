@@ -161,7 +161,7 @@ flex-shrink: 0;
  .custom-card-title {
    color: #082737;
    font-family: Outfit;
-   font-size: 20px !important;
+   font-size: 25px !important;
    font-style: normal;
    font-weight: 500 !important;
    line-height: normal;
@@ -173,6 +173,7 @@ flex-shrink: 0;
    font-style: normal;
    font-weight: 600;
    line-height: normal;
+   margin-top: -1vh;
  }
  
  .custom-card-h2 {

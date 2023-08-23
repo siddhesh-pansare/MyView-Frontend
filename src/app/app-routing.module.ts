@@ -14,12 +14,14 @@ import { OtherContributionsComponent } from './modules/shared-modules/Dialogue/o
 import { RoundDetailsComponent } from './modules/shared-modules/Dialogue/round-details/round-details.component';
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/attendance-dialog/attendance-dialog.component';
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
+import { OpenPositionsComponent } from './modules/manager/open-positions/open-positions.component';
 
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
+  { path:'openpos', component:OpenPositionsComponent },
   { path:'', component:RoleComponent ,
   children:[
     {

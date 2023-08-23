@@ -140,14 +140,16 @@ body {
   left: 20vw;
 }
 
+.table-container{
+  height: 100vh;
+}
+
 .table-responsive.rounded {
   top: 15vh;
   width: 100vw;
   position: relative;
   width: 82vw;
   left: 8vw;
-  
-  z-index: -10;
 }
 
 .table-bordered {

@@ -14,9 +14,9 @@ body {
 .page-sub-header {
   display: flex;
   flex-direction: row;
-  margin-left: 8vw;
+  margin-left: 5vw;
   margin-right: 5vw;
-  top: 30px;
+  top: 10px;
   position: relative;
   justify-content: space-between;
 }
@@ -71,7 +71,7 @@ body {
   padding: 9px, 8px, 9px, 8px;
   gap: 10px;
   background-color: #0074fcb8;
-  margin-top: 45px;
+  margin-top: 25px;
   font-weight: 600;
   color: #ffffff;
   cursor: pointer;
@@ -96,7 +96,7 @@ body {
   font-weight: 600;
   width: 90%;
   text-align: center;
-  left: 5vw;
+  left: 4vw;
 }
 
 .nav-link {
@@ -137,30 +137,30 @@ body {
   box-sizing: border-box;
   width: 50vw;
   height: 0.06rem;
-  left: 20vw;
+  left: 17vw;
 }
 
-.table-container{
-  height: 100vh;
-}
+
 
 .table-responsive.rounded {
-  top: 15vh;
+  top: 17vh;
   width: 100vw;
   position: relative;
   width: 82vw;
-  left: 8vw;
+  left: 6vw;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .table-bordered {
-  border: 1.5px solid #205072;
-  border-radius: 10px 10px 0 0;
+  border: 1px solid #205072;
+  
 }
 
 th {
   color: #205072;
   background-color: #3de50233;
-  border: 1.5px solid #205072;
+  border: 1px solid #205072;
   font-size: 1rem;
 }
 
@@ -169,7 +169,8 @@ td {
   font-weight: 600;
   font-size: 0.8rem;
   text-align: center;
-   border: 1.5px solid #205072; 
+  border: 1px solid #205072; 
+  
 }
 
 td:hover {
@@ -286,6 +287,7 @@ td#action {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: none;
   transition: transform 0.5s;
 }
 

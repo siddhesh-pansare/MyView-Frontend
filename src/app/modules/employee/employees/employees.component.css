@@ -16,9 +16,9 @@ body{
 .page-sub-header{
   display: flex;
   flex-direction: row;
-  margin-left: 8vw;
+  margin-left: 5vw;
   margin-right: 5vw;
-  top:30px;
+  top:10px;
   position: relative;
   justify-content: space-between;
 
@@ -68,7 +68,7 @@ body{
 
 .container{
   position: relative;
-  top:40px;
+  top:20px;
 }
 
 .row.align-items-center {
@@ -85,7 +85,7 @@ body{
   flex-direction: row;
   padding: 0.63rem;
   color: rgba(0, 0, 0, 0.5);
-  left: 70px;
+  left: 30px;
   gap: 0.63rem;
   justify-content: center;
 }
@@ -132,14 +132,14 @@ input::placeholder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 80px;
+  margin-right: 100px;
   
 }
 
 .line-div-container {
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-top: 60px;
+  margin-left: 80px;
+  margin-right: 120px;
+  margin-top: 40px;
 }
 
 .line-div {
@@ -156,10 +156,10 @@ input::placeholder {
 }
 
 .table-responsive.rounded{
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 80px;
+  margin-right: 100px;
   margin-top: 30px;
-  max-width: calc(100vw - 300px);
+  max-width: calc(100vw - 250px);
 }
 
 table{

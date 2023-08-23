@@ -21,7 +21,6 @@ const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
-  { path:'openpos', component:OpenPositionsComponent },
   { path:'', component:RoleComponent ,
   children:[
     {

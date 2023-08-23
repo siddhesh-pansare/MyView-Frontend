@@ -229,17 +229,20 @@ flex-shrink: 0;
 .menu-card-container:nth-child(6):hover .menu-card-box {
   box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
 }	
+.menu-card-container:nth-child(6){
+  padding-left: 40px;
+}
  .menu-card-container {
   height: 15vh;
    display: grid;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transition: transform 0.3s ease,  text-shadow 0.3s ease;
  }
  .menu-card-container:hover{
   transform: scale(1.01);
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+  text-shadow: 1px 1px #0074FC;;
 }
  .menu-card-box {
    border-radius: 5px;
@@ -292,7 +295,7 @@ flex-shrink: 0;
  }
  .menu-card-title:hover{  
   transform: scale(1.05);
-  text-shadow: 0 0 3px 3px #0074FC;;
+  text-shadow: 0 0 3px 3px #0074FC;
  }
  .container-fluid {
    position: relative;

@@ -39,7 +39,7 @@
 </div>
 
   <div class="table-responsive rounded">
-    <table mat-table [dataSource]="dataSource">
+    <table  mat-table [dataSource]="dataSource" class="custom-table">
       <ng-container *ngFor="let column of displayedColumns" [matColumnDef]="column">
         <th  mat-header-cell *matHeaderCellDef>{{ column }}</th>
         <td  *matCellDef="let element">
@@ -62,6 +62,8 @@
     </mat-paginator>
     
   </div>
+  
+
 </div>  
 
 <span class="company-logo">

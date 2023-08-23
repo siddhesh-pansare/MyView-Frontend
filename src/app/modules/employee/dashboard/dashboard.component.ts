@@ -42,14 +42,15 @@ export class DashboardComponent implements OnInit {
     this.restoreBoxPositions();
     this.loadData();
 
-    const apiUrl = 'https://fab4-14-99-89-34.ngrok.io/v2/health';
-    const accessToken = sessionStorage.getItem('accessToken');
+    const apiUrl = 'https://illum.serveo.net/v2/homeEC';
+    const accessToken = sessionStorage.getItem('idToken');
 
     const headers = new HttpHeaders().set('Authorization', `Bearer ${accessToken}`);
 
     this.http.get<any>(apiUrl, { headers }).subscribe(
       response => {
         this.content = response;
+        console.log(this.content)
       },
       error => {
         console.error('Error fetching content:', error);

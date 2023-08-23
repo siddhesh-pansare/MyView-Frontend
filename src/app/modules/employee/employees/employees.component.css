@@ -68,7 +68,7 @@ body{
 
 .container{
   position: relative;
-  top:20px;
+  top:10px;
 }
 
 .row.align-items-center {
@@ -132,14 +132,14 @@ input::placeholder {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 120px;
   
 }
 
 .line-div-container {
   margin-left: 80px;
-  margin-right: 120px;
-  margin-top: 40px;
+  margin-right: 140px;
+  margin-top: 20px;
 }
 
 .line-div {
@@ -159,7 +159,9 @@ input::placeholder {
   margin-left: 80px;
   margin-right: 100px;
   margin-top: 30px;
-  max-width: calc(100vw - 250px);
+  max-width: calc(100vw - 280px);
+  height: calc(100vh - 230px); /* Adjust the height as needed */
+  overflow-y: auto;
 }
 
 table{
@@ -175,11 +177,13 @@ table{
 }
 
 .mat-mdc-header-row{
+  position: sticky;
   background-color: rgba(0, 240, 255, 0.1);
   text-align: center;
   font-weight: 600;
   height: 35px;
-
+  top:0;
+  z-index: 2;
 }
 
 .mat-mdc-header-cell{
@@ -190,6 +194,7 @@ table{
   font-size: 1rem;
   border-right: 1px solid #205072;
   border-bottom: 1px solid #205072;
+  z-index: 2;
 }
 
 .mat-mdc-row{
@@ -204,6 +209,14 @@ table{
   border-right: 1px solid #205072;
 }
 
+.company-logo{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-right: 16px; 
+  margin-bottom: 2px; 
+
+}
 
 @media (min-width:1000px) and (max-width:1500px) {
     .page-heading1{

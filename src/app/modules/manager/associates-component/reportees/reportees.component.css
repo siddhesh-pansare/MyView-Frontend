@@ -1,68 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
-.menu-card-container:nth-child(1):hover .menu-card-box {
-  box-shadow: 0 0 2px 2px #ffd700;
-  transition: transform 0.3s ease, box-shadow 0.s ease;
-}
-
-/* Apply hover styles for the second card */
-.menu-card-container:nth-child(2):hover .menu-card-box {
-  box-shadow: 0px 0px 3px 3px #0074FC;
-}
-
-/* Apply hover styles for the third card */
-.menu-card-container:nth-child(3):hover .menu-card-box {
-  box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-}
-
-.menu-card-container:nth-child(4):hover .menu-card-box {
-  box-shadow: 0px 0px 3px 3px #7BE495;
-}
-
-.menu-card-container:nth-child(5):hover .menu-card-box {
-  box-shadow: 0px 0px 3px 3px #205072;
-}
-
-.menu-card-container:nth-child(6):hover .menu-card-box {
-  box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-}
-/* Add more styles for additional cards as needed */
-
-
-.menu-card-container{
-  transition: transform 0.3s ease, box-shadow 0.s ease;
-}
-
-.menu-card-container:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-.menu-card-title{
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
-}
-
-.menu-card-title:hover{
-  transform: scale(1.05);
-  text-shadow:  0px 0px 3px 3px #0074FC;
-}
-
-
 body{
   font-family: Outfit;
 }
-
-.attendence{
-  color: #205072;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.8px;
-}
-
 .personal-info-container{
   margin-left: 0%;
 }
@@ -99,9 +39,10 @@ flex-shrink: 0;
  }
  
  .card-header{
-  border-radius: 5px 5px 0px 0px;
-background: rgba(0, 240, 255, 0.10);
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+   border-radius: 5px 5px 0px 0px;
+ background: rgba(255, 0, 0, 0.10);
+ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+ height: 7vh;
  }
  
  .division{
@@ -341,6 +282,25 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
  }
  
  @media (max-width: 576px){
+
+  .image_name{
+    order: 1 ;
+  }
+  .detaildc{
+    order: 5;
+  }
+  .skillcard{
+    order: 3;
+  }
+  .ecdcsection{
+    order: 6;
+  }
+  .recentactivity{
+    order: 4;
+  }
+  .menucard{
+    order: 2;
+  }
   .popup{
  
     width: 92vw;
@@ -482,7 +442,24 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
    }
  }
  @media (min-width: 576px) and (max-width:767px){
-
+  .image_name{
+    order: 1 ;
+  }
+  .detaildc{
+    order: 5;
+  }
+  .skillcard{
+    order: 3;
+  }
+  .ecdcsection{
+    order: 6;
+  }
+  .recentactivity{
+    order: 4;
+  }
+  .menucard{
+    order: 2;
+  }
   .popup{
  
     width: 92vw;
@@ -606,6 +583,24 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 
 
 @media (min-width: 768px) and (max-width:991px){
+  .image_name{
+    order: 1 ;
+  }
+  .detaildc{
+    order: 5;
+  }
+  .skillcard{
+    order: 3;
+  }
+  .ecdcsection{
+    order: 6;
+  }
+  .recentactivity{
+    order: 4;
+  }
+  .menucard{
+    order: 2;
+  }
   .popup{
  
     width: 90vw;
@@ -938,9 +933,9 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
     
   }
   .remark-icon{
-    margin-left: 3vw;
+    margin-left: 6vw;
    /* margin-right: 9vw; */
-    width: 14vw;
+    width: 22vw;
    }
   .custom-card-title {
     color: #082737;
@@ -959,7 +954,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
   }
   .card-header{
     height: max-content;
-    max-height: 3vw;
+    max-height: 5vw;
     
   }
   .card-info{
@@ -969,7 +964,7 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
   }
   .imgskill{
     max-width: 20px;
-    max-height: 22px;
+    max-height: 20px;
     margin-left: 0;
     padding-left: 0;
   }

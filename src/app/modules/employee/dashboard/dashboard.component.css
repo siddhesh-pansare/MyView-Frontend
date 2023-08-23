@@ -2,46 +2,48 @@
 
 /* Apply hover styles for the first card */
 .menu-card-container:nth-child(1):hover .menu-card-box {
-  box-shadow: 0 0 1px 1px #ffd700;
-  transition: transform 0.3s ease, box-shadow 0.s ease;
+  box-shadow: 0 0 2px 2px #ffd700;
+ 
 }
 
 /* Apply hover styles for the second card */
 .menu-card-container:nth-child(2):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #0074FC;
+  box-shadow: 0px 0px 2px 2px #0074FC;
 }
 
 /* Apply hover styles for the third card */
 .menu-card-container:nth-child(3):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px rgba(250, 10, 10, 0.50);
+  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
 }
 
 .menu-card-container:nth-child(4):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #7BE495;
+  box-shadow: 0px 0px 2px 2px #7BE495;
 }
 
 .menu-card-container:nth-child(5):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #205072;
+  box-shadow: 0px 0px 2px 2px #205072;
 }
 
 .menu-card-container:nth-child(6):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px rgba(250, 10, 10, 0.50);
+  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
 }
 /* Add more styles for additional cards as needed */
 
 
 .menu-card-container{
-  transition: transform 0.3s ease, box-shadow 0.s ease, text-shadow 0.3s ease;
+  transition: transform 0.5s , box-shadow 0.5s , text-shadow 0.5s ;
 }
 
 .menu-card-container:hover{
-  transform: scale(1.05);
+  transform: scale(1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px #0074FC;
+  text-shadow:  1px 1px #205072;
+  animation-name: smartAnimate;
 }
 
 .menu-card-title{
   transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .menu-card-title:hover{
@@ -196,7 +198,7 @@ line-height: normal;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 16vh;
+  height: 18vh;
 }
 
 .menu-card-box {
@@ -219,9 +221,9 @@ line-height: normal;
 .menu-card-title {
   color: #082737;
   font-family: Outfit;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 

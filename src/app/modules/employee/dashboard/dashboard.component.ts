@@ -118,8 +118,6 @@ export class DashboardComponent implements OnInit {
         width: '400px', // Set the width as needed
       });
     }
-
-
   }
 
 }

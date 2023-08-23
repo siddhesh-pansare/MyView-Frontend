@@ -1,6 +1,13 @@
 import { CdkDragStart, CdkDragMove, CdkDragEnd, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
+import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
+import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
+import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
+import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
+import { SessionComponent } from '../../shared-modules/dialogue/session-dialogue/session.component';
+import { InterviewComponent } from '../interview/interview.component';
 
 @Component({
   selector: 'app-pseudo-dashboard',
@@ -15,13 +22,13 @@ export class PseudoDashboardComponent implements OnInit {
   selectedTab = 'EC';
   activeTab: string = 'dc';
 
-  cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
-    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award' },
-    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt: 'certification' },
-    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt: 'interviews' },
-    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt: 'sessions' },
-    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt: 'client_feedback' },
-    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions' },
+  cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
+    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award', dialogComponent:'AwardComponent' },
+    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt:'certification',dialogComponent:'CertificationComponent' },
+    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt:'interviews', dialogComponent:'InterviewsComponent' },
+    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt:'sessions', dialogComponent:'SessionComponent' },
+    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt:'client_feedback', dialogComponent:'ClientFeedbackComponent' },
+    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions',dialogComponent:'OtherContributionsComponent' },
   ];
 
   handleClick(event: MouseEvent): void {
@@ -31,7 +38,7 @@ export class PseudoDashboardComponent implements OnInit {
     console.log(`Mouse clicked at X: ${xCoordinate}, Y: ${yCoordinate}`);
   }
 
-  constructor(private userDataService: LoggedUserDataService) { }
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog ){}
 
 
 
@@ -93,6 +100,37 @@ export class PseudoDashboardComponent implements OnInit {
         box.style.top = `${top}px`;
       }
     });
+  }
+
+  openDialog(dialogComponent: string){
+    if(dialogComponent === 'AwardComponent'){
+      const dialogRef = this.dialog.open(AwardComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }else if(dialogComponent === 'CertificationComponent'){
+      const dialogRef = this.dialog.open(CertificationDialogueComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }else if(dialogComponent === 'InterviewsComponent'){
+      const dialogRef = this.dialog.open(InterviewComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
+    else if(dialogComponent === 'SessionComponent'){
+      const dialogRef = this.dialog.open(SessionComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
+    else if(dialogComponent === 'ClientFeedbackComponent'){
+      const dialogRef = this.dialog.open(ClientFeedbackComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
+    else if(dialogComponent === 'OtherContributionsComponent'){
+      const dialogRef = this.dialog.open(OtherContributionsComponent, {
+        width: '400px', // Set the width as needed
+      });
+    }
   }
 
 }

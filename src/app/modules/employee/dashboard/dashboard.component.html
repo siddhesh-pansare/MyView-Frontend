@@ -74,13 +74,9 @@
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
-          <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)" style="height: 60vh;">
-            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards"
-              cdkDrag>
+          <div class="row menu-cards-row">
+            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards">
               <div class="menu-card-box" (click)="openDialog(card.dialogComponent)">
-                <div cdkDragHandle>
-                  <span class="empty-handler">.</span>
-                </div>
                 <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
               </div>
               <span class="menu-card-title pt-1">{{card.cardTitle}}</span>

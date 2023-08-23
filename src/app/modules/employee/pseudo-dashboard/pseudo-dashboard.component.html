@@ -61,9 +61,17 @@
           </div>
         </div>
 
-        <div class="card col-sm-12 col-md-4 col-xl-6 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
-          element 3
+
+
+        <div class="cards col-sm-2 col-md-4 col-lg-3 col-xl-6  example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)" cdkDragBoundary=".example-boundary">
+          <div class="example-handle" cdkDragHandle>
+            <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
+          </div>
+          <div class="menu-cards-row">
+element 3
+          </div>
         </div>
+
       </div>
     </div>
 

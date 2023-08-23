@@ -17,7 +17,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-} 
+}
 .exp{
   color: #56C596;
   font-family: Outfit;
@@ -43,7 +43,7 @@ font-size: 10px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-} 
+}
 .dcid{
   color: rgba(51, 54, 63, 0.60);
 font-family: Outfit;
@@ -181,7 +181,7 @@ line-height: normal;
   letter-spacing: 0.5px;
   text-align: end;
   padding-right: 10%;
-  
+
 }
 
 .arrows{
@@ -216,17 +216,17 @@ line-height: normal;
   margin: 10px;
   border: none;
   outline: none;
-  
+
 }
 
 .council-dropdown select {
   padding: 5px;
   font-size: 16px;
-  border: none; 
-  background-color: rgba(245, 245, 245, 1); 
-  outline: none; 
-  
-} 
+  border: none;
+  background-color: rgba(245, 245, 245, 1);
+  outline: none;
+
+}
 
 select {
   -webkit-appearance: none;
@@ -236,7 +236,7 @@ select {
 }
 
 .council-dropdown::after {
-  content: url('src\assets\dropdown\Vector.svg'); 
+  /* content: url('src\assets\dropdown\Vector.svg');  */
   position: absolute;
   top: 50%;
   right: 10px;
@@ -245,12 +245,12 @@ select {
 }
 
 .council-dropdown.open::after {
-  content: url('src\assets\dropdown\Vector (1).svg');
+  /* content: url('src\assets\dropdown\Vector (1).svg'); */
 }
 
 .council-dropdown select option:checked {
   background-color: rgba(217, 217, 217, 1);
-} 
+}
 
 
 

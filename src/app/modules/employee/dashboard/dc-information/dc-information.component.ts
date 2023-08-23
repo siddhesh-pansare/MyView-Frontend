@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-dc-information',
@@ -12,6 +11,7 @@ export class DcInformationComponent implements OnInit {
   collapseClient: boolean = true;
   collapseReportee: boolean = true;
   selectedCouncil: string = 'pimco-de';
+  isDropdownOpen: boolean = false;
   constructor(private userDataService: LoggedUserDataService) {
     const email = 'siddhesh.pansare@geminisolutions.com';
 
@@ -25,9 +25,11 @@ export class DcInformationComponent implements OnInit {
     //this.loadData();
   }
 
-  isDropdownOpen: boolean = false;
-
   toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  toggleDropdownImage() {
     this.isDropdownOpen = !this.isDropdownOpen;
   }
 

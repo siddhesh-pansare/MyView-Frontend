@@ -208,6 +208,14 @@ select {
   text-overflow: "";
 }
 
+.council-dropdown.open::after {
+  content: url("src\assets\dropdown\Vector (1).svg");
+}
+
+.council-dropdown select option:checked {
+  background-color: rgba(217, 217, 217, 1);
+}
+
 @media (max-width: 1200px) {
   .reportee-card {
     padding: 0;

@@ -11,6 +11,7 @@ import { SessionComponent } from '../../shared-modules/dialogue/session-dialogue
 import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -42,7 +43,7 @@ export class DashboardComponent implements OnInit {
     this.restoreBoxPositions();
     this.loadData();
 
-    const apiUrl = 'https://illum.serveo.net/v2/homeEC';
+    const apiUrl = environment.baseUrl+'homeEC';
     const accessToken = sessionStorage.getItem('idToken');
 
     const headers = new HttpHeaders().set('Authorization', `Bearer ${accessToken}`);

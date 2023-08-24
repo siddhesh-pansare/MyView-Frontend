@@ -38,10 +38,10 @@ const isIE =
   declarations: [AppComponent, OpenPositionsComponent],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     EmployeeModule,
-    HttpClientModule,
     SharedModulesModule,
     FormsModule,
     ManagerModule,

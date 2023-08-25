@@ -66,7 +66,7 @@ flex-shrink: 0;
         position: fixed;
  }
  .card {
-   margin-top: 20px;
+   margin-top: 10px;
  }
  
  .card-header{
@@ -93,6 +93,7 @@ flex-shrink: 0;
  font-weight: 600;
  line-height: normal;
  letter-spacing: 0.8px;
+ padding: 5px;
  }
  
  .remark-icon{
@@ -353,8 +354,23 @@ flex-shrink: 0;
    justify-content: center;
    align-items: center;
    margin: 0;
-   padding-right: 0;
+   padding: 0;
  }
+ .imgskill{
+  max-width: 18vw;
+  max-height: 15vh;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.imgstar{
+  display: flex;
+  justify-content: center;
+  height: 2vh;
+  margin: 0px;
+  padding: 0px;
+}
  
  @media (max-width: 576px){
 
@@ -599,12 +615,12 @@ flex-shrink: 0;
     font-weight: bold;
     
   }
-  .imgskill{
+  /* .imgskill{
     max-width: 20px;
     max-height: 20px;
     margin-left: 0;
     padding-left: 0;
-  }
+  } */
  
   .custom-card-designation {
     font-size: 11px; 
@@ -715,12 +731,12 @@ flex-shrink: 0;
     font-weight: bold;
     
   }
-  .imgskill{
+  /* .imgskill{
     max-width: 20px;
     max-height: 20px;
     margin-left: 0;
     padding-left: 0;
-  }
+  } */
  
   .custom-card-designation {
     font-size: 1.5vw; 
@@ -829,12 +845,12 @@ flex-shrink: 0;
     font-weight: bold;
     
   }
-  .imgskill{
+  /* .imgskill{
     max-width: 20px;
     max-height: 20px;
     margin-left: 0;
     padding-left: 0;
-  }
+  } */
  
   
   .custom-card-h2 {
@@ -1008,12 +1024,12 @@ flex-shrink: 0;
     font-weight: bold;
     
   }
-  .imgskill{
+  /* .imgskill{
     max-width: 20px;
     max-height: 20px;
     margin-left: 0;
     padding-left: 0;
-  }
+  } */
  
   .custom-card-designation {
     font-size: 14px; 

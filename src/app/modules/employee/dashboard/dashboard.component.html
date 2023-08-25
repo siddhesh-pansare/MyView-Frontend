@@ -20,20 +20,17 @@
               </div>
             </div>
             <!-- Right Column - Employee Details -->
-            <div class="col-8 col-md-8 pl-0 m-0">
+            <div class="col-8 col-md-8 pl-0 m-0">                
               <div class="card-body">
                 <!-- Name and Position -->
-                <p class="custom-card-title"><span class="hi">Hi,</span>Siddhesh Sandeep pansare</p>
+              <span class="custom-card-title">Hi, Siddhesh Sandeep pansare</span>
                 <p class="custom-card-designation">Technology Solution Lead-L2</p>
                 <!-- Other Details -->
-                <div class="details">
-                  <p class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G
-                      397</span></p>
-                  <p class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">6 years</span>
-                  </p>
-                  <p class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">IT Park,
-                      PanchKula</span></p>
-                </div>
+                <!-- <div class="details"> -->
+                  <span class="custom-card-h2">Emp Code: </span><span class="custom-card-d2">GSI G 397</span><br>
+                  <span class="custom-card-h2">Exp: </span><span class="custom-card-d2">6 years</span><br>
+                  <span class="custom-card-h2">Location: </span><span class="custom-card-d2">IT Park, PanchKula</span><br>
+                <!-- </div> -->
               </div>
             </div>
           </div>
@@ -45,12 +42,12 @@
 
 
       <div class="row ec-dc-row">
-        <div class="bottom col-sm-10 col-md-8 col-xl-6 example-box" cdkDragBoundary=".example-boundary"
+        <div class="bottom col-sm-10 col-md-8 col-xl-6 col-lg-12 example-box" cdkDragBoundary=".example-boundary"
           (cdkDragEnded)="onDragEnded($event)" cdkDrag>
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
-          <div class="tab-group col-md-12">
+          <div class="tab-group col-lg-12 col-md-12">
             <mat-tab-group>
               <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
               <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
@@ -58,7 +55,7 @@
           </div>
         </div>
 
-        <div class="cards col-sm-2 col-md-4 col-lg-4 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"
+        <div class="cards col-sm-2 col-md-4 col-lg-3 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"
           cdkDrag>
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
@@ -66,7 +63,7 @@
           <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">
             <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards"
               cdkDrag>
-              <div class="menu-card-box" [matTooltip]="card.cardTitle" (click)="openDialog(card.dialogComponent)">
+              <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
                 <div cdkDragHandle>
                   <span class="empty-handler">.</span>
                 </div>
@@ -79,11 +76,11 @@
       </div>
     </div>
 
-    <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0 ">
+    <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0 "><br>
       <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag>
         <div class="pending-task-header" cdkDragHandle>
           <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
-          <span class="head">Pending Tasks</span>
+          <span class="head ml-2">Pending Tasks</span>
         </div>
         <div class="card-body">
           <ul class="task1">
@@ -92,21 +89,23 @@
             <li>July Monthly Connect with mentees</li>
           </ul>
         </div>
-      </div>
+      </div><br>
 
-      <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag>
+      
+      <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag><div class="border">
         <div class="upcoming-events-header" cdkDragHandle>
           <img src="assets/images/icons/events.svg">
-          <span class="head">Upcoming Events</span>
+          <span class="head ml-2">Upcoming Events</span>
         </div>
         <div class="card-body">
           <ul class="task1">
             <li>Client Visit on 25th July (Uma Katru - PIMCO)</li><br>
             <li>DE Team Gurgoan Office Visit (31-July-2023)</li><br>
-            <li>Team Trip in 3 week of october.<a href=""> Register Now!</a></li>
+            <li>Team Trip in 3 week of October.<a class="link" href=""> Register Now!</a></li>
           </ul>
         </div>
       </div>
+    </div>
     </div>
 
   </div>

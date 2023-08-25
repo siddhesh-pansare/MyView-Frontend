@@ -40,20 +40,20 @@
                             <div class="col-6 col-sm-8 col-lg-8 col-md-8 col-xl-8 pl-0 m-0">
                               <div class="card-body">
                                 <!-- Name and Position -->
-                                <h5 class="custom-card-title">Mansi Goyal</h5>
+                                <h5 class="custom-card-title">Mohit Choudhary</h5>
                                 <p class="custom-card-designation">Software Engineer - L1</p>
                                 <!-- Other Details -->
                                 <div class="details">
-                                  <p class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI C 1577</span></p>
-                                  <p class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">1 year 4 months</span></p>
-                                  <p class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">IT Park, Panchkula</span></p>
+                                  <p class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G 1094</span></p>
+                                  <p class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">4 years 6 months</span></p>
+                                  <p class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">Canaan Tower</span></p>
                                 </div>
                               </div>
                             </div>
 
                         </div>
                         <!-- DETAILDC -->
-                    <div class="card detaildc" style="width: 25vw;"> <!--DC information card-->
+                    <div class="card detaildc"> <!--DC information card-->
 
                       <div class="card-header">
                         <div class="card-info"><img class="headlogo" src="../../../../../assets/images/icons/information.svg" alt="info-icon">
@@ -68,17 +68,16 @@
                           <!--<div class="col-6 align-items-center">{{loggedUserData.Email}}</div>-->
 
                           <div class="col-6">
-                            <span class="email info">mansi.mukesh@geminis..</span>
+                            <span class="email info">mohit.choudhary1@g..</span>
                           </div>
 
                         </div>
-                        
                         <div class="row">
 
                               <div class="col-6"><img src="assets/images/icons/phone.png">&nbsp;Phone</div>
                               <!--<div class="col-6 align-items-center">{{loggedUserData.Phone}}</div>-->
                               <div class="col-6">
-                                <p class="info">9518634267</p>
+                                <p class="info">8800886771</p>
                               </div>
 
                         </div>
@@ -96,7 +95,7 @@
                           <div class="col-6"><img src="assets/images/icons/joining.png">&nbsp;Joining Date</div>
                           <!--<div class="col-6 align-items-center">{{loggedUserData.Joining}}</div>-->
                           <div class="col-6">
-                            <p class="info">07-Feb-2022</p>
+                            <p class="info">04-Oct-2021</p>
                           </div>
 
                         </div>
@@ -113,10 +112,10 @@
                     </div>
         
                     <!-- SKILLCARD!!!!! -->
-                    <div class="card skillcard" style="width: 25vw;"> <!--Skills-->
+                    <div class="card skillcard"> <!--Skills-->
 
                       <div class="card-header">            
-                        <div class="card-info"><img class="headlogo" src="../../../../../assets/images/icons/skill.png" alt="info-icon">
+                        <div class="card-info"><img class="headlogo" src="assets/images/icons/skill.png" alt="info-icon">
                             Skills</div>                      
                       </div> 
 
@@ -167,7 +166,7 @@
                     <div class="row">
 
                       <div class="col-6">
-                        <mat-tab label="Delivery Council"><app-dc-information [showmanager]="false" [isMentee]="false" [isReportee]="true"></app-dc-information></mat-tab>
+                        <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
                       </div>
 
                     <div class="col-6">
@@ -175,38 +174,8 @@
                     </div>
 
                   </div>                  
-                  </mat-tab-group>
-                  <div class="border-top">
-                  <span><br>
-
-                    <div class="row">
-                
-                      <div class="col-6">
-                
-                        <span class="attendence">Clients Visits Attendence </span><span><img class="percent" src="assets/images/icons/percentage.png"></span>
-                
-                      </div>
-                
-                      <div class="col-6">
-                
-                        <span class="attendence">Office Visits Attendence </span><img class="percent" src="assets/images/icons/100percent.png">
-                
-                      </div>
-                
-                    </div>
-                
-                    <div class="row">
-                
-                      <div class="col-8">
-                
-                        <span class="attendence">Internal Meetings Attendence </span><img class="percent" src="assets/images/icons/80percent.png">
-                
-                      </div>
-                
-                    </div>  
-                
-                  </span>  
-                </div>    
+                  </mat-tab-group>  
+                  <a href=".."><img  class="remark-icon" src="assets/images/icons/My Remarks Button.svg"></a>            
                 </div>
               
                 
@@ -235,7 +204,7 @@
                           <div class="row menu-cards-row">  
                               <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
                         
-                                    <div class="menu-card-box" >
+                                    <div class="menu-card-box" [matTooltip]="card.cardTitle">
                                       <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image"> 
                                     </div>
                                     <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
@@ -244,7 +213,7 @@
                           </div>
                         </div>
                         <br><br>
-                        <a href=".."><img  class="remark-icon" src="assets/images/My Remarks Button.svg"></a> 
+                      
                       </div>
                   
                  </div>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
 @Component({
   selector: 'app-mentees',
@@ -24,7 +23,7 @@ export class MenteesComponent implements OnInit{
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService ){}
+  constructor(){}
 
   ngOnInit(): void {
     this.loadData();
@@ -39,26 +38,8 @@ export class MenteesComponent implements OnInit{
     }
   }
 
-
-
-  // @HostListener('window:resize', ['$event'])
-  // onResize(event: any): void {
-  //   this.checkMobileScreen();
-  // }
-
   loadData(): void {
-    const email = 'mohit.choudhary1@geminisolutions.com';
-
-    this.userDataService.fetchDataByEmail(email).subscribe((filteredData) => {
-      this.loggedUserData = filteredData[0];
-      //console.log('here', this.loggedUserData);
-    });
-    // this.checkMobileScreen();
   }
-
-  // checkMobileScreen(): void {
-  //   this.isMobileScreen = window.innerWidth <8786;
-  // }
 
   toggleCollapse(section: string): void {
     this.isCollapsed[section] = !this.isCollapsed[section];

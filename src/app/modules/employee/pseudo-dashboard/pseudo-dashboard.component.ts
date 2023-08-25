@@ -1,7 +1,6 @@
 import { CdkDragStart, CdkDragMove, CdkDragEnd, CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, ElementRef, HostListener, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
@@ -38,14 +37,12 @@ export class PseudoDashboardComponent implements OnInit {
     console.log(`Mouse clicked at X: ${xCoordinate}, Y: ${yCoordinate}`);
   }
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog ){}
+  constructor(private dialog: MatDialog ){}
 
 
 
 
   ngOnInit(): void {
-    //this.getAndSaveBoxCoordinates();
-    this.loadData();
   }
 
   activateTab(tab: string) {
@@ -56,14 +53,7 @@ export class PseudoDashboardComponent implements OnInit {
     this.restoreBoxPositions();
   }
 
-  loadData(): void {
-    const email = 'siddhesh.pansare@geminisolutions.com';
 
-    this.userDataService.fetchDataByEmail(email).subscribe((filteredData) => {
-      this.loggedUserData = filteredData[0];
-      //console.log('here', this.loggedUserData);
-    });
-  }
 
   selectTab(tab: string) {
     this.selectedTab = tab;

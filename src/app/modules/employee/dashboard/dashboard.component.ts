@@ -2,8 +2,6 @@
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-
-import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 import { AwardComponent } from '../../shared-modules/dialogue/awards-dialogue/award/award.component';
 import { CertificationDialogueComponent } from '../../shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
 import { InterviewComponent } from '../../shared-modules/dialogue/interview-dialogue/interview.component';
@@ -26,6 +24,10 @@ export class DashboardComponent implements OnInit {
   selectedTab = 'EC';
   activeTab: string = 'dc';
   content: any;
+  ApiData: any;
+  DashboardData: any;
+  DcData: any;
+  Gem_Exp!:string;
 
 
 
@@ -38,21 +40,43 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions', dialogComponent: 'OtherContributionsComponent' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient) { }
+  constructor(private dialog: MatDialog, private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.callDataAPI();
     this.restoreBoxPositions();
-    this.loadData();
 
-    const apiUrl = environment.baseUrl+'homeEC';
+    // const apiUrl = environment.baseUrl+'homeEC';
+    // const accessToken = sessionStorage.getItem('idToken');
+
+    // const headers = new HttpHeaders().set('Authorization', `Bearer ${accessToken}`);
+
+    // this.http.get<any>(apiUrl, { headers }).subscribe(
+    //   response => {
+    //     this.content = response;
+    //     console.log(this.content)
+    //   },
+    //   error => {
+    //     console.error('Error fetching content:', error);
+    //   }
+    // );
+  }
+
+  callDataAPI() {
+    const apiUrl = environment.baseUrl + 'homeDC';
     const accessToken = sessionStorage.getItem('idToken');
 
     const headers = new HttpHeaders().set('Authorization', `Bearer ${accessToken}`);
 
     this.http.get<any>(apiUrl, { headers }).subscribe(
       response => {
-        this.content = response;
-        console.log(this.content)
+        this.ApiData = response;
+        this.DashboardData = this.ApiData.My_Details;
+        this.Gem_Exp = this.calculateExperience(this.DashboardData.DOJ);
+        this.DcData = this.ApiData;
+        console.log(this.ApiData);
+
+
       },
       error => {
         console.error('Error fetching content:', error);
@@ -61,14 +85,8 @@ export class DashboardComponent implements OnInit {
   }
 
 
-  loadData(): void {
-    const email = 'siddhesh.pansare@geminisolutions.com';
 
-    this.userDataService.fetchDataByEmail(email).subscribe((filteredData) => {
-      this.loggedUserData = filteredData[0];
-      //console.log('here', this.loggedUserData);
-    });
-  }
+
   activateTab(tab: string) {
     this.activeTab = tab;
   }
@@ -95,9 +113,6 @@ export class DashboardComponent implements OnInit {
   }
 
   private restoreBoxPositions(): void {
-    console.log('restoring positions'
-    );
-
     const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
 
     boxes.forEach((box: HTMLElement, index: number) => {
@@ -141,5 +156,41 @@ export class DashboardComponent implements OnInit {
       });
     }
   }
+
+  calculateExperience(dateOfJoining: string): string {
+    const today = new Date();
+    const joinDate = new Date(dateOfJoining);
+
+    let years = today.getFullYear() - joinDate.getFullYear();
+    let months = today.getMonth() - joinDate.getMonth();
+    let days = today.getDate() - joinDate.getDate();
+
+    if (months < 0 || (months === 0 && days < 0)) {
+        years--;
+        months += 12;
+    }
+
+    if (days < 0) {
+        const lastMonth = new Date(today.getFullYear(), today.getMonth() - 1, joinDate.getDate());
+        const diff = today.getTime() - lastMonth.getTime();
+        const daysInLastMonth = Math.floor(diff / (1000 * 60 * 60 * 24));
+        months--;
+        days += daysInLastMonth;
+    }
+
+    //return `${years} years, ${months} months, ${days} days`;
+    const yearText = years === 1 ? "year" : "years";
+    const monthText = months === 1 ? "month" : "months";
+
+    if (years === 0) {
+        return `${months} ${monthText} & ${days} days`;
+    } else if (months === 0) {
+        return `${years} ${yearText} & ${days} days`;
+    } else {
+        return `${years} ${yearText}, ${months} ${monthText} & ${days} days`;
+    }
+}
+
+
 
 }

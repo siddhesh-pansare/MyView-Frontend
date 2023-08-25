@@ -1,4 +1,4 @@
-<div class="container-fluid example-boundary p-1 m-0" *ngIf="loggedUserData">
+<div class="container-fluid example-boundary p-1 m-0">
   <div class="row dashboard-container p-0">
 
     <div class="col-12 col-md-12 col-lg-8">
@@ -12,24 +12,25 @@
               <div class="text-img">
                 <div class="image-container">
                   <div class="circular-wrapper">
-                    <img src="../../../../assets/images/OtherImages/user.jpg" alt="Image"
+                    <img [src]="DashboardData?.image_path" alt="User Image"
                       class="image-fluid circular-image">
                   </div>
                 </div>
-                <p class="custom-card-workStatus">Working Hybridly</p>
+                <p class="custom-card-workStatus" matTooltip="office status" *ngIf='DashboardData?.office_status !== "NA"'>{{DashboardData?.office_status}}</p>
+                <p class="custom-card-workStatus" matTooltip="office status" *ngIf='DashboardData?.office_status === "NA"'>Not Known</p>
               </div>
             </div>
             <!-- Right Column - Employee Details -->
             <div class="col-8 col-md-8 pl-0 m-0">
               <div class="card-body">
                 <!-- Name and Position -->
-              <span class="custom-card-title">Hi, Siddhesh Sandeep pansare</span>
-                <p class="custom-card-designation">Technology Solution Lead-L2</p>
+              <span class="custom-card-title">Hi, {{DashboardData?.name}}</span>
+                <p class="custom-card-designation">{{DashboardData?.designation}}</p>
                 <!-- Other Details -->
                 <!-- <div class="details"> -->
-                  <span class="custom-card-h2">Emp Code: </span><span class="custom-card-d2">GSI G 397</span><br>
-                  <span class="custom-card-h2">Exp: </span><span class="custom-card-d2">6 years</span><br>
-                  <span class="custom-card-h2">Location: </span><span class="custom-card-d2">IT Park, PanchKula</span><br>
+                  <span class="custom-card-h2">Emp Code: </span><span class="custom-card-d2">{{DashboardData?.gem_emp_id}}</span><br>
+                  <span class="custom-card-h2">Gemini Exp: </span><span class="custom-card-d2">{{Gem_Exp}}</span><br>
+                  <span class="custom-card-h2">Location: </span><span class="custom-card-d2">{{DashboardData?.base_location}}</span><br>
                 <!-- </div> -->
               </div>
             </div>
@@ -60,7 +61,7 @@
               <!-- <div class="line2"></div><br> -->
 
               <span *ngIf="activeTab === 'dc'">
-                <app-dc-information></app-dc-information>
+                <app-dc-information [DcData]="DcData"></app-dc-information>
               </span>
               <span *ngIf="activeTab === 'ec'">
                 <app-ec-information></app-ec-information>

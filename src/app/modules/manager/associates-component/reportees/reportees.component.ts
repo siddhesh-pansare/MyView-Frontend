@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
 
 
@@ -23,19 +22,12 @@ export class ReporteesComponent implements OnInit{
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService ){}
+  constructor(){}
 
   ngOnInit(): void {
     this.loadData();
   }
 
   loadData(): void {
-    const email = 'mansi.mukesh@geminisolutions.com';
-
-    this.userDataService.fetchDataByEmail(email).subscribe((filteredData) => {
-      this.loggedUserData = filteredData[0];
-      //console.log('here', this.loggedUserData);
-    });
-  }
-
+}
 }

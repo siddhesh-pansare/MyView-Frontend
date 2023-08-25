@@ -12,6 +12,10 @@ export class DcInformationComponent implements OnInit {
   collapseReportee: boolean = true;
   selectedCouncil: string = 'pimco-de';
   isDropdownOpen: boolean = false;
+  items: any[] = [
+    { Id: 1, Name: 'PIMCO - DE' },
+    { Id: 2, Name: 'PIMCO - TechOps' },
+  ];
   constructor(private userDataService: LoggedUserDataService) {
     const email = 'siddhesh.pansare@geminisolutions.com';
 
@@ -21,6 +25,31 @@ export class DcInformationComponent implements OnInit {
     });
   }
 
+  hoveredItem: number | null = null;
+
+  isItemHovered(itemId: number): boolean {
+    return this.hoveredItem === itemId;
+  }
+
+  setItemHovered(itemId: number, value: boolean): void {
+    if (value) {
+      this.hoveredItem = itemId;
+    } else if (this.hoveredItem === itemId) {
+      this.hoveredItem = null;
+    }
+  }
+
+  isItemSelected(itemId: number): boolean {
+    return parseInt(this.selectedCouncil, 10) === itemId;
+  }
+  SelectItem(event: any) {
+    const filterVal = event.target.value;
+    if (filterVal !== null) {
+      const id = parseInt(filterVal, 10);
+      // Your code here
+      console.log('Selected ID:', id);
+    }
+  }
   ngOnInit(): void {
     //this.loadData();
   }

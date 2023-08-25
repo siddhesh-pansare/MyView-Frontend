@@ -2,13 +2,23 @@
     <div class="card  m-2">
         <div class="council-head p-2  m-0 d-flex align-items-center ">
             <p class="council1">Delivery Council</p>
-            <div class="council-dropdown">
-                <select [(ngModel)]="selectedCouncil"
-                    (click)="toggleDropdownImage()">
-                    <option value="pimco-de">PIMCO-DE</option>
-                    <option value="pimco-techops">PIMCO-TechOps</option>
+            <div class="select" style="width: 180px;"
+                [ngClass]="{'open': isDropdownOpen}">
+                <select (click)="toggleDropdown()"
+                    style="width: 160px; color:#082737">
+                    <option
+                        *ngFor="let item of items"
+                        [value]="item.Id"
+                        style="font-size: 16px; font-weight: 700; padding: 8px 16px; border: 1px solid transparent; cursor: pointer;"
+                        [ngStyle]="{ color: isItemSelected(item.Id) ? '#38a3a5' : '#205072', backgroundColor: isItemHovered(item.Id) ? 'rgba(0, 0, 0, 0.1)' : 'transparent', borderLeft: isItemSelected(item.Id) ? '2px solid #38a3a5' : 'none' }"
+                        (mouseenter)="setItemHovered(item.Id, true)"
+                        (mouseleave)="setItemHovered(item.Id, false)">
+                        {{ item.Name }}
+                    </option>
                 </select>
+                <div class="arrow"></div>
             </div>
+
         </div>
     </div>
 </div>

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+
+
+h2{
+    font-family: Outfit;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.buttons{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}

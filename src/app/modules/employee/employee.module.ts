@@ -16,7 +16,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatListModule } from '@angular/material/list';
 
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import { NzTableModule } from 'ng-zorro-antd/table';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { NzTableModule } from 'ng-zorro-antd/table';
     MatListModule,
   
     MatSnackBarModule,
-    NzTableModule
+
     
 
   ],

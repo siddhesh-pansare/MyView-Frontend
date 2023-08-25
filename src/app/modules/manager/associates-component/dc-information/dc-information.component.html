@@ -8,7 +8,7 @@
 
   
   <div class="card m-2"> <!--DC information card-->
-    <div class="card-header">
+    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info"><img src="../../../../../assets/images/icons/information.svg" alt="info-icon">
       &nbsp;DC Information</div>
     </div>
@@ -23,7 +23,7 @@
        </div>
 
 
-       <div class="row ">
+       <div class="row " *ngIf="showmanager">
         <div class="col-6 ">
           <div class="text-wrap">Manager</div>
         </div>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="card m-2">
-    <div class="card-header">
+    <div class="card-header"  [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info">
         <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 
@@ -107,6 +107,19 @@
           <p class="client2">Experience</p>
         </div>
         <div class="col-6"><p class="client1">{{loggedUserData.Experience}} months</p></div>
+      </div>
+
+      <div class="row" *ngIf="showbill">
+        <div class="col-6">
+          <p class="client2">Billing Status</p>
+        </div>
+        <div class="col-6"><p class="client1">PAID</p></div>
+      </div>
+      <div class="row" *ngIf="showrag">
+        <div class="col-6">
+          <p class="client2">RAG Status</p>
+        </div>
+        <div class="col-6"><p class="client1">N/A</p></div>
       </div>
       
     </div>

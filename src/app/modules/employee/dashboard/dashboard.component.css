@@ -2,43 +2,63 @@
 
 /* Apply hover styles for the first card */
 .menu-card-container:nth-child(1):hover .menu-card-box {
-  box-shadow: 0 0 2px 2px #ffd700;
+border-radius: 5px;
+border: 1px solid #205072;
+background: #FFF;
+box-shadow: 0px 0px 2px 2px #FFD700;
  
 }
 
 /* Apply hover styles for the second card */
 .menu-card-container:nth-child(2):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px #0074FC;
+border-radius: 5px;
+border: 1px solid #205072;
+background: #FFF;
+box-shadow: 0px 0px 2px 2px #0074FC;
 }
 
 /* Apply hover styles for the third card */
 .menu-card-container:nth-child(3):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.50);
 }
 
 .menu-card-container:nth-child(4):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px #7BE495;
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #7BE495;
 }
 
 .menu-card-container:nth-child(5):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px #205072;
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #9747FF;
 }
 
 .menu-card-container:nth-child(6):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #E50255;
 }
 /* Add more styles for additional cards as needed */
 
 
 .menu-card-container{
-  transition: transform 0.5s , box-shadow 0.5s , text-shadow 0.5s ;
+  transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in-out; /* Animation timing function */
 }
 
 .menu-card-container:hover{
   transform: scale(1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-shadow:  1px 1px #205072;
-  animation-name: smartAnimate;
+  text-shadow: 0px 0px 5px #205072;
+  
 }
 
 .menu-card-title{
@@ -48,7 +68,7 @@
 
 .menu-card-title:hover{
   transform: scale(1.05);
-  text-shadow:  0px 0px 3px 3px #0074FC;
+  
 }
 
 body {

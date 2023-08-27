@@ -14,12 +14,12 @@
     <li class="nav-item">
       <a class="nav-link actived"
         [ngClass]="{ 'actived': activeTab === 'Active', 'aclosed': activeTab !== 'Active' }"
-        (click)="setActiveTab('Active')" [class.active]="activeTab == 'Active'">Active</a>
+        (click)="setActiveTab('Active')" (click)="setActiveTabAnm('Active')" [class.active]="activeTab == 'Active'">Active</a>
     </li>
     <li class="nav-item">
       <a class="nav-link closed"
         [ngClass]="{ 'closed': activeTab === 'Closed', 'cclosed': activeTab !== 'Closed' }"
-        (click)="setActiveTab('Closed')" [class.active]="activeTab == 'Closed'">Closed</a>
+        (click)="setActiveTab('Closed')" (click)="setActiveTabAnm('Closed')"[class.active]="activeTab == 'Closed'">Closed</a>
     </li>
   </ul>
   <div class="line2"></div><br>

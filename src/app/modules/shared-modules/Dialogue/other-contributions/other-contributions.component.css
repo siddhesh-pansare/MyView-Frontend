@@ -141,6 +141,9 @@ table.table tr th {
     margin-left: 0.5vw;
     width: 2vw;
   }
+  .close{
+    margin-top: -18%;
+  }
 }
 
 @media screen and (min-width: 425px) {
@@ -207,6 +210,9 @@ table.table tr th {
     height: 60%;
     width: 60%;
   }
+  .close{
+    margin-top: -10%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -268,10 +274,14 @@ table.table tr th {
     width: 50px;
     border-radius: 50%;
   }
+  .close{
+    margin-left: -200%;
+    margin-top: -5%;
+  }
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .modal-dialog {
     max-width: 70vw;
     height: 70vh;
@@ -361,5 +371,9 @@ table.table tr th {
   .logo2{
     margin-left: 1.5vw;
     width: 1.5vw;
+  }
+  .close{
+    margin-right: -4%;
+    margin-top: -5%;
   }
 }

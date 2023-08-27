@@ -96,17 +96,18 @@ body {
   font-weight: 600;
   width: 90%;
   text-align: center;
-  left: 4vw;
+  
 }
 
 .nav-link {
-  width: 200px;
+  width: 300px;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .actived {
   color: rgba(0, 172, 43, 1);
-  width: 200px;
+  width: 300px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -116,7 +117,7 @@ body {
 
 .closed {
   color: #e50202;
-  width: 200px;
+  width: 300px;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
@@ -137,7 +138,7 @@ body {
   box-sizing: border-box;
   width: 50vw;
   height: 0.06rem;
-  left: 17vw;
+  left: 18vw;
 }
 
 
@@ -368,7 +369,7 @@ table td {
     font-weight: 600;
     width: 100%;
     text-align: center;
-    left: 5vw;
+    left: 8vw;
   }
   .nav-link {
     width: 200px;
@@ -390,7 +391,7 @@ table td {
     box-sizing: border-box;
     width: 50vw;
     height: 0.06rem;
-    left: 18vw;
+    left: 15vw;
   }
 
   .btn {
@@ -426,7 +427,7 @@ table td {
     font-weight: 600;
     width: 100%;
     text-align: center;
-    left: 10vw;
+    left: 12vw;
   }
   .nav-link {
     width: 100px;
@@ -448,7 +449,7 @@ table td {
     box-sizing: border-box;
     width: 45vw;
     height: 0.06rem;
-    left: 18vw;
+    left: 12vw;
   }
 
   .btn {
@@ -472,7 +473,7 @@ table td {
 @media (max-width: 450px) {
   .tabs {
     position: relative;
-    top: 15vh;
+    top: 12vh;
     font-size: 1rem;
     font-family: Outfit;
     font-weight: 600;
@@ -500,7 +501,7 @@ table td {
     box-sizing: border-box;
     width: 45vw;
     height: 0.06rem;
-    left: 13vw;
+    left: 9vw;
   }
 
   th {

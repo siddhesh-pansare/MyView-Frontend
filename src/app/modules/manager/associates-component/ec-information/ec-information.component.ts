@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
 
 @Component({
@@ -9,6 +9,9 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 export class ECInformationComponent {
 
   loggedUserData: any;     //variable to store complete data from MIS
+
+  @Input() isMentee: boolean = true; // Set to true for mentees screen
+  @Input() isReportee: boolean = false; 
 
   constructor(private userDataService: LoggedUserDataService ){
     const email = 'mohit.choudhary1@geminisolutions.com';

@@ -8,6 +8,9 @@ import { LoggedUserDataService } from 'src/app/services/logged-user-data.service
 })
 export class MenteesComponent implements OnInit{
   loggedUserData: any;
+
+  isMentee: boolean = true;
+  isReportee: boolean = false;
   isMobile: boolean = false;   //variable to store complete data from MIS
   isCollapsed: { [key: string]: boolean } = {
     skills: false,

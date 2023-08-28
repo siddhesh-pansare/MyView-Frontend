@@ -14,7 +14,6 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
-import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -24,8 +23,7 @@ import { MatSelectModule } from '@angular/material/select';
     DcInformationComponent,
     PseudoDashboardComponent,
     DashboardComponent,
-    EmployeesComponent,
-
+    EmployeesComponent
   ],
   imports: [
     CommonModule,
@@ -37,8 +35,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatPaginatorModule,
     MatTableModule,
     FormsModule,
-    MatIconModule,
-    MatSelectModule
+    MatIconModule
   ],
   exports:[
     EmployeesComponent

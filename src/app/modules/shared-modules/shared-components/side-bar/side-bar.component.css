@@ -9,15 +9,8 @@ body {
   /* margin-top: 39%;
   margin-left: 92%;
    */
-   
 
 }
-/* .employees{
-  padding-left: -15px;
-  background-color: red;
-  
-} */
-
 
 .scratchbutton img {
   position: fixed;
@@ -50,8 +43,8 @@ body {
 
 #sidebar .sidebar-header {
 
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 2px solid white;
   margin-bottom: 30px;
 }
@@ -65,8 +58,8 @@ body {
 }
 
 #sidebar .sidebar-header img {
-  width: 55%;
-  height: 55%;
+  width: 40%;
+  height: 40%;
 
 }
 
@@ -75,16 +68,10 @@ body {
 
 #sidebar ul li a {
   color: white;
-  text-align: center;
+
   display: block;
-  text-decoration: none;
 }
-ul{
-  margin-top: 60px;
-}
-.event{
-  margin-top: -20px;
-}
+
 .container {
   position: absolute;
   display: inline-block;
@@ -93,14 +80,13 @@ ul{
 
 #sidebar ul.components li {
   position: relative;
-  padding: 20%;
-  text-align: justify;
+  padding: 8%;
 }
 
 #sidebar ul.components li a img {
-  width: 70%;
+  width: 40%;
   /* Adjust the width as per your requirement */
-  height: 70%;
+  height: 40%;
   /* Adjust the height as per your requirement */
   transition: transform 0.3s ease;
   /* Apply a transition for smooth animation */
@@ -111,9 +97,6 @@ ul{
 
 }
 
-.homescreen{
-  margin-left: -10px;
-}
 #sidebar ul.components li .image-name {
   position: relative;
 
@@ -122,26 +105,14 @@ ul{
   text-align: center;
   color: white;
   background-color: #082737;
-  padding-top: 3%;
+  padding: 3%;
   opacity: 0;
   pointer-events: none;
   /* This prevents the name from being clickable */
   transition: opacity 0.3s ease;
   font-size: 10px;
-  line-height: 15px;
-  text-align: inherit;
-  
 }
-a .employees{
-  
-  margin-left: -6px;
-}
-a .interviews{
-  margin-left: -4px;
-}
-a .openposition{
-  margin-left: -3px;
-}
+
 #sidebar ul.components li a:hover img {
   transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
   /* Increase the image size by 20% on hovering */

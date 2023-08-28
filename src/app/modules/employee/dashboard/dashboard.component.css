@@ -96,31 +96,8 @@ transition-property: transform; /* Apply transition to the transform property */
 
 body {
   font-family: Outfit;
-  
-}
-.scratchbutton {
-  position: relative;
-  /* margin-top: 39%;
-  margin-left: 92%;
-   */
-
 }
 
-.scratchbutton img {
-  position: fixed;
-  bottom: 80px;
-  right: 4%;
-  cursor: pointer;
-  
-
-}
-
-
-
-.scratchbutton img:hover {
-
-  transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
-}
 .news-card {
   margin: 20px;
 }
@@ -652,8 +629,4 @@ height: 71vh;
   .example-handle {
     visibility: hidden;
   }
-  .scratchpadbtn{
-    margin-top:800px;
-}
- 
 }

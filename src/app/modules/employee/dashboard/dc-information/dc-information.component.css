@@ -10,48 +10,60 @@ body {
   justify-content: space-between;
   background-color: #f5f5f5;
 }
-.name{
+
+.name {
   color: rgba(51, 54, 63, 0.75);
-font-family: Outfit;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-} 
-.exp{
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.exp {
   color: #56C596;
   font-family: Outfit;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.bltag{
+
+.bltag {
   color: #205072;
-font-family: Outfit;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-white-space: nowrap;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
 }
 
 .dcname {
   color: #205072;
-font-family: Outfit;
-font-size: 10px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-} 
-.dcid{
-  color: rgba(51, 54, 63, 0.60);
-font-family: Outfit;
-font-size: 8px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Outfit;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
+
+.dcid {
+  color: rgba(51, 54, 63, 0.60);
+  font-family: Outfit;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.dropdown {
+  float: right;
+  position: absolute;
+  padding-left: 280px;
+  z-index: 10;
+}
+
 .card-info {
 
   color: #082737;
@@ -66,10 +78,13 @@ line-height: normal;
 .small-card {
   border: none;
 }
+
 .img-slightly-down {
-  margin-top: 7px; /* Adjust this value as needed */
+  margin-top: 7px;
+  /* Adjust this value as needed */
   /* padding-right: 5%; */
 }
+
 .small-card .card-img {
   object-fit: cover;
   height: 35px;
@@ -114,9 +129,11 @@ line-height: normal;
   line-height: normal;
   margin-top: -3vh;
 }
-.mentor-card{
+
+.mentor-card {
   overflow: hidden;
 }
+
 .col-6 {
   color: #205072;
   font-family: Outfit;
@@ -134,11 +151,13 @@ line-height: normal;
   background: rgba(0, 240, 255, 0.10);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
-.repo{
+
+.repo {
   border-radius: 5px 5px 0px 0px;
   background: rgba(0, 240, 255, 0.10);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
+
 .council2 {
   color: #082737;
   text-align: center;
@@ -147,6 +166,9 @@ line-height: normal;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding-right: 60px;
+  padding-left: 50px;
+
 }
 
 .mentee-work-status {
@@ -160,7 +182,8 @@ line-height: normal;
   text-align: end;
   padding-right: 10%;
 }
-.mentee-work-statusO{
+
+.mentee-work-statusO {
   color: #00AC2B;
   font-family: Outfit;
   font-size: 7px;
@@ -171,7 +194,8 @@ line-height: normal;
   text-align: end;
   padding-right: 10%;
 }
-.mentee-work-statusL{
+
+.mentee-work-statusL {
   color: #F00;
   font-family: Outfit;
   font-size: 7px;
@@ -181,20 +205,24 @@ line-height: normal;
   letter-spacing: 0.5px;
   text-align: end;
   padding-right: 10%;
-  
+
 }
 
-.arrows{
+span .arrows {
   display: flex;
   height: 20px;
   width: 20px;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  padding-left: 50px;
 }
 
+.fa-solid {
+  padding: 50px;
+}
 
-.arrows:hover{
+.arrows:hover {
   background-color: #205075;
   color: rgba(0, 240, 255, 0.10);
 }

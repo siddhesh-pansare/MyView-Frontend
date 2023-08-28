@@ -1,4 +1,8 @@
-<div class="container-fluid example-boundary p-1 m-0" *ngIf="loggedUserData">
+
+<div class="container-fluid example-boundary " *ngIf="loggedUserData">
+
+
+
   <div class="row dashboard-container p-0">
 
     <div class="col-12 col-md-12 col-lg-8">
@@ -20,7 +24,7 @@
               </div>
             </div>
             <!-- Right Column - Employee Details -->
-            <div class="col-8 col-md-8 pl-0 m-0">                
+            <div class="col-8 col-md-8 pl-0 m-0">
               <div class="card-body">
                 <!-- Name and Position -->
               <span class="custom-card-title">Hi, Siddhesh Sandeep pansare</span>
@@ -91,7 +95,7 @@
         </div>
       </div><br>
 
-      
+
       <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag><div class="border">
         <div class="upcoming-events-header" cdkDragHandle>
           <img src="assets/images/icons/events.svg">
@@ -105,11 +109,13 @@
           </ul>
         </div>
       </div>
+      <div class="scratchbutton" >
+      <img src="assets/images/maybe.png" (click)="OpenScratch('1000ms', '500ms')">
+      </div>
     </div>
-    </div>
-
   </div>
   <!-- <img src="../../../../assets/images/icons/scratchpad.svg" alt="scratchpad" class="scratchpad-logo"> -->
+
   <span class="company-logo">
     <svg width="212" height="104" viewBox="0 0 212 104" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g opacity="0.3">

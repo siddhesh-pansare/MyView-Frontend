@@ -8,7 +8,13 @@
     <div class="rightSide">
         <p class="welcome">Welcome!</p>
         <div class="box">
-            <img class="app_logo" src="./../../../../../assets/images/app_logo.png" alt="itellisence" />
+            <!-- Background image for the box -->
+            <img src="./../../../../../assets/login images/box_bg.png"
+                class="box-background" />
+            <!-- Logo and button inside the box -->
+            <img class="app_logo"
+                src="./../../../../../assets/login images/appLogo.png"
+                alt="itellisence" />
             <button (click)="onLoginSSO()" *ngIf="!isLoggedIn" class="ssoButton">Login via SSO</button>
         </div>
     </div>

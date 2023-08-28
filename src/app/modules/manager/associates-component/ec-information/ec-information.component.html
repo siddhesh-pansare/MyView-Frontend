@@ -10,7 +10,7 @@
   
   
     <div class="card m-2"> <!--EC information card-->
-      <div class="card-header">
+      <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
         <span><img src="../../../../../assets/images/icons/information.svg" alt="info-icon"></span>
         EC Information
       </div>
@@ -18,7 +18,7 @@
         <div class="row">
           <div class="col-6 text-wrap">Name</div>
           <div class="col-6 ec-tech">{{loggedUserData.ECTech}}</div>
-        </div>
+        </div><br>
         <div class="row align-items-center justify-content-center mt-2">
           <div class="col-6 text-wrap">Experience</div>
           <div class="col-6">
@@ -30,9 +30,9 @@
                       <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile">
                     </div> -->
                     <div class="col-9 col-xl-9 align-items-start justify-content-center p-0">
-                      <div class="card-body p-0">
+                      <div class="card-body mt-0 p-0">
                         <!-- <h5 class="card-title m-0">{{loggedUserData.ECChairName}}</h5> -->
-                       <br> <p class="card-text">{{loggedUserData.Experience}} months</p>
+                       <span class="card-text ">{{loggedUserData.Experience}} months</span>
                       </div>
                     </div>
                   </div>

@@ -1,18 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 
-
-
 @Component({
-  selector: 'app-reportees',
+  selector: 'app-mentees',
   templateUrl: './reportees.component.html',
   styleUrls: ['./reportees.component.css']
 })
 export class ReporteesComponent implements OnInit{
-  loggedUserData: any;     //variable to store complete data from MIS
 
   isMentee: boolean = false;
   isReportee: boolean = true;
+  loggedUserData: any;
+  isMobile: boolean = false;   //variable to store complete data from MIS
+  isCollapsed: { [key: string]: boolean } = {
+    skills: false,
+    details: false,
+    activity: false
+  };
 
+  // isMobileScreen: boolean = false;
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },
     { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt:'certification' },
@@ -26,7 +31,23 @@ export class ReporteesComponent implements OnInit{
 
   ngOnInit(): void {
     this.loadData();
+    this.checkMobileScreen();
   }
+  checkMobileScreen(): void {
+    this.isMobile = window.innerWidth <= 768; // Define your mobile breakpoint
+    if (this.isMobile) {
+      this.isCollapsed['skills'] = this.isMobile; // Collapse skills card by default
+      this.isCollapsed['details'] = this.isMobile; // Collapse details card by default
+      this.isCollapsed['activity'] = this.isMobile; // Collapse activity card by default
+    }
+  }
+
+
+
+  // @HostListener('window:resize', ['$event'])
+  // onResize(event: any): void {
+  //   this.checkMobileScreen();
+  // }
 
   loadData(): void {
 }

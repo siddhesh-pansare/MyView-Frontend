@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
+.mentee-header{
+  border-radius: 5px 5px 0px 0px;
+background: rgba(255, 0, 0, 0.10);
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.reportee-header{
+  border-radius: 5px 5px 0px 0px;
+background: rgba(0, 240, 255, 0.10);
+box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
 .body{
   font-family: Outfit;
 }
@@ -20,33 +32,29 @@
 .text-wrap{
   color: rgba(51, 54, 63, 0.80);
   font-family: Outfit;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 14px !important;
+  font-weight: 600;
   line-height: normal;
 }
 
 .ec-tech{
   color: #205072;
 font-family: Outfit;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
-font-weight: bold;
+font-weight: 600;
 line-height: normal;
 }
 
 .card-text {
   color: #56C596;
 font-family: Outfit;
-font-size: 12px;
+font-size: 14px;
 font-style: normal;
-font-weight: 700;
+font-weight: 600;
 line-height: normal;
 }
-.card-header {
-  border-radius: 5px 5px 0px 0px;
-  background: rgba(255, 0, 0, 0.10);
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
-}
+
 .council-head {
     display: flex;
     flex-direction: row;

@@ -13,7 +13,7 @@
       &nbsp;DC Information</div>
     </div>
     <div class="card-body p-2 pl-4 pr-4">
-      <div class="row mb-0">
+      <div class="row">
         <div class="col-6">
           <div class="text-wrap">Name</div>
         </div>
@@ -23,20 +23,20 @@
        </div>
 
 
-       <div class="row" *ngIf="showmanager">
+       <div class="row " *ngIf="showmanager">
         <div class="col-6 ">
-          <div class="text-wrap">Reporting Manager</div>
+          <div class="text-wrap">Manager</div>
         </div>
         <div class="col-6 p-0 ">
           <div class="row">
             <div class="col p-0">
               <div class="card small-card">
                 <div class="row ">
-                  <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center p-0">
+                  <div class="col-3 col-lg-3 col-xl-3 d-flex align-items-center">
                     <img src="../../../../assets/images/OtherImages/user.jpg" class="card-img" alt="Profile Image">
                   </div>
                   <div class="col-9 col-lg-9 col-xl-9 align-items-start justify-content-center p-0 ">
-                    <div class="card-body p-2">
+                    <div class="card-body p-0">
                       <div class="card-title">{{loggedUserData.DCChairName}}</div>
                       <div class="card-text">{{loggedUserData.DCChairId}} </div>
                     </div>
@@ -49,7 +49,7 @@
       </div>
 
 
-      <div class="row align-items-center justify-content-center mt-0">
+      <div class="row align-items-center justify-content-center mt-1">
         <div class="col-6">
           <br><div class="text-wrap">Experience</div>
         </div>
@@ -58,10 +58,10 @@
             <div class="col p-0">
               <div class="card small-card">
                 <div class="row">
-                  <div class="col-sm-6 col-lg-9 col-xl-9 mt-0">
-                    <div class="card-body p-0" style="margin-top: 1.5vw;">
+                  <div class="col-sm-6 col-lg-9 col-xl-9 mt-0 ">
+                    <div class="card-body p-0">
                       <!-- <h5 class="card-title">{{loggedUserData.Experience}}</h5> -->
-                      <span class="card-text">{{loggedUserData.Experience}} months</span>
+                      <span class="card-text1">{{loggedUserData.Experience}} months</span>
                     </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@
   </div>
 
   <div class="card m-2">
-    <div class="card-header" [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
+    <div class="card-header"  [ngClass]="{'mentee-header': isMentee, 'reportee-header': isReportee}">
       <div class="card-info">
         <img src="../../../../../assets/images/icons/client.svg" alt="info-icon">
 
@@ -88,19 +88,19 @@
           <p class="client2">Name</p>
         </div>
         <div class="col-6">
-          <p class="client">Client</p></div>
+          <p class="client">Client's name here </p></div>
       </div>
       <div class="row">
         <div class="col-6">
           <p class="client2">Manager</p>
         </div>
-        <div class="col-6"><p class="client">Manager</p></div>
+        <div class="col-6"><p class="client">Manager's name here</p></div>
       </div>
       <div class="row">
         <div class="col-6">
           <p class="client2">Team</p>
         </div>
-        <div class="col-6"><p class="client">Team</p></div>
+        <div class="col-6"><p class="client">Team's name here</p></div>
       </div>
       <div class="row">
         <div class="col-6">
@@ -108,6 +108,7 @@
         </div>
         <div class="col-6"><p class="client1">{{loggedUserData.Experience}} months</p></div>
       </div>
+
       <div class="row" *ngIf="showbill">
         <div class="col-6">
           <p class="client2">Billing Status</p>

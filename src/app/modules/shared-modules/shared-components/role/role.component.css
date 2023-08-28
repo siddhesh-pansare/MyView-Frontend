@@ -2,6 +2,29 @@
   display: flex;
 }
 
+.scratchbutton {
+  position: relative;
+  /* margin-top: 39%;
+  margin-left: 92%;
+   */
+
+}
+
+.scratchbutton img {
+  position: fixed;
+  bottom: 13%;
+  right: 6.2%;
+  cursor: pointer;
+  background: transparent;
+  max-height: 40px;
+  max-width: 40px;
+
+}
+.scratchbutton img:hover {
+
+  transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
+}
+
 .header {
   height: 50px;
   flex: 0 0 auto;
@@ -10,8 +33,19 @@
   top: 0;
   left: 60px;
   right: 0;
+  z-index: 100;
 }
-
+.logo{
+  
+  position: fixed;
+  bottom: 2px;
+  right: 0%;
+  height: 12%;
+  background: transparent;
+}
+.logo img{
+  height: 100%;
+}
 .sidebar {
   flex: 0 0 auto;
   position: fixed;

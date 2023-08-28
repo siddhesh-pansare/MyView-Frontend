@@ -7,12 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenteesComponent implements OnInit{
   loggedUserData: any;
+
+  isMentee: boolean = true;
+  isReportee: boolean = false;
   isMobile: boolean = false;   //variable to store complete data from MIS
   isCollapsed: { [key: string]: boolean } = {
     skills: false,
     details: false,
     activity: false
   };
+  
   // isMobileScreen: boolean = false;
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },

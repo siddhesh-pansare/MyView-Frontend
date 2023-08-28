@@ -41,7 +41,12 @@ export class OpenPositionsComponent implements OnInit {
 
   tabState: 'Active' | 'Closed' = 'Active';
 
-  setActiveTab(tab: 'Active' | 'Closed') {
+  setActiveTab(tab: string) {
+    this.activeTab = tab;
+    this.fetchData(this.activeTab);
+  }
+
+  setActiveTabAnm(tab: 'Active' | 'Closed') {
     this.tabState = tab;
     this.fetchData(this.tabState);
   }

@@ -115,7 +115,8 @@ a,a:hover{
 }
 
 .dropdown.show{
-    right: 90px;
+    right: 115px;
+    z-index: 100;
 }
 
 .dropdown-menu{
@@ -123,6 +124,7 @@ a,a:hover{
     padding: 0px;
     margin-right: 100px;
     border-radius: 0px;
+    z-index: 100;
 }
 
 .dropdown-item{

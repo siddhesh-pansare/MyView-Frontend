@@ -2,51 +2,96 @@
 
 /* Apply hover styles for the first card */
 .menu-card-container:nth-child(1):hover .menu-card-box {
-  box-shadow: 0 0 1px 1px #ffd700;
-  transition: transform 0.3s ease, box-shadow 0.s ease;
+border-radius: 5px;
+border: 1px solid #205072;
+background: #FFF;
+box-shadow: 0px 0px 2px 2px #FFD700;
+transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in-out; /* Animation timing function */
+  animation-name: smartAnimate;
+ 
 }
 
 /* Apply hover styles for the second card */
 .menu-card-container:nth-child(2):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #0074FC;
+border-radius: 5px;
+border: 1px solid #205072;
+background: #FFF;
+box-shadow: 0px 0px 2px 2px #0074FC;
+transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in-out; /* Animation timing function */
+  animation-name: smartAnimate;
 }
 
 /* Apply hover styles for the third card */
 .menu-card-container:nth-child(3):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px rgba(250, 10, 10, 0.50);
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.50);
+  transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in-out; /* Animation timing function */
+  animation-name: smartAnimate;
 }
 
 .menu-card-container:nth-child(4):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #7BE495;
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #7BE495;
+transition-property: linear; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in-out; /* Animation timing function */
+  animation-name: Dissolve;
 }
 
 .menu-card-container:nth-child(5):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px #205072;
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #9747FF;
+transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in; /* Animation timing function */
+  animation-name: smartAnimate;
 }
 
 .menu-card-container:nth-child(6):hover .menu-card-box {
-  box-shadow: 0px 0px 1px 1px rgba(250, 10, 10, 0.50);
+border-radius: 5px;
+border: 1px solid #38A3A5;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px #E50255;
+transition-property: transform; /* Apply transition to the transform property */
+  transition-duration: 300ms; /* Animation duration */
+  transition-timing-function: ease-in; /* Animation timing function */
+  animation-name: smartAnimate;
 }
 /* Add more styles for additional cards as needed */
 
 
 .menu-card-container{
-  transition: transform 0.3s ease, box-shadow 0.s ease, text-shadow 0.3s ease;
+  transition-property: transform; /* Apply transition to the transform property */
+  
 }
 
 .menu-card-container:hover{
-  transform: scale(1.05);
+  transform: scale(1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  text-shadow: 1px 1px #0074FC;
+  text-shadow: 0px 0px 5px #205072;
+  
 }
 
 .menu-card-title{
   transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .menu-card-title:hover{
-  transform: scale(1.05);
-  text-shadow:  0px 0px 3px 3px #0074FC;
+  transform: scale(1);
+  
 }
 
 body {
@@ -219,9 +264,9 @@ line-height: normal;
 .menu-card-title {
   color: #082737;
   font-family: Outfit;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
 }
 
@@ -291,7 +336,7 @@ line-height: normal;
 .cards {
   border-right: 1px solid #D9D9D9;
   border-left: 1px solid #D9D9D9;
-
+height: 71vh;
 }
 
 

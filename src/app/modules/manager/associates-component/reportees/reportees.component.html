@@ -1,23 +1,23 @@
 <div class="popup">
-  
+
   <div class="container-fluid" *ngIf="loggedUserData">
     <div class="cross"><img src="assets/images/btn_close.svg"></div>
     <div class="row dashboard-container">
-  
+
       <div class="col-12 col-md-12 col-lg-12">
-        
-       
+
+
         <div class="top center">
           <div class="container-fluid personal-info-container">
           <div class="row personal-info-row">
-             
-          <div class="row"></div>  
+
+          <div class="row"></div>
               <!-- Left Column - Image -->
           <div class="divison col-12 col-sm-5 col-md-5 col-lg-5 col-xl-4">
               <div class="border-right">
                 <div class="col leftright">
               <div class="row ">
-                
+
               <div class="image-outer-container col-3 col-sm-2 col-md-2 col-lg-3 col-xl-3 pr-sm-0 m-0 ">
                 <div class="text-img">
                   <div>
@@ -25,17 +25,17 @@
                       <img
                         class=" profile mt-2">
                     <!-- </div> -->
-                    
+
                   </div>
-                  
-                  
+
+
                   <p class="custom-card-workStatus mt-2">Working From Home</p>
                 </div>
               </div>
-              
-  
+
+
               <div class="col-1 col-sm-2 col-lg-1  pl-0 m-0"></div>
-  
+
               <!-- Right Column - Employee Details -->
               <div class="col-6 col-sm-8 col-lg-8 col-md-8 col-xl-8 pl-0 m-0 ">
                 <div class="card-body">
@@ -49,11 +49,11 @@
                     <p class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">IT Park, Panchkula</span></p>
                   </div>
                 </div>
-  
-                
+
+
               </div></div>
             </div>
-             
+
             <div class="col detaildc" style="height: 29vh; margin-top: -1.5vw;">
               <div class="card "> <!--DC information card-->
                 <div class="card-header" (click)="toggleCollapse('details')">
@@ -98,19 +98,19 @@
                     <div class="col-6">
                       <p class="info">N/A</p>
                     </div>
-                  </div>              
+                  </div>
                 </div>
               </div></div>
-              
+
               <div class="col skill" >
               <div class="card" style="height: 26vh;"> <!--Skills-->
-                <div class="card-header" (click)="toggleCollapse('skills')">      
+                <div class="card-header" (click)="toggleCollapse('skills')">
                    <div class="card-info"><img class="headlogo" src="../../../../../assets/images/skills logo.png" alt="info-icon">
-                      Skills</div>     
+                      Skills</div>
                       <div class="arrows">
                         <i class="fa-solid" [ngClass]="{'fa-caret-down': !isCollapsed['skills'], 'fa-caret-up': isCollapsed['skills']}"></i>
-                      </div>                    
-                </div> 
+                      </div>
+                </div>
                 <div class="card-body" [hidden]="isCollapsed['skills']" >
                   <div class="row">
                     <div class="col-4">
@@ -125,10 +125,10 @@
                       <div><img class="imgskill" src="assets/images/python.png" style="height: 30px; width: 70px;"> </div>
                       <div class="imgstar"><img src="assets/images/ratings.png"> </div>
                     </div>
-                    
+
                   </div><br>
                   <div class="row">
-                    
+
                     <div class="col-4">
                       <div ><img class="imgskill" src="assets/images/download 1.png" style="height: 30px; width: 70px;"> </div>
                       <div class="imgstar"><img src="assets/images/ratings.png"> </div>
@@ -141,18 +141,18 @@
                       <div ><img class="imgskill" src="assets/images/dbt.png" style="height: 30px; width: 70px;"> </div>
                       <div class="imgstar"><img src="assets/images/ratings.png"> </div>
                     </div>
-                    
+
                   </div>
-                                
-              </div>               
-                
+
+              </div>
+
             </div></div>
-  
+
               </div>
             </div>
 
 
-            
+
               <div class="col-xs-12 col-sm-6 col-lg-6 col-xl-5 col-md-6 mattab">
                 <mat-tab-group>
                   <div class="row">
@@ -162,89 +162,88 @@
                 <div class="col-6">
                   <mat-tab label="Engineering Council"><app-ec-information [isMentee]="false" [isReportee]="true"></app-ec-information></mat-tab>
                 </div>
-                </div>                  
-                </mat-tab-group>  
-               
-                <div class="row border-top">
-                
-                  <div class="col-6">
-            
-                    <span class="attendence">Clients Visits Attendence </span><span><img class="percent" src="assets/images/icons/percentage.png"></span>
-            
-                  </div>
-            
-                  <div class="col-6">
-            
-                    <span class="attendence">Office Visits Attendence </span><img class="percent" src="assets/images/icons/100percent.png">
-            
-                  </div>
-            
                 </div>
-            
-                <div class="row">
-            
-                  <div class="col-8">
-            
-                    <span class="attendence">Internal Meetings Attendence </span><img class="percent" src="assets/images/icons/80percent.png">
-            
+                </mat-tab-group>
+
+                <div class="row border-top">
+
+                  <div class="col-6">
+
+                    <span class="attendence">Clients Visits Attendence </span><span><img class="percent" src="assets/images/icons/percentage.png"></span>
+
                   </div>
-            
-                </div>  
+
+                  <div class="col-6">
+
+                    <span class="attendence">Office Visits Attendence </span><img class="percent" src="assets/images/icons/100percent.png">
+
+                  </div>
+
+                </div>
+
+                <div class="row">
+
+                  <div class="col-8">
+
+                    <span class="attendence">Internal Meetings Attendence </span><img class="percent" src="assets/images/icons/80percent.png">
+
+                  </div>
+
+                </div>
               </div>
-            
-               
-              <div class="col-xs-12 col-sm-5 col-lg-5 col-xl-3 col-md-5 ">  
-                <div class="border-left">                         
+
+
+              <div class="col-xs-12 col-sm-5 col-lg-5 col-xl-3 col-md-5 ">
+                <div class="border-left">
                 <div class="row-1 ">
-                  <div class="card m-2 mb-0 ">            
-                    <div class="card-header" (click)="toggleCollapse('activity')">            
-                      <div class="card-info acti"><img class="headlogo" src="../../../../../assets/images/activities.png" alt="info-icon">            
-                        Recent Activities</div>  
+                  <div class="card m-2 mb-0 ">
+                    <div class="card-header" (click)="toggleCollapse('activity')">
+                      <div class="card-info acti"><img class="headlogo" src="../../../../../assets/images/activities.png" alt="info-icon">
+                        Recent Activities</div>
                         <div class="arrows">
                           <i class="fa-solid" [ngClass]="{'fa-caret-down': !isCollapsed['activity'], 'fa-caret-up': isCollapsed['activity']}"></i>
-                        </div>          
-                    </div>            
-                    <div class="card-body p-2 pl-4 pr-4" [hidden]="isCollapsed['activity']">            
-                      <ul>            
-                        <br>            
-                        <li>Completed 5 KM run in Gem Sports Activity</li><br>            
-                        <li>Completed BOW for June'23</li><br>            
-                        <li>Started Cyber-Security Training</li>            
-                      </ul>              
-                    </div>            
-                  </div></div> 
-                  
+                        </div>
+                    </div>
+                    <div class="card-body p-2 pl-4 pr-4" [hidden]="isCollapsed['activity']">
+                      <ul>
+                        <br>
+                        <li>Completed 5 KM run in Gem Sports Activity</li><br>
+                        <li>Completed BOW for June'23</li><br>
+                        <li>Started Cyber-Security Training</li>
+                      </ul>
+                    </div>
+                  </div></div>
+
                   <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon">
-                    
-                    <div class="row menu-cards-row">  
+
+                    <div class="row menu-cards-row">
                 <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
-                  
+
                   <div class="menu-card-box">
                     <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
-                    
+
                   </div>
                   <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
-                  
+
                 </div></div><br><br>
-                
+
               </div>
-                
+
               </div>
-              <a href=".."><img  class="remark-icon" src="assets/images/My Remarks Button.svg"></a>   
-            </div> 
+              <a href=".."><img  class="remark-icon" src="assets/images/My Remarks Button.svg"></a>
+            </div>
             </div>
           </div>
         </div>
-  
+
       </div>
-    
-      
+
+
   </div>
-  
+
     </div>
-  
+
   </div>
-  
-    
-  
-  
+
+
+

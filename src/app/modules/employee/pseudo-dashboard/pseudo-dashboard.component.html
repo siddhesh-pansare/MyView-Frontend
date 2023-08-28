@@ -2,7 +2,7 @@
   <div class="row dashboard-container p-0">
     <div class="col-12 col-lg-8">
       <div class="row">
-        <div class="personal-info-container" style="border: 1px solid black;">
+        <div class="personal-info-container">
           <div class="image-outer-container">
             <div class="text-img">
               <div class="image-container">
@@ -15,20 +15,20 @@
             </div>
           </div>
 
-            <div class="card-body">
-              <!-- Name and Position -->
-              <span class="custom-card-title"><span class="hi">Hi,</span>Siddhesh Sandeep pansare</span>
-              <span class="custom-card-designation">Technology Solution Lead-L2</span>
-              <!-- Other Details -->
-              <div class="details">
-                <span class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G
-                    397</span></span>
-                <span class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">6 years</span>
-                </span>
-                <span class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">IT Park,
-                    PanchKula</span></span>
-              </div>
+          <div class="card-body">
+            <!-- Name and Position -->
+            <span class="custom-card-title"><span class="hi">Hi,</span>Siddhesh Sandeep pansare</span>
+            <span class="custom-card-designation">Technology Solution Lead-L2</span>
+            <!-- Other Details -->
+            <div class="details">
+              <span class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G
+                  397</span></span>
+              <span class="detail"><span class="custom-card-h2">Exp:</span><span class="custom-card-d2">6 years</span>
+              </span>
+              <span class="detail"><span class="custom-card-h2">Location:</span><span class="custom-card-d2">IT Park,
+                  PanchKula</span></span>
             </div>
+          </div>
 
         </div>
       </div>
@@ -43,10 +43,12 @@
             <div class="tabs">
               <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTab === 'dc'">Delivery Council</a>
+                  <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTab === 'dc'">Delivery
+                    Council</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" (click)="activateTab('ec')" [class.active]="activeTab === 'ec'">Engineering Council</a>
+                  <a class="nav-link" (click)="activateTab('ec')" [class.active]="activeTab === 'ec'">Engineering
+                    Council</a>
                 </li>
               </ul>
               <!-- <div class="line2"></div><br> -->
@@ -63,7 +65,8 @@
 
 
 
-        <div class="col-sm-2 col-md-4 col-xl-6  example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)" cdkDragBoundary=".example-boundary">
+        <div class="col-sm-2 col-md-4 col-xl-6  example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)"
+          cdkDragBoundary=".example-boundary">
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
@@ -82,8 +85,11 @@
       </div>
     </div>
 
-    <div class="card col-md-4 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
-      element 4
+    <div class="card col-md-4 example-box" >
+      <div class="card example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
+        element 4
+      </div>
+
     </div>
   </div>
 </div>

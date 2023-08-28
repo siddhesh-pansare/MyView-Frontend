@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './reportees.component.html',
   styleUrls: ['./reportees.component.css']
 })
-export class ReporteesComponent implements OnInit{
+export class ReporteesComponent implements OnInit {
 
   isMentee: boolean = false;
   isReportee: boolean = true;
@@ -19,15 +19,15 @@ export class ReporteesComponent implements OnInit{
 
   // isMobileScreen: boolean = false;
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string }[] = [
-    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award' },
-    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt:'certification' },
-    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt:'interviews' },
-    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt:'sessions' },
-    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt:'client_feedback' },
-    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions' },
+    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award' },
+    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt: 'certification' },
+    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt: 'interviews' },
+    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt: 'sessions' },
+    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt: 'client_feedback' },
+    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions' },
   ];
 
-  constructor(){}
+  constructor() { }
 
   ngOnInit(): void {
     this.loadData();
@@ -50,5 +50,9 @@ export class ReporteesComponent implements OnInit{
   // }
 
   loadData(): void {
-}
+  }
+
+  toggleCollapse(str:string){
+
+  }
 }

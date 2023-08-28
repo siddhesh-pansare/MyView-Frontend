@@ -1,6 +1,6 @@
-<a class="scratchbutton" (click)="OpenScratch('1000ms', '500ms')">
+<!-- <a class="scratchbutton" (click)="OpenScratch('1000ms', '500ms')">
   <img src="assets/images/maybe.png">
-</a>
+</a> -->
 
 <nav id="sidebar">
 
@@ -11,14 +11,16 @@
     <ul class="list-unstyled components">
       <li>
         <a routerLink="employee/dashboard">
-          <img src="assets/images/home.png" alt="HomeScreen" title="HomeScreen Tooltip">
-          <div class="image-name">HomeScreen</div>
+          <img src="assets/images/home.png" alt="HomeScreen">
+          <div class="image-name homescreen">HomeScreen</div>
         </a>
       </li>
       <li>
         <a routerLink="employee/employees">
           <img src="assets/images/employee.png" alt="All Employees">
-          <div class="image-name">Employees</div>
+          <div class="image-name ">
+            <div class= "employees">Employees</div>
+          </div>
         </a>
       </li>
       <li>
@@ -30,17 +32,23 @@
       <li>
         <a routerLink="employee/interviews">
           <img src="assets/images/interview.png" alt="Interviews">
-          <div class="image-name">Interviews</div>
+          <div class="image-name">
+            <div class = "interviews">Interviews</div>
+          </div>
         </a>
       </li>
       <li>
         <a routerLink="manager/open-positions">
           <img src="assets/images/hiring.png" alt="Open Positions">
-          <div class="image-name">OpenPositions</div>
+          <div class="image-name">
+            <div class="openposition">
+              Open Positions
+            </div>
+          </div>
         </a>
       </li>
       <li>
-        <a>
+        <a class="event">
           <img src="assets/images/events.png" alt="Events">
           <div class="image-name">Events</div>
         </a>
@@ -54,5 +62,3 @@
       </li>
     </ul>
   </div>
-
-</nav>

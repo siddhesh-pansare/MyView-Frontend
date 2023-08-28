@@ -1,3 +1,4 @@
+
 body {
   margin: 0px;
   padding: 0px;
@@ -9,8 +10,15 @@ body {
   /* margin-top: 39%;
   margin-left: 92%;
    */
+   
 
 }
+/* .employees{
+  padding-left: -15px;
+  background-color: red;
+  
+} */
+
 
 .scratchbutton img {
   position: fixed;
@@ -35,6 +43,7 @@ body {
   background: #082737;
   text-align: center;
   overflow: visible;
+
 }
 
 .hero-con {
@@ -43,8 +52,8 @@ body {
 
 #sidebar .sidebar-header {
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border-bottom: 2px solid white;
   margin-bottom: 30px;
 }
@@ -58,8 +67,8 @@ body {
 }
 
 #sidebar .sidebar-header img {
-  width: 40%;
-  height: 40%;
+  width: 55%;
+  height: 55%;
 
 }
 
@@ -68,10 +77,16 @@ body {
 
 #sidebar ul li a {
   color: white;
-
+  text-align: center;
   display: block;
+  text-decoration: none;
 }
-
+ul{
+  margin-top: 40px;
+}
+.event{
+  margin-top: -20px;
+}
 .container {
   position: absolute;
   display: inline-block;
@@ -80,13 +95,14 @@ body {
 
 #sidebar ul.components li {
   position: relative;
-  padding: 8%;
+  padding: 20%;
+  text-align: justify;
 }
 
 #sidebar ul.components li a img {
-  width: 40%;
+  width: 70%;
   /* Adjust the width as per your requirement */
-  height: 40%;
+  height: 70%;
   /* Adjust the height as per your requirement */
   transition: transform 0.3s ease;
   /* Apply a transition for smooth animation */
@@ -97,6 +113,9 @@ body {
 
 }
 
+.homescreen{
+  margin-left: -10px;
+}
 #sidebar ul.components li .image-name {
   position: relative;
 
@@ -105,14 +124,26 @@ body {
   text-align: center;
   color: white;
   background-color: #082737;
-  padding: 3%;
+  padding-top: 3%;
   opacity: 0;
   pointer-events: none;
   /* This prevents the name from being clickable */
   transition: opacity 0.3s ease;
   font-size: 10px;
+  line-height: 15px;
+  text-align: inherit;
+  
 }
-
+a .employees{
+  
+  margin-left: -6px;
+}
+a .interviews{
+  margin-left: -4px;
+}
+a .openposition{
+  margin-left: -3px;
+}
 #sidebar ul.components li a:hover img {
   transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
   /* Increase the image size by 20% on hovering */

@@ -68,14 +68,13 @@ body {
   width: 120px;
   height: 30px;
   border-radius: 10px;
-  padding: 3px, 5px, 6px, 3px;
   gap: 10px;
   background-color: #0074fcb8;
   margin-top: 25px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .btn:hover {
@@ -162,6 +161,10 @@ tr{
   height: 25px;
 }
 
+.table-bordered th{
+  border: 1px solid #205072;
+}
+
 
 th {
   color: #205072;
@@ -186,6 +189,7 @@ td:hover {
   color: #205072;
   background-color: rgba(255, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid #205072;
 }
 
 #council {

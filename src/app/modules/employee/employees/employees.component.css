@@ -72,7 +72,7 @@ body{
 }
 
 .row.align-items-center {
-  margin-top: 20px; 
+  margin-top: 30px; 
   margin-left: 70px;
 }
 
@@ -346,7 +346,7 @@ table{
     }
   
     td{
-      font-size: 0.40rem;
+      font-size: 12px;
     }
     .arrow-back-icon {
 

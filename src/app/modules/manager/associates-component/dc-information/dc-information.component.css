@@ -47,7 +47,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-height: 2vh;
+height: 4vh;
 
 }
 
@@ -106,6 +106,7 @@ letter-spacing: 0.8px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+ 
 }
 
 .card-text {
@@ -115,6 +116,7 @@ font-size: 12px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+
 }
 .card-text1 {
   color: #56C596;

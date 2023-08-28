@@ -59,15 +59,14 @@
           </div>
         </div>
 
-        <div class="cards col-sm-2 col-md-4 col-lg-3 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary"
-          cdkDrag>
+        <div class="cards col-sm-2 col-md-4 col-lg-3 col-xl-6 mt-2 example-box" cdkDragBoundary=".example-boundary" cdkDrag>
           <div class="example-handle" cdkDragHandle>
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
           <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">
-            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards"
-              cdkDrag>
-              <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
+            <div class="col-2 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards" cdkDrag>
+            
+              <div class="menu-card-box" (click)="openDialog(card.dialogComponent)">
                 <div cdkDragHandle>
                   <span class="empty-handler">.</span>
                 </div>
@@ -77,6 +76,7 @@
             </div>
           </div>
         </div>
+        
       </div>
     </div>
 

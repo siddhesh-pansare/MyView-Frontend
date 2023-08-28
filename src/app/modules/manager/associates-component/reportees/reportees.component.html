@@ -54,7 +54,7 @@
               </div></div>
             </div>
              
-            <div class="col detaildc" style="height: 29vh; margin-top: -1.5vw;">
+            <div class="col detaildc">
               <div class="card "> <!--DC information card-->
                 <div class="card-header" (click)="toggleCollapse('details')">
                   <div class="card-info"><img class="headlogo" src="../../../../../assets/images/icons/information.svg" alt="info-icon">
@@ -103,7 +103,7 @@
               </div></div>
               
               <div class="col skill" >
-              <div class="card" style="height: 26vh;"> <!--Skills-->
+              <div class="card"> <!--Skills-->
                 <div class="card-header" (click)="toggleCollapse('skills')">      
                    <div class="card-info"><img class="headlogo" src="../../../../../assets/images/skills logo.png" alt="info-icon">
                       Skills</div>     
@@ -214,19 +214,23 @@
                     </div>            
                   </div></div> 
                   
-                  <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon">
-                    
-                    <div class="row menu-cards-row">  
-                <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
-                  
-                  <div class="menu-card-box">
+                  <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon example-box" cdkDragBoundary=".example-boundary"
+                  cdkDrag>
+                 
+                    <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">  
+                <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards; let i = index">
+                  <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
+
+                    <div cdkDragHandle>
+                      <span class="empty-handler">.</span>
+                    </div>
+
                     <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
-                    
                   </div>
-                  <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
-                  
+                  <span class="menu-card-title pt-1">{{card.cardTitle}}</span>  
+
                 </div></div><br><br>
-                
+
               </div>
                 
               </div>

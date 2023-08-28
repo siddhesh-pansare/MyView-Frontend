@@ -266,10 +266,8 @@ flex-shrink: 0;
  }
  
  .profile{
-  border: 1px solid #38a3a5;
+    border: 1px solid #38a3a5;
     background-image: url(https://picsum.photos/200);
-    height: 120px;
-    width: 120px;
     border-radius: 100%;
  }
  .img-fluid {
@@ -451,6 +449,11 @@ flex-shrink: 0;
  
  @media (max-width: 576px){
 
+  .profile{
+    height: 90px !important;
+    width: 90px !important; 
+ }
+
   .leftright{    
     order: 1;
   }
@@ -626,6 +629,11 @@ flex-shrink: 0;
  }
  @media (min-width: 576px) and (max-width:767px){
 
+
+  .profile{
+    height: 70px !important;
+    width: 70px !important;
+  }
   .popup{
  
     width: 92vw;
@@ -747,6 +755,11 @@ flex-shrink: 0;
 
 
 @media (min-width: 768px) and (max-width:991px){
+
+  .profile{
+    height: 90px !important;
+    width: 90px !important;
+ }
   .popup{
  
     width: 90vw;
@@ -853,6 +866,11 @@ flex-shrink: 0;
  } 
 
  @media (min-width: 992px) and (max-width:1199px){
+
+  .profile{
+    width: 100px !important;
+    height: 100px !important;
+  }
   .popup{
  
     width: 90vw;
@@ -1039,6 +1057,11 @@ flex-shrink: 0;
 } */
 
 @media (min-width: 1200px) and (max-width: 2000px){
+
+  .profile{
+    height: 100px !important;
+    width: 100px !important;
+  }
   .popup{
  
     width: 90vw;

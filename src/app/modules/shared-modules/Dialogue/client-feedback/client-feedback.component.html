@@ -35,7 +35,7 @@
                         </thead>
                         <tbody class="text-center">
                             <tr *ngFor="let cv of feedbackdata;let i=index">
-                                <td>{{ cv.Date }}</td>
+                                <td class="date_column">{{ cv.Date }}</td>
                                 <td>{{ cv.Feedback }}</td>
                                 <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
                             </tr>

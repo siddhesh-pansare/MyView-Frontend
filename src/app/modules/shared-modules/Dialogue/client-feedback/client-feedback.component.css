@@ -12,6 +12,20 @@
   
   opacity: 0.3; 
 }
+.close{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.close:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.date_column {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 100%;
+}
 
 .btn{
   border: 1px solid #205072;
@@ -53,7 +67,7 @@
   box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
 }
 
-table {
+table,td,tr {
   border-color: #205072;
   border: 1;
   border-radius: 2px;
@@ -98,11 +112,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .btn {
@@ -171,11 +185,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .btn {
@@ -237,7 +251,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
@@ -318,7 +332,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;

@@ -15,14 +15,14 @@ import { RoundDetailsComponent } from './modules/shared-modules/Dialogue/round-d
 import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/attendance-dialog/attendance-dialog.component';
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
 import { BrowserUtils } from "@azure/msal-browser";
+import { AwardComponent } from './modules/shared-modules/dialogue/awards-dialogue/award/award.component';
 
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
-  {path:'reportees',component:ReporteesComponent},
-  {path:'mentees',component:MenteesComponent},
+  {path:'awards',component:AwardComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

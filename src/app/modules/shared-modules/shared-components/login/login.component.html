@@ -15,7 +15,7 @@
             <img class="app_logo"
                 src="./../../../../../assets/login images/appLogo.png"
                 alt="itellisence" />
-            <button class="ssoButton">Login via SSO</button>
+            <button (click)="onLoginSSO()" *ngIf="!isLoggedIn" class="ssoButton">Login via SSO</button>
         </div>
     </div>
 </section>

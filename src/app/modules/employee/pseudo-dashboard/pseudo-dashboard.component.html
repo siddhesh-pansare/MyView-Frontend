@@ -1,4 +1,4 @@
-<div class="container-fluid example-boundary m-0">
+<!-- <div class="container-fluid example-boundary m-0">
   <div class="row dashboard-container p-0">
     <div class="col-12 col-lg-8">
       <div class="row">
@@ -16,10 +16,8 @@
           </div>
 
           <div class="card-body">
-            <!-- Name and Position -->
             <span class="custom-card-title"><span class="hi">Hi,</span>Siddhesh Sandeep pansare</span>
             <span class="custom-card-designation">Technology Solution Lead-L2</span>
-            <!-- Other Details -->
             <div class="details">
               <span class="detail"><span class="custom-card-h2">Emp Code:</span><span class="custom-card-d2">GSI G
                   397</span></span>
@@ -51,7 +49,6 @@
                     Council</a>
                 </li>
               </ul>
-              <!-- <div class="line2"></div><br> -->
 
               <span *ngIf="activeTab === 'dc'">
                 <app-dc-information></app-dc-information>
@@ -85,11 +82,47 @@
       </div>
     </div>
 
-    <div class="card col-md-4 example-box" >
+    <div class="col-md-4" >
       <div class="card example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
         element 4
       </div>
 
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="container-fluid row">
+  <div class="col-md-8">
+    <div class="row card example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
+      <div class="card-title">
+        hey 1
+      </div>
+    </div>
+    <div class="row">
+      <div class="card col-md-6 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
+        <div class="card-title">
+          hey 2
+        </div>
+      </div>
+      <div class="card col-md-6 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
+        <div class="card-title">
+          hey 3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card col-md-12 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)">
+      <div class="card-title">
+        hey 4
+      </div>
+    </div>
+    <div class="card col-md-12 example-box" cdkDrag (cdkDragEnded)="onDragEnded($event)" >
+      <div class="card-title">
+        hey 5
+      </div>
     </div>
   </div>
 </div>

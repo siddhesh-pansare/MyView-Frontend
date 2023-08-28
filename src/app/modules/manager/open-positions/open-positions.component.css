@@ -68,14 +68,13 @@ body {
   width: 120px;
   height: 30px;
   border-radius: 10px;
-  padding: 3px, 5px, 6px, 3px;
   gap: 10px;
   background-color: #0074fcb8;
   margin-top: 25px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .btn:hover {
@@ -96,7 +95,7 @@ body {
   font-weight: 600;
   width: 90%;
   text-align: center;
-  
+  left: 3vw;
 }
 
 .nav-link {
@@ -138,7 +137,7 @@ body {
   box-sizing: border-box;
   width: 50vw;
   height: 0.06rem;
-  left: 18vw;
+  left: 19vw;
 }
 
 
@@ -160,6 +159,10 @@ body {
 
 tr{
   height: 25px;
+}
+
+.table-bordered th{
+  border: 1px solid #205072;
 }
 
 
@@ -186,6 +189,7 @@ td:hover {
   color: #205072;
   background-color: rgba(255, 0, 0, 0.1);
   text-align: center;
+  border: 1px solid #205072;
 }
 
 #council {
@@ -214,7 +218,7 @@ td:hover {
   cursor: pointer;
 }
 
-.icon {
+.icon:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;

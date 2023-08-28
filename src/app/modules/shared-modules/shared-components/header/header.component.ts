@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, HostListener, EventEmitter, Directive, Output,Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +8,16 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   isDropdownOpen = false;
 
-  toggleDropdown() {
+  constructor(private renderer: Renderer2, private elementRef: ElementRef) {}
+
+  ngOnInit() {
+    this.renderer.listen('document', 'click', (event: Event) => {
+      if (!this.elementRef.nativeElement.contains(event.target)) {
+        this.isDropdownOpen = false;
+      }
+    });
+  }
+  toggleDropdown() : void{
     this.isDropdownOpen = !this.isDropdownOpen;
   }
 

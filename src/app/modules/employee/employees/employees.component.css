@@ -16,8 +16,8 @@ body{
 .page-sub-header{
   display: flex;
   flex-direction: row;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 4vw;
+  margin-right: 3vw;
   top:10px;
   position: relative;
   justify-content: space-between;
@@ -52,7 +52,7 @@ body{
   position: absolute;
   border-top: 1px solid #000;
   box-sizing: border-box;
-  width: 93%;
+  width: 95%;
   height: 0.06rem;
   top:50px;
 }
@@ -65,15 +65,17 @@ body{
 }
 
 
-
 .container{
   position: relative;
   top:10px;
+  
 }
 
 .row.align-items-center {
-  margin-top: 20px; 
+  margin-top: 30px; 
+  margin-left: 70px;
 }
+
 
 
 .searchCandidate {
@@ -82,12 +84,10 @@ body{
   align-items: center;
   border-bottom: 2px solid #205075;
   width: 280px;
-  flex-direction: row;
   padding: 0.63rem;
   color: rgba(0, 0, 0, 0.5);
-  left: 30px;
   gap: 0.63rem;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .search-container {
@@ -96,7 +96,7 @@ body{
   font-weight: 600;
   font-size: 0.80rem ;
   text-align: center;
-  
+
 }
 
 input{
@@ -138,8 +138,8 @@ input::placeholder {
 
 .line-div-container {
   margin-left: 80px;
-  margin-right: 140px;
-  margin-top: 20px;
+  margin-right: 120px;
+  margin-top: 15px;
 }
 
 .line-div {
@@ -212,7 +212,7 @@ text-align: center;
   margin-left: 80px;
   margin-right: 100px;
   margin-top: 30px;
-  max-width: calc(100vw - 280px);
+  max-width: calc(100vw - 260px);
   padding-left: 2px;
   padding-right: 2px;
 }
@@ -346,7 +346,7 @@ table{
     }
   
     td{
-      font-size: 0.40rem;
+      font-size: 12px;
     }
     .arrow-back-icon {
 

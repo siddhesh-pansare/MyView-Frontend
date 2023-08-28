@@ -115,7 +115,7 @@ a,a:hover{
 }
 
 .dropdown.show{
-    right: 90px;
+    right: 115px;
     z-index: 100;
 }
 

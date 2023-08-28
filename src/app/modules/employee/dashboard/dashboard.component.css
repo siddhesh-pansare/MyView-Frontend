@@ -13,6 +13,30 @@ transition-property: transform; /* Apply transition to the transform property */
  
 }
 
+.menu-card-container:nth-child(1).clicked .menu-card-box {
+  border-radius: 5px;
+border: 1px solid #205072;
+background: #FFF;
+box-shadow: 0px 0px 3px 3px rgba(255, 215, 0, 0.50) inset;
+  transition-property: transform; /* Apply transition to the transform property */
+    transition-duration: 300ms; /* Animation duration */
+    transition-timing-function: ease-in-out; /* Animation timing function */
+    animation-name: smartAnimate;
+   
+  }
+
+.menu-card-container:nth-child(1):hover .menu-card-box {
+  border-radius: 5px;
+  border: 1px solid #205072;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 2px #FFD700;
+  transition-property: transform; /* Apply transition to the transform property */
+    transition-duration: 300ms; /* Animation duration */
+    transition-timing-function: ease-in-out; /* Animation timing function */
+    animation-name: smartAnimate;
+   
+  }
+
 /* Apply hover styles for the second card */
 .menu-card-container:nth-child(2):hover .menu-card-box {
 border-radius: 5px;

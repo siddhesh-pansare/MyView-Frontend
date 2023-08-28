@@ -12,6 +12,7 @@ import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-fe
 import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -37,7 +38,7 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions', dialogComponent: 'OtherContributionsComponent' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient) { }
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private _loader:NgxUiLoaderService) { }
 
   ngOnInit(): void {
     this.restoreBoxPositions();

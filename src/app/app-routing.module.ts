@@ -23,6 +23,7 @@ const routes: Routes = [
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
   {path:'awards',component:AwardComponent},
+  {path:'mentees', component:MenteesComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

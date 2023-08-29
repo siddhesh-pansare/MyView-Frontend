@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
+.detaildc{
+  height: 14vw !important;
+}
+
 .imgskill{
 
   max-width: 18vw;

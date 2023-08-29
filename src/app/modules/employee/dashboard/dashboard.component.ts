@@ -1,6 +1,6 @@
 
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { Component, OnInit } from '@angular/core';
+import { CdkDragDrop, CdkDragEnd, moveItemInArray } from '@angular/cdk/drag-drop';
+import { ChangeDetectorRef, Component, NgZone, OnInit } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { LoggedUserDataService } from 'src/app/services/logged-user-data.service';
@@ -25,6 +25,7 @@ export class DashboardComponent implements OnInit {
   loggedUserData: any;     //variable to store complete data from MIS
   selectedTab = 'EC';
   content: any;
+  activeTab: string = 'dc';
 
 
 
@@ -36,11 +37,12 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt: 'client_feedback', dialogComponent: 'ClientFeedbackComponent' },
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions', dialogComponent: 'OtherContributionsComponent' },
   ];
-
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient) { }
+  col4InitialX!: number; // Store the initial x-coordinate of the col-md-4 column
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
 
   ngOnInit(): void {
-    this.restoreBoxPositions();
+    this.col4InitialX = this.getCol4InitialX(); // Store the initial x-coordinate
+    this.restorePositions(); // Restore positions on page load
     this.loadData();
 
     const apiUrl = environment.baseUrl+'homeEC';
@@ -77,35 +79,67 @@ export class DashboardComponent implements OnInit {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }
 
-  private getAndSaveBoxCoordinates(): void {
-    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+  getCol4InitialX(): number {
+    const col4 = document.querySelector('.news-container');
+    console.log(col4?.getBoundingClientRect().left);
 
-    boxes.forEach((box: HTMLElement, index: number) => {
-      const boxRect = box.getBoundingClientRect();
-      const boxCoordinates = { left: boxRect.left, top: boxRect.top };
-      localStorage.setItem(`dashboard_move_com_${index + 1}_coordinates`, JSON.stringify(boxCoordinates));
+    return col4 ? col4.getBoundingClientRect().left : 0;
+  }
+
+  onDragEnd(event: CdkDragEnd, elementId: string, inCol8: boolean): void {
+    const element = event.source.getRootElement();
+    const rect = element.getBoundingClientRect();
+    let coordinates = { x: rect.left, y: rect.top };
+
+
+
+    if (inCol8) {
+      //if element is from col-md-8
+      console.log("inside @incol8");
+      localStorage.setItem(elementId, JSON.stringify(coordinates));
+    }else{
+      coordinates = {x:(coordinates.x - this.getCol4InitialX()), y:rect.top}
+      localStorage.setItem(elementId, JSON.stringify(coordinates));
+    }
+  }
+
+  deleteStoredValues(): void {
+    const elementKeys = ['element1', 'element2', 'element3', 'element4', 'element5'];
+
+    elementKeys.forEach(key => {
+      localStorage.removeItem(key);
+    });
+
+    // Run change detection within NgZone
+    this.ngZone.run(() => {
+      this.restorePositions();
     });
   }
 
-  onDragEnded(event: any) {
-    this.getAndSaveBoxCoordinates();
-  }
 
-  private restoreBoxPositions(): void {
-    console.log('restoring positions'
-    );
+  restorePositions(): void {
+    console.log('restoring position');
 
-    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+    const elements = document.querySelectorAll('.example-box');
 
-    boxes.forEach((box: HTMLElement, index: number) => {
-      const storedCoordinates = localStorage.getItem(`dashboard_move_com_${index + 1}_coordinates`);
+    elements.forEach(element => {
+      const elementId = element.id;
+      const storedCoordinates = localStorage.getItem(elementId);
+
       if (storedCoordinates) {
-        const { left, top } = JSON.parse(storedCoordinates);
-        box.style.position = 'fixed'; // Use absolute positioning
-        box.style.left = `${left}px`;
-        box.style.top = `${top}px`;
+        const coordinates = JSON.parse(storedCoordinates);
+        const htmlElement = element as HTMLElement;
+
+        // Set the element's position to absolute for accurate positioning
+        htmlElement.style.position = 'absolute';
+
+        // Set the saved coordinates
+        htmlElement.style.left = `${coordinates.x}px`;
+        htmlElement.style.top = `${coordinates.y}px`;
       }
     });
+
+    this.cdr.detectChanges();
   }
 
   openDialog(dialogComponent: string) {
@@ -137,8 +171,6 @@ export class DashboardComponent implements OnInit {
         width: '400px', // Set the width as needed
       });
     }
-
-
   }
 
 }

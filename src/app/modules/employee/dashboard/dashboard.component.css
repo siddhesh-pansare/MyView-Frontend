@@ -2,26 +2,32 @@
 
 /* Apply hover styles for the first card */
 .menu-card-container:nth-child(1):hover .menu-card-box {
-border-radius: 5px;
-border: 1px solid #205072;
-background: #FFF;
-box-shadow: 0px 0px 2px 2px #FFD700;
-transition-property: transform; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in-out; /* Animation timing function */
+  border-radius: 5px;
+  border: 1px solid #205072;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 2px #FFD700;
+  transition-property: transform;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in-out;
+  /* Animation timing function */
   animation-name: smartAnimate;
- 
+
 }
 
 /* Apply hover styles for the second card */
 .menu-card-container:nth-child(2):hover .menu-card-box {
-border-radius: 5px;
-border: 1px solid #205072;
-background: #FFF;
-box-shadow: 0px 0px 2px 2px #0074FC;
-transition-property: transform; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in-out; /* Animation timing function */
+  border-radius: 5px;
+  border: 1px solid #205072;
+  background: #FFF;
+  box-shadow: 0px 0px 2px 2px #0074FC;
+  transition-property: transform;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in-out;
+  /* Animation timing function */
   animation-name: smartAnimate;
 }
 
@@ -31,67 +37,81 @@ transition-property: transform; /* Apply transition to the transform property */
   border: 1px solid #38A3A5;
   background: #FFF;
   box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.50);
-  transition-property: transform; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in-out; /* Animation timing function */
+  transition-property: transform;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in-out;
+  /* Animation timing function */
   animation-name: smartAnimate;
 }
 
 .menu-card-container:nth-child(4):hover .menu-card-box {
-border-radius: 5px;
-border: 1px solid #38A3A5;
-background: #FFF;
-box-shadow: 0px 0px 3px 3px #7BE495;
-transition-property: linear; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in-out; /* Animation timing function */
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 3px #7BE495;
+  transition-property: linear;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in-out;
+  /* Animation timing function */
   animation-name: Dissolve;
 }
 
 .menu-card-container:nth-child(5):hover .menu-card-box {
-border-radius: 5px;
-border: 1px solid #38A3A5;
-background: #FFF;
-box-shadow: 0px 0px 3px 3px #9747FF;
-transition-property: transform; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in; /* Animation timing function */
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 3px #9747FF;
+  transition-property: transform;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in;
+  /* Animation timing function */
   animation-name: smartAnimate;
 }
 
 .menu-card-container:nth-child(6):hover .menu-card-box {
-border-radius: 5px;
-border: 1px solid #38A3A5;
-background: #FFF;
-box-shadow: 0px 0px 3px 3px #E50255;
-transition-property: transform; /* Apply transition to the transform property */
-  transition-duration: 300ms; /* Animation duration */
-  transition-timing-function: ease-in; /* Animation timing function */
+  border-radius: 5px;
+  border: 1px solid #38A3A5;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 3px #E50255;
+  transition-property: transform;
+  /* Apply transition to the transform property */
+  transition-duration: 300ms;
+  /* Animation duration */
+  transition-timing-function: ease-in;
+  /* Animation timing function */
   animation-name: smartAnimate;
 }
+
 /* Add more styles for additional cards as needed */
 
 
-.menu-card-container{
-  transition-property: transform; /* Apply transition to the transform property */
-  
+.menu-card-container {
+  transition-property: transform;
+  /* Apply transition to the transform property */
+
 }
 
-.menu-card-container:hover{
+.menu-card-container:hover {
   transform: scale(1);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   text-shadow: 0px 0px 5px #205072;
-  
+
 }
 
-.menu-card-title{
+.menu-card-title {
   transition: transform 0.3s ease, text-shadow 0.3s ease;
   cursor: pointer;
 }
 
-.menu-card-title:hover{
+.menu-card-title:hover {
   transform: scale(1);
-  
+
 }
 
 body {
@@ -141,27 +161,27 @@ body {
   align-items: center;
 }
 
-.personal-info-row{
+.personal-info-row {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
 
-.personal-info-container{
-  margin:  0 !important;
+.personal-info-container {
+  margin: 0 !important;
 }
 
 .custom-card-title {
   display: flex;
-    flex-direction: column;
-    justify-content: top;
-    flex-shrink: 0;
-color: #082737;
-font-family: Outfit;
-font-size: 25px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  flex-direction: column;
+  justify-content: top;
+  flex-shrink: 0;
+  color: #082737;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .custom-card-designation {
@@ -175,10 +195,10 @@ line-height: normal;
 
 .custom-card-h2 {
   color: #38A3A5;
-    font-family: Outfit;
-    line-height: 25px;
-    margin-top: -5vh;
-    font-weight: 600;
+  font-family: Outfit;
+  line-height: 25px;
+  margin-top: -5vh;
+  font-weight: 600;
 }
 
 .custom-card-d2 {
@@ -198,7 +218,8 @@ line-height: normal;
   font-weight: 600;
   line-height: normal;
 }
-.link{
+
+.link {
   text-decoration: none;
 }
 
@@ -252,7 +273,7 @@ line-height: normal;
   padding: 1vw 3vw 1vw 3vw;
   width: fit-content;
   cursor: pointer;
-  
+
 }
 
 .menu-card-image {
@@ -325,9 +346,10 @@ line-height: normal;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
 }
 
-.border{
+.border {
   border-radius: 5px 5px 0px 0px;
 }
+
 .upcoming-events-header {
   cursor: move;
   border-radius: 5px 5px 0px 0px;
@@ -338,7 +360,7 @@ line-height: normal;
 .cards {
   border-right: 1px solid #D9D9D9;
   border-left: 1px solid #D9D9D9;
-height: 71vh;
+  height: 71vh;
 }
 
 
@@ -354,7 +376,6 @@ height: 71vh;
 }
 
 .dashboard-container {
-  overflow-y: auto;
   padding: 1rem;
   margin: 0;
 }
@@ -386,15 +407,15 @@ height: 71vh;
   transition: box-shadow 200ms cubic-bezier(0, 0, 0.2, 1);
 }
 
-.example-box:active {
+/* .example-box:active {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
     0 8px 10px 1px rgba(0, 0, 0, 0.14),
     0 3px 14px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
-.example-box:hover {
+/* .example-box:hover {
   box-shadow: none;
-}
+} */
 
 .example-handle {
   position: absolute;

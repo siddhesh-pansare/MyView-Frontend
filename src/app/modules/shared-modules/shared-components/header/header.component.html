@@ -34,6 +34,9 @@
         <div class="nav-item">
             <img class="profile" src="assets/header/btn_profile.png" (click)="toggleDropdown()" alt="Button 4">
         </div>
+        <div class="nav-item">
+          <span (click)="deleteStoredValues()">Reset Layout</span>
+      </div>
         <div  class="dropdown" [ngClass]="{ 'show': isDropdownOpen }" >
           <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen }">
             <a class="dropdown-item first">My Profile</a>

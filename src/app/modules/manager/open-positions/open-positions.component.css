@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-left: 5vw;
-  margin-right: 5vw;
+  margin-right: 3vw;
   top: 10px;
   position: relative;
   justify-content: space-between;
@@ -146,7 +146,7 @@ body {
   top: 11vh;
   width: 100vw;
   position: relative;
-  width: 82vw;
+  width: 80vw;
   left: 6vw;
   padding-right: 5px;
   padding-left: 5px;

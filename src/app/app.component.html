@@ -3,7 +3,18 @@
  
 
  <!-- app.component.html -->
-  
-  
+ <ngx-ui-loader [fgsTemplate]="foregroundSpinner"  ></ngx-ui-loader>
+
+ <ng-template #foregroundSpinner>
+    
+        <div class="circle">
+            <div class="circular-container">
+                <img src="assets/images/loader.gif" alt="Loading...">
+            </div>
+        </div> 
+    
+ </ng-template>
+ 
+
   <router-outlet></router-outlet>
 

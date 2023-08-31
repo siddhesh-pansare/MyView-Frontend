@@ -2,6 +2,35 @@
 
 .detaildc{
   height: 14vw !important;
+  margin-left: -1vw;
+  margin-top: -1vw;
+}
+
+.skill{
+  margin-left: -1vw;
+}
+
+.attendence{
+  color: #205072;
+text-align: center;
+font-family: Outfit;
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: 0.8px;
+}
+
+.percent{
+  width: 3vw;
+  height: 6vh;
+}
+
+.internal{
+  width: 3vw;
+  height: 6vh;
+  margin-top: 0.8vw;
+  margin-left: 0.8vw;
 }
 
 .imgskill{
@@ -308,17 +337,17 @@ flex-shrink: 0;
    font-family: Outfit;
    /* font-size: 14px; */
    font-style: normal;
-   font-weight: 600;
+   font-weight: bold;
    line-height: normal;
  }
  
  .custom-card-d2 {
-   color: #38A3A5;
- font-family: Outfit;
- /* font-size: 14px; */
- font-style: normal;
- font-weight: 600;
- line-height: normal;
+  color: #38A3A5;
+font-family: Outfit;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
  }
  
  .custom-card-workStatus {
@@ -1063,8 +1092,8 @@ flex-shrink: 0;
 @media (min-width: 1200px) and (max-width: 2000px){
 
   .profile{
-    height: 100px !important;
-    width: 100px !important;
+    height: 120px !important;
+    width: 120px !important;
   }
   .popup{
  

@@ -993,8 +993,8 @@ flex-shrink: 0;
 @media (min-width: 1200px) and (max-width: 2000px){
   .profile{
    
-    height: 100px !important;
-    width: 100px !important;
+    height: 120px !important;
+    width: 120px !important;
    
  }
   .popup{

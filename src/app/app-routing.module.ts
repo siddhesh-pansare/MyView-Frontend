@@ -25,6 +25,7 @@ const routes: Routes = [
   {path:'awards',component:AwardComponent},
   {path:'reportees',component:ReporteesComponent},
   {path:'mentees',component:MenteesComponent},
+  {path:'remark',component:RemarkDialogueComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

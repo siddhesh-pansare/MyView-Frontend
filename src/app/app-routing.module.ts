@@ -16,6 +16,7 @@ import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/att
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
 import { BrowserUtils } from "@azure/msal-browser";
 import { AwardComponent } from './modules/shared-modules/dialogue/awards-dialogue/award/award.component';
+import { CertificationDialogueComponent } from './modules/shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
 
 
 const routes: Routes = [
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path:'p-dashboard', component:PseudoDashboardComponent },
   {path:'awards',component:AwardComponent},
   {path:'mentees', component:MenteesComponent},
+  {path:'certification',component:CertificationDialogueComponent},
   { path:'', component:RoleComponent ,
   children:[
     {

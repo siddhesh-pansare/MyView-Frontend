@@ -126,6 +126,15 @@ line-height: normal;
   line-height: normal;
 }
 
+.header-1{
+  border-radius: 0px;
+}
+
+.scard:hover{
+  color:rgba(56, 163, 165, 1);
+  border: 1px solid #205072;
+}
+
 
 .card-header {
   display: flex;

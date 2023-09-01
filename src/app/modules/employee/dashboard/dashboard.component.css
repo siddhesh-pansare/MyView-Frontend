@@ -165,8 +165,9 @@ line-height: normal;
 }
 
 .custom-card-designation {
-  color: rgba(8, 39, 55, 0.95);
   font-family: Outfit;
+  font-weight: 600;
+  color: rgba(8, 39, 55, 0.5);
   /* font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -176,6 +177,7 @@ line-height: normal;
 .custom-card-h2 {
   color: #38A3A5;
     font-family: Outfit;
+    font-size: 14px;
     line-height: 25px;
     margin-top: -5vh;
     font-weight: 600;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
 .detaildc{
-  height: 14vw !important;
+  /* height: 14vw !important; */
   margin-left: -1vw;
   margin-top: -1vw;
 }
@@ -16,7 +16,7 @@ text-align: center;
 font-family: Outfit;
 font-size: 14px;
 font-style: normal;
-font-weight: 300;
+font-weight: 500;
 line-height: normal;
 letter-spacing: 0.8px;
 }
@@ -132,9 +132,7 @@ letter-spacing: 0.8px;
     animation-name: smartAnimate;
   }
   /* Add more styles for additional cards as needed */
-  .menu-card-container:nth-child(6){
-padding-left: 40px;
-  }
+
   
   .menu-card-container{
     transition-property: transform; /* Apply transition to the transform property */
@@ -191,7 +189,7 @@ body{
   color: rgba(0, 240, 255, 0.10);
 } 
 .cross{
-  position: absolute;
+  position: sticky;
   /* top: -1px;
   right: -10px; */
   cursor: pointer;
@@ -318,7 +316,7 @@ flex-shrink: 0;
  .custom-card-title {
    color: #082737;
    font-family: Outfit;
-   font-size: 20px !important;
+   font-size: 24px !important;
    font-style: normal;
    font-weight: 500 !important;
    line-height: normal;
@@ -346,7 +344,7 @@ flex-shrink: 0;
 font-family: Outfit;
 font-size: 16px;
 font-style: normal;
-font-weight: 300;
+font-weight: bold;
 line-height: normal;
  }
  
@@ -486,7 +484,13 @@ line-height: normal;
     height: 90px !important;
     width: 90px !important; 
  }
-
+ .attendence{
+  font-size: 14px;
+ }
+.percent{
+  width: 4.5vw;
+  height: 3vh;
+}
   .leftright{    
     order: 1;
   }
@@ -496,6 +500,7 @@ line-height: normal;
   }
   .detaildc{
     order: 3;
+    /* height: 16vh !important; */
   }
   .skill{
     order: 4;
@@ -521,9 +526,9 @@ line-height: normal;
    .cross{
     position: absolute;
     margin-top: 0vh;
-    right: 2px;
-    margin-left: 10px;
-    margin-right: -40px;
+    /* right: 2px; */
+    margin-left: 85vw;
+    /* margin-right: -40px; */
     cursor: pointer;
     color: #999;
     display: flex;
@@ -564,7 +569,7 @@ line-height: normal;
     font-size: 3vw;
   }
   .custom-card-designation{
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .custom-card-workStatus{
     font-size: 10px;
@@ -591,8 +596,32 @@ line-height: normal;
   .menu-card-container{
     height: 50%; 
     width: 16%;  
-    margin: 0 2px 0 0;
+    margin: 0 2px 0 -2vh;
     padding: 0;  
+  }
+  .menu-card-container:nth-child(1){
+    margin-right: 4vw;
+  }
+  .menu-card-container:nth-child(2){
+    margin-right: 4vw;
+  }
+  .menu-card-container:nth-child(3){
+    margin-right: 4vw;
+  }
+  .menu-card-container:nth-child(4){
+    margin-right: 4vw;
+  }
+  .menu-card-container:nth-child(5){
+    margin-right: 4vw;
+  }
+  .menu-card-container:nth-child(6){
+    margin-right: 4vw;
+  }
+  .menu-card-title{
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap;
+    font-size: 10px !important;
   }
   .menu-cards-row{
     width: 85vw;
@@ -655,9 +684,10 @@ line-height: normal;
     line-height: normal;
   }
   .remark-icon{
-    margin-left: 20vw;
+    margin-left: 20vw !important;
    /* margin-right: 9vw; */
-    width: 45vw;
+    width: 40vw !important;
+    margin-bottom: 2vh;
    }
  }
  @media (min-width: 576px) and (max-width:767px){
@@ -899,7 +929,9 @@ line-height: normal;
  } 
 
  @media (min-width: 992px) and (max-width:1199px){
-
+  .menu-card-container:nth-child(6){
+    padding-left: 40px;
+      }
   .profile{
     width: 100px !important;
     height: 100px !important;
@@ -1090,7 +1122,9 @@ line-height: normal;
 } */
 
 @media (min-width: 1200px) and (max-width: 2000px){
-
+  .menu-card-container:nth-child(6){
+    padding-left: 40px;
+      }
   .profile{
     height: 120px !important;
     width: 120px !important;
@@ -1098,11 +1132,11 @@ line-height: normal;
   .popup{
  
     width: 90vw;
-       height: 92vh; 
+       height: 95vh; 
        margin-right: 5vw;
        margin-left: 5vw;
        /* margin-top: 20%; */
-       top:3vh;
+       top:2vh;
        padding: 1vw 0.25vw 0.5vw 0.25vw;
    }
    .container-fluid{
@@ -1128,9 +1162,9 @@ line-height: normal;
     
   }
   .remark-icon{
-    margin-left: 6vw;
+    margin-left: 2vw !important;
    /* margin-right: 9vw; */
-    width: 22vw;
+    width: 18vw !important;
    }
   .custom-card-title {
     color: #082737;

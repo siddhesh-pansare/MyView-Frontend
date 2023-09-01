@@ -1,8 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap%22);
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 
@@ -102,7 +103,7 @@ ul{
   pointer-events: none;
   /* This prevents the name from being clickable */
   transition: opacity 0.3s ease;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 15px;
   text-align: inherit;
   

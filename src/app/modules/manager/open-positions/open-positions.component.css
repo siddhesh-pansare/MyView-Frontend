@@ -64,7 +64,7 @@ body {
 .btn {
   position: relative;
   float: right;
-  right: 140px;
+  right: 115px;
   width: 120px;
   height: 30px;
   border-radius: 10px;
@@ -149,7 +149,7 @@ body {
   width: 80vw;
   left: 6vw;
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 2px;
 }
 
 .table-bordered {
@@ -247,14 +247,14 @@ tr:last-child td:not(:first-child):not(:last-child):hover:after {
   z-index: 1;
 }
 
-.company-logo{
+/* .company-logo{
   position: fixed;
   bottom: 0;
   right: 0;
   margin-right: 16px; 
   margin-bottom: 2px; 
 
-}
+} */
 
 
 

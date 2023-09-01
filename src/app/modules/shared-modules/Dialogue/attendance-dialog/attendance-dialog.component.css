@@ -6,6 +6,8 @@
 
 .table-responsive.rounded{
   max-height: 55vh;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 
@@ -16,6 +18,10 @@ table {
   max-height: fit-content;
   font-weight: 600;
   table-layout: fixed;
+}
+
+.table-bordered th{
+  border-bottom: 1px solid #205072;
 }
 
 th{

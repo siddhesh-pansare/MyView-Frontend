@@ -105,8 +105,8 @@ body {
 .task1 {
   font-family: Outfit;
   color: #205072;
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .task {
@@ -117,9 +117,9 @@ body {
 .head {
   color: #082737;
   font-family: Outfit;
-  font-size: 16px !important;
+  font-size: 14px !important;
   font-style: normal;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   line-height: normal;
   letter-spacing: 0.9px;
 }
@@ -156,12 +156,12 @@ body {
     flex-direction: column;
     justify-content: top;
     flex-shrink: 0;
-color: #082737;
-font-family: Outfit;
-font-size: 25px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+    color: #082737;
+    font-family: Outfit;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .custom-card-designation {
@@ -251,15 +251,15 @@ line-height: normal;
   border: 1px solid #38A3A5;
   background: #FFF;
   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
-  padding: 1vw 3vw 1vw 3vw;
+  padding: 1vw 2vw 1vw 2vw;
   width: fit-content;
   cursor: pointer;
   
 }
 
 .menu-card-image {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 
 
@@ -319,6 +319,10 @@ line-height: normal;
   filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
 }
 
+.engineering-council {
+  background: rgba(250, 255, 0, 0.2);
+   
+}
 
 .pending-task-header {
   cursor: move;
@@ -340,7 +344,7 @@ line-height: normal;
 .cards {
   border-right: 1px solid #D9D9D9;
   border-left: 1px solid #D9D9D9;
-height: 71vh;
+  height: 71vh;
 }
 
 

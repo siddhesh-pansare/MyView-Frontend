@@ -13,6 +13,7 @@ import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { MatTabChangeEvent } from '@angular/material/tabs';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -38,7 +39,8 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions', dialogComponent: 'OtherContributionsComponent' },
   ];
   col4InitialX!: number; // Store the initial x-coordinate of the col-md-4 column
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private cdr: ChangeDetectorRef, private ngZone: NgZone,  private _loader:NgxUiLoaderService) { }
+
 
   ngOnInit(): void {
     this.col4InitialX = this.getCol4InitialX(); // Store the initial x-coordinate

@@ -166,7 +166,7 @@ body {
   margin: 0 !important;
 }
 
-.custom-card-title {
+/* .custom-card-title {
   display: flex;
     flex-direction: column;
     justify-content: top;
@@ -183,10 +183,7 @@ body {
   font-family: Outfit;
   font-weight: 600;
   color: rgba(8, 39, 55, 0.5);
-  /* font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; */
+  
 }
 
 .custom-card-h2 {
@@ -203,8 +200,56 @@ body {
   line-height: 25px;
   margin-top: -5vh;
   font-weight: 600;
+} */
+.custom-card-d2{
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  line-height: var(--h2-line-height);
+  margin-top: var(--margin-top);
+  font-weight: var(--font-weight-bold);
 }
 
+.custom-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  flex-shrink: 0;
+  color: var(--primary-color);
+  font-size: var(--font-size-title);
+  font-style: normal;
+  font-weight:var(--font-weight);
+  
+  line-height: var(--line-height);
+  
+}
+/* .custom-card-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  flex-shrink: 0;
+  color: #082737;
+  font-family: Outfit;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+} */
+
+.custom-card-designation {
+  color: var(--secondary-color);
+  font-family: var(--font-family);
+  
+  
+}
+
+.custom-card-h2{
+  color: var(--details-header);
+  font-family: var(--font-family);
+  
+  line-height: var(--h2-line-height);
+  margin-top: var(--margin-top);
+  font-weight: var(--font-weight-bold);
+} 
 .custom-card-workStatus {
   color: #FF710A;
   text-align: center;

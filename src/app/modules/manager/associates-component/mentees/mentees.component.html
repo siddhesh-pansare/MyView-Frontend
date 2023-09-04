@@ -117,8 +117,7 @@
 
                       <div class="col-4">
                         <div class="d-flex row justify-content-center"><img class="imgskill" src="assets/images/aws.png" style="height: 30px; width: 70px;"> </div>
-                        <div class="imgstar"
-                         ><img  src="assets/images/ratings.png" > </div>
+                        <div class="imgstar"><img  src="assets/images/ratings.png" > </div>
                       </div>
                       
                       <div class="col-4">                        
@@ -195,12 +194,17 @@
                       </div>            
                     </div></div> 
                     
-                    <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon">
-                      
-                      <div class="row menu-cards-row">  
-                  <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
+                    <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon example-box" cdkDragBoundary=".example-boundary" cdkDrag>          
+                                          
+                      <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">  
+                        <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards; let i = index">
                     
-                    <div class="menu-card-box" >
+                    <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
+                      <div cdkDragHandle>
+
+                        <span class="empty-handler">.</span>
+      
+                      </div>
                       <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
                       
                     </div>

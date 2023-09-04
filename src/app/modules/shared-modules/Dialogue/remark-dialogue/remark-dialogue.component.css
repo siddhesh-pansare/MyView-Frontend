@@ -3,12 +3,48 @@
 * {
   font-family: Outfit;
 }
+.table-bordered th {
+  border-bottom: 1px solid #205072;
+}
+
+.table-bordered {
+  border: 1px solid #205072;
+  border-collapse: collapse; /* To ensure the table borders collapse properly */
+  
+}
+
+.table-bordered td, .table-bordered th {
+  border: 1px solid #205072; /* Add borders to table cells */
+   /* Add padding to cells for spacing */
+}
+.remark-icon{
+  transition: transform 0.3s ease;  
+ }
+ .remark-icon:hover{  
+  transform: scale(1.01);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0px 0px 4px 0px #000 inset;
+  border-radius: 10px;
+ }
+.btncross{
+  right: 2vw;
+  position: absolute;  
+  top: 0.5vw;   
+  cursor: pointer; 
+  height: 15px !important;
+  width: 15px !important;  
+}
+.logo-hover{
+  transition: transform 0.3s ease;
+  
+ }
 
 .logo1:hover,
 .logo2:hover,
 .logo-hover:hover {
-  /* Add desired hover styles here */
-  opacity: 0.3; /* For example, reduce opacity on hover */
+  transform: scale(1.1);
+  /* box-shadow: 0px 0px 4px 0px #000 inset; */
+ 
 }
 
 .addremark:hover,
@@ -23,7 +59,7 @@
   cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.table-responsive.rounded{
+.table-responsive{
   margin-left: 15px;
   margin-right: 15px;
   width: 55vw;
@@ -32,9 +68,10 @@
 table {
   border-color: #205072;
   border: 1;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   max-height: fit-content;
   font-weight: 600;
+  
 }
 
 table.table th {
@@ -42,8 +79,9 @@ table.table th {
 }
 
 th{
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   padding: 5px;
+  font-weight: 900 !important;
 }
 
 td{
@@ -57,9 +95,9 @@ td{
   color: #205072;
   text-align: center;
   font-family: Outfit;
-  font-size: 14px;
+  font-size: 0.80rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600 !important;
   line-height: normal;
 }
 
@@ -67,12 +105,64 @@ td{
   max-width: 100%;
   overflow-x: auto;
 }
-
-
+@media (max-width:566px){
+.remark-icon{
+  margin-left: 49vw;
+  margin-top: 7vh;
+ /* margin-right: 9vw; */
+  width: 22vw;
+ }
+}
+@media (min-width:567px) and(max-width:767px){
+  .remark-icon{
+    margin-left: 51vw !important;
+   /* margin-right: 9vw; */
+    width: 15vw !important;
+   }
+}
+@media (min-width: 768px) and (max-width:991px){
+  .remark-icon{
+    margin-left: 51vw;
+   /* margin-right: 9vw; */
+    width: 15vw;
+   }
+}
+@media (min-width: 992px) and (max-width:1199px){
+  .remark-icon{
+    margin-left: 47vw;
+   /* margin-right: 9vw; */
+    width: 10vw;
+   }
+}
+@media (min-width: 1200px) and (max-width: 2000px){
+  .remark-icon{
+    margin-left: 47vw;
+    margin-top: 25vh;
+   /* margin-right: 9vw; */
+    width: 9vw;
+   }
+}
+@media(min-width: 2000px){
+  .remark-icon{
+    margin-left: 9vw;
+   /* margin-right: 9vw; */
+    width: 17vw;
+    transition: transform 0.3s ease;
+    
+   }
+}
 @media (max-width:600px){
 
-  
-  .table-responsive.rounded{
+  #feed{
+    color: #205072;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 0.50rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .table-responsive{
     margin-left: 1vw;
     margin-right: 15px;
     width: 70vw;
@@ -198,13 +288,12 @@ td{
     font-size: 0.50rem;
   }
       .btncross{
-        right: 1vw;
+        right: 2vw;
         position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-        size: 40px;
-        width: -2vw;
-        height: -2vw;
+        top: 0.5vw;   
+        cursor: pointer; 
+        height: 15px !important;
+        width: 15px !important;  
       }
 
       .no_data{
@@ -224,7 +313,7 @@ td{
     display: block; /* Show the icon for mobile screens */
   }
   
-  .table-responsive.rounded{
+  .table-responsive{
     margin-left: 1vw;
     margin-right: 15px;
     width: 65vw;
@@ -254,7 +343,7 @@ td{
     position: fixed;
     }
 
-    .addremark{
+    /* .addremark{
      width: 14vw;
      height: 5vh;
      border-radius: 7px;
@@ -268,7 +357,7 @@ td{
      font-weight: 400;
      line-height: normal;
      margin-left:-2%;
-    }
+    } */
 
     .box{
       display: flex;
@@ -342,11 +431,12 @@ td{
 
 
       .btncross{
-        right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
-        size: 35px;
+        right: 1vw !important;
+      position: absolute;  
+      top: 0.5vw;   
+      cursor: pointer; 
+      height: 15px !important;
+      width: 15px !important; 
       }
 
       .no_data{
@@ -407,7 +497,7 @@ td{
     overflow:auto;
     }
 
-    .addremark{
+    /* .addremark{
       width: 12vw;
       height: 5vh;
       border-radius: 7px;
@@ -420,7 +510,7 @@ td{
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-    }
+    } */
 
     .box{
         display: flex;
@@ -440,7 +530,7 @@ td{
     text-align: center;
     color: #205072;
     font-family: Outfit;
-    font-size:0.80rem;
+    font-size:1rem;
     font-weight: 600;
 }
 
@@ -488,9 +578,11 @@ td{
 
       .btncross{
         right: 1vw;
-        position: absolute;  
-        top: 1vw;  
-        cursor: pointer;  
+      position: absolute;  
+      top: 0.5vw;   
+      cursor: pointer; 
+      height: 15px !important;
+      width: 15px !important; 
       }
 
     }
@@ -594,10 +686,12 @@ td{
     }
  
     .btncross{
-      right: 10px;
+      right: 0.5vw;
       position: absolute;  
-      top: 10px;  
-      cursor: pointer;  
+      top: 0.5vw;   
+      cursor: pointer; 
+      height: 15px;
+      width: 15px; 
     }    
        
   }

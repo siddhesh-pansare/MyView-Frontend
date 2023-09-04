@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EmployeeModule } from './modules/employee/employee.module';
-import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModulesModule } from './modules/shared-modules/shared-modules.module';
-import{ FormsModule} from '@angular/forms';
-
+import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar'; // Import MatSnackBar
 import { ManagerModule } from './modules/manager/manager.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
@@ -18,6 +18,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { MsalGuard, MsalGuardConfiguration, MsalInterceptorConfiguration, MsalModule, MsalRedirectComponent, MsalService } from "@azure/msal-angular";
 import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
 
 
 const isIE =
@@ -48,7 +49,11 @@ const isIE =
     CommonModule,
     MatPaginatorModule,
     MatTableModule,
-   
+    NgxUiLoaderModule,
+    MatSnackBarModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground:true,
+    }),
     MatIconModule,
     MsalModule.forRoot(
       new PublicClientApplication({
@@ -66,6 +71,7 @@ const isIE =
       msalGuardConfig,
       msalInterceptorConfig,
     ),
+
 
   ],
   providers: [MsalGuard, {provide:LocationStrategy, useClass:HashLocationStrategy},MsalService],

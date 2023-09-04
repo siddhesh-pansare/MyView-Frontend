@@ -11,12 +11,12 @@
   </div>
 
   <a href="...">
-  <span class="btncross" ><img  src="assets/images/close.png"></span></a>
+  <span class="btncross" ><img  src="assets/images/close.svg"></span></a>
   <br>
   <div class="line"></div><br>
 
   
-  <div class="table-responsive rounded">
+  <div class="table-responsive ">
     <table class="table table-bordered" *ngIf="remarkdata.length > 0">
         <thead class="text-center">
             <tr>
@@ -35,23 +35,24 @@
               {{cv.Feedback}}
             </td>
 
-            <td><img [src]="cv.Action" class="logo1 logo-hover"><img [src]="cv.Action1" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+            <td><img [src]="cv.Action" class="logo1 logo-hover" title="Edit"><img [src]="cv.Action1" class="logo2 logo-hover" title="Delete" (click)="deleteRow(i)"></td>
           </tr>
 
         </tbody>
     </table>
    
+  
   </div>
   <div class="no_data d-flex justify-content-center" *ngIf="remarkdata.length === 0">
   <img
   src="../../../../../../assets/images/no_data.png"
   alt="No Data" />
   </div>
- 
-    <div class="box3">
+  <a href=".."><img  class="remark-icon" src="assets/images/remark3.png"></a>    
+    <!-- <div class="box3">
       <a href="...">
     <button class="addremark addremark-hover">Add New Remark</button>
       </a>
-  </div>
+  </div> -->
     
 </div>

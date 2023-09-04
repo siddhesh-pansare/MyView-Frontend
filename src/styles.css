@@ -8,8 +8,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {      
+    --primary-color: #082737;
+    
+  
+  
+    --secondary-color: rgba(8, 39, 55, 0.95);
+    --accent-color: #205072;
+    --details-header: #38A3A5;
+    --font-family: 'Outfit', sans-serif;
+    --font-size-title: 25px;
+    --font-size-designation: 16px;
+    --font-size-detail: 20px;
+    --line-height:'normal';
+    --h2-line-height:25px;
+    --margin-top: -5vh;
+    --font-weight-bold: 600;
+    --font-weight:200;
+    --animation-duration: 300ms;
+    --animation-timing: ease-in-out;
+    --hover-shadow: 0px 0px 3px 3px var(--primary-color);
+    --rejected: #E50255;
 
-:root{
     --font-family: 'Outfit', sans-serif;
     --card-header-font-size:14px;
     --dc-name-font-size:10px;
@@ -34,4 +54,5 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --ec-card-header-color:rgba(255, 0, 0, 0.10);
     --card-header-box-shadow:0px 2px 1px 0px rgba(0, 0, 0, 0.25);
     --card-header-border-radius:5px 5px 0px 0px;
-}
+
+  }

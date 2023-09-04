@@ -16,15 +16,15 @@
                   </div>
                 </div>
                 <p class="custom-card-workStatus">Working Hybridly</p>
-                <span (click)="deleteStoredValues()">Reset Layout</span>
+                
               </div>
             </div>
             <!-- Right Column - Employee Details -->
             <div class="col-8 col-md-8 pl-0 m-0">
               <div class="card-body">
                 <!-- Name and Position -->
-                <span class="custom-card-title">Hi, Siddhesh Sandeep pansare</span>
-                <p class="custom-card-designation">Technology Solution Lead-L2</p>
+              <span class="custom-card-title">Hi, Siddhesh Sandeep pansare</span>
+                <span class="custom-card-designation">Technology Solution Lead-L2</span><br>
                 <!-- Other Details -->
                 <!-- <div class="details"> -->
                 <span class="custom-card-h2">Emp Code: </span><span class="custom-card-d2">GSI G 397</span><br>
@@ -46,10 +46,24 @@
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
           <div class="tab-group col-lg-12 col-md-12">
-            <mat-tab-group>
-              <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
-              <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
-            </mat-tab-group>
+            <div class="tabs">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTabs === 'dc'">Delivery Council</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" (click)="activateTab('ec')" [class.active]="activeTabs === 'ec'">Engineering Council</a>
+                </li>
+              </ul>
+              <div class="line2"></div><br>
+
+              <span *ngIf="activeTabs === 'dc'">
+                <app-dc-information></app-dc-information>
+              </span>
+              <span *ngIf="activeTabs === 'ec'">
+                <app-ec-information></app-ec-information>
+              </span>
+            </div>
           </div>
         </div>
 
@@ -67,12 +81,14 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
-    <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0  news-container">
+
+    <div class="container col-11 col-sm-8 col-lg-4 col-md-8 offset-sm-2 offset-md-0 news-container"><br>
       <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag
-        (cdkDragEnded)="onDragEnd($event, 'element4', false)" id="element4">
-        <div class="pending-task-header" cdkDragHandle>
+      (cdkDragEnded)="onDragEnd($event, 'element4', false)" id="element4">
+        <div class="pending-task-header"  [ngClass]="{'pt': activeTabs === 'ec'}" cdkDragHandlee>
           <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
           <span class="head ml-2">Pending Tasks</span>
         </div>
@@ -88,7 +104,7 @@
       <div class="card news-card example-box m-1" cdkDragBoundary=".example-boundary" cdkDrag
         (cdkDragEnded)="onDragEnd($event, 'element5', false)" id="element5">
         <div class="border">
-          <div class="upcoming-events-header" cdkDragHandle>
+          <div class="upcoming-events-header"  [ngClass]="{'ue': activeTabs === 'ec'}" cdkDragHandle>
             <img src="assets/images/icons/events.svg">
             <span class="head ml-2">Upcoming Events</span>
           </div>
@@ -99,7 +115,6 @@
               <li>Team Trip in 3 week of October.<a class="link" href=""> Register Now!</a></li>
             </ul>
           </div>
-        </div>
       </div>
     </div>
   </div>

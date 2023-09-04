@@ -12,6 +12,8 @@ import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-fe
 import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { MatTabChangeEvent } from '@angular/material/tabs';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -23,11 +25,9 @@ export class DashboardComponent implements OnInit {
 
   //declare variables
   loggedUserData: any;     //variable to store complete data from MIS
-  selectedTab = 'EC';
+  // selectedTab = 'EC';
   content: any;
-  activeTab: string = 'dc';
-
-
+  activeTabs: string = 'dc';
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award', dialogComponent: 'AwardComponent' },
@@ -38,7 +38,8 @@ export class DashboardComponent implements OnInit {
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt: 'other-Contributions', dialogComponent: 'OtherContributionsComponent' },
   ];
   col4InitialX!: number; // Store the initial x-coordinate of the col-md-4 column
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private cdr: ChangeDetectorRef, private ngZone: NgZone) { }
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient, private cdr: ChangeDetectorRef, private ngZone: NgZone,  private _loader:NgxUiLoaderService) { }
+
 
   ngOnInit(): void {
     this.col4InitialX = this.getCol4InitialX(); // Store the initial x-coordinate
@@ -62,6 +63,8 @@ export class DashboardComponent implements OnInit {
   }
 
 
+
+
   loadData(): void {
     const email = 'siddhesh.pansare@geminisolutions.com';
 
@@ -71,10 +74,12 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  selectTab(tab: string) {
-    this.selectedTab = tab;
+  // selectTab(tab: string) {
+  //   this.selectedTab = tab;
+  // }
+  activateTab(tab: string) {
+    this.activeTabs = tab;
   }
-
   drop(event: CdkDragDrop<{ title: string; poster: string }[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }

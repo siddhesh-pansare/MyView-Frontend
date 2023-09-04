@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+.btncross{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.btncross:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 @media (min-width: 300px) and (max-width: 600px){
   .line2{
     position: relative;

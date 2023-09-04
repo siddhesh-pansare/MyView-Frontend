@@ -8,6 +8,7 @@
 
 :root {
   --primary-color: #208572;
+  --font-size-btn: 14px;
 }
 
 html,
@@ -46,10 +47,8 @@ body {
 
 /* Dialog Box Image */
 .dialog-box-image {
-  border-radius: 100px;
   border: 1px solid #38a3a5;
   background: url(https://picsum.photos/200), lightgray 50% / cover no-repeat;
-  border: 1px solid #38a3a5;
   height: 100px;
   width: 100px;
   border-radius: 100%;
@@ -70,13 +69,13 @@ body {
   text-align: center;
   size: 80%;
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--font-size-btn);
   border: none; /* Remove the default border */
   transition: box-shadow 0.3s ease;
 }
 
 .dialog-box-button:hover {
-  box-shadow: 0px 0px 3px 3px #205072;
+  box-shadow: 0px 0px 3px 3px var(--primary-color);
   /* Medium sharp shadow around borders */
 }
 

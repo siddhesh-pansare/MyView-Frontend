@@ -16,13 +16,13 @@ import { AttendanceDialogComponent } from './modules/shared-modules/Dialogue/att
 import { EmployeesComponent } from './modules/employee/employees/employees.component';
 import { BrowserUtils } from "@azure/msal-browser";
 import { AwardComponent } from './modules/shared-modules/dialogue/awards-dialogue/award/award.component';
+import { CertificationDialogueComponent } from './modules/shared-modules/dialogue/certification-dialogue/certification-dialogue.component';
 
 
 const routes: Routes = [
   { path:'', redirectTo: 'login', pathMatch:'full' },
   { path:'login', component:LoginComponent },
   { path:'p-dashboard', component:PseudoDashboardComponent },
-  {path:'awards',component:AwardComponent},
   {path:'reportees',component:ReporteesComponent},
   {path:'mentees',component:MenteesComponent},
   {path:'remark',component:RemarkDialogueComponent},

@@ -1,10 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
-/* body{
 
-  font-family: Outfit;
 
-} */
-
+.table-bordered th{
+  border-top: 1px solid #205072;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.logo{
+  height: 2.75vw ;
+  width: 5vw;
+  margin-top: -1.1vh;
+  margin-left: -5vh;
+}
 .btncross{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -19,15 +26,20 @@
 }
 .clicktext{
   color: #0074FC;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
 }
 .clicktext:hover{
   color:#0074FC;
   transform: scale(1.1);
   text-shadow: 1px 1px #0074FC;
+  animation-name: smartAnimate;
+  animation-timing-function: ease-out;
+  animation-duration: 300ms;
 }
 .clickHere:hover{
   transform: scale(1.1);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -40,11 +52,10 @@
     background: #FFF;
     box-shadow: 0px 0px 3px 3px #0074FC;
     margin-top: -30vh;
-    margin-left: 2%;
+    margin-left: 0%;
     /* margin-right: 15vw; */
     position: fixed;
-    display: flexbox;
-    
+    display: flexbox;  
     }
 
     h1{
@@ -94,38 +105,33 @@
         height: 0.1%; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
         margin-top: -2vh;
-
     }
     .table-container {
       width: 100%;
       overflow-x: auto;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
-    .table {
+    .table-bordered {
         margin-left: 0vw;
         margin-right: 1vw;
         border-collapse: collapse;
-        border-radius: 10px 10px 0px 0px;
-        overflow: hidden;
-        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
-        border: #205072;
+        border:1px solid  #205072;
         height: 10%;
         width: 100%;
-        white-space: nowrap;
       }
       
-      th, td {
-        /* padding: 10px; */
-        border: 1px solid #ccc;
-       
+th, td {
+border: 1px solid #205072;    
 text-align: center;
 font-family: Outfit;
 font-weight: 500;
 line-height: normal;
 border: 1px solid #205072;
 background: #FFF;
-padding: 10px;
+padding: 6px;
       }
 
       .logo{
@@ -133,16 +139,13 @@ padding: 10px;
         width: 39%;
       }
       td{
-        color: #38A3A5;
+color: #38A3A5;
 text-align: center;
 font-family: Outfit;
 font-size: 10px;
 font-style: normal;
 font-weight: bold;
 line-height: normal;
-
-
-
       }
       
       th {
@@ -154,15 +157,7 @@ line-height: normal;
       }
       
             
-      tr:hover {
-        background-color: gray;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
+  
       .btncross{
         right: 1vw;
         position: absolute;  
@@ -179,7 +174,7 @@ flex-shrink: 0;
   @media (min-width: 1025px){
 
     .container{
-        width: 70vw;
+    width: 70vw;
     height: 80vh;
     flex-shrink: 0;
     border-radius: 10px;
@@ -190,10 +185,9 @@ flex-shrink: 0;
     margin-bottom: 10vh;
     margin-left: -20vw; 
      position: fixed;
-    display: flexbox;
-    
+    display: flexbox; 
     }
-
+    
     
     h1{
         color: #205072;
@@ -242,7 +236,7 @@ flex-shrink: 0;
         margin-left: 3vw;
         margin-right: 3vw;
         border-collapse: collapse;
-        border-radius: 10px 10px 0px 0px;
+        /* border-radius: 10px 10px 0px 0px; */
         overflow: hidden;
         /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
@@ -273,7 +267,7 @@ padding: 10px;
         color: #38A3A5;
 text-align: center;
 font-family: Outfit;
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -283,20 +277,9 @@ line-height: normal;
         background: #FFF;;
         font-weight: bold;
         /* padding: 2%; */
-        font-size: 20px;
+        font-size: 18px;
       }
-      
-     
-      
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
+    
       .btncross{
         right: 0.5vw;
         position: absolute;  
@@ -314,7 +297,23 @@ flex-shrink: 0;
     width: 100%;
     overflow-x: auto;
   }
+
+  .container{
+    width: 70vw;
+    height: 80vh;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #205072;
+    background: #FFF;
+    box-shadow: 0px 0px 3px 3px #0074FC;
+    margin-top: -40vh;
+    margin-bottom: 10vh;
+    margin-left: -17vw; 
+     position: fixed;
+    display: flexbox; 
+    }
 }
+
   @media (min-width: 1400px) and (max-width: 1800px){
     .btncross{
       right: 0.5vw;
@@ -336,10 +335,11 @@ flex-shrink: 0;
     box-shadow: 0px 0px 3px 3px #0074FC;
     height: 70vh;
     width: 84vw;
-    margin-left: -16vw;
+    align-items: center;
+    justify-content: center;
+    margin-left: -17vw;
     position: fixed;
     margin-top: -35vh;
-    
     }
 
     h1{
@@ -380,15 +380,14 @@ flex-shrink: 0;
         width: 100%; /* Adjust the width as needed */
         height: 0.1%; /* Adjust the height as needed */
         background: rgba(51, 54, 63, 0.60);
-        margin-top: -2vh;
-
+        margin-top: 0vh;
     }
     
     .table {
         margin-left: 4vw;
         margin-right: 4vw;
         border-collapse: collapse;
-        border-radius: 10px 10px 0px 0px;
+        /* border-radius: 10px 10px 0px 0px; */
         overflow: hidden;
         /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
         align-items: center;
@@ -436,18 +435,7 @@ line-height: normal;
         /* padding: 2%; */
         font-size: 20px;
       }
-      
-    
-      
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
+        
       .btncross{
         right: 1vw;
         position: absolute;  
@@ -519,7 +507,7 @@ flex-shrink: 0;
       margin-left: 3vw;
       margin-right: 10vw;
       border-collapse: collapse;
-      border-radius: 10px 10px 0px 0px;
+      /* border-radius: 10px 10px 0px 0px; */
       overflow: hidden;
       /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
       align-items: center;
@@ -562,12 +550,7 @@ padding: 10px;
       font-size: 24px;
     }
     
-    
-    
-    tr:hover {
-      background-color: #f9f9f9;
-    }
-   
+
     .btncross{
       right: 10px;
       position: absolute;  

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MsalGuard, MsalGuardConfiguration, MsalInterceptorConfiguration, MsalModule, MsalRedirectComponent, MsalService } from "@azure/msal-angular";
 import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 const isIE =
@@ -71,6 +72,12 @@ const isIE =
       msalGuardConfig,
       msalInterceptorConfig,
     ),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
 
 
   ],

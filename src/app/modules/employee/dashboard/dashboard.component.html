@@ -90,7 +90,7 @@
       (cdkDragEnded)="onDragEnd($event, 'element4', false)" id="element4">
         <div class="pending-task-header"  [ngClass]="{'pt': activeTabs === 'ec'}" cdkDragHandlee>
           <img src="./../../../../assets/images/icons/clock.svg" alt="clock">
-          <span class="head ml-2">Pending Tasks</span>
+          <span class="head ml-2" [ngClass]="{'pt1': activeTabs === 'ec'}">Pending Tasks</span>
         </div>
         <div class="card-body">
           <ul class="task1">
@@ -106,7 +106,7 @@
         <div class="border">
           <div class="upcoming-events-header"  [ngClass]="{'ue': activeTabs === 'ec'}" cdkDragHandle>
             <img src="assets/images/icons/events.svg">
-            <span class="head ml-2">Upcoming Events</span>
+            <span class="head ml-2" [ngClass]="{'ue1': activeTabs === 'ec'}">Upcoming Events</span>
           </div>
           <div class="card-body">
             <ul class="task1">

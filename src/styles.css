@@ -11,8 +11,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 :root {      
     --primary-color: #082737;
     
-  
-  
     --secondary-color: rgba(8, 39, 55, 0.95);
     --accent-color: #205072;
     --details-header: #38A3A5;

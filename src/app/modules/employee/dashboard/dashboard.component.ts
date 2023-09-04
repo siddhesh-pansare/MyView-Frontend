@@ -27,7 +27,7 @@ export class DashboardComponent implements OnInit {
   selectedTab = 'EC';
   content: any;
   activeTab: string = 'Delivery Council';
-
+  activeTabs: string = 'dc';
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award', dialogComponent: 'AwardComponent' },
@@ -76,7 +76,9 @@ export class DashboardComponent implements OnInit {
   selectTab(tab: string) {
     this.selectedTab = tab;
   }
-
+  activateTab(tab: string) {
+    this.activeTabs = tab;
+  }
   drop(event: CdkDragDrop<{ title: string; poster: string }[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }

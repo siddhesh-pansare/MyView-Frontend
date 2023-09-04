@@ -48,10 +48,24 @@
             <i class="fa-solid fa-arrows-up-down-left-right" style="color: #c0c0c0;"></i>
           </div>
           <div class="tab-group col-lg-12 col-md-12">
-            <mat-tab-group>
-              <mat-tab label="Delivery Council"><app-dc-information></app-dc-information></mat-tab>
-              <mat-tab label="Engineering Council"><app-ec-information></app-ec-information></mat-tab>
-            </mat-tab-group>
+            <div class="tabs">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" (click)="activateTab('dc')" [class.active]="activeTabs === 'dc'">Delivery Council</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" (click)="activateTab('ec')" [class.active]="activeTabs === 'ec'">Engineering Council</a>
+                </li>
+              </ul>
+              <div class="line2"></div><br>
+            
+              <span *ngIf="activeTabs === 'dc'">
+                <app-dc-information></app-dc-information>
+              </span>
+              <span *ngIf="activeTabs === 'ec'">
+                <app-ec-information></app-ec-information>
+              </span>
+            </div>
           </div>
         </div>
 

@@ -25,10 +25,9 @@ export class DashboardComponent implements OnInit {
 
   //declare variables
   loggedUserData: any;     //variable to store complete data from MIS
-  selectedTab = 'EC';
+  // selectedTab = 'EC';
   content: any;
-  activeTab: string = 'Delivery Council';
-
+  activeTabs: string = 'dc';
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
     { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt: 'award', dialogComponent: 'AwardComponent' },
@@ -63,9 +62,8 @@ export class DashboardComponent implements OnInit {
     );
   }
 
-  onTabChange(event: MatTabChangeEvent) {
-    this.activeTab = event.tab.textLabel;
-  }
+
+
 
   loadData(): void {
     const email = 'siddhesh.pansare@geminisolutions.com';
@@ -76,10 +74,12 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  selectTab(tab: string) {
-    this.selectedTab = tab;
+  // selectTab(tab: string) {
+  //   this.selectedTab = tab;
+  // }
+  activateTab(tab: string) {
+    this.activeTabs = tab;
   }
-
   drop(event: CdkDragDrop<{ title: string; poster: string }[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
   }

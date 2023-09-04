@@ -4,6 +4,24 @@
   font-family: "Outfit", sans-serif;
 }
 
+.table-bordered th{
+  border: 1px solid #205072;
+}
+.close{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.close:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.date_column {
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  max-width: 100%;
+}
+
 .logo1,.logo2,.logo{
   cursor: pointer;
 }
@@ -97,11 +115,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .btn {
@@ -117,14 +135,9 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
-  }
-  .btn:active{
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
   .profile {
     background-color: #205072;
@@ -175,11 +188,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .btn {
@@ -196,14 +209,9 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
-  }
-  .btn:active{
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
 
   .profile {
@@ -246,7 +254,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table {
+  table,td,th,tr {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
@@ -266,14 +274,10 @@ table.table tr th {
     transition: box-shadow 0.3s ease;
   }
 
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
-  }
-  .btn:active{
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
 
   .profile {
@@ -313,7 +317,7 @@ table.table tr th {
   }
 
   .title {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 700;
     color: #205072;
     margin: 0px;
@@ -331,7 +335,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table {
+  table,td,th,tr,tbody{
     border-color: #205072;
     border: 1;
     border-radius: 2px;
@@ -352,14 +356,9 @@ table.table tr th {
   }
 
   /* Add the hover effect */
-  .btn:hover{
-    background:rgba(250, 10, 10, 0.40);
-    border:rgba(0, 0, 0, 0.4);
-  }
-  .btn:active{
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    /* Medium sharp shadow around borders */
   }
   .profile {
     background-color: #205072;
@@ -382,3 +381,5 @@ table.table tr th {
     width: 1.5vw;
   }
 }
+
+

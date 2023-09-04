@@ -10,13 +10,13 @@
             </div>
             <div class="modal-body">
                 <div class="row d-flex justify-content-between">
-                    <div class="col-4 text-start">
+                    <div class="col-3 text-start">
                         <img class=" profile" src="/assets/images/Ellipse_52.png">
                     </div>
-                    <div class="col-4 text-center">
+                    <div class="col-6 text-center">
                         <p class="title">Other Contributions</p>
                     </div>
-                    <div class="col-4 text-end">
+                    <div class="col-3 text-end">
                         <img class="awardslogo"
                             src="/assets/images/contri_logo.png"
                             alt="Image 2">
@@ -35,7 +35,7 @@
                         </thead>
                         <tbody class="text-center">
                             <tr *ngFor="let cv of contributions;let i=index">
-                                <td>{{ cv.Date }}</td>
+                                <td class="date_column">{{ cv.Date }}</td>
                                 <td>{{ cv.Details }}</td>
                                 <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
                             </tr>
@@ -52,7 +52,7 @@
   
             </div>
             <div class="modal-footer d-flex bottom-0 justify-content-end">
-                <button type="button" class="btn btn-warning">Add New contributions</button>
+                <button type="button" class="btn ">Add New contributions</button>
             </div>
         </div>
     </div>

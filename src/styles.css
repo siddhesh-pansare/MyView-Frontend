@@ -9,3 +9,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+:root{
+    --font-family: 'Outfit', sans-serif;
+    --header-font-size:16px;
+    --accent-color:#205072;
+    --experience-color:#56C596;
+    --parameter-font-size:16px;
+    --charcoal-color:#33363F99;
+    --content-font-size:14px;
+    --client-name-size:12px;
+    --squid-ink-color:#082737;
+    --wfh-color:#FF9900;
+    --wfo-color:#00AC2B;
+    --leave-color:#FF0000;
+    --card-profile-font-size:14px;
+    --card-desig-font-size:12px;
+    --card-client-font-size:12px;
+    --card-status-font-size:10px;
+    
+
+}

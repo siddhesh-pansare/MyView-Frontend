@@ -11,13 +11,13 @@
             <div class="modal-body">
                 <div class="row d-flex justify-content-between">
                     <div class="col-4 text-start">
-                        <img class=" profile" src="/assets/images/Ellipse_52.png">
+                        <img class="dialog-box-image">
                     </div>
                     <div class="col-4 text-center">
-                        <p class="title">Other Contributions</p>
+                        <p class="dialog-box-title">Other Contributions</p>
                     </div>
                     <div class="col-4 text-end">
-                        <img class="awardslogo"
+                        <img class="dialog-box-icon"
                             src="/assets/images/contri_logo.png"
                             alt="Image 2">
                     </div>
@@ -37,7 +37,11 @@
                             <tr *ngFor="let cv of contributions;let i=index">
                                 <td>{{ cv.Date }}</td>
                                 <td>{{ cv.Details }}</td>
-                                <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+                                <td><img src="assets/images/edit.png"
+                                        class="logo1 logo-hover"><img
+                                        src="assets/images/delete.png"
+                                        class="logo2 logo-hover"
+                                        (click)="deleteRow(i)"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -45,15 +49,17 @@
                         class="d-flex justify-content-center align-content-center"><img
                             class="d-flex no_data  justify-content-center"
                             *ngIf="contributions.length===0"
-                            src="/assets/images/contri_no_data.png"alt="No Data" />
-                            
+                            src="/assets/images/contri_no_data.png"
+                            alt="No Data" />
+
                     </div>
                 </div>
-  
+
             </div>
             <div class="modal-footer d-flex bottom-0 justify-content-end">
-                <button type="button" class="btn btn-warning">Add New contributions</button>
+                <button type="button" class="dialog-box-button btn btn-warning">Add
+                    New contributions</button>
             </div>
         </div>
     </div>
-  </div>
+</div>

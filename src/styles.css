@@ -1,10 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  font-family: "Outfit", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+/* Dialog Box Title */
+.dialog-box-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #205072;
+  margin-top: 30px !important;
+  padding-top: 10px;
+  width: 300px;
+}
+
+/* Dialog Box Image */
+.dialog-box-image {
+  border-radius: 100px;
+  border: 1px solid #38a3a5;
+  background: url(https://picsum.photos/200), lightgray 50% / cover no-repeat;
+  border: 1px solid #38a3a5;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* Dialog Box Icon */
+.dialog-box-icon {
+  height: 100px;
+  width: 100px;
+  background-position-y: bottom;
+}
+
+/* Dialog Box Button */
+.dialog-box-button {
+  border-radius: 10px;
+  background: #ffd700; /* You can modify the background color here */
+  color: #205072;
+  text-align: center;
+  size: 80%;
+  font-weight: 600;
+  font-size: 14px;
+  border: none; /* Remove the default border */
+  transition: box-shadow 0.3s ease;
+}
+
+.dialog-box-button:hover {
+  box-shadow: 0px 0px 3px 3px #205072;
+  /* Medium sharp shadow around borders */
+}
+
+table {
+  border-color: #205072;
+  border: 1;
+  border-radius: 2px;
+}
+.table-bordered th tr td {
+  border: 1px solid #205072;
+}
+
+table.table tr td th {
+  border: 1px solid #205072;
+  color: #38a3a5;
+  font-weight: 500;
+}
+
+table.table tr th td {
+  border: 1px solid #205072;
+  color: #205072;
+  font-weight: 900;
+}
+
+.close_btn {
+  height: 70%;
+  width: 70%;
+  border: none;
+}

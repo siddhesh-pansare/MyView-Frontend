@@ -14,16 +14,16 @@
           <div class="row"></div>  
               <!-- Left Column - Image -->
           <div class="divison col-12 col-sm-5 col-md-5 col-lg-5 col-xl-4">
-              <div class="border-right">
+              <!-- <div class="border-right"> -->
                 <div class="col leftright">
               <div class="row ">
                 
               <div class="image-outer-container col-3 col-sm-2 col-md-2 col-lg-3 col-xl-3 pr-sm-0 m-0 ">
-                <div class="text-img">
+                <div class="text-img mt-0">
                   <div>
                     <!-- <div class="circular-wrapper"> -->
                       <img
-                        class=" profile mt-2">
+                        class=" profile mt-1 mr-1">
                     <!-- </div> -->
                     
                   </div>
@@ -40,7 +40,7 @@
               <div class="col-6 col-sm-8 col-lg-8 col-md-8 col-xl-8 pl-0 m-0 ">
                 <div class="card-body">
                   <!-- Name and Position -->
-                  <h5 class="custom-card-title">Mansi Goyal</h5>
+                  <h5 class="custom-card-title mb-0">Mansi Goyal</h5>
                   <p class="custom-card-designation">Software Engineer - L1</p>
                   <!-- Other Details -->
                   <div class="details">
@@ -54,8 +54,8 @@
               </div></div>
             </div>
              
-            <div class="col detaildc" style="height: 29vh; margin-top: -1.5vw;">
-              <div class="card "> <!--DC information card-->
+            <div class="col detaildc">
+              <div class="card mt-0.25"> <!--DC information card-->
                 <div class="card-header" (click)="toggleCollapse('details')">
                   <div class="card-info"><img class="headlogo" src="../../../../../assets/images/icons/information.svg" alt="info-icon">
                   &nbsp;Details</div>
@@ -68,7 +68,7 @@
                     <div class="col-6"><img src="assets/images/email.png">&nbsp;&nbsp;Email</div>
                     <!--<div class="col-6 align-items-center">{{loggedUserData.Email}}</div>-->
                     <div class="col-6">
-                      <span class="email info" id="emailCopy" >mansi.mukesh@geminis..</span>
+                      <span class="email info" id="emailCopy" >mansi.mukesh@gemini..</span>
                     </div>
                   </div>
                   <div class="row">
@@ -92,7 +92,7 @@
                       <p class="info">07-Feb-2022</p>
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="row pb-0">
                     <div class="col-6"><img src="assets/images/visa.png">&nbsp;&nbsp;Visa Status</div>
                     <!--<div class="col-6 align-items-center">{{loggedUserData.Visa}}</div>-->
                     <div class="col-6">
@@ -103,7 +103,7 @@
               </div></div>
               
               <div class="col skill" >
-              <div class="card" style="height: 26vh;"> <!--Skills-->
+              <div class="card mt-0.25"> <!--Skills-->
                 <div class="card-header" (click)="toggleCollapse('skills')">      
                    <div class="card-info"><img class="headlogo" src="../../../../../assets/images/skills logo.png" alt="info-icon">
                       Skills</div>     
@@ -137,7 +137,7 @@
                       <div ><img class="imgskill" src="assets/images/download 2.png" style="height: 30px; width: 70px;"> </div>
                       <div class="imgstar"><img src="assets/images/ratings.png"> </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 pb-0">
                       <div ><img class="imgskill" src="assets/images/dbt.png" style="height: 30px; width: 70px;"> </div>
                       <div class="imgstar"><img src="assets/images/ratings.png"> </div>
                     </div>
@@ -148,7 +148,7 @@
                 
             </div></div>
   
-              </div>
+              
             </div>
 
 
@@ -165,15 +165,15 @@
                 </div>                  
                 </mat-tab-group>  
                
-                <div class="row border-top">
+                <div class="row border-top ">
                 
-                  <div class="col-6">
+                  <div class="col-6 mt-2">
             
                     <span class="attendence">Clients Visits Attendence </span><span><img class="percent" src="assets/images/icons/percentage.png"></span>
             
                   </div>
             
-                  <div class="col-6">
+                  <div class="col-6 mt-2">
             
                     <span class="attendence">Office Visits Attendence </span><img class="percent" src="assets/images/icons/100percent.png">
             
@@ -183,18 +183,21 @@
             
                 <div class="row">
             
-                  <div class="col-8">
+                  <div class="col-4 mt-2">
             
-                    <span class="attendence">Internal Meetings Attendence </span><img class="percent" src="assets/images/icons/80percent.png">
+                    <span class="attendence">Internal Meetings Attendence </span>
             
                   </div>
+                  <div class="col-6 ml-2 mt-2">
+                  <img class="percent" src="assets/images/icons/80percent.png">
+                </div>
             
                 </div>  
               </div>
             
                
               <div class="col-xs-12 col-sm-5 col-lg-5 col-xl-3 col-md-5 ">  
-                <div class="border-left">                         
+                <!-- <div class="border-left">                          -->
                 <div class="row-1 ">
                   <div class="card m-2 mb-0 ">            
                     <div class="card-header" (click)="toggleCollapse('activity')">            
@@ -214,22 +217,26 @@
                     </div>            
                   </div></div> 
                   
-                  <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon">
-                    
-                    <div class="row menu-cards-row">  
-                <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3" *ngFor="let card of cards">
-                  
-                  <div class="menu-card-box">
+                  <div class="cards col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 awaricon example-box" cdkDragBoundary=".example-boundary"
+                  cdkDrag>
+                 
+                    <div class="row menu-cards-row example-list" cdkDropList (cdkDropListDropped)="drop($event)">  
+                <div class="col-sm-1 col-lg-6 col-md-6 menu-card-container mt-3 example-box" *ngFor="let card of cards; let i = index">
+                  <div class="menu-card-box"  (click)="openDialog(card.dialogComponent)">
+
+                    <div cdkDragHandle>
+                      <span class="empty-handler">.</span>
+                    </div>
+
                     <img [src]="card.cardImageSrc" [alt]="card.ImageAlt" class="img-fluid menu-card-image">
-                    
                   </div>
-                  <span class="menu-card-title pt-1">{{card.cardTitle}}</span>
-                  
+                  <span class="menu-card-title pt-1">{{card.cardTitle}}</span>  
+
                 </div></div><br><br>
-                
+
               </div>
                 
-              </div>
+              
               <a href=".."><img  class="remark-icon" src="assets/images/My Remarks Button.svg"></a>   
             </div> 
             </div>

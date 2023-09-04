@@ -46,13 +46,14 @@ font-weight: 600;
 line-height: normal;
 }
 
-.card-text {
+.card-text1 {
   color: #56C596;
-font-family: Outfit;
-font-size: 14px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-family: Outfit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: -0.8vw;
 }
 
 .council-head {

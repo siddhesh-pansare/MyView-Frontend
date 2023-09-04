@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
 /* Apply hover styles for the first card */
-
   .menu-card-container:nth-child(1):hover .menu-card-box {
     border-radius: 5px;
     border: 1px solid #205072;
@@ -33,7 +32,7 @@
   border-radius: 5px;
   border: 1px solid #38A3A5;
   background: #FFF;
-  box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.50);
+  box-shadow: 0px 0px 2px 2px rgba(255, 6, 6, 0.50);
   transition-property: transform;
   /* Apply transition to the transform property */
   transition-duration: 300ms;
@@ -47,7 +46,7 @@
   border-radius: 5px;
   border: 1px solid #38A3A5;
   background: #FFF;
-  box-shadow: 0px 0px 3px 3px #7BE495;
+  box-shadow: 0px 0px 2px 2px #7BE495;
   transition-property: linear;
   /* Apply transition to the transform property */
   transition-duration: 300ms;
@@ -61,7 +60,7 @@
   border-radius: 5px;
   border: 1px solid #38A3A5;
   background: #FFF;
-  box-shadow: 0px 0px 3px 3px #9747FF;
+  box-shadow: 0px 0px 2px 2px #9747FF;
   transition-property: transform;
   /* Apply transition to the transform property */
   transition-duration: 300ms;
@@ -75,7 +74,7 @@
   border-radius: 5px;
   border: 1px solid #38A3A5;
   background: #FFF;
-  box-shadow: 0px 0px 3px 3px #E50255;
+  box-shadow: 0px 0px 2px 2px #E50255;
   transition-property: transform;
   /* Apply transition to the transform property */
   transition-duration: 300ms;
@@ -83,6 +82,10 @@
   transition-timing-function: ease-in;
   /* Animation timing function */
   animation-name: smartAnimate;
+}
+
+.menu-card-container:nth-child(6) .menu-card-box {
+margin-left: 0.8vw;
 }
 
 /* Add more styles for additional cards as needed */
@@ -94,9 +97,9 @@
 
 }
 
-.menu-card-container:hover {
+.menu-card-container:hover{
   transform: scale(1);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
   text-shadow: 0px 0px 5px #205072;
 }
 
@@ -119,8 +122,8 @@ body {
 
 .task1 {
   font-family: Outfit;
-  color: #205072;
-  font-weight: 600;
+  color: #205072 !important;
+  font-weight: 600 !important;
   font-size: 12px;
 }
 
@@ -285,6 +288,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
 
 .container-fluid {

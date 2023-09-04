@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EmployeeModule } from './modules/employee/employee.module';
 import { MatPaginatorModule } from '@angular/material/paginator';
@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MsalGuard, MsalGuardConfiguration, MsalInterceptorConfiguration, MsalModule, MsalRedirectComponent, MsalService } from "@azure/msal-angular";
 import { InteractionType, PublicClientApplication } from '@azure/msal-browser';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 const isIE =
@@ -61,7 +62,7 @@ const isIE =
           clientId: "6c36c042-0bfb-450c-81b9-bdca9a92c9e4", // Application (client) ID from the app registration
           authority:"https://login.microsoftonline.com/b9806c7d-9280-4e44-afea-6dc0ff495c2f", // The Azure cloud instance and the app's sign-in audience (tenant ID, common, organizations, or consumers)
           //redirectUri: "https://dedashboard-np.geminisolutions.com/callback", // This is your redirect URI
-          redirectUri: "http://localhost:4200/callback",
+          redirectUri: "http://127.0.0.1:4200/callback",
         },
         cache: {
           cacheLocation: "localStorage",
@@ -71,6 +72,12 @@ const isIE =
       msalGuardConfig,
       msalInterceptorConfig,
     ),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
 
 
   ],

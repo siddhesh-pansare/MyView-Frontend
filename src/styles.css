@@ -6,6 +6,10 @@
   font-family: "Outfit", sans-serif;
 }
 
+:root {
+  --primary-color: #208572;
+}
+
 html,
 body {
   height: 100%;
@@ -34,7 +38,7 @@ body {
 .dialog-box-title {
   font-size: 32px;
   font-weight: 700;
-  color: #205072;
+  color: var(--primary-color);
   margin-top: 30px !important;
   padding-top: 10px;
   width: 300px;
@@ -62,7 +66,7 @@ body {
 .dialog-box-button {
   border-radius: 10px;
   background: #ffd700; /* You can modify the background color here */
-  color: #205072;
+  color: var(--primary-color);
   text-align: center;
   size: 80%;
   font-weight: 600;
@@ -77,23 +81,23 @@ body {
 }
 
 table {
-  border-color: #205072;
+  border-color: var(--primary-color);
   border: 1;
   border-radius: 2px;
 }
 .table-bordered th tr td {
-  border: 1px solid #205072;
+  border: 1px solid var(--primary-color);
 }
 
 table.table tr td th {
-  border: 1px solid #205072;
+  border: 1px solid var(--primary-color);
   color: #38a3a5;
   font-weight: 500;
 }
 
 table.table tr th td {
-  border: 1px solid #205072;
-  color: #205072;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
   font-weight: 900;
 }
 

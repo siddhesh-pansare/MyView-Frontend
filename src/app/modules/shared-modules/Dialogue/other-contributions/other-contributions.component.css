@@ -3,6 +3,10 @@
 * {
   font-family: "Outfit", sans-serif;
 }
+
+.table-bordered th{
+  border: 1px solid #205072;
+}
 .close{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   

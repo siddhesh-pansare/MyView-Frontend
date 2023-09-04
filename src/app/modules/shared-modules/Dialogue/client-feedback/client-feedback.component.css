@@ -3,6 +3,9 @@
 * {
   font-family: "Outfit", sans-serif;
 }
+.table-bordered th{
+  border: 1px solid #205072;
+}
 .logo1,.logo2,.logo{
   cursor: pointer;
 }

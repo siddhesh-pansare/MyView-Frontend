@@ -1,38 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap%22);
 
 body {
   margin: 0px;
   padding: 0px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
-.scratchbutton {
-  position: relative;
-  /* margin-top: 39%;
-  margin-left: 92%;
-   */
-   
 
-}
-/* .employees{
-  padding-left: -15px;
-  background-color: red;
-  
-} */
-
-
-.scratchbutton img {
-  position: fixed;
-  bottom: 70px;
-  right: 3.2%;
-  cursor: pointer;
-  background: transparent;
-
-}
-
-.scratchbutton img:hover {
-
-  transform: perspective(6.5cm) scale(1.2) rotateX(10deg);
-}
 
 #sidebar {
   padding: 0px;
@@ -129,7 +103,7 @@ ul{
   pointer-events: none;
   /* This prevents the name from being clickable */
   transition: opacity 0.3s ease;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 15px;
   text-align: inherit;
   
@@ -303,9 +277,9 @@ a .openposition{
   }
 
   #sidebar ul.components li a img {
-    width: 40%;
+    width: 60%;
     /* Adjust the width as per your requirement */
-    height: 40%;
+    height: 60%;
     /* Adjust the height as per your requirement */
     transition: transform 0.3s ease;
     /* Apply a transition for smooth animation */

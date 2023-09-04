@@ -86,7 +86,21 @@ line-height: normal;
   padding-right: 10%;
 }
 
+.header-1{
+  border-radius: 0px;
+}
 
+
+.council1 {
+  color: rgba(0, 0, 0, 0.30);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  padding-top: 6px;
+}
 
 .card-header {
   border-radius: 5px 5px 0px 0px;

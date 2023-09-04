@@ -61,4 +61,5 @@
   top: 50px;
   left: 60px;
   overflow-y: auto;
+  height: calc(100vh - 30px);
 }

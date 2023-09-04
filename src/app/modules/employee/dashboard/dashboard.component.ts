@@ -12,6 +12,7 @@ import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-fe
 import { OtherContributionsComponent } from '../../shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { MatTabChangeEvent } from '@angular/material/tabs';
 // import { ClientFeedbackComponent } from '../../shared-modules/Dialogue/client-feedback/client-feedback.component';
 
 @Component({
@@ -25,8 +26,7 @@ export class DashboardComponent implements OnInit {
   loggedUserData: any;     //variable to store complete data from MIS
   selectedTab = 'EC';
   content: any;
-  activeTab: string = 'dc';
-
+  activeTab: string = 'Delivery Council';
 
 
   cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
@@ -61,6 +61,9 @@ export class DashboardComponent implements OnInit {
     );
   }
 
+  onTabChange(event: MatTabChangeEvent) {
+    this.activeTab = event.tab.textLabel;
+  }
 
   loadData(): void {
     const email = 'siddhesh.pansare@geminisolutions.com';

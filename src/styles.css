@@ -7,8 +7,10 @@
 }
 
 :root {
-  --primary-color: #208572;
+  --accent-color: #205072;
   --font-size-btn: 14px;
+  --font-weight-bold: 600;
+  --dialog-box-table-font-color: #38a3a5;
 }
 
 html,
@@ -38,16 +40,16 @@ body {
 /* Dialog Box Title */
 .dialog-box-title {
   font-size: 32px;
-  font-weight: 700;
-  color: var(--primary-color);
-  margin-top: 30px !important;
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-color);
+  margin-top: 50px !important;
   padding-top: 10px;
   width: 300px;
 }
 
 /* Dialog Box Image */
 .dialog-box-image {
-  border: 1px solid #38a3a5;
+  border: 1px solid var(--dialog-box-table-font-color);
   background: url(https://picsum.photos/200), lightgray 50% / cover no-repeat;
   height: 100px;
   width: 100px;
@@ -65,7 +67,7 @@ body {
 .dialog-box-button {
   border-radius: 10px;
   background: #ffd700; /* You can modify the background color here */
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-align: center;
   size: 80%;
   font-weight: 600;
@@ -75,28 +77,23 @@ body {
 }
 
 .dialog-box-button:hover {
-  box-shadow: 0px 0px 3px 3px var(--primary-color);
+  box-shadow: 0px 0px 3px 3px var(--accent-color);
   /* Medium sharp shadow around borders */
 }
 
 table {
-  border-color: var(--primary-color);
+  border-color: var(--accent-color);
   border: 1;
   border-radius: 2px;
 }
-.table-bordered th tr td {
-  border: 1px solid var(--primary-color);
-}
 
-table.table tr td th {
-  border: 1px solid var(--primary-color);
-  color: #38a3a5;
+table.table tr td {
+  color: var(--dialog-box-table-font-color);
   font-weight: 500;
 }
 
-table.table tr th td {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+table.table tr th {
+  color: var(--accent-color);
   font-weight: 900;
 }
 

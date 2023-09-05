@@ -1,841 +1,271 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+/* Add this to your component's CSS or to a global stylesheet */
+.custom-modal-dialog {
+  width: 70vw !important;
+  background-color: white;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  height: 80vh !important;
+}
 
-@media (min-width: 300px) and (max-width: 600px){
-  .line2{
-    position: relative;
-    border-top: 1px solid #000;
-    box-sizing: border-box;
-    width: 150%;
-    height: 0.06rem;
-    margin-left: 10%;
-    margin-top: -2rem;
-    align-items: center;
+.modal-content {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
 
+.close {
+  background: none;
+  padding: 0;
+  border: 0;
+}
+
+.close:hover {
+  box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
+}
+
+@media screen and (min-width: 320px) {
+  .modal-dialog {
+    max-width: 310px;
+    height: 60vh;
+    border-radius: 4px;
+    border: 1px solid #205072;
+    margin-left: -30px;
+    margin-right: -30px;
+    box-shadow: 0 0 3px 3px #7be495;
   }
-  .nav-link{
+
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #205072;
+  }
+
+  .awardslogo {
+    height: 40px;
+    width: 40px;
+    background-position-y: bottom;
+  }
+
+  .close_btn {
+    height: 50%;
+    width: 50%;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 9px;
+  }
+
+  .btn {
+    size: 60%;
+    font-weight: 600;
     font-size: 10px;
+    border: none; /* Remove the default border */
+    background-color: rgba(
+      250,
+      10,
+      10,
+      0.5
+    ); /* Set the button background color */
+    color: #205072; /* Set the text color to white */
 
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
   }
-  /* .container{
-    margin-right: -50% ;
-  } */
+
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
+  .profile {
+    background-color: #205072;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .no_data {
+    height: 70%;
+    width: 70%;
+  }
 }
-/* Media query for mobile screens */
-@media (max-width: 768px) {
-    .container{
-      width: 70vw;
-      height: 70vh;
-    flex-shrink: 0;
+
+@media screen and (min-width: 425px) {
+  .modal-dialog {
+    max-width: 90vw;
+    height: 70vh;
+    border-radius: 5px;
+    border: 1px solid #205072;
+    box-shadow: 0 0 3px 3px #7be495;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #205072;
+  }
+
+  .awardslogo {
+    height: 40px;
+    width: 40px;
+    background-position-y: bottom;
+  }
+
+  .close_btn {
+    height: 50%;
+    width: 50%;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 12px;
+  }
+
+  .btn {
+    size: 60%;
+    font-weight: 600;
+    font-size: 10px;
+    border: none; /* Remove the default border */
+    background-color: rgba(
+      250,
+      10,
+      10,
+      0.5
+    ); /* Set the button background color */
+    color: #205072; /* Set the text color to white */
+
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
+
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
+
+  .profile {
+    background-color: #205072;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+
+  .no_data {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    max-width: 60vw;
+    height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: -30vh;
-    margin-left: 2%;
-    /* margin-top: -30vh;
-    margin-left: 2%; */
-    /* margin-right: 15vw; */
-    position: fixed;
-    box-shadow: 0px 0px 3px 3px #7BE495;
-    display: flexbox;
-
-    }
-    .nav{
-
-  justify-content: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  /* text-decoration: none; */
-
-
-    }
-    .nav-link{
-  text-decoration: none;
-
-  color: gray;
-  padding-bottom: 3px;
-  /* border-bottom: 0.2px solid gray; */
-  width: auto;
-  max-width: 200px;
-  vertical-align: middle;
-  box-sizing: border-box;
-  padding: 10px 10px 10px 10px;
-  transition: transform 0.3s ease;
-
-    }
-
-
-    .nav-link:hover {
-      color: 	#3fbdc2;
-      transform: scale(1.1);
-      /*padding-bottom: 3px; */
-    }
-
-    .nav-link:active{
-      color: #205072;
-    }
-
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 79%;
-      height: 0.06rem;
-      margin-left: 12%;
-      margin-top: -2rem;
-      align-items: center;
-
-    }
-
-    .nodata{
-      display: block;
-      margin-left: 15vw;
-      margin-top: -5vh;
-      padding: 5px;
-      width: 35vw;
-      height: 32vh;
-
-    }
-    .image-container {
-      text-align: center;
+    box-shadow: 0 0 3px 3px #7be495;
   }
-    .image-caption{
-      display: block;
-      margin-left: 27vw;
-      margin-top: -15vh;
-      padding: 5px;
-      width: 14vw;
-      height: 18vh;
-    }
 
-    h1{
-      color: #205072;
-      text-align: center;
-      font-family: Outfit;
-      font-size: 3vw;
-      font-style: normal;
-      font-weight: bold;
-      line-height: normal;
-      margin-top:10vh;
-
-    }
-
-    .imgsize{
-      width: 10vw;
-      height: 10vw;
-      align-content: flex-start;
-      margin-left: 1vw;
-      margin-top:8vh;
-    }
-
-    .logo{
-      width: 8vw;
-      height: 8vw;
-      align-content: flex-end;
-      background: white;
-      /* align-items: flex-end;   */
-      position: absolute;
-      margin-top: 8vh;
-      margin-left: 5vw;
-
-    }
-
-
-    .line {
-      width: 101%; /* Adjust the width as needed */
-      height: 0.1%; /* Adjust the height as needed */
-      background: rgba(51, 54, 63, 0.60);
-      margin-top: -2vh;
-
-    }
-    .left-cell {
-      border-right: none;
-      border-left: none;
-      border-top: none;
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #205072;
   }
-  .right-cell {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-}
-    .borderless-table {
-        margin-left: 12vw;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        align-items: center;
-        border: #205072;
 
-      }
+  .awardslogo {
+    height: 50px;
+    width: 50px;
+    background-position-y: bottom;
+  }
 
-      th, td {
-        padding: 1vw;
-        border: 1px solid #ccc;
-        color: gray;
-text-align: center;
-font-family: Outfit;
-font-size: 2.5vw;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  .close_btn {
+    height: 70%;
+    width: 70%;
+  }
 
-      }
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 14px;
+  }
 
-      td{
-        color: #38A3A5;
-text-align: center;
-font-family: Outfit;
-font-size: 2vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-      }
+  .btn {
+    size: 80%;
+    font-weight: 600;
+    font-size: 14px;
+    border: none; /* Remove the default border */
+    background-color: rgba(
+      250,
+      10,
+      10,
+      0.5
+    ); /* Set the button background color */
+    color: #205072; /* Set the text color to white */
 
-      th {
-        background-color: #FFF;
-        font-weight: bold;
-      }
+    /* Add a thin shadow on hover */
+    transition: box-shadow 0.3s ease;
+  }
 
-      tr:last-child td {
-        border-bottom: none;
-      }
+  /* Add the hover effect */
+  .btn:hover {
+    box-shadow: 0px 0px 3px 3px #205072;
+    /* Medium sharp shadow around borders */
+  }
 
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
+  .profile {
+    background-color: #205072;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
 
-      } */
-      .btncross{
-        right: 1vw;
-        position: absolute;
-        top: 1vw;
-        cursor: pointer;
-        height: 15px;
-      width: 15px;
-      }
-
-
+  .no_data {
+    height: 80%;
+    width: 80%;
+  }
 }
 
-
-
-   /* For screens with a minimum width of 1025 pixels and larger (Laptop screens) */
-  @media (min-width: 1025px){
-
-    .container{
-      width: 70vw;
-      height: 80vh;
-    flex-shrink: 0;
+@media screen and (min-width: 1024px) {
+  .modal-dialog {
+    max-width: 70vw;
+    height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: -40vh;
-    margin-left: -20vw;
-    position: fixed;
-    box-shadow: 0px 0px 3px 3px #7BE495;
-    display: flexbox;
-    }
-    .nav{
-      /* display: flexbox; */
-  justify-content: center;
-  /* flex-wrap: wrap; */
-  text-align: center;
-
-
-    }
-
-    .nav-link{
-      text-decoration: none;
-      /* display: inline-table;  */
-      color: gray;
-      /* border-bottom: 0.2px solid gray; */
-      width: 100%;
-      max-width: 200px;
-      font-size: 16px;
-      /* vertical-align: middle; */
-      box-sizing: border-box;
-      padding-bottom: 1px;
-      margin-bottom: 1.5%;
-      transition: transform 0.3s;
-      line-height: 1;
-
-        }
-
-        .nav-link:hover {
-          color: #3fbdc2;
-          /* border-bottom: 0.2px solid #3fbdc2; */
-          transform: scale(1.1);
-        }
-
-    .nav-link:active{
-      color: #205072;
-    }
-
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 65%;
-      height: 0.06rem;
-      margin-left: 18%;
-      margin-top: -1.5rem;
-    }
-
-    .nodata{
-      display: block;
-      margin-left: 20vw;
-      margin-top: -8vh;
-      padding: 5px;
-      width: 25vw;
-      height: 48vh;
-
-    }
-    .image-container {
-      text-align: center;
+    box-shadow: 0 0 3px 3px #7be495;
   }
-    .image-caption{
-      display: block;
-      margin-left: 28vw;
-      margin-top: -18vh;
-      padding: 5px;
-      width: 10vw;
-      height: 18vh;
-    }
-
-    h1{
-      color: #205072;
-      text-align: center;
-      font-family: Outfit;
-      font-size: 2vw;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-      margin-top:18vh;
-
-
-    }
-
-    .imgsize{
-      width: 8vw;
-      height: 8vw;
-      border-radius: 100px;
-      /* border: 1px solid #38A3A5; */
-      margin-left: 1vw;
-      align-content: flex-start;
-      margin-top:11vh;
-    /* background: lightgray 50% / cover no-repeat; */
-    }
-
-    .logo{
-      width: 7vw;
-      height: 7vw;
-      background: white;
-      align-items: flex-end;
-      position: absolute;
-      margin-top: 12vh;
-      margin-left: 5vw;
-    }
-
-
-    .line {
-      width: 100%; /* Adjust the width as needed */
-      height: 0.1vh; /* Adjust the height as needed */
-      background: rgba(51, 54, 63, 0.60);
-      margin-top: -2vh;
-    }
-    .left-cell {
-      border-right: none;
-      border-left: none;
-      border-top: none;
+  .custom-modal-dialog {
+    width: 70vw !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    height: 80vh !important;
   }
-  .right-cell {
-    border-left: none;
-    border-right: none;
-    border-top: none;
+
+  .modal-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+
+  .titleBar {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  table {
+    border-color: #205072;
+    border: 1;
+    border-radius: 2px;
+    font-size: 14px;
+  }
+
+  .no_data {
+    height: 40%;
+    width: 40%;
+  }
 }
-
-    .borderless-table {
-        margin-left: 13vw;
-        margin-right: 7vw;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        align-items: center;
-        border: #205072;
-
-      }
-
-      th, td {
-        padding: 1vw;
-        border: 1px solid #ccc;
-        color: gray;
-text-align: center;
-font-family: Outfit;
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-
-      }
-
-      td{
-        color: #38A3A5;
-text-align: center;
-font-family: Outfit;
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-      }
-
-      th {
-        background-color: #FFF;
-        font-weight: bold;
-      }
-
-      tr:last-child td {
-        border-bottom: none;
-      }
-
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
-      .btncross{
-        right: 0.5vw;
-        position: absolute;
-        top: 0.5vw;
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-      }
-
-
-  }
-
-
-  @media (min-width: 1185px) and (max-width: 1479px){
-  .line2{
-    position: relative;
-    border-top: 1px solid #000;
-    box-sizing: border-box;
-    width: 53%;
-    height: 0.06rem;
-    margin-left: 24%;
-    margin-top: -1.5rem;
-  }
-  }
-  @media (min-width: 1480px) and (max-width: 1735px){
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 42%;
-      height: 0.06rem;
-      margin-left: 29%;
-      margin-top: -1.5rem;
-    }
-  }
-  @media (min-width: 1736px) and (max-width: 2250px){
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 37%;
-      height: 0.06rem;
-      margin-left: 31.5%;
-      margin-top: -1.5rem;
-    }
-  }
-
-
-  /* Media query for tablet screens */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container{
-      width: 84vw;
-      height: 70vh;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px #0074FC;
-    margin-top: -35vh;
-    /* margin-bottom: 20vh; */
-    margin-left: -16vw;
-    position: fixed;
-    box-shadow: 0px 0px 3px 3px #7BE495;
-    display: flexbox;
-    }
-    .nav{
-      /* display: flexbox; */
-  justify-content: center;
-
-    }
-    .nav-link{
-  text-decoration: none;
-  /* display: inline-block;  */
-  color: gray;
-  padding-bottom: 3px;
-  /* border-bottom: 0.2px solid gray;   */
-  vertical-align: top;
-  box-sizing: border-box;
-  padding: 10px 10px 10px 10px;
-
-    }
-    .nav-link:hover {
-      color: #3fbdc2;
-      /* border-bottom: 0.2px solid #3fbdc2; */
-      transform: scale(1.1);
-    }
-
-    .nav-link:active{
-      color: #205072;
-    }
-
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 65%;
-      height: 0.06rem;
-      margin-left: 17%;
-      margin-top: -3vh;
-    }
-    .nodata{
-      display: block;
-      margin-left: 17vw;
-      margin-top: -8vh;
-      padding: 5px;
-      width: 40vw;
-      height: 48vh;
-
-    }
-    .image-container {
-      text-align: center;
-  }
-    .image-caption{
-      display: block;
-      margin-left: 32vw;
-      margin-top: -18vh;
-      padding: 5px;
-      width: 14vw;
-      height: 18vh;
-    }
-
-    h1{
-      color: #205072;
-      text-align: center;
-      font-family: Outfit;
-      font-size: 2.5vw;
-      font-style: normal;
-      font-weight: bold;
-      line-height: normal;
-      margin-top:18vh;
-
-
-    }
-
-    .imgsize{
-      width: 9vw;
-      height: 9vw;
-      margin-left: 1vw;
-      align-content: flex-start;
-      margin-top:12vh;
-    /* background: lightgray 50% / cover no-repeat; */
-    }
-
-    .logo{
-      width: 8vw;
-      height: 8vw;
-      flex-shrink: 0;
-      background: white;
-      align-items: flex-end;
-      position: absolute;
-      margin-top: 12vh;
-      margin-left: 4vw;
-    }
-
-
-    .line {
-      width: 101%; /* Adjust the width as needed */
-      height: 0.1%; /* Adjust the height as needed */
-      background: rgba(51, 54, 63, 0.60);
-      margin-top: -2vh;
-
-    }
-    .left-cell {
-      border-right: none;
-      border-left: none;
-      border-top: none;
-  }
-  .right-cell {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-}
-
-    .borderless-table {
-        margin-left: 12vw;
-        margin-right: 10vw;
-        border-collapse: collapse;
-        border-radius: 10px;
-        overflow: hidden;
-        align-items: center;
-        border: #205072;
-
-      }
-
-      th, td {
-        padding: 1vw;
-        border: 1px solid #ccc;
-        color: gray;
-text-align: center;
-font-family: Outfit;
-font-size: 2vw;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
-      }
-
-      td{
-        color: #38A3A5;
-text-align: center;
-font-family: Outfit;
-font-size: 1.6vw;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-      }
-
-      th {
-        background-color: #FFF;
-        font-weight: bold;
-      }
-
-      tr:last-child td {
-        border-bottom: none;
-      }
-
-      tr:hover {
-        background-color: #f9f9f9;
-      }
-      /* .tableicon{
-        width: 60px;
-height: 28.171px;
-flex-shrink: 0;
-
-      } */
-      .btncross{
-        right: 1vw;
-        position: absolute;
-        top: 1vw;
-        cursor: pointer;
-        height: 15px;
-        width: 15px;
-      }
-
-  }
-
-  @media (min-width: 2042px) and (max-width: 2300px){
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 22vw;
-      height: 0.06rem;
-      margin-left: 18vw;
-      margin-top: -2vh;
-    }
-  }
-  @media (min-width: 2281px){
-    .container {
-      width: 100vw;
-      height: 93vh;
-      flex-shrink: 0;
-      border-radius: 10px;
-      border: 1px solid #205072;
-      background: #FFF;
-      box-shadow: 0px 0px 3px 3px #0074FC;
-      /* margin-top: 3vh;
-      margin-bottom: 5vh;
-      margin-left: 30vw;
-      margin-right: 20vw; */
-      position: relative;
-      box-shadow: 0px 0px 3px 3px #7BE495;
-      display: flexbox;
-    }
-    .nav{
-      /* display: flexbox; */
-  justify-content: center;
-
-    }
-    .nav-link{
-  text-decoration: none;
-  /* display: inline-block;  */
-  color: gray;
-  padding-bottom: 3px;
-  /* border-bottom: 0.2px solid gray;   */
-  vertical-align: top;
-  box-sizing: border-box;
-  padding: 10px 10px 10px 10px;
-    }
-    .nav-link:hover {
-      color: #3fbdc2;
-      /* border-bottom: 0.2px solid #3fbdc2; */
-      transform: scale(1.1);
-    }
-    .nav-link:active{
-      color: #205072;
-    }
-
-    .line2{
-      position: relative;
-      border-top: 1px solid #000;
-      box-sizing: border-box;
-      width: 20vw;
-      height: 0.06rem;
-      margin-left: 14.5vw;
-      margin-top: -2vh;
-    }
-
-    .nodata{
-      display: block;
-      margin-left: 8vw;
-      margin-top: -8vh;
-      padding: 5px;
-      width: 30vw;
-      height: 50vh;
-
-    }
-    .image-container {
-      text-align: center;
-  }
-    .image-caption{
-      display: block;
-      margin-left: 19vw;
-      margin-top: -18vh;
-      padding: 5px;
-      width: 10vw;
-      height: 18vh;
-    }
-
-
-    h1 {
-      color: #205072;
-      text-align: center;
-      font-family: Outfit;
-      font-size: 2vw;
-      font-style: normal;
-      font-weight: bold;
-      line-height: normal;
-      margin-top:15vh;
-    }
-
-    .imgsize {
-      width: 5vw;
-      height: 5vw;
-      margin-left: 1vw;
-      align-content: flex-start;
-      margin-top:10vh;
-     }
-
-    .logo {
-      width: 5vw;
-      height: 5vw;
-      background: white;
-      align-items: flex-end;
-      position: absolute;
-      align-content: flex-end;
-      margin-top: 10vh;
-    margin-left: 5vw;
-    }
-
-    .line {
-
-      width: 101%;
-      height: 0.1%;
-      background: rgba(51, 54, 63, 0.60);
-    }
-    .left-cell {
-      border-right: none;
-      border-left: none;
-      border-top: none;
-  }
-  .right-cell {
-    border-left: none;
-    border-right: none;
-    border-top: none;
-}
-
-    .borderless-table {
-
-      margin-left: 6vw;
-      margin-right: 10vw;
-      width: 38vw;
-      border-collapse: collapse;
-      border-radius: 10px;
-      overflow: hidden;
-      align-items: center;
-      border: #205072;
-    }
-
-
-     th, td {
-      padding: 10px;
-      border: 1px solid #ccc;
-      color: gray;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-
-    }
-
-    td{
-      color: #38A3A5;
-  text-align: center;
-  font-family: Outfit;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-    }
-
-    th {
-      background-color: #FFF;
-      font-weight: bold;
-    }
-
-    tr:last-child td {
-      border-bottom: none;
-    }
-
-    tr:hover {
-      background-color: #f9f9f9;
-    }
-
-    .btncross{
-      right: 10px;
-      position: absolute;
-      top: 10px;
-      cursor: pointer;
-      height: 15px;
-      width: 15px;
-    }
-
-    /* You can also add any other styles or adjustments for larger screens here*/
-
-  }

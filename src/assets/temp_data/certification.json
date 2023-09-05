@@ -1,0 +1,16 @@
+{
+  "certificates": [
+    {
+      "Date": "16-Mar-2023",
+      "Certification_Name": "ITIL v4 Certified",
+      "Cost": "₹15,500",
+      "Link": "Click here to open"
+    },
+    {
+      "Date": "01-Jan-2023",
+      "Certification_Name": "ITIL v5 Certified",
+      "Cost": "₹25,500",
+      "Link": "Click here to open"
+    }
+  ]
+}

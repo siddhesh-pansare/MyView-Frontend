@@ -22,29 +22,30 @@
   max-width: 100%;
 }
 
-.logo1,.logo2,.logo{
+.logo1,
+.logo2,
+.logo {
   cursor: pointer;
 }
 .logo1:hover,
 .logo2:hover,
 .logo-hover:hover {
-  
-  opacity: 0.3; 
+  opacity: 0.3;
 }
 
-.btn{
-  border: 1px solid rgba(250, 10, 10, 0.50);
-  background:rgba(250, 10, 10, 0.50);
-  color: #FFF;
+.btn {
+  border: 1px solid rgba(250, 10, 10, 0.5);
+  background: rgba(250, 10, 10, 0.5);
+  color: #fff;
 }
-.btn:hover{
-  background:rgba(250, 10, 10, 0.40);
-  border:rgba(0, 0, 0, 0.4);
+.btn:hover {
+  background: rgba(250, 10, 10, 0.4);
+  border: rgba(0, 0, 0, 0.4);
 }
-.btn:active{
-  border: 1px solid rgba(250, 10, 10, 0.50);
-  background:rgba(250, 10, 10, 0.50);
-  color: #FFF;
+.btn:active {
+  border: 1px solid rgba(250, 10, 10, 0.5);
+  background: rgba(250, 10, 10, 0.5);
+  color: #fff;
 }
 /* Add this to your component's CSS or to a global stylesheet */
 .custom-modal-dialog {
@@ -70,7 +71,7 @@
   box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
 }
 
-table {
+/* table {
   border-color: #205072;
   border: 1;
   border-radius: 2px;
@@ -84,7 +85,7 @@ table.table tr td {
 table.table tr th {
   color: #205072;
   font-weight: 900;
-}
+} */
 
 @media screen and (min-width: 320px) {
   .modal-dialog {
@@ -94,8 +95,8 @@ table.table tr th {
     margin-left: -30px;
     margin-right: -30px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
   .title {
@@ -127,17 +128,22 @@ table.table tr th {
     font-weight: 600;
     font-size: 8px;
     border: none; /* Remove the default border */
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+    border: 1px solid rgba(250, 10, 10, 0.5);
+    background: rgba(250, 10, 10, 0.5);
+    color: #fff;
     /* Add a thin shadow on hover */
     transition: box-shadow 0.3s ease;
   }
 
   /* Add the hover effect */
-  .btn:hover {
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-    /* Medium sharp shadow around borders */
+  .btn:hover{
+    background:rgba(250, 10, 10, 0.40);
+    border:rgba(0, 0, 0, 0.4);
+  }
+  .btn:active{
+    border: 1px solid rgba(250, 10, 10, 0.50);
+    background:rgba(250, 10, 10, 0.50);
+    color: #FFF;
   }
   .profile {
     background-color: #205072;
@@ -150,12 +156,12 @@ table.table tr th {
     height: 70%;
     width: 70%;
   }
-  .logo1{
+  .logo1 {
     margin-left: -1vw;
     width: 2vw;
   }
 
-  .logo2{
+  .logo2 {
     margin-left: 0.5vw;
     width: 2vw;
   }
@@ -167,8 +173,8 @@ table.table tr th {
     height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
   .title {
@@ -200,18 +206,23 @@ table.table tr th {
     font-weight: 600;
     font-size: 10px;
     border: none; /* Remove the default border */
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+    border: 1px solid rgba(250, 10, 10, 0.5);
+    background: rgba(250, 10, 10, 0.5);
+    color: #fff;
 
     /* Add a thin shadow on hover */
     transition: box-shadow 0.3s ease;
   }
 
   /* Add the hover effect */
-  .btn:hover {
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-    /* Medium sharp shadow around borders */
+  .btn:hover{
+    background:rgba(250, 10, 10, 0.40);
+    border:rgba(0, 0, 0, 0.4);
+  }
+  .btn:active{
+    border: 1px solid rgba(250, 10, 10, 0.50);
+    background:rgba(250, 10, 10, 0.50);
+    color: #FFF;
   }
 
   .profile {
@@ -233,8 +244,8 @@ table.table tr th {
     height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
   .title {
@@ -266,27 +277,30 @@ table.table tr th {
     font-weight: 600;
     font-size: 12px;
     border: none; /* Remove the default border */
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+    border: 1px solid rgba(250, 10, 10, 0.5);
+    background: rgba(250, 10, 10, 0.5);
+    color: #fff;
 
     /* Add a thin shadow on hover */
     transition: box-shadow 0.3s ease;
   }
 
-  /* Add the hover effect */
-  .btn:hover {
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-    /* Medium sharp shadow around borders */
+  .btn:hover{
+    background:rgba(250, 10, 10, 0.40);
+    border:rgba(0, 0, 0, 0.4);
+  }
+  .btn:active{
+    border: 1px solid rgba(250, 10, 10, 0.50);
+    background:rgba(250, 10, 10, 0.50);
+    color: #FFF;
   }
 
   .profile {
-    background-color: rgba(250, 10, 10, 0.50);
+    background-color: rgba(250, 10, 10, 0.5);
     height: 50px;
     width: 50px;
     border-radius: 50%;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
@@ -295,8 +309,8 @@ table.table tr th {
     height: 70vh;
     border-radius: 10px;
     border: 1px solid #205072;
-    background: #FFF;
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
+    background: #fff;
+    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
   .custom-modal-dialog {
     width: 70vw !important;
@@ -347,18 +361,23 @@ table.table tr th {
     font-weight: 600;
     font-size: 14px;
     border: none; /* Remove the default border */
-    border: 1px solid rgba(250, 10, 10, 0.50);
-    background:rgba(250, 10, 10, 0.50);
-    color: #FFF;
+    border: 1px solid rgba(250, 10, 10, 0.5);
+    background: rgba(250, 10, 10, 0.5);
+    color: #fff;
 
     /* Add a thin shadow on hover */
     transition: box-shadow 0.3s ease;
   }
 
   /* Add the hover effect */
-  .btn:hover {
-    box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.50);
-    /* Medium sharp shadow around borders */
+  .btn:hover{
+    background:rgba(250, 10, 10, 0.40);
+    border:rgba(0, 0, 0, 0.4);
+  }
+  .btn:active{
+    border: 1px solid rgba(250, 10, 10, 0.50);
+    background:rgba(250, 10, 10, 0.50);
+    color: #FFF;
   }
   .profile {
     background-color: #205072;
@@ -371,15 +390,13 @@ table.table tr th {
     height: 40%;
     width: 40%;
   }
-  .logo1{
+  .logo1 {
     margin-left: 0vw;
     width: 1.5vw;
   }
 
-  .logo2{
+  .logo2 {
     margin-left: 1.5vw;
     width: 1.5vw;
   }
 }
-
-

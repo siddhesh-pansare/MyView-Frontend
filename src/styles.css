@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  font-family: "Outfit", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-:root {      
+:root {
+    --font-size-btn: 14px;
+    --dialog-box-table-font-color: #38a3a5;
     --primary-color: #082737;
     --secondary-color: rgba(8, 39, 55, 0.95);
     --accent-color: #205072;
@@ -51,5 +51,93 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --ec-card-header-color:rgba(255, 0, 0, 0.10);
     --card-header-box-shadow:0px 2px 1px 0px rgba(0, 0, 0, 0.25);
     --card-header-border-radius:5px 5px 0px 0px;
+}
 
-  }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+/* Dialog Box Title */
+.dialog-box-title {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-color);
+  margin-top: 50px !important;
+  padding-top: 10px;
+  width: 300px;
+}
+
+/* Dialog Box Image */
+.dialog-box-image {
+  border: 1px solid var(--dialog-box-table-font-color);
+  background: url(https://picsum.photos/200), lightgray 50% / cover no-repeat;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+
+/* Dialog Box Icon */
+.dialog-box-icon {
+  height: 100px;
+  width: 100px;
+  background-position-y: bottom;
+}
+
+/* Dialog Box Button */
+.dialog-box-button {
+  border-radius: 10px;
+  background: #ffd700; /* You can modify the background color here */
+  color: var(--accent-color);
+  text-align: center;
+  size: 80%;
+  font-weight: 600;
+  font-size: var(--font-size-btn);
+  border: none; /* Remove the default border */
+  transition: box-shadow 0.3s ease;
+}
+
+.dialog-box-button:hover {
+  box-shadow: 0px 0px 3px 3px var(--accent-color);
+  /* Medium sharp shadow around borders */
+}
+
+table {
+  border-color: var(--accent-color);
+  border: 1;
+  border-radius: 2px;
+}
+
+table.table tr td {
+  color: var(--dialog-box-table-font-color);
+  font-weight: 500;
+}
+
+table.table tr th {
+  color: var(--accent-color);
+  font-weight: 900;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  

@@ -37,7 +37,11 @@
                             <tr *ngFor="let cv of feedbackdata;let i=index">
                                 <td class="date_column">{{ cv.Date }}</td>
                                 <td>{{ cv.Feedback }}</td>
-                                <td><img src="assets/images/edit.png" class="logo1 logo-hover"><img src="assets/images/delete.png" class="logo2 logo-hover" (click)="deleteRow(i)"></td>
+                                <td><img src="assets/images/edit.png"
+                                        class="logo1 logo-hover"><img
+                                        src="assets/images/delete.png"
+                                        class="logo2 logo-hover"
+                                        (click)="deleteRow(i)"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -45,14 +49,16 @@
                         class="d-flex justify-content-center align-content-center"><img
                             class="d-flex no_data  justify-content-center"
                             *ngIf="feedbackdata.length===0"
-                            src="/assets/images/client_no_data.png"alt="No Data" />
-                            
+                            src="/assets/images/client_no_data.png"
+                            alt="No Data" />
+
                     </div>
                 </div>
-  
+
             </div>
             <div class="modal-footer d-flex bottom-0 justify-content-end">
-                <button type="button" class="btn ">Add New Feedback</button>
+                <button type="button" class="dialog-box-button btn btn-warning">Add
+                    New Feedback</button>
             </div>
         </div>
     </div>

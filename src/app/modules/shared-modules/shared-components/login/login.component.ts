@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
       auth: {
         clientId: '6c36c042-0bfb-450c-81b9-bdca9a92c9e4',
         authority:"https://login.microsoftonline.com/b9806c7d-9280-4e44-afea-6dc0ff495c2f",
-        redirectUri: 'http://127.0.0.1:4200/callback',
+        redirectUri: 'http://localhost:4200/callback',
       },
     };
     this.msalInstance = new PublicClientApplication(msalConfig);

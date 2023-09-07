@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=var(--font-family):wght@200&display=swap");
 
 body{
-  font-family: Outfit;
+  font-family: var(--font-family);
 }
 .personal-info-container{
   margin-left: 0%;
@@ -10,7 +10,7 @@ body{
   display: none;
 }
 .email{
-  color: #205072;
+  color: var(--accent-color);
   transition: color 0.3s;
 }
 .email:hover {
@@ -28,7 +28,7 @@ body{
 }
 
 .arrows:hover{
-  background-color: #205075;
+  background-color: var(--accent-color);
   color: rgba(0, 240, 255, 0.10);
 } 
 .cross{
@@ -51,32 +51,32 @@ flex-shrink: 0;
   /* box-shadow: 1px 1px 1px 1px red; */
 }
 .popup{
-      flex-direction: column;
+    flex-direction: column;
     display: flex;
-     margin-right: 5vw;
-     margin-left: 5vw;
-     padding: 1vw 0.25vw 0.5vw 0.25vw;
-     margin-top: 0vw ;
-     bottom: 1vw;
-     border-radius: 10px;
-     border: 1px solid #205072;
-     background: #FFF;
-     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.50);
-        overflow-y: auto;
-        position: fixed;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    padding: 1vw 0.25vw 0.5vw 0.25vw;
+    margin-top: 0vw ;
+    bottom: 1vw;
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+    background: #FFF;
+    box-shadow: var(--card-header-box-shadow);
+    overflow-y: auto;
+    position: fixed;
  }
  .card {
    margin-top: 10px;
  }
  
  .card-header{
-   border-radius: 5px 5px 0px 0px;
- background: rgba(255, 0, 0, 0.10);
- box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.25);
- height: 7vh;
- display: flex;
-  justify-content: space-between;
-  align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    background: var(--ec-card-header-color);
+    box-shadow: var(--card-header-box-shadow);
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  }
  
  .division{
@@ -87,10 +87,10 @@ flex-shrink: 0;
  overflow: hidden;
  color: rgba(51, 54, 63, 0.80);
  text-overflow: ellipsis;
- font-family: Outfit;
+ font-family: var(--font-family);
  font-size: 12px;
  font-style: normal;
- font-weight: 600;
+ font-weight: var(--font-weight-bold);
  line-height: normal;
  letter-spacing: 0.8px;
  padding: 5px;
@@ -111,18 +111,18 @@ flex-shrink: 0;
  }
 
  .card-info{
-   color: #082737;
- font-family: Outfit;
- font-size: 14px;
- font-style: normal;
- font-weight: bold;
- line-height: normal;
- letter-spacing: 1px;
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: 1px;
  }
  
  .task1{
-   font-family: Outfit;
-   color: #205072;
+   font-family: var(--font-family);
+   color: var(--accent-color);
    font-weight: bold;
  }
  
@@ -131,11 +131,11 @@ flex-shrink: 0;
  }
  
  .head{
-   color: #082737;
- font-family: Outfit;
+   color: var(--primary-color);
+ font-family:var(--primary-color);
  font-size: 16px;
  font-style: normal;
- font-weight: 600;
+ font-weight: var(--font-weight-bold);
  line-height: normal;
  letter-spacing: 0.9px;
  }
@@ -160,11 +160,11 @@ flex-shrink: 0;
  }
  
  .custom-card-title {
-   color: #082737;
-   font-family: Outfit;
+   color: var(--primary-color);
+   font-family: var(--primary-color);
    font-size: 25px !important;
    font-style: normal;
-   font-weight: 500 !important;
+   font-weight: var(--font-weight) !important;
    line-height: normal;
  }
  
@@ -172,33 +172,33 @@ flex-shrink: 0;
    color: rgba(8, 39, 55, 0.80);
    /* font-size: 16px; */
    font-style: normal;
-   font-weight: 600;
+   font-weight: var(--font-weight-bold);
    line-height: normal;
    margin-top: -1vh;
  }
  
  .custom-card-h2 {
-   color:#205072;
-   font-family: Outfit;
+   color:var(--accent-color);
+   font-family: var(--font-family);
    /* font-size: 14px; */
    font-style: normal;
-   font-weight: 600;
+   font-weight: var(--font-weight-bold);
    line-height: normal;
  }
  
  .custom-card-d2 {
    color: #38A3A5;
- font-family: Outfit;
+ font-family: var(--font-family);
  /* font-size: 14px; */
  font-style: normal;
- font-weight: 600;
+ font-weight: var(--font-weight-bold);
  line-height: normal;
  }
  
  .custom-card-workStatus {
    color: #FD9536;
  text-align: center;
- font-family: Outfit;
+ font-family: var(--font-family);
  font-size: 12px;
  font-style: normal;
  font-weight: bold;
@@ -226,7 +226,7 @@ flex-shrink: 0;
   box-shadow: 0px 0px 2px 2px #7BE495;
 } 
 .menu-card-container:nth-child(5):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px #205072;
+  box-shadow: 0px 0px 2px 2px var(--accent-color);
 }
 .menu-card-container:nth-child(6):hover .menu-card-box {
   box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
@@ -250,7 +250,7 @@ flex-shrink: 0;
    border-radius: 5px;
    border: 1px solid #38A3A5;
    background: #FFF;
-   box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+   box-shadow: var(--card-header-box-shadow);
    /* padding: 1vw 3vw 1vw 3vw; */
    width: fit-content;
    cursor: pointer;
@@ -265,12 +265,12 @@ flex-shrink: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
  .info{
-   color: #205072;
+   color: var(--accent-color);
  text-align: center;
- font-family: Outfit;
+ font-family: var(--font-family);
  font-size: 12px;
  font-style: normal;
- font-weight: 600;
+ font-weight: var(--font-weight-bold);
  line-height: normal;
  
  }
@@ -285,11 +285,11 @@ flex-shrink: 0;
  }
  
  .menu-card-title {
-   color: #082737;
-   font-family: Outfit;
+   color: var(--primary-color);
+   font-family: var(--font-family);
    font-size: 16px;
    font-style: normal;
-   font-weight: 600;
+   font-weight: var(--font-weight-bold);
    line-height: normal;
    text-align: center;
    white-space: nowrap;
@@ -518,12 +518,12 @@ flex-shrink: 0;
   } */
   
   .info{
-    color: #205072;
+    color: var(--accent-color);
   text-align: center;
-  font-family: Outfit;
+  font-family: var(--font-family);
   font-size: 12px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: normal;
   
   }
@@ -540,8 +540,8 @@ flex-shrink: 0;
   } */
   
   .menu-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -609,8 +609,8 @@ flex-shrink: 0;
     width: 24vw;
    }
   .custom-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 11px !important;
     font-style: normal;
     font-weight: 100;
@@ -653,7 +653,7 @@ flex-shrink: 0;
   }
   .info{
     font-size: 10px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
   }
 
   .menu-card-title {
@@ -731,8 +731,8 @@ flex-shrink: 0;
     width: 22vw;
    }
   .custom-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 2vw;
     font-style: normal;
     font-weight: 100;
@@ -838,12 +838,12 @@ flex-shrink: 0;
     
   }
   .custom-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 2vw;
     font-style: normal;
     font-weight: 100;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     
   }
   .custom-card-designation{
@@ -931,8 +931,8 @@ flex-shrink: 0;
     
   }
   .custom-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 10px;
     font-style: normal;
     font-weight: 100;
@@ -1018,11 +1018,11 @@ flex-shrink: 0;
     font-size: 20px;
     color: #999;
     display: flex;
-  width: 1.75vw;
-  height: 1.5vh;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+    width: 1.75vw;
+    height: 1.5vh;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
   }
   .image-container {
     width: 80px;
@@ -1035,8 +1035,8 @@ flex-shrink: 0;
     width: 22vw;
    }
   .custom-card-title {
-    color: #082737;
-    font-family: Outfit;
+    color: var(--primary-color);
+    font-family: var(--font-family);
     font-size: 20px;
     font-style: normal;
     font-weight: 100;
@@ -1161,10 +1161,10 @@ flex-shrink: 0;
     font-size: 20px;
     color: #999;
     display: flex;
-  width: 1.75vw;
-  height: 1.5vh;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+    width: 1.75vw;
+    height: 1.5vh;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
   }
 }

@@ -7,6 +7,7 @@
 }
 
 :root {
+    
     --font-size-btn: 14px;
     --dialog-box-table-font-color: #38a3a5;
     --primary-color: #082737;
@@ -45,12 +46,20 @@
     --card-desig-font-size:12px;
     --card-client-font-size:12px;
     --card-status-font-size:7px;
+    --font-weight-light:100;
     --font-weight:500;
     --font-weight-bold:600;
     --card-header-color:rgba(0, 240, 255, 0.10);
     --ec-card-header-color:rgba(255, 0, 0, 0.10);
     --card-header-box-shadow:0px 2px 1px 0px rgba(0, 0, 0, 0.25);
     --card-header-border-radius:5px 5px 0px 0px;
+
+    --attendence-font-size:14px;
+    --card-body-font-size:12px;
+    --reportee-profile-border:1px solid #38a3a5;
+    --reportee-work-status-color:#FD9536;
+
+    --menu-card-title-font-size:12px;
 }
 
 html,

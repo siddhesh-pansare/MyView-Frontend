@@ -9,7 +9,7 @@ import { ClientFeedbackComponent } from 'src/app/modules/shared-modules/Dialogue
 import { OtherContributionsComponent } from 'src/app/modules/shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig, MatDialogRef } from '@angular/material/dialog';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 
 
@@ -42,7 +42,7 @@ export class MenteesComponent implements OnInit{
     { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions', dialogComponent:'OtherContributionsComponent' },
   ];
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient ){}
+  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient,public dialogRef: MatDialogRef<MenteesComponent> ){}
 
   ngOnInit(): void {
     // this.loadData();

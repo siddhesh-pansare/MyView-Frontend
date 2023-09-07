@@ -137,3 +137,13 @@ white-space: nowrap;
   text-align: center;
   margin-top: 1vh;
 }
+/* styles.css (or your custom CSS/SCSS file) */
+/* styles.css (or your custom CSS/SCSS file) */
+.custom-dialog-class {
+  margin-left:10px;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh; /* Adjust the height as needed */
+}
+
+

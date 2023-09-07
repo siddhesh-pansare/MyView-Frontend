@@ -18,41 +18,86 @@
           </div>
           <div class="col-4 text-end">
             <img class="dialog-box-icon"
-              src="../../../../../../assets/awards-images/awards.png"
+              src="../../../../../../assets/session/interviewLogo.png"
               alt="Image 2">
           </div>
         </div>
         <hr>
+
+        <div class="attendance-tabs">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" (click)="setActiveTab('Sessions Attended')"
+                [class.active]="activeTab == 'Sessions Attended'">Sessions
+                Attended</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" (click)="setActiveTab('Sessions Conducted')"
+                [class.active]="activeTab == 'Sessions Conducted'">Sessions
+                Conducted</a>
+            </li>
+          </ul>
+          <div class="line2"></div><br>
+        </div>
+
         <div class="table-responsive rounded">
-          <table class="table table-bordered"
-            *ngIf="sessData.length>0">
-            <thead class="text-center">
-              <tr>
-                <th>Date</th>
-                <th>Certification Name</th>
-                <th>Cost(₹)</th>
-                <th>Link</th>
-              </tr>
-            </thead>
-            <tbody class="text-center">
-              <tr *ngFor="let cv of sessData">
-                <td>{{ cv.Date }}</td>
-                <td class="d-flex justify-content-around"><img class="logo"
-                    src="assets/images/download 3.png">{{ cv.Certification_Name
-                  }}</td>
-                <td>{{ cv.Cost}}</td>
-                <td>{{ cv.Link}}<a href=".." class="clicktext no-underline"><img
-                      class="clickHere" src="assets/images/External Link.jpg"></a></td>
-              </tr>
-            </tbody>
-          </table>
-          <div
-            class="d-flex justify-content-center align-content-center"><img
-              class="d-flex no_data  justify-content-center"
-              *ngIf="sessData.length===0"
-              src="../../../../../../assets/session/noData_sess.png"
-              alt="No Data" />
+          <div *ngIf="activeTab === 'Sessions Attended'">
+            <table class="table table-bordered" *ngIf="isDataLoadedsa">
+              <thead class="text-center"
+                [class.fade-in]="activeTab === 'Sessions Attended'">
+                <tr>
+                  <th>Date</th>
+                  <th>Event</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class="text-center"
+                [class.fade-in]="activeTab === 'Sessions Attended'">
+                <tr *ngFor="let cv of sessionsAttended">
+                  <td>{{cv.date}}</td>
+                  <td class="eventcolor">{{cv.event}}</td>
+                  <td>{{cv.status}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="no_data d-flex justify-content-center"
+              *ngIf="!isDataLoadedsa">
+              <img
+                src="assets/session/noData_sess.png"
+                alt="No Data" />
+              <p class="ndf">No Data Found</p>
+            </div>
           </div>
+
+          <div *ngIf="activeTab === 'Sessions Conducted'">
+            <table class="table table-bordered" *ngIf="isDataLoadedsc">
+              <thead class="text-center"
+                [class.fade-in]="activeTab === 'Sessions Conducted'">
+                <tr>
+                  <th>Date</th>
+                  <th>Event</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody class="text-center"
+                [class.fade-in]="activeTab === 'Sessions Conducted'">
+                <tr *ngFor="let im of sessConducted">
+                  <td>{{im.date}}</td>
+                  <td class="eventcolor">{{im.event}}</td>
+                  <td>{{im.status}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="no_data d-flex justify-content-center"
+              *ngIf="!isDataLoadedsc">
+              <img
+                src="assets/session/noData_sess.png"
+                alt="No Data" />
+              <p class="ndf">No Data Found</p>
+            </div>
+
+          </div>
+
         </div>
       </div>
       <div class="modal-footer d-flex bottom-0 justify-content-end">

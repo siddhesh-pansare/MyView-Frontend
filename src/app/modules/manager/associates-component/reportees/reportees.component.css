@@ -56,7 +56,7 @@ letter-spacing: 0.8px;
   background: #FFF;
   box-shadow: 0px 0px 2px 2px #FFD700;
   transition-property: transform; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in-out; /* Animation timing function */
     animation-name: smartAnimate;
    
@@ -69,7 +69,7 @@ letter-spacing: 0.8px;
   background: #FFF;
   box-shadow: 0px 0px 2px 2px #0074FC;
   transition-property: transform; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in-out; /* Animation timing function */
     animation-name: smartAnimate;
   }
@@ -81,7 +81,7 @@ letter-spacing: 0.8px;
     background: #FFF;
     box-shadow: 0px 0px 3px 3px rgba(255, 6, 6, 0.50);
     transition-property: transform; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in-out; /* Animation timing function */
     animation-name: smartAnimate;
   }
@@ -92,7 +92,7 @@ letter-spacing: 0.8px;
   background: #FFF;
   box-shadow: 0px 0px 3px 3px #7BE495;
   transition-property: linear; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in-out; /* Animation timing function */
     animation-name: Dissolve;
   }
@@ -103,7 +103,7 @@ letter-spacing: 0.8px;
   background: #FFF;
   box-shadow: 0px 0px 3px 3px #9747FF;
   transition-property: transform; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in; /* Animation timing function */
     animation-name: smartAnimate;
   }
@@ -114,7 +114,7 @@ letter-spacing: 0.8px;
   background: #FFF;
   box-shadow: 0px 0px 3px 3px #E50255;
   transition-property: transform; /* Apply transition to the transform property */
-    transition-duration: 300ms; /* Animation duration */
+    transition-duration: var(--animation-duration); /* Animation duration */
     transition-timing-function: ease-in; /* Animation timing function */
     animation-name: smartAnimate;
   }

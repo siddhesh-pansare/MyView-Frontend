@@ -77,6 +77,9 @@ body {
   margin: 0;
 }
 
+.table-bordered th td tr{
+  border: 1px solid #205072;
+}
 /* Dialog Box Title */
 .dialog-box-title {
   font-size: 32px;

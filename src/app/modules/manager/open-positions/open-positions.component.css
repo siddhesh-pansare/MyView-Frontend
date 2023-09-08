@@ -1,9 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap");
-
-* {
-  font-family: Outfit;
-}
-
 body {
   margin: 0px;
   padding: 0px;
@@ -35,8 +29,7 @@ body {
   position: relative;
   top: 10vh;
   font-size: 1.15rem;
-  font-family: Outfit;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   width: 90%;
   text-align: center;
   left: 3vw;
@@ -75,6 +68,7 @@ body {
 .cclosed {
   color: rgba(255, 6, 6, 0.5);
 }
+
 .line2 {
   position: relative;
   border-top: 1px solid #000;
@@ -95,7 +89,7 @@ body {
 }
 
 .table-bordered {
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
   font-size: 12px;
 }
 
@@ -104,33 +98,33 @@ tr {
 }
 
 .table-bordered th {
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
 }
 
 th {
-  color: #205072;
+  color: var(--accent-color);
   background-color: #3de50233;
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
   font-size: 12px !important;
 }
 
 td {
   color: #33363f99;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   text-align: center;
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
   font-size: 12px !important;
 }
 
 td:hover {
-  color: #205072;
+  color: var(--accent-color);
   cursor: default;
 }
 .ctable th {
-  color: #205072;
+  color: var(--accent-color);
   background-color: rgba(255, 0, 0, 0.1);
   text-align: center;
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
 }
 
 #council {
@@ -255,7 +249,7 @@ td#action.clicked {
     gap: 10px;
     background-color: #0074fcb8;
     margin-top: 45px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
@@ -274,7 +268,7 @@ td#action.clicked {
     gap: 10px;
     background-color: #0074fcb8;
     margin-top: 45px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
@@ -308,7 +302,7 @@ table td {
     top: 12vh;
     font-size: 1rem;
     font-family: Outfit;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     width: 100%;
     text-align: center;
     left: 8vw;
@@ -347,7 +341,7 @@ table td {
     gap: 10px;
     background-color: #0074fcb8;
     margin-top: 45px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
@@ -366,7 +360,7 @@ table td {
     top: 12vh;
     font-size: 1rem;
     font-family: Outfit;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     width: 100%;
     text-align: center;
     left: 12vw;
@@ -405,7 +399,7 @@ table td {
     gap: 10px;
     background-color: #0074fcb8;
     margin-top: 45px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
@@ -418,7 +412,7 @@ table td {
     top: 12vh;
     font-size: 1rem;
     font-family: Outfit;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     width: 100%;
     text-align: center;
     left: 15vw;
@@ -463,7 +457,7 @@ table td {
     gap: 10px;
     background-color: #0074fcb8;
     margin-top: 45px;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     color: #ffffff;
     cursor: pointer;
     font-size: 10px;
@@ -472,7 +466,7 @@ table td {
   .page-heading1 {
     margin-left: 1vw;
     font-family: Outfit;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     font-size: 1rem;
   }
   .arrow-back-icon {

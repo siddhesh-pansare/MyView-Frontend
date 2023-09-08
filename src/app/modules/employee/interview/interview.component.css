@@ -10,7 +10,7 @@
   width: 30px;
   padding: 2px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 1px solid var(--accent-color);
   margin-right: 15px;
 }
 
@@ -38,22 +38,22 @@ tr {
 }
 
 tr:hover td {
-  cursor: pointer;
+  cursor: var(--interview-table-hover-cursor);
   border: 1px solid var(--interview-table-hover-color);
   box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:first-child {
-  cursor: pointer;
+  cursor: var(--interview-table-hover-cursor);
   border: 1px solid var(--interview-table-hover-color);
   box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:last-child {
-  cursor: pointer;
+  cursor: var(--interview-table-hover-cursor);
   border: 1px solid var(--interview-table-hover-color);
   box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:after {
-  cursor: pointer;
+  cursor: var(--interview-table-hover-cursor);
   content: "";
   width: 5px;
   height: 100%;

@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, ViewChild, Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { MatTableDataSource } from '@angular/material/table';
 
 interface InterviewTaken {
   Candidate_Name: string;
@@ -15,8 +17,9 @@ interface InterviewTaken {
   templateUrl: './interview.component.html',
   styleUrls: ['./interview.component.css'],
 })
-export class InterviewComponent implements OnInit {
+export class InterviewComponent implements OnInit, AfterViewInit {
   interviewRec: InterviewTaken[] = [];
+  dataSource!: MatTableDataSource<InterviewTaken>;
   displayedColumns: string[] = [
     'Candidate_Name',
     'Email',
@@ -25,11 +28,26 @@ export class InterviewComponent implements OnInit {
     'Last_Update',
   ];
 
-  constructor(private http: HttpClient, private snackBar: MatSnackBar) {}
+  pageIndex = 0;
+  pageSize = 5;
+  totalItems = 0;
+  searchTerm: string = '';
+  pageSizeOptions: number[] = [5, 10, 25];
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+
+  constructor(private http: HttpClient, private snackBar: MatSnackBar) {
+    this.pageSize = this.pageSizeOptions[0];
+    this.dataSource = new MatTableDataSource<InterviewTaken>(this.interviewRec);
+  }
 
   ngOnInit() {
     console.log('ngOnInit');
     this.fetchData();
+  }
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
   }
 
   fetchData() {
@@ -39,7 +57,8 @@ export class InterviewComponent implements OnInit {
         (data) => {
           console.log('Data fetched:', data);
           this.interviewRec = data.interview;
-          console.log('Interview array length:', this.interviewRec.length);
+          this.totalItems = this.interviewRec.length;
+          this.applyFilter();
         },
         (error) => {
           console.error('Error fetching data:', error);
@@ -80,5 +99,42 @@ export class InterviewComponent implements OnInit {
       default:
         return '#FF9900'; // Default color (or you can set it to another color)
     }
+  }
+
+  applyFilter() {
+    const filterValue = this.searchTerm.toLowerCase();
+    const filteredData = this.interviewRec.filter(
+      (interview) =>
+        interview.Candidate_Name.toLowerCase().includes(filterValue) ||
+        interview.Email.toLowerCase().includes(filterValue) ||
+        interview.Category.toLowerCase().includes(filterValue) ||
+        interview.Status.toLowerCase().includes(filterValue) ||
+        interview.Last_Update.toLowerCase().includes(filterValue)
+    );
+    this.dataSource.data = filteredData;
+    this.dataSource.paginator = this.paginator;
+  }
+  onPageChange(event: PageEvent): void {
+    this.paginator.pageIndex = event.pageIndex;
+    this.paginator.pageSize = event.pageSize;
+    this.applyFilter();
+  }
+
+  goToFirstPage(): void {
+    this.paginator.firstPage();
+    this.onPageChange({
+      pageIndex: this.paginator.pageIndex,
+      pageSize: this.paginator.pageSize,
+      length: this.paginator.length,
+    });
+  }
+
+  goToLastPage(): void {
+    this.paginator.lastPage();
+    this.onPageChange({
+      pageIndex: this.paginator.pageIndex,
+      pageSize: this.paginator.pageSize,
+      length: this.paginator.length,
+    });
   }
 }

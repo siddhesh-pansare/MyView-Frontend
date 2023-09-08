@@ -40,7 +40,7 @@
           <div class="line2"></div><br>
         </div>
 
-        <div class="table-responsive rounded">
+        <div class="dialog-box-table table-responsive rounded">
           <div *ngIf="activeTab === 'Sessions Attended'">
             <table class="table table-bordered" *ngIf="isDataLoadedsa">
               <thead class="text-center"
@@ -70,7 +70,8 @@
           </div>
 
           <div *ngIf="activeTab === 'Sessions Conducted'">
-            <table class="table table-bordered" *ngIf="isDataLoadedsc">
+            <table class="dialog-box-table table table-bordered"
+              *ngIf="isDataLoadedsc">
               <thead class="text-center"
                 [class.fade-in]="activeTab === 'Sessions Conducted'">
                 <tr>

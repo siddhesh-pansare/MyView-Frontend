@@ -14,6 +14,12 @@
   --interview-table-hover-cursor: pointer; /* used in interview screen */
   --interview-table-hover-color: #38a3a5; /* used in interview screen */
   --interview-table-hover-box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8); /* used in interview screen */
+  --btn-text-color-openPos: #ffffff; /* button used in open positions screen */
+  --btn-bg-color-openPos: #0074fcb8; /* button used in open positions screen */
+  --btn-hover-style-openPos: 0px 0px 4px #000; /* button used in open positions screen */
+  --tab-width-openPos: 300px; /* button used in open positions screen */
+  --closed-color-openPos: #e50202; /* button used in open positions screen */
+  --active-color-openPos: #00ac2b; /* button used in open positions screen */
 }
 
 html,

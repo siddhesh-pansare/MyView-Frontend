@@ -1,8 +1,8 @@
 .status {
   border: none;
   background: none;
-  color: #38a3a5;
-  font-weight: 600;
+  color: #33363f99;
+  font-weight: var(--font-weight-bold);
 }
 
 .profImg {
@@ -14,11 +14,27 @@
   margin-right: 15px;
 }
 
-table {
-  border-color: #205072;
-  border: 1px;
-  border-radius: 2px;
-  margin-left: 20px;
+.table-responsive.rounded {
+  top: 2vh;
+  width: 100vw;
+  position: relative;
+  width: 80vw;
+  left: 6vw;
+  padding-right: 5px;
+  padding-left: 2px;
+}
+
+.table-bordered {
+  border: 1px solid #205072;
+  font-size: 12px;
+}
+
+tr {
+  height: 25px;
+}
+
+.table-bordered th {
+  border: 1px solid #205072;
 }
 
 tr:hover td {
@@ -46,10 +62,6 @@ tr:hover td:after {
   right: 0;
   top: 0;
   z-index: 1;
-}
-
-table.table tr td {
-  color: #38a3a5;
 }
 
 table.table tr th {

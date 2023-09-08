@@ -25,7 +25,7 @@
 }
 
 .table-bordered {
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
   font-size: 12px;
 }
 
@@ -34,23 +34,23 @@ tr {
 }
 
 .table-bordered th {
-  border: 1px solid #205072;
+  border: 1px solid var(--accent-color);
 }
 
 tr:hover td {
   cursor: pointer;
-  border: 1px solid #38a3a5;
-  box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8);
+  border: 1px solid var(--interview-table-hover-color);
+  box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:first-child {
   cursor: pointer;
-  border: 1px solid #38a3a5;
-  box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8);
+  border: 1px solid var(--interview-table-hover-color);
+  box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:last-child {
   cursor: pointer;
-  border: 1px solid #38a3a5;
-  box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8);
+  border: 1px solid var(--interview-table-hover-color);
+  box-shadow: var(--interview-table-hover-box-shadow);
 }
 tr:hover td:after {
   cursor: pointer;
@@ -65,7 +65,7 @@ tr:hover td:after {
 }
 
 table.table tr th {
-  color: #205072;
+  color: var(--accent-color);
   background-color: rgba(0, 240, 255, 0.1);
 }
 

@@ -11,6 +11,8 @@
   --font-size-btn: 14px;
   --font-weight-bold: 600;
   --dialog-box-table-font-color: #38a3a5;
+  --interview-table-hover-color: #38a3a5; /* used in interview screen */
+  --interview-table-hover-box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8); /* used in interview screen */
 }
 
 html,

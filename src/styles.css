@@ -71,7 +71,7 @@ body {
   color: var(--accent-color);
   text-align: center;
   size: 80%;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-btn);
   border: none; /* Remove the default border */
   transition: box-shadow 0.3s ease;
@@ -122,7 +122,7 @@ body {
 
 .page-heading1 {
   margin-left: 1vw;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: 1.25rem;
 }
 .arrow-back-icon {
@@ -164,7 +164,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid #205075;
+  border-bottom: 2px solid var(--accent-color);
   width: 280px;
   padding: 0.63rem;
   color: rgba(0, 0, 0, 0.5);
@@ -175,7 +175,7 @@ body {
 .search-container {
   flex: 1;
   position: relative;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: 0.8rem;
   text-align: center;
 }
@@ -188,8 +188,7 @@ input {
 }
 
 input::placeholder {
-  font-family: Outfit;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 .icon {

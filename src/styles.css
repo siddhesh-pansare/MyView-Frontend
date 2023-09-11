@@ -7,8 +7,6 @@
 }
 
 :root {
-<<<<<<< HEAD
-    
     --font-size-btn: 14px;
     --dialog-box-table-font-color: #38a3a5;
     --primary-color: #082737;
@@ -63,10 +61,6 @@
     --reportee-work-status-color:#FD9536;
 
     --menu-card-title-font-size:12px;
-=======
-  --accent-color: #205072;
-  --font-size-btn: 14px;
-  --font-weight-bold: 600;
   --dialog-box-table-font-color: #38a3a5;
   --interview-table-hover-cursor: pointer; /* used in interview screen */
   --interview-table-hover-color: #38a3a5; /* used in interview screen */
@@ -77,7 +71,6 @@
   --tab-width-openPos: 300px; /* button used in open positions screen */
   --closed-color-openPos: #e50202; /* button used in open positions screen */
   --active-color-openPos: #00ac2b; /* button used in open positions screen */
->>>>>>> origin/khushi_global_css
 }
 
 html,
@@ -152,20 +145,17 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.table-bordered th,
-tr,
-td {
+.table-bordered th,tr,td {
   border: 1px solid var(--accent-color) !important;
 }
 
-<<<<<<< HEAD
+
 table {
   border-color: var(--accent-color);
   border: 1;
 }
 
-table.table tr td {
-=======
+
 .dialog-box-table.table tr td {
 >>>>>>> origin/khushi_global_css
   color: var(--dialog-box-table-font-color);
@@ -179,13 +169,12 @@ table.table tr td {
 .table-bordered th,tr,td {
   border: 1px solid #205072 !important;
 }
-<<<<<<< HEAD
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   
-=======
+
 .no_data {
   height: 70%;
   width: 70%;
@@ -313,4 +302,4 @@ input::placeholder {
 }
 
 /* ^^ interview and all employees screen ^^ */
->>>>>>> origin/khushi_global_css
+

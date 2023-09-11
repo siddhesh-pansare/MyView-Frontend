@@ -4,9 +4,6 @@
   font-family: "Outfit", sans-serif;
 }
 
-.table-bordered th{
-  border: 1px solid #205072;
-}
 .close{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
@@ -99,13 +96,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
-  .title {
-    font-size: 14px;
+  .dialog-box-title {
+    font-size: 9px;
     font-weight: 700;
     color: #205072;
   }
 
-  .awardslogo {
+  .dialog-box-icon {
     height: 40px;
     width: 40px;
     background-position-y: bottom;
@@ -145,7 +142,7 @@ table.table tr th {
     background:rgba(250, 10, 10, 0.50);
     color: #FFF;
   }
-  .profile {
+  .dialog-box-image {
     background-color: #205072;
     height: 40px;
     width: 40px;
@@ -177,13 +174,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
-  .title {
-    font-size: 14px;
+  .dialog-box-title {
+    font-size: 13px;
     font-weight: 700;
     color: #205072;
   }
 
-  .awardslogo {
+  .dialog-box-icon {
     height: 40px;
     width: 40px;
     background-position-y: bottom;
@@ -225,7 +222,7 @@ table.table tr th {
     color: #FFF;
   }
 
-  .profile {
+  .dialog-box-image {
     background-color: #205072;
     height: 40px;
     width: 40px;
@@ -248,13 +245,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(250, 10, 10, 0.5);
   }
 
-  .title {
+  .dialog-box-title {
     font-size: 18px;
     font-weight: 700;
     color: #205072;
   }
 
-  .awardslogo {
+  .dialog-box-icon {
     height: 50px;
     width: 50px;
     background-position-y: bottom;
@@ -295,7 +292,7 @@ table.table tr th {
     color: #FFF;
   }
 
-  .profile {
+  .dialog-box-image {
     background-color: rgba(250, 10, 10, 0.5);
     height: 50px;
     width: 50px;
@@ -330,7 +327,7 @@ table.table tr th {
     margin: 20px;
   }
 
-  .title {
+  .dialog-box-title {
     font-size: 34px;
     font-weight: 700;
     color: #205072;
@@ -338,7 +335,7 @@ table.table tr th {
     margin-top: 20px;
   }
 
-  .awardslogo {
+  .dialog-box-icon {
     height: 100px;
     width: 100px;
     background-position-y: bottom;
@@ -379,7 +376,7 @@ table.table tr th {
     background:rgba(250, 10, 10, 0.50);
     color: #FFF;
   }
-  .profile {
+  .dialog-box-image {
     background-color: #205072;
     height: 100px;
     width: 100px;

@@ -54,6 +54,8 @@
     --card-header-box-shadow:0px 2px 1px 0px rgba(0, 0, 0, 0.25);
     --card-header-border-radius:5px 5px 0px 0px;
 
+    --card-hover-red-color:rgba(250, 10, 10, 0.50);
+
     --attendence-font-size:14px;
     --card-body-font-size:12px;
     --reportee-profile-border:1px solid #38a3a5;
@@ -94,9 +96,10 @@ body {
   font-size: 32px;
   font-weight: var(--font-weight-bold);
   color: var(--accent-color);
-  margin-top: 50px !important;
   padding-top: 10px;
-  width: 300px;
+  margin-top: 50px !important; 
+  
+  /* width: 300px; */
 }
 
 /* Dialog Box Image */
@@ -106,6 +109,7 @@ body {
   height: 100px;
   width: 100px;
   border-radius: 100%;
+  
 }
 
 /* Dialog Box Icon */
@@ -136,7 +140,6 @@ body {
 table {
   border-color: var(--accent-color);
   border: 1;
-  border-radius: 2px;
 }
 
 table.table tr td {
@@ -147,6 +150,9 @@ table.table tr td {
 table.table tr th {
   color: var(--accent-color);
   font-weight: 900;
+}
+.table-bordered th,tr,td {
+  border: 1px solid #205072 !important;
 }
 
 html, body { height: 100%; }

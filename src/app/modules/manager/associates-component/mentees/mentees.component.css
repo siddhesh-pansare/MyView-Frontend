@@ -220,7 +220,7 @@ flex-shrink: 0;
   box-shadow: 0px 0px 2px 2px #0074FC;
 } 
 .menu-card-container:nth-child(3):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+  box-shadow: 0px 0px 2px 2px var( --card-hover-red-color);
 } 
 .menu-card-container:nth-child(4):hover .menu-card-box {
   box-shadow: 0px 0px 2px 2px #7BE495;
@@ -229,7 +229,7 @@ flex-shrink: 0;
   box-shadow: 0px 0px 2px 2px var(--accent-color);
 }
 .menu-card-container:nth-child(6):hover .menu-card-box {
-  box-shadow: 0px 0px 2px 2px rgba(250, 10, 10, 0.50);
+  box-shadow: 0px 0px 2px 2px var( --card-hover-red-color);
 }	
 .menu-card-container:nth-child(6){
   padding-left: 40px;

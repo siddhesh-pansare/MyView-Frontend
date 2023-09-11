@@ -22,6 +22,41 @@
 .close:hover {
   box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
 }
+.dialog-box-button:hover {
+  box-shadow: 0px 0px 3px 3px #7be495;
+  /* Medium sharp shadow around borders */
+}
+
+/* Add this CSS to your component's stylesheet or a global stylesheet */
+
+/* Style for active tab */
+.nav-link.active {
+  color: var(--accent-color);
+  font-weight: var(--font-weight-bold);
+}
+
+.nav-link.active:hover {
+  color: #7be495;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav-link:not(.active):hover {
+  color: #7be495;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Style for inactive tab */
+.nav-link:not(.active) {
+  color: rgba(51, 54, 63, 0.6);
+  font-weight: var(--font-weight-bold);
+}
+
+.line2 {
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 25vw;
+}
 
 @media screen and (min-width: 320px) {
   .modal-dialog {

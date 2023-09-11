@@ -7,6 +7,7 @@
 }
 
 :root {
+<<<<<<< HEAD
     
     --font-size-btn: 14px;
     --dialog-box-table-font-color: #38a3a5;
@@ -62,6 +63,21 @@
     --reportee-work-status-color:#FD9536;
 
     --menu-card-title-font-size:12px;
+=======
+  --accent-color: #205072;
+  --font-size-btn: 14px;
+  --font-weight-bold: 600;
+  --dialog-box-table-font-color: #38a3a5;
+  --interview-table-hover-cursor: pointer; /* used in interview screen */
+  --interview-table-hover-color: #38a3a5; /* used in interview screen */
+  --interview-table-hover-box-shadow: 0px 0px 4px 0px rgba(51, 54, 63, 0.8); /* used in interview screen */
+  --btn-text-color-openPos: #ffffff; /* button used in open positions screen */
+  --btn-bg-color-openPos: #0074fcb8; /* button used in open positions screen */
+  --btn-hover-style-openPos: 0px 0px 4px #000; /* button used in open positions screen */
+  --tab-width-openPos: 300px; /* button used in open positions screen */
+  --closed-color-openPos: #e50202; /* button used in open positions screen */
+  --active-color-openPos: #00ac2b; /* button used in open positions screen */
+>>>>>>> origin/khushi_global_css
 }
 
 html,
@@ -88,9 +104,13 @@ body {
   margin: 0;
 }
 
+<<<<<<< HEAD
 .table-bordered th td tr{
   border: 1px solid #205072;
 }
+=======
+/* Dialog box styling (all of them) */
+>>>>>>> origin/khushi_global_css
 /* Dialog Box Title */
 .dialog-box-title {
   font-size: 32px;
@@ -126,36 +146,171 @@ body {
   color: var(--accent-color);
   text-align: center;
   size: 80%;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-btn);
   border: none; /* Remove the default border */
   transition: box-shadow 0.3s ease;
 }
 
-.dialog-box-button:hover {
-  box-shadow: 0px 0px 3px 3px var(--accent-color);
-  /* Medium sharp shadow around borders */
+.table-bordered th,
+tr,
+td {
+  border: 1px solid var(--accent-color) !important;
 }
 
+<<<<<<< HEAD
 table {
   border-color: var(--accent-color);
   border: 1;
 }
 
 table.table tr td {
+=======
+.dialog-box-table.table tr td {
+>>>>>>> origin/khushi_global_css
   color: var(--dialog-box-table-font-color);
-  font-weight: 500;
+  font-weight: 600;
 }
 
-table.table tr th {
+.dialog-box-table.table tr th {
   color: var(--accent-color);
   font-weight: 900;
 }
 .table-bordered th,tr,td {
   border: 1px solid #205072 !important;
 }
+<<<<<<< HEAD
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
   
+=======
+.no_data {
+  height: 70%;
+  width: 70%;
+}
+
+/* ^^ Dialog box styling (all of them) ^^ */
+
+/*interview and all employees screen */
+
+.page-sub-header {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5vw;
+  margin-right: 3vw;
+  top: 10px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.page-heading {
+  top: 0rem;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.page-heading1 {
+  margin-left: 1vw;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+}
+.arrow-back-icon {
+  top: 0.63rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin-right: 1vw;
+}
+
+.arrow-back-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  border-top: 1px solid #000;
+  box-sizing: border-box;
+  width: 93%;
+  height: 0.06rem;
+  top: 40px;
+}
+
+.btn-all-employees-icon {
+  position: relative;
+  object-fit: cover;
+  height: 40px;
+  width: 40px;
+}
+
+.container {
+  position: relative;
+  top: 10px;
+}
+
+.row.align-items-center {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+
+.searchCandidate {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--accent-color);
+  width: 280px;
+  padding: 0.63rem;
+  color: rgba(0, 0, 0, 0.5);
+  gap: 0.63rem;
+  justify-content: space-between;
+}
+
+.search-container {
+  flex: 1;
+  position: relative;
+  font-weight: var(--font-weight-bold);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding-left: 50px;
+  size: 100px;
+}
+
+input::placeholder {
+  font-weight: var(--font-weight-bold);
+}
+
+.icon {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  object-fit: cover;
+}
+
+.line-div-container {
+  margin-left: 80px;
+  margin-right: 120px;
+  margin-top: 15px;
+}
+
+.line-div {
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  width: 100%;
+  height: 0.06rem;
+}
+
+/* ^^ interview and all employees screen ^^ */
+>>>>>>> origin/khushi_global_css

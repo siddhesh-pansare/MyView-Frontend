@@ -272,14 +272,15 @@ table.table tr th {
     width: 100px;
     background-position-y: bottom;
   } */
-
-  table {
-    border-color: #205072;
-    border: 1;
-    border-radius: 2px;
-    font-size: 14px;
+  .clicktext {
+    color: #0074fc;
   }
 
+  .clicktext:hover {
+    color: #0074fc;
+    text-shadow: 0px 0px 4px #38a3a5;
+    cursor: pointer;
+  }
   /* .btn {
     size: 80%;
     font-weight: 600;

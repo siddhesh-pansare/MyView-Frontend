@@ -18,13 +18,13 @@
           </div>
           <div class="col-4 text-end">
             <img class="dialog-box-icon"
-              src="../../../../../../assets/awards-images/awards.png"
+              src="../../../../../../assets/images/certiLogo.png"
               alt="Image 2">
           </div>
         </div>
         <hr>
-        <div class="table-responsive rounded">
-          <table class="table table-bordered"
+        <div class=" table table-responsive rounded">
+          <table class="dialog-box-table table table-bordered"
             *ngIf="certiData.length>0">
             <thead class="text-center">
               <tr>
@@ -38,10 +38,13 @@
               <tr *ngFor="let cv of certiData">
                 <td>{{ cv.Date }}</td>
                 <td class="d-flex justify-content-around"><img class="logo"
-                    src="assets/images/download 3.png">{{ cv.Certification_Name
+                    src="assets/images/download 3.png">{{
+                  cv.Certification_Name
                   }}</td>
                 <td>{{ cv.Cost}}</td>
-                <td>{{ cv.Link}}<a href=".." class="clicktext no-underline"><img
+                <td class="clicktext" style="color: #0074fc;">{{ cv.Link}}<a
+                    href=".."
+                    class="clicktext no-underline"><img
                       class="clickHere" src="assets/images/External Link.jpg"></a></td>
               </tr>
             </tbody>

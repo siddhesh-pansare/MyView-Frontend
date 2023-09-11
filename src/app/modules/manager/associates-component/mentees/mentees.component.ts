@@ -9,40 +9,83 @@ import { ClientFeedbackComponent } from 'src/app/modules/shared-modules/Dialogue
 import { OtherContributionsComponent } from 'src/app/modules/shared-modules/Dialogue/other-contributions/other-contributions.component';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import {
+  MatDialog,
+  MatDialogConfig,
+  MatDialogRef,
+} from '@angular/material/dialog';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-
 
 @Component({
   selector: 'app-mentees',
   templateUrl: './mentees.component.html',
-  styleUrls: ['./mentees.component.css']
+  styleUrls: ['./mentees.component.css'],
 })
-export class MenteesComponent implements OnInit{
+export class MenteesComponent implements OnInit {
   loggedUserData: any;
   selectedTab = 'EC';
   content: any;
 
   isMentee: boolean = true;
   isReportee: boolean = false;
-  isMobile: boolean = false;   //variable to store complete data from MIS
+  isMobile: boolean = false; //variable to store complete data from MIS
   isCollapsed: { [key: string]: boolean } = {
     skills: false,
     details: false,
-    activity: false
+    activity: false,
   };
-  
+
   // isMobileScreen: boolean = false;
-  cards: { cardImageSrc: string; cardTitle: string, ImageAlt: string, dialogComponent: string }[] = [
-    { cardImageSrc: '../../../../assets/images/icons/awards.svg', cardTitle: 'Awards', ImageAlt:'award', dialogComponent: 'AwardComponent' },
-    { cardImageSrc: '../../../../assets/images/icons/certificate.svg', cardTitle: 'Certifications', ImageAlt:'certification', dialogComponent: 'CertificationComponent' },
-    { cardImageSrc: '../../../../assets/images/icons/interview.svg', cardTitle: 'Interviews', ImageAlt:'interviews', dialogComponent: 'InterviewsComponent' },
-    { cardImageSrc: '../../../../assets/images/icons/session.svg', cardTitle: 'Sessions', ImageAlt:'sessions',  dialogComponent: 'SessionComponent' },
-    { cardImageSrc: '../../../../assets/images/icons/client_feedback.svg', cardTitle: 'Client Feedback', ImageAlt:'client_feedback', dialogComponent: 'ClientFeedbackComponent' },
-    { cardImageSrc: '../../../../assets/images/icons/other_contributions.svg', cardTitle: 'Other Contributions', ImageAlt:'other-Contributions', dialogComponent:'OtherContributionsComponent' },
+  cards: {
+    cardImageSrc: string;
+    cardTitle: string;
+    ImageAlt: string;
+    dialogComponent: string;
+  }[] = [
+    {
+      cardImageSrc: '../../../../assets/images/icons/awards.svg',
+      cardTitle: 'Awards',
+      ImageAlt: 'award',
+      dialogComponent: 'AwardComponent',
+    },
+    {
+      cardImageSrc: '../../../../assets/images/icons/certificate.svg',
+      cardTitle: 'Certifications',
+      ImageAlt: 'certification',
+      dialogComponent: 'CertificationComponent',
+    },
+    {
+      cardImageSrc: '../../../../assets/images/icons/interview.svg',
+      cardTitle: 'Interviews',
+      ImageAlt: 'interviews',
+      dialogComponent: 'InterviewsComponent',
+    },
+    {
+      cardImageSrc: '../../../../assets/images/icons/session.svg',
+      cardTitle: 'Sessions',
+      ImageAlt: 'sessions',
+      dialogComponent: 'SessionComponent',
+    },
+    {
+      cardImageSrc: '../../../../assets/images/icons/client_feedback.svg',
+      cardTitle: 'Client Feedback',
+      ImageAlt: 'client_feedback',
+      dialogComponent: 'ClientFeedbackComponent',
+    },
+    {
+      cardImageSrc: '../../../../assets/images/icons/other_contributions.svg',
+      cardTitle: 'Other Contributions',
+      ImageAlt: 'other-Contributions',
+      dialogComponent: 'OtherContributionsComponent',
+    },
   ];
 
-  constructor(private userDataService: LoggedUserDataService, private dialog: MatDialog, private http: HttpClient ){}
+  constructor(
+    private userDataService: LoggedUserDataService,
+    private dialog: MatDialog,
+    private http: HttpClient,
+    public dialogRef: MatDialogRef<MenteesComponent>
+  ) {}
 
   ngOnInit(): void {
     // this.loadData();
@@ -50,17 +93,20 @@ export class MenteesComponent implements OnInit{
     this.restoreBoxPositions();
     this.loadData();
 
-    const apiUrl = environment.baseUrl+'homeEC';
+    const apiUrl = environment.baseUrl + 'homeEC';
     const accessToken = sessionStorage.getItem('idToken');
 
-    const headers = new HttpHeaders().set('Authorization', `Bearer ${accessToken}`);
+    const headers = new HttpHeaders().set(
+      'Authorization',
+      `Bearer ${accessToken}`
+    );
 
     this.http.get<any>(apiUrl, { headers }).subscribe(
-      response => {
+      (response) => {
         this.content = response;
-        console.log(this.content)
+        console.log(this.content);
       },
-      error => {
+      (error) => {
         console.error('Error fetching content:', error);
       }
     );
@@ -81,14 +127,18 @@ export class MenteesComponent implements OnInit{
       moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
     }
   }
-  
+
   private getAndSaveBoxCoordinates(): void {
-    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+    const boxes: NodeListOf<HTMLElement> =
+      document.querySelectorAll('.example-box');
 
     boxes.forEach((box: HTMLElement, index: number) => {
       const boxRect = box.getBoundingClientRect();
       const boxCoordinates = { left: boxRect.left, top: boxRect.top };
-      localStorage.setItem(`dashboard_move_com_${index + 1}_coordinates`, JSON.stringify(boxCoordinates));
+      localStorage.setItem(
+        `dashboard_move_com_${index + 1}_coordinates`,
+        JSON.stringify(boxCoordinates)
+      );
     });
   }
 
@@ -97,13 +147,15 @@ export class MenteesComponent implements OnInit{
   }
 
   private restoreBoxPositions(): void {
-    console.log('restoring positions'
-    );
+    console.log('restoring positions');
 
-    const boxes: NodeListOf<HTMLElement> = document.querySelectorAll('.example-box');
+    const boxes: NodeListOf<HTMLElement> =
+      document.querySelectorAll('.example-box');
 
     boxes.forEach((box: HTMLElement, index: number) => {
-      const storedCoordinates = localStorage.getItem(`dashboard_move_com_${index + 1}_coordinates`);
+      const storedCoordinates = localStorage.getItem(
+        `dashboard_move_com_${index + 1}_coordinates`
+      );
       if (storedCoordinates) {
         const { left, top } = JSON.parse(storedCoordinates);
         box.style.position = 'fixed'; // Use absolute positioning
@@ -112,7 +164,6 @@ export class MenteesComponent implements OnInit{
       }
     });
   }
-
 
   // @HostListener('window:resize', ['$event'])
   // onResize(event: any): void {
@@ -150,24 +201,18 @@ export class MenteesComponent implements OnInit{
       const dialogRef = this.dialog.open(InterviewComponent, {
         width: '400px', // Set the width as needed
       });
-    }
-    else if (dialogComponent === 'SessionComponent') {
+    } else if (dialogComponent === 'SessionComponent') {
       const dialogRef = this.dialog.open(SessionComponent, {
         width: '400px', // Set the width as needed
       });
-    }
-    else if (dialogComponent === 'ClientFeedbackComponent') {
+    } else if (dialogComponent === 'ClientFeedbackComponent') {
       const dialogRef = this.dialog.open(ClientFeedbackComponent, {
         width: '400px', // Set the width as needed
       });
-    }
-    else if (dialogComponent === 'OtherContributionsComponent') {
+    } else if (dialogComponent === 'OtherContributionsComponent') {
       const dialogRef = this.dialog.open(OtherContributionsComponent, {
         width: '400px', // Set the width as needed
       });
     }
-
-
   }
-
 }

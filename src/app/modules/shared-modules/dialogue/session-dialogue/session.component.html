@@ -24,7 +24,7 @@
         </div>
         <hr>
 
-        <div class="attendance-tabs">
+        <div class="attendance-tabs d-flex row justify-content-center">
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link" (click)="setActiveTab('Sessions Attended')"
@@ -37,10 +37,10 @@
                 Conducted</a>
             </li>
           </ul>
-          <div class="line2"></div><br>
+          <div class="line2 d-flex"></div><br>
         </div>
 
-        <div class="dialog-box-table table-responsive rounded">
+        <div class="dialog-box-table table table-responsive rounded">
           <div *ngIf="activeTab === 'Sessions Attended'">
             <table class="table table-bordered" *ngIf="isDataLoadedsa">
               <thead class="text-center"
@@ -60,12 +60,12 @@
                 </tr>
               </tbody>
             </table>
-            <div class="no_data d-flex justify-content-center"
-              *ngIf="!isDataLoadedsa">
-              <img
-                src="assets/session/noData_sess.png"
+            <div
+              class="d-flex justify-content-center align-content-center"><img
+                class="d-flex no_data  justify-content-center"
+                *ngIf="!isDataLoadedsa"
+                src="../../../../../../assets/session/noData_sess.png"
                 alt="No Data" />
-              <p class="ndf">No Data Found</p>
             </div>
           </div>
 
@@ -82,19 +82,19 @@
               </thead>
               <tbody class="text-center"
                 [class.fade-in]="activeTab === 'Sessions Conducted'">
-                <tr *ngFor="let im of sessConducted">
-                  <td>{{im.date}}</td>
-                  <td class="eventcolor">{{im.event}}</td>
-                  <td>{{im.status}}</td>
+                <tr *ngFor="let sc of sessConducted">
+                  <td>{{sc.date}}</td>
+                  <td class="eventcolor">{{sc.event}}</td>
+                  <td>{{sc.status}}</td>
                 </tr>
               </tbody>
             </table>
-            <div class="no_data d-flex justify-content-center"
-              *ngIf="!isDataLoadedsc">
-              <img
-                src="assets/session/noData_sess.png"
+            <div
+              class="d-flex justify-content-center align-content-center"><img
+                class="d-flex no_data  justify-content-center"
+                *ngIf="!isDataLoadedsc"
+                src="../../../../../../assets/session/noData_sess.png"
                 alt="No Data" />
-              <p class="ndf">No Data Found</p>
             </div>
 
           </div>

@@ -41,7 +41,8 @@ export class SessionComponent implements OnInit {
   sessConducted: SessionsConducted[] = [];
   isDataLoadedsa: boolean = true;
   isDataLoadedsc: boolean = true;
-  activeTab: string = 'SessionsAttended';
+  activeTab: string = 'Sessions Attended';
+
   setActiveTab(tab: string) {
     this.activeTab = tab;
     this.fetchData(this.activeTab);
@@ -58,7 +59,7 @@ export class SessionComponent implements OnInit {
 
     if (tab === 'Sessions Attended') {
       url = 'assets/temp_data/sessionsAttended.json';
-    } else if (tab === 'Sessions conducted') {
+    } else if (tab === 'Sessions Conducted') {
       url = 'assets/temp_data/sessConducted.json';
     }
     this.http.get<any>(url).subscribe(
@@ -66,7 +67,7 @@ export class SessionComponent implements OnInit {
         if (tab === 'Sessions Attended') {
           this.sessionsAttended = data.sessionsAttended;
           this.isDataLoadedsa = this.sessionsAttended.length > 0;
-        } else if (tab === 'Sessions conducted') {
+        } else if (tab === 'Sessions Conducted') {
           this.sessConducted = data.sessConducted;
           this.isDataLoadedsc = this.sessConducted.length > 0;
         }
@@ -87,13 +88,7 @@ export class SessionComponent implements OnInit {
             }
           );
         } else {
-          this.snackBar.open(
-            'An error occurred while fetching data.',
-            'Close',
-            {
-              duration: 5000,
-            }
-          );
+          // Handle other HTTP errors here if needed.
         }
       }
     );

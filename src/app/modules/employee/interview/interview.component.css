@@ -33,7 +33,9 @@ tr {
   height: 25px;
 }
 
-.table-bordered th {
+.table-bordered th,
+tr,
+td {
   border: 1px solid var(--accent-color);
 }
 

@@ -86,15 +86,15 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-.dialog-box-table {
-  border-color: var(--accent-color);
-  border: 1;
-  border-radius: 2px;
+.table-bordered th,
+tr,
+td {
+  border: 1px solid var(--accent-color) !important;
 }
 
 .dialog-box-table.table tr td {
   color: var(--dialog-box-table-font-color);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .dialog-box-table.table tr th {
@@ -106,6 +106,10 @@ body {
   height: 70%;
   width: 70%;
   border: none;
+}
+.no_data {
+  height: 70%;
+  width: 70%;
 }
 
 /* ^^ Dialog box styling (all of them) ^^ */

@@ -3,28 +3,15 @@
 * {
   font-family: "Outfit", sans-serif;
 }
-.logo1,.logo2,.logo{
+.logo1,
+.logo2,
+.logo {
   cursor: pointer;
 }
-
 .logo1:hover,
 .logo2:hover,
 .logo-hover:hover {
   opacity: 0.3;
-}
-.close{
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-.close:hover{
-  transform: scale(1.05);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-.date_column {
-  white-space: nowrap; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
-  max-width: 100%;
 }
 
 .btn {
@@ -48,7 +35,6 @@
   max-width: 100% !important;
   margin: 0 auto !important;
   height: 80vh !important;
-  
 }
 
 .modal-content {
@@ -67,7 +53,7 @@
   box-shadow: 0px 4px 4px 0px rgba(255, 6, 6, 0.5);
 }
 
-table {
+/* table {
   border-color: #205072;
   border: 1;
   border-radius: 2px;
@@ -81,11 +67,11 @@ table.table tr td {
 table.table tr th {
   color: #205072;
   font-weight: 900;
-} 
+} */
 
 @media screen and (min-width: 320px) {
   .modal-dialog {
-    max-width: 30vw;
+    max-width: 310px;
     height: 60vh;
     border-radius: 4px;
     margin-left: -30px;
@@ -95,13 +81,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.5);
   }
 
-  .dialog-box-title {
+  .title {
     font-size: 12px;
     font-weight: 700;
     color: #205072;
   }
 
-  .dialog-box-icon {
+  .awardslogo {
     height: 40px;
     width: 40px;
     background-position-y: bottom;
@@ -112,11 +98,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table,td,th,tr {
+  table {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .btn {
@@ -136,7 +122,7 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px #205072;
     /* Medium sharp shadow around borders */
   }
-  .dialog-box-image {
+  .profile {
     background-color: #205072;
     height: 40px;
     width: 40px;
@@ -168,13 +154,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.5);
   }
 
-  .dialog-box-title {
+  .title {
     font-size: 14px;
     font-weight: 700;
     color: #205072;
   }
 
-  .dialog-box-icon {
+  .awardslogo {
     height: 40px;
     width: 40px;
     background-position-y: bottom;
@@ -185,11 +171,11 @@ table.table tr th {
     width: 50%;
   }
 
-  table,td,th,tr {
+  table {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .btn {
@@ -211,7 +197,7 @@ table.table tr th {
     /* Medium sharp shadow around borders */
   }
 
-  .dialog-box-image {
+  .profile {
     background-color: #205072;
     height: 40px;
     width: 40px;
@@ -234,13 +220,13 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px rgba(151, 71, 255, 0.5);
   }
 
-  .dialog-box-title {
+  .title {
     font-size: 18px;
     font-weight: 700;
     color: #205072;
   }
 
-  .dialog-box-icon {
+  .awardslogo {
     height: 50px;
     width: 50px;
     background-position-y: bottom;
@@ -251,7 +237,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table,td,th,tr {
+  table {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
@@ -277,7 +263,7 @@ table.table tr th {
     /* Medium sharp shadow around borders */
   }
 
-  .dialog-box-image {
+  .profile {
     background-color: #205072;
     height: 50px;
     width: 50px;
@@ -312,15 +298,15 @@ table.table tr th {
     margin: 20px;
   }
 
-  .dialog-box-title {
-    font-size: 34px;
+  .title {
+    font-size: 36px;
     font-weight: 700;
     color: #205072;
     margin: 0px;
     margin-top: 20px;
   }
 
-  .dialog-box-icon {
+  .awardslogo {
     height: 100px;
     width: 100px;
     background-position-y: bottom;
@@ -331,7 +317,7 @@ table.table tr th {
     width: 70%;
   }
 
-  table,td,th,tr {
+  table {
     border-color: #205072;
     border: 1;
     border-radius: 2px;
@@ -356,7 +342,7 @@ table.table tr th {
     box-shadow: 0px 0px 3px 3px #205072;
     /* Medium sharp shadow around borders */
   }
-  .dialog-box-image {
+  .profile {
     background-color: #205072;
     height: 100px;
     width: 100px;
